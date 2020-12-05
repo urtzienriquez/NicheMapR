@@ -97,10 +97,9 @@ C     energy conservation: selecting low temperatures (between CTmin and Temerge
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
          ENDIF
-C     BEHAVIOUR 2
+C     optimum performance strategy (between CTmin and Tpref)
        ELSE IF(BURROWBHV.EQ.2)THEN
-         MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
-         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.MAXTEMP))THEN
+         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TPREF))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
