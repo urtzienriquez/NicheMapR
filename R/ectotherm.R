@@ -525,6 +525,7 @@ ectotherm <- function(
   postur = 1,
   climb = 0,
   shdburrow = 0,
+  burrowbhv = 0,
   mindepth = 2,
   maxdepth = 10,
   aquabask = 0,
@@ -1339,7 +1340,7 @@ ectotherm <- function(
       write.table(shadhumid[(seq(1, ndays * 24)), ], file = "ecto csv input/shadhumid.csv", sep = ",", row.names = FALSE)
     }
     # final input list
-    ecto <- list(ndays = ndays, nstages = stages, ectoinput = ectoinput, metout = metout[, 1:18], shadmet = shadmet[, 1:18], soil = soil, shadsoil = shadsoil, soilmoist = soilmoist, shadmoist = shadmoist, soilpot = soilpot, shadpot = shadpot, humid = humid, shadhumid = shadhumid, DEP = DEP, rainfall = rainfall, rainhr = rainhr, iyear = iyear, countday = countday, debmod = debmod, deblast = deblast, foodwaters = foodwaters, foodlevels = foodlevels, wetlandTemps = wetlandTemps, wetlandDepths = wetlandDepths, GLMtemps = GLMtemps, GLMO2s = GLMO2s, GLMsalts = GLMsalts, GLMpHs = GLMpHs, GLMfoods = GLMfoods, arrhenius = arrhenius, arrhenius2 = arrhenius2, thermal_stages = thermal_stages, behav_stages = behav_stages, water_stages = water_stages, nutri_stages = nutri_stages, minshades = minshades, maxshades = maxshades, S_instar = S_instar)
+    ecto <- list(ndays = ndays, nstages = stages, ectoinput = ectoinput, metout = metout[, 1:18], shadmet = shadmet[, 1:18], soil = soil, shadsoil = shadsoil, soilmoist = soilmoist, shadmoist = shadmoist, soilpot = soilpot, shadpot = shadpot, humid = humid, shadhumid = shadhumid, DEP = DEP, rainfall = rainfall, rainhr = rainhr, iyear = iyear, countday = countday, debmod = debmod, deblast = deblast, foodwaters = foodwaters, foodlevels = foodlevels, wetlandTemps = wetlandTemps, wetlandDepths = wetlandDepths, GLMtemps = GLMtemps, GLMO2s = GLMO2s, GLMsalts = GLMsalts, GLMpHs = GLMpHs, GLMfoods = GLMfoods, arrhenius = arrhenius, arrhenius2 = arrhenius2, thermal_stages = thermal_stages, behav_stages = behav_stages, water_stages = water_stages, nutri_stages = nutri_stages, minshades = minshades, maxshades = maxshades, S_instar = S_instar, burrowbhv = burrowbhv)
 
     message('running ectotherm model ... \n')
 
