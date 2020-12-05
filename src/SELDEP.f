@@ -90,16 +90,16 @@ C     normal behavior in NicheMapR
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
          ENDIF
-C     energy conservation: selecting low temperatures (between CTmin and Temerge and lower than CTmax)
+C     energy conservation: selecting low temperatures (between CTmin and Temerge)
        ELSE IF(BURROWBHV.EQ.1)THEN
-         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TEMERGE).AND.(TSOIL(IDEP).LT.CTMAX))THEN
+         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TEMERGE))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
          ENDIF
-C     optimum performance strategy (between CTmin and Tpref and lower than CTmax)
+C     optimum performance strategy (between CTmin and Tpref)
        ELSE IF(BURROWBHV.EQ.2)THEN
-         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TPREF).AND.(TSOIL(IDEP).LT.CTMAX)THEN
+         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TPREF))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
