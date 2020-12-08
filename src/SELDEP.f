@@ -112,9 +112,9 @@ C     BEHAVIOUR 3
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
          ENDIF
-13     ENDIF
+       ENDIF
        GO TO 999
-      CONTINUE
+13    CONTINUE
 
       IF(NON.EQ.10)THEN
        TA=TANNUL
