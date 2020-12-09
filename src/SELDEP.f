@@ -125,8 +125,11 @@ C     BEHAVIOUR 3
          DO 41 MINWETNODE=MINNODE,NON
            IF(PSOIL(MINWETNODE).GE.-72.5)THEN
              MWNODE=MINWETNODE
+             GO TO 411
            ENDIF
 41     CONTINUE
+
+411   CONTINUE
          DO 14 IDEP=MWNODE,NON
 C     normal behavior in NicheMapR
           IF(BURROWTMP.EQ.0)THEN
@@ -138,8 +141,7 @@ C     normal behavior in NicheMapR
              GO TO 999
             ENDIF
           ENDIF
-14      CONTINUE
-       ENDIF
+14     CONTINUE
 
       IF(NON.EQ.10)THEN
        TA=TANNUL
@@ -152,7 +154,7 @@ C     normal behavior in NicheMapR
       ENDIF
       GOTO 999
 
-999   CONTINUE
+
 C     SET UP UNDERGROUND CLIMATE CONDITIONS
       CALL BELOWGROUND
       CALL RADIN
