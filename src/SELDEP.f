@@ -82,46 +82,34 @@ C     INITIALIZING FOR FINDING SOIL TEMPERATURE MAXIMUM,MINIMUM & CORRESPONDING 
        ENDIF
 1     CONTINUE
 
-      IF(BURROWWTR.EQ.0)THEN
-        DO 13 IDEP=MINNODE,NON
+      DO 13 IDEP=MINNODE,NON
 C     normal behavior in NicheMapR
-          IF(BURROWTMP.EQ.0)THEN
-            MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
-            IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.MAXTEMP))THEN
-             TA = TSOIL(IDEP)
-             RELHUM = HSOIL(IDEP)*100.
-             NEWDEP = ZSOIL(IDEP)
-             GO TO 999
-            ENDIF
+       IF(BURROWBHV.EQ.0)THEN
+        MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
+        IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.MAXTEMP))THEN
+          TA = TSOIL(IDEP)
+          RELHUM = HSOIL(IDEP)*100.
+          NEWDEP = ZSOIL(IDEP)
+          GO TO 999
+        ENDIF
 C     energy conservation: selecting low temperatures (between CTmin and Temerge)
-          ELSE IF(BURROWTMP.EQ.1)THEN
-            IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TEMERGE))THEN
-             TA = TSOIL(IDEP)
-             RELHUM = HSOIL(IDEP)*100.
-             NEWDEP = ZSOIL(IDEP)
-             GO TO 999
-            ENDIF
+       ELSE IF(BURROWBHV.EQ.1)THEN
+        IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TEMERGE))THEN
+          TA = TSOIL(IDEP)
+          RELHUM = HSOIL(IDEP)*100.
+          NEWDEP = ZSOIL(IDEP)
+          GO TO 999
+        ENDIF
 C     optimum performance strategy (between Temerge and Tpref)
-          ELSE IF(BURROWTMP.EQ.2)THEN
-            IF((TSOIL(IDEP).GT.TEMERGE).AND.(TSOIL(IDEP).LE.TPREF))THEN
-             TA = TSOIL(IDEP)
-             RELHUM = HSOIL(IDEP)*100.
-             NEWDEP = ZSOIL(IDEP)
-             GO TO 999
-            ENDIF
-C     BEHAVIOUR 3
-          ELSE IF(BURROWTMP.EQ.3)THEN
-            MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
-            IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.MAXTEMP))THEN
-             TA = TSOIL(IDEP)
-             RELHUM = HSOIL(IDEP)*100.
-             NEWDEP = ZSOIL(IDEP)
-             GO TO 999
-            ENDIF
-          ENDIF
-13    CONTINUE
-
-       
+       ELSE IF(BURROWBHV.EQ.2)THEN
+        IF((TSOIL(IDEP).GT.TEMERGE).AND.(TSOIL(IDEP).LE.TPREF))THEN
+          TA = TSOIL(IDEP)
+          RELHUM = HSOIL(IDEP)*100.
+          NEWDEP = ZSOIL(IDEP)
+          GO TO 999
+        ENDIF
+       ENDIF
+13     CONTINUE
 
       IF(NON.EQ.10)THEN
        TA=TANNUL
