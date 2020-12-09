@@ -116,7 +116,7 @@ C     normal behavior in NicheMapR
        ELSE IF((BURROWTMP.EQ.0).AND.(BURROWWTR.EQ.1))THEN
         MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.MAXTEMP).AND.
-     & (PSOIL(IDEP).GE.-72.5)THEN
+     & (PSOIL(IDEP).GE.-72.5))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
