@@ -83,6 +83,8 @@ C     INITIALIZING FOR FINDING SOIL TEMPERATURE MAXIMUM,MINIMUM & CORRESPONDING 
 1     CONTINUE
 
       DO 13 IDEP=MINNODE,NON
+
+C     FIRST WITHOUT FOLLOWING WATER
 C     normal behavior in NicheMapR
        IF((BURROWTMP.EQ.0).AND.(BURROWWTR.EQ.0))THEN
         MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
@@ -103,6 +105,36 @@ C     energy conservation: selecting low temperatures (between CTmin and Temerge
 C     optimum performance strategy (between Temerge and Tpref)
        ELSE IF((BURROWTMP.EQ.2).AND.(BURROWWTR.EQ.0))THEN
         IF((TSOIL(IDEP).GT.TEMERGE).AND.(TSOIL(IDEP).LE.TPREF))THEN
+          TA = TSOIL(IDEP)
+          RELHUM = HSOIL(IDEP)*100.
+          NEWDEP = ZSOIL(IDEP)
+          GO TO 999
+        ENDIF
+
+C     SECOND, FOLLOWING SOIL DEPTH FROM WHICH THEY CAN ABSORB WATER
+C     normal behavior in NicheMapR
+       ELSE IF((BURROWTMP.EQ.0).AND.(BURROWWTR.EQ.1))THEN
+        MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
+        IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.MAXTEMP).AND.
+     & (PSOIL(IDEP).GE.-72.5)THEN
+          TA = TSOIL(IDEP)
+          RELHUM = HSOIL(IDEP)*100.
+          NEWDEP = ZSOIL(IDEP)
+          GO TO 999
+        ENDIF
+C     energy conservation: selecting low temperatures (between CTmin and Temerge)
+      ELSE IF((BURROWTMP.EQ.1).AND.(BURROWWTR.EQ.1))THEN
+        IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TEMERGE).AND.
+     & (PSOIL(IDEP).GE.-72.5))THEN
+          TA = TSOIL(IDEP)
+          RELHUM = HSOIL(IDEP)*100.
+          NEWDEP = ZSOIL(IDEP)
+          GO TO 999
+        ENDIF
+C     optimum performance strategy (between Temerge and Tpref)
+      ELSE IF((BURROWTMP.EQ.2).AND.(BURROWWTR.EQ.1))THEN
+        IF((TSOIL(IDEP).GT.TEMERGE).AND.(TSOIL(IDEP).LE.TPREF).AND.
+     & (PSOIL(IDEP).GE.-72.5))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
