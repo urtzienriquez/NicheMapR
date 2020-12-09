@@ -522,7 +522,8 @@ ectotherm <- function(
   crepus = 0,
   shade_seek = 1,
   burrow = 1,
-  burrowtmp = 0, 
+  burrowtmp = 0,
+  burrowwtr = 0,
   postur = 1,
   climb = 0,
   shdburrow = 0,
@@ -1283,7 +1284,7 @@ ectotherm <- function(
                              p_Xm, k_sub, flymetab, continit, wetmod, contonly, conthole,
                              contype, shdburrow, Tb_breed, Tb_breed_hrs, contwet, warmsig,
                              aquabask, pct_H_death, write_csv, aestdepth, eggshade, pO2thresh,
-                             intmethod, burrowtmp))
+                             intmethod, burrowtmp, burrowwtr))
     debmod <- c(clutchsize, rho_body_deb, d_V, d_Egg, mu_X, mu_E, mu_V, mu_P, T_REF - 273.15, z, kap, kap_X, p_M, v, E_G, kap_R, E_sm, del_M, h_a, V_init_baby, E_init_baby, k_J, E_Hb, E_Hj, E_Hp, clutch_ab[2], batch, rain_breed, photostart, photofinish, daylengthstart, daylengthfinish, photodirs, photodirf, clutch_ab[1], amphibreed, amphistage, eta_O, JM_JO, E_0, kap_X_P, PTUREA1, PFEWAT1, wO, w_N, FoodWater1, f, s_G, K, X[1], metab_mode, stages, kap_V, s_j, startday, raindrink, reset, m_a, m_i, m_h, aestivate, depress, minclutch, L_b, E_He, k_Ee, k_EV)
     deblast <- c(iyear, countday, V_init, E_init, ES_init, cumrepro_init, q_init, hs_init, cumbatch_init, V_baby_init, E_baby_init, E_H_init, stage)
 
