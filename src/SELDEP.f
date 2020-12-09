@@ -142,6 +142,7 @@ C     normal behavior in NicheMapR
             ENDIF
           ENDIF
 14     CONTINUE
+      ENDIF
 
       IF(NON.EQ.10)THEN
        TA=TANNUL
@@ -164,4 +165,4 @@ C     SET UP UNDERGROUND CLIMATE CONDITIONS
       ENDIF
 
       RETURN
-      END 
+      END
