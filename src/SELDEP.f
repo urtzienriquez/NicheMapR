@@ -119,7 +119,7 @@ C     BEHAVIOUR 3
              GO TO 999
             ENDIF
           ENDIF
- 13    CONTINUE
+13    CONTINUE
 
        IF(BURROWWTR.EQ.1)THEN
          DO 41 MINWETNODE=MINNODE,NON
@@ -155,6 +155,7 @@ C     normal behavior in NicheMapR
       GOTO 999
 
 
+999   CONTINUE
 C     SET UP UNDERGROUND CLIMATE CONDITIONS
       CALL BELOWGROUND
       CALL RADIN
@@ -163,4 +164,4 @@ C     SET UP UNDERGROUND CLIMATE CONDITIONS
       ENDIF
 
       RETURN
-      END
+      END 
