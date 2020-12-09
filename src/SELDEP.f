@@ -84,7 +84,7 @@ C     INITIALIZING FOR FINDING SOIL TEMPERATURE MAXIMUM,MINIMUM & CORRESPONDING 
 
       DO 13 IDEP=MINNODE,NON
 C     normal behavior in NicheMapR
-       IF(BURROWTMP.EQ.0)THEN
+       IF((BURROWTMP.EQ.0).AND.(BURROWWTR.EQ.0))THEN
         MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.MAXTEMP))THEN
           TA = TSOIL(IDEP)
@@ -93,7 +93,7 @@ C     normal behavior in NicheMapR
           GO TO 999
         ENDIF
 C     energy conservation: selecting low temperatures (between CTmin and Temerge)
-       ELSE IF(BURROWTMP.EQ.1)THEN
+       ELSE IF((BURROWTMP.EQ.1).AND.(BURROWWTR.EQ.0))THEN
         IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LE.TEMERGE))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
@@ -101,7 +101,7 @@ C     energy conservation: selecting low temperatures (between CTmin and Temerge
           GO TO 999
         ENDIF
 C     optimum performance strategy (between Temerge and Tpref)
-       ELSE IF(BURROWTMP.EQ.2)THEN
+       ELSE IF((BURROWTMP.EQ.2).AND.(BURROWWTR.EQ.0))THEN
         IF((TSOIL(IDEP).GT.TEMERGE).AND.(TSOIL(IDEP).LE.TPREF))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
