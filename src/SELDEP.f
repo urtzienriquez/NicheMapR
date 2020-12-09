@@ -121,28 +121,7 @@ C     BEHAVIOUR 3
           ENDIF
 13    CONTINUE
 
-       IF(BURROWWTR.EQ.1)THEN
-         DO 41 MINWETNODE=MINNODE,NON
-           IF(PSOIL(MINWETNODE).GE.-72.5)THEN
-             MWNODE=MINWETNODE
-             GO TO 411
-           ENDIF
-41     CONTINUE
-
-411   CONTINUE
-         DO 14 IDEP=MWNODE,NON
-C     normal behavior in NicheMapR
-          IF(BURROWTMP.EQ.0)THEN
-            MAXTEMP=(CTMAX-(CTMAX-TMAXPR)/2.)
-            IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.MAXTEMP))THEN
-             TA = TSOIL(IDEP)
-             RELHUM = HSOIL(IDEP)*100.
-             NEWDEP = ZSOIL(IDEP)
-             GO TO 999
-            ENDIF
-          ENDIF
-14     CONTINUE
-      ENDIF
+       
 
       IF(NON.EQ.10)THEN
        TA=TANNUL
