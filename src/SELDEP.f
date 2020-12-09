@@ -126,6 +126,7 @@ C     BEHAVIOUR 3
            IF(PSOIL(MINWETNODE).GE.-72.5)THEN
              MWNODE=MINWETNODE
            ENDIF
+         ENDIF 
 41     CONTINUE
          DO 14 IDEP=MWNODE,NON
 C     normal behavior in NicheMapR
