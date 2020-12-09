@@ -125,7 +125,6 @@ C     BEHAVIOUR 3
          DO 41 MINWETNODE=MINNODE,NON
            IF(PSOIL(MINWETNODE).GE.-72.5)THEN
              MWNODE=MINWETNODE
-             GO TO 14
            ENDIF
 41     CONTINUE
          DO 14 IDEP=MWNODE,NON
@@ -139,8 +138,8 @@ C     normal behavior in NicheMapR
              GO TO 999
             ENDIF
           ENDIF
-14    CONTINUE
-
+14      CONTINUE
+       ENDIF
 
       IF(NON.EQ.10)THEN
        TA=TANNUL
