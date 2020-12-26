@@ -110,6 +110,14 @@ C     optimum performance strategy (between Temerge and Tpref)
           NEWDEP = ZSOIL(IDEP)
           GO TO 999
         ENDIF
+C     pasive to temperature (only avoid CTmax)
+       ELSE IF((BURROWTMP.EQ.3).AND.(BURROWWTR.EQ.0))THEN
+        IF(TSOIL(IDEP).LT.CTMAX)THEN
+          TA = TSOIL(IDEP)
+          RELHUM = HSOIL(IDEP)*100.
+          NEWDEP = ZSOIL(IDEP)
+          GO TO 999
+        ENDIF
 
 C     SECOND, FOLLOWING SOIL DEPTH FROM WHICH THEY CAN ABSORB WATER
 C     normal behavior in NicheMapR
@@ -135,6 +143,14 @@ C     optimum performance strategy (between Temerge and Tpref)
       ELSE IF((BURROWTMP.EQ.2).AND.(BURROWWTR.EQ.1))THEN
         IF((TSOIL(IDEP).GT.TEMERGE).AND.(TSOIL(IDEP).LE.TPREF).AND.
      & (PSOIL(IDEP).GE.-72.5))THEN
+          TA = TSOIL(IDEP)
+          RELHUM = HSOIL(IDEP)*100.
+          NEWDEP = ZSOIL(IDEP)
+          GO TO 999
+        ENDIF
+C     pasive to temperature (only avoid CTmax)
+      ELSE IF((BURROWTMP.EQ.3).AND.(BURROWWTR.EQ.1))THEN
+        IF((TSOIL(IDEP).LT.CTMAX).AND.(PSOIL(IDEP).GE.-72.5))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
