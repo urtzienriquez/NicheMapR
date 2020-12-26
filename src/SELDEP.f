@@ -110,9 +110,9 @@ C     optimum performance strategy (between lbt = 13.84 and ubt = 20.03)
           NEWDEP = ZSOIL(IDEP)
           GO TO 999
         ENDIF
-C     pasive to temperature (only avoid CTmax)
+C     pasive to temperature (only avoid CTmax and CTmin)
        ELSE IF((BURROWTMP.EQ.3).AND.(BURROWWTR.EQ.0))THEN
-        IF(TSOIL(IDEP).LT.CTMAX)THEN
+        IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.CTMAX))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
@@ -148,9 +148,10 @@ C     optimum performance strategy (between lbt = 13.84 and ubt = 20.03)
           NEWDEP = ZSOIL(IDEP)
           GO TO 999
         ENDIF
-C     pasive to temperature (only avoid CTmax)
+C     pasive to temperature (only avoid CTmax and CTmin)
       ELSE IF((BURROWTMP.EQ.3).AND.(BURROWWTR.EQ.1))THEN
-        IF((TSOIL(IDEP).LT.CTMAX).AND.(PSOIL(IDEP).GE.-72.5))THEN
+        IF((TSOIL(IDEP).GT.CTMIN).AND.(TSOIL(IDEP).LT.CTMAX).AND.
+     & (PSOIL(IDEP).GE.-72.5))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
