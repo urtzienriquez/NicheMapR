@@ -102,9 +102,9 @@ C     energy conservation: selecting low temperatures (between CTmin and Temerge
           NEWDEP = ZSOIL(IDEP)
           GO TO 999
         ENDIF
-C     optimum performance strategy (between Temerge and Tpref)
+C     optimum performance strategy (between lbt = 13.84 and ubt = 20.03)
        ELSE IF((BURROWTMP.EQ.2).AND.(BURROWWTR.EQ.0))THEN
-        IF((TSOIL(IDEP).GT.TEMERGE).AND.(TSOIL(IDEP).LE.TPREF))THEN
+        IF((TSOIL(IDEP).GE.13.84).AND.(TSOIL(IDEP).LE.20.03))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
           NEWDEP = ZSOIL(IDEP)
@@ -139,9 +139,9 @@ C     energy conservation: selecting low temperatures (between CTmin and Temerge
           NEWDEP = ZSOIL(IDEP)
           GO TO 999
         ENDIF
-C     optimum performance strategy (between Temerge and Tpref)
+C     optimum performance strategy (between lbt = 13.84 and ubt = 20.03)
       ELSE IF((BURROWTMP.EQ.2).AND.(BURROWWTR.EQ.1))THEN
-        IF((TSOIL(IDEP).GT.TEMERGE).AND.(TSOIL(IDEP).LE.TPREF).AND.
+        IF((TSOIL(IDEP).GE.13.84).AND.(TSOIL(IDEP).LE.20.03).AND.
      & (PSOIL(IDEP).GE.-72.5))THEN
           TA = TSOIL(IDEP)
           RELHUM = HSOIL(IDEP)*100.
