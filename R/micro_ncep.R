@@ -1,5987 +1,1249 @@
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-  <link rel="dns-prefetch" href="https://github.githubassets.com">
-  <link rel="dns-prefetch" href="https://avatars.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
-  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
-
-
-
-  <link crossorigin="anonymous" media="all" integrity="sha512-rF3cnLJE5IkKUWFkw54emxUMV82DhbZ9aJun83zhvBgJ7J7ZXC20bEFVuLY9RRRC60Ig+pHQO57DuYBrYO+cAA==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-ac5ddc9cb244e4890a516164c39e1e9b.css" />
-  <link crossorigin="anonymous" media="all" integrity="sha512-tO1butB3aXG+Ab9M+171Fjde3B2uzMU0DEAKzjbXJ0GLJWfiaIVEhM9QS3/G9Ck32IEZLmaSTscoyA9Z66IglQ==" rel="stylesheet" href="https://github.githubassets.com/assets/site-b4ed5bbad0776971be01bf4cfb5ef516.css" />
-    <link crossorigin="anonymous" media="all" integrity="sha512-Hue19Wzg3C1IwSpMCcpD1Puex2KUiitE/DlbhxLIEsQGe5ZQP9vSZ4ARDzh0tstwKyrnndpk0iKPBEZc9zj6FQ==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-1ee7b5f56ce0dc2d48c12a4c09ca43d4.css" />
-    
-    
-    
-    <link crossorigin="anonymous" media="all" integrity="sha512-pqJkUtN34UpQQTBl1G5+mN1zghmGVZIcQoeJzbGXkq4LqFZ5E9m0PQGdL0Y8+tWq4Nk3o4sarwvdYJ77yBrEyg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-a6a26452d377e14a50413065d46e7e98.css" />
-
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-8K2vvwbW+6H27Nad5ydg8PA2/aMD/LKq+EiK9s0U0hhVZxCI2tWBsYk9beAtisRw2j+Or5k2/F+6dk02nmj/PA==" type="application/javascript" src="https://github.githubassets.com/assets/environment-f0adafbf.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-qqxefjEZzhP8x0ed+F3sDEdSogyDs+0ThK6EYXtqye9PJ26t5C996Q9EuRBr+296TAbc1rimsOSeZjZXJac1cA==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-aaac5e7e.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-ZZSiCHJ85gkTIyggKfuBXsl3a7e+GPhw6iUguJ6eki2dXkGnOFBpQlUUG+gcTSJzgE8ii1cYyM7aLYXZeSeDbA==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-6594a208.js"></script>
-  
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-vyjbTdEGTiemoiT41KyVSh3+NxJv285wa1qlccyGrTsQsAAvhBSUrT0t1LZbJVEfccSTx+zLAyTekiljOX2wKA==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-bf28db4d.js"></script>
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-IboH9NL3+O+Lawukto6QKYpZo9QXcqLTuYSR6qN9HjTXaD7uqCRQAOUJicPMDeNw/1J9CFaTG1FQjHT/00QnSw==" type="application/javascript" src="https://github.githubassets.com/assets/primer-21ba07f4.js"></script>
-  
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-evfy6RyDyXvLuaEEFaUaIlw9dSRgvKkF3rMeUELkvXq7sGEK/43vTg+3EE6E8nOsjpuPyYQjgS8bxzqkTjlZag==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-7af7f2e9.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-obMR8mPKx8OvqRe34LgnUcxeJ1qujiA4ND3H6UX13ExMlA/WfHLjEzXRmgGRcRvN/8J1nzc+Z+jgz/PLTFy6zg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-a1b311f2.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-V4eZZUWgD9RSVrXzWPGn+vP/9+D0oCITMcifb0ktnwvLUUuXHtwiPWXiu4CYxU4zzC1k6DMTDCZG/GQi0QOJpA==" type="application/javascript" data-module-id="./chunk-edit.js" data-src="https://github.githubassets.com/assets/chunk-edit-57879965.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-TGnbT/6B5dxVwEk7iOlwSY9mfqhfq8m05ec+KjdlfEwoieq73iBeyidClQUSmFa2snukwzF9peY8c7FJf9FARA==" type="application/javascript" data-module-id="./chunk-emoji-picker-element.js" data-src="https://github.githubassets.com/assets/chunk-emoji-picker-element-4c69db4f.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-NwYkwzxETzKUYRXumHDsBIuggkh86KmJ1WrwWZW5wTvVPf047+wOmOHI5b4D65bfdtd3WbXJ7k+3ZWoxpIaqcA==" type="application/javascript" data-module-id="./chunk-insights-graph.js" data-src="https://github.githubassets.com/assets/chunk-insights-graph-370624c3.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-d4qeK/Wp1V8BZisIkPhs7xSB+SBXQvQ0gJCEfI86A+Tz+32QGkHS1KYDplpGNhexhTIA1AUJ6nPAnAXkPaaICQ==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-778a9e2b.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-tcH4xCRuMBAh1PruDaiwGnRIbHlF6bGLhxyCQ16uqok1cV5QFMguVPWJtN9KI0jGQOgN+Pha3+uOUXhXdfK/qw==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-b5c1f8c4.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-E+H+wAtjiqutBvn2cnXzDIvmasIhYiS7i7JzOfFUwo+Ej8zT54OrJtP//RhwixnypgOpCF4JvqzYy6zOtORDmg==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-13e1fec0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-U+Pp1bYuA3fRqhike5Go//O/vsExaZLz00lrIby+rZ88yf03nQHz3wLZR9paWkakpD7TH5nS6AUpabCc7OFWpg==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-53e3e9d5.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-QBwrFY4kzAVN0nZmTYJLeEhi5bQ+42rE8h1g384XeZb7n62BykcUICACtaDQ473aIrRf38RSR7WDfNEIVuSlTA==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-401c2b15.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-n6EpBQk2M67m7wptFmkltRMlpwgI71rL1h7DTYuYL9UVHfct525L+cr5V4NGVS7MpOzdGf7UQfr3ZUhVbCwTTA==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-9fa12905.js"></script>
-  
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-kEiDH0jxLa6wV/n7ei+VCLSO8fApjIZexCN1M1Wn2RUSGDfXr4/sXnP8/HP3Aguq4CZlXSG2F+XtFzeqUjUkrA==" type="application/javascript" src="https://github.githubassets.com/assets/repositories-9048831f.js"></script>
-<script crossorigin="anonymous" defer="defer" integrity="sha512-Pw6zQpGoBvqjJw/6YJKrVGnloEuny6jzMBcfNjI8DRE/b51GkcYUD0pY9psWEJpcoPC4QS2NSC2JIAlurZEOug==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-3f0eb342.js"></script>
-
-  <meta name="viewport" content="width=device-width">
-  
-  <title>NicheMapR/micro_ncep.R at master · mrke/NicheMapR · GitHub</title>
-    <meta name="description" content="R implementation of Niche Mapper software for biophysical modelling - mrke/NicheMapR">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-  <meta property="fb:app_id" content="1401488693436528">
-  <meta name="apple-itunes-app" content="app-id=1477376905" />
-    <meta name="twitter:image:src" content="https://avatars.githubusercontent.com/u/8292924?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="mrke/NicheMapR" /><meta name="twitter:description" content="R implementation of Niche Mapper software for biophysical modelling - mrke/NicheMapR" />
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/8292924?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="mrke/NicheMapR" /><meta property="og:url" content="https://github.com/mrke/NicheMapR" /><meta property="og:description" content="R implementation of Niche Mapper software for biophysical modelling - mrke/NicheMapR" />
-
-
-
-    
-
-  <link rel="assets" href="https://github.githubassets.com/">
-  
-
-  <meta name="request-id" content="F1BD:589E:1A113A3:2042ED0:602BAF48" data-pjax-transient="true"/><meta name="html-safe-nonce" content="0704bf67f9f1742347596342f281ec7c708f119fcfecca150d49e5f795781794" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9tcmtlL05pY2hlTWFwUi90cmVlL21hc3Rlci9SIiwicmVxdWVzdF9pZCI6IkYxQkQ6NTg5RToxQTExM0EzOjIwNDJFRDA6NjAyQkFGNDgiLCJ2aXNpdG9yX2lkIjoiNTA1MzkxNjQ2NjAxOTc0OTYwIiwicmVnaW9uX2VkZ2UiOiJmcmEiLCJyZWdpb25fcmVuZGVyIjoiZnJhIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="7159cce838f0781afece99e97fac28a1f117d3f0f8a50aae99bf83bffb396e40" data-pjax-transient="true"/>
-
-    <meta name="hovercard-subject-tag" content="repository:45649715" data-pjax-transient>
-
-
-  <meta name="github-keyboard-shortcuts" content="repository,source-code" data-pjax-transient="true" />
-
-  
-
-  <meta name="selected-link" value="repo_source" data-pjax-transient>
-
-    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
-  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
-  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
-  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
-
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" />
-
-  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
-
-  
-
-
-
-  <meta name="optimizely-datafile" content="{&quot;version&quot;: &quot;4&quot;, &quot;rollouts&quot;: [], &quot;typedAudiences&quot;: [], &quot;anonymizeIP&quot;: true, &quot;projectId&quot;: &quot;16737760170&quot;, &quot;variables&quot;: [], &quot;featureFlags&quot;: [], &quot;experiments&quot;: [{&quot;status&quot;: &quot;Running&quot;, &quot;audienceIds&quot;: [], &quot;variations&quot;: [{&quot;variables&quot;: [], &quot;id&quot;: &quot;19956217181&quot;, &quot;key&quot;: &quot;control&quot;}, {&quot;variables&quot;: [], &quot;id&quot;: &quot;19969098350&quot;, &quot;key&quot;: &quot;beginner_resources&quot;}, {&quot;variables&quot;: [], &quot;id&quot;: &quot;19950385587&quot;, &quot;key&quot;: &quot;profile_readme_cta&quot;}, {&quot;variables&quot;: [], &quot;id&quot;: &quot;19950395715&quot;, &quot;key&quot;: &quot;both&quot;}], &quot;id&quot;: &quot;19953946760&quot;, &quot;key&quot;: &quot;new_user_dashboard_components&quot;, &quot;layerId&quot;: &quot;19957835199&quot;, &quot;trafficAllocation&quot;: [{&quot;entityId&quot;: &quot;19956217181&quot;, &quot;endOfRange&quot;: 2500}, {&quot;entityId&quot;: &quot;19950385587&quot;, &quot;endOfRange&quot;: 5000}, {&quot;entityId&quot;: &quot;19969098350&quot;, &quot;endOfRange&quot;: 7500}, {&quot;entityId&quot;: &quot;19950395715&quot;, &quot;endOfRange&quot;: 10000}], &quot;forcedVariations&quot;: {}}], &quot;audiences&quot;: [{&quot;conditions&quot;: &quot;[\&quot;or\&quot;, {\&quot;match\&quot;: \&quot;exact\&quot;, \&quot;name\&quot;: \&quot;$opt_dummy_attribute\&quot;, \&quot;type\&quot;: \&quot;custom_attribute\&quot;, \&quot;value\&quot;: \&quot;$opt_dummy_value\&quot;}]&quot;, &quot;id&quot;: &quot;$opt_dummy_audience&quot;, &quot;name&quot;: &quot;Optimizely-Generated Audience for Backwards Compatibility&quot;}], &quot;groups&quot;: [], &quot;attributes&quot;: [{&quot;id&quot;: &quot;16822470375&quot;, &quot;key&quot;: &quot;user_id&quot;}, {&quot;id&quot;: &quot;17143601254&quot;, &quot;key&quot;: &quot;spammy&quot;}, {&quot;id&quot;: &quot;18175660309&quot;, &quot;key&quot;: &quot;organization_plan&quot;}, {&quot;id&quot;: &quot;18813001570&quot;, &quot;key&quot;: &quot;is_logged_in&quot;}, {&quot;id&quot;: &quot;19073851829&quot;, &quot;key&quot;: &quot;geo&quot;}], &quot;botFiltering&quot;: false, &quot;accountId&quot;: &quot;16737760170&quot;, &quot;events&quot;: [{&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;17911811441&quot;, &quot;key&quot;: &quot;hydro_click.dashboard.teacher_toolbox_cta&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18124116703&quot;, &quot;key&quot;: &quot;submit.organizations.complete_sign_up&quot;}, {&quot;experimentIds&quot;: [&quot;19953946760&quot;], &quot;id&quot;: &quot;18145892387&quot;, &quot;key&quot;: &quot;no_metric.tracked_outside_of_optimizely&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18178755568&quot;, &quot;key&quot;: &quot;click.org_onboarding_checklist.add_repo&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18180553241&quot;, &quot;key&quot;: &quot;submit.repository_imports.create&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18186103728&quot;, &quot;key&quot;: &quot;click.help.learn_more_about_repository_creation&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18188530140&quot;, &quot;key&quot;: &quot;test_event.do_not_use_in_production&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18191963644&quot;, &quot;key&quot;: &quot;click.empty_org_repo_cta.transfer_repository&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18195612788&quot;, &quot;key&quot;: &quot;click.empty_org_repo_cta.import_repository&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18210945499&quot;, &quot;key&quot;: &quot;click.org_onboarding_checklist.invite_members&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18211063248&quot;, &quot;key&quot;: &quot;click.empty_org_repo_cta.create_repository&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18215721889&quot;, &quot;key&quot;: &quot;click.org_onboarding_checklist.update_profile&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18224360785&quot;, &quot;key&quot;: &quot;click.org_onboarding_checklist.dismiss&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18234832286&quot;, &quot;key&quot;: &quot;submit.organization_activation.complete&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18252392383&quot;, &quot;key&quot;: &quot;submit.org_repository.create&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18257551537&quot;, &quot;key&quot;: &quot;submit.org_member_invitation.create&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18259522260&quot;, &quot;key&quot;: &quot;submit.organization_profile.update&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18564603625&quot;, &quot;key&quot;: &quot;view.classroom_select_organization&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18568612016&quot;, &quot;key&quot;: &quot;click.classroom_sign_in_click&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18572592540&quot;, &quot;key&quot;: &quot;view.classroom_name&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18574203855&quot;, &quot;key&quot;: &quot;click.classroom_create_organization&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18582053415&quot;, &quot;key&quot;: &quot;click.classroom_select_organization&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18589463420&quot;, &quot;key&quot;: &quot;click.classroom_create_classroom&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18591323364&quot;, &quot;key&quot;: &quot;click.classroom_create_first_classroom&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18591652321&quot;, &quot;key&quot;: &quot;click.classroom_grant_access&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18607131425&quot;, &quot;key&quot;: &quot;view.classroom_creation&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18831680583&quot;, &quot;key&quot;: &quot;upgrade_account_plan&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19064064515&quot;, &quot;key&quot;: &quot;click.signup&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19075373687&quot;, &quot;key&quot;: &quot;click.view_account_billing_page&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19077355841&quot;, &quot;key&quot;: &quot;click.dismiss_signup_prompt&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19079713938&quot;, &quot;key&quot;: &quot;click.contact_sales&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19120963070&quot;, &quot;key&quot;: &quot;click.compare_account_plans&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19151690317&quot;, &quot;key&quot;: &quot;click.upgrade_account_cta&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19424193129&quot;, &quot;key&quot;: &quot;click.open_account_switcher&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19520330825&quot;, &quot;key&quot;: &quot;click.visit_account_profile&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19540970635&quot;, &quot;key&quot;: &quot;click.switch_account_context&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19730198868&quot;, &quot;key&quot;: &quot;submit.homepage_signup&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19820830627&quot;, &quot;key&quot;: &quot;click.homepage_signup&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19988571001&quot;, &quot;key&quot;: &quot;click.create_enterprise_trial&quot;}], &quot;revision&quot;: &quot;436&quot;}" />
-  <!-- To prevent page flashing, the optimizely JS needs to be loaded in the
-    <head> tag before the DOM renders -->
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-VJrqSK702Mzl9EQxm2OvFxKaumGptgVdeJS2rsaLvVlOdR4HEu3ZFjtV83kMKdYRelUnxxaAFw0wthkpdEUafw==" type="application/javascript" src="https://github.githubassets.com/assets/optimizely-549aea48.js"></script>
-
-
-
-  
-
-      <meta name="hostname" content="github.com">
-    <meta name="user-login" content="">
-
-
-      <meta name="expected-hostname" content="github.com">
-
-
-    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,ACTIONS_SHORT_SHA_WARNING">
-
-  <meta http-equiv="x-pjax-version" content="36fa1ee65b9c899139bd4bbc62c66fd80f5e26c7aac5f0b4bd3338429f09ce95">
-  
-
-        <link href="https://github.com/mrke/NicheMapR/commits/master.atom" rel="alternate" title="Recent Commits to NicheMapR:master" type="application/atom+xml">
-
-  <meta name="go-import" content="github.com/mrke/NicheMapR git https://github.com/mrke/NicheMapR.git">
-
-  <meta name="octolytics-dimension-user_id" content="8292924" /><meta name="octolytics-dimension-user_login" content="mrke" /><meta name="octolytics-dimension-repository_id" content="45649715" /><meta name="octolytics-dimension-repository_nwo" content="mrke/NicheMapR" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="45649715" /><meta name="octolytics-dimension-repository_network_root_nwo" content="mrke/NicheMapR" />
-
-
-
-    <link rel="canonical" href="https://github.com/mrke/NicheMapR/blob/master/R/micro_ncep.R" data-pjax-transient>
-
-
-  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-
-  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
-
-  <meta name="browser-optimizely-client-errors-url" content="https://api.github.com/_private/browser/optimizely_client/errors">
-
-  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
-
-<meta name="theme-color" content="#1e2327">
-
-
-  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
-
-  </head>
-
-  <body class="logged-out env-production page-responsive page-blob" style="word-wrap: break-word;">
-    
-
-    <div class="position-relative js-header-wrapper ">
-      <a href="#start-of-content" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
-      <span class="progress-pjax-loader width-full js-pjax-loader-bar Progress position-fixed">
-    <span style="background-color: #79b8ff;width: 0%;" class="Progress-item progress-pjax-loader-bar "></span>
-</span>      
-      
-
-
-            <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
-  <div class="container-xl d-lg-flex flex-items-center p-responsive">
-    <div class="d-flex flex-justify-between flex-items-center">
-        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
-          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-        </a>
-
-          <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
-            
-
-          </div>
-
-        <div class="d-flex flex-items-center">
-              <a href="/join?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fblob%2Fshow&amp;source=header-repo"
-                class="d-inline-block d-lg-none f5 text-white no-underline border border-gray-dark rounded-2 px-2 py-1 mr-3 mr-sm-5"
-                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/mrke/NicheMapR/blob/master/R/micro_ncep.R&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2a2b9b8c13e6c74a514b965107f09faf683e6688a392d69999561f314c96da12"
-                data-ga-click="Sign up, click to sign up for account, ref_page:/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show;ref_cta:Sign up;ref_loc:header logged out">
-                Sign&nbsp;up
-              </a>
-
-          <button class="btn-link d-lg-none mt-1 js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
-            <svg height="24" class="octicon octicon-three-bars text-white" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
-          </button>
-        </div>
-    </div>
-
-    <div class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
-      <div class="d-flex d-lg-none flex-justify-end border-bottom bg-gray-light p-3">
-        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 24 24" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path></svg>
-        </button>
-      </div>
-
-        <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
-          <ul class="d-lg-flex list-style-none">
-              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
-                <details class="HeaderMenu-details details-overlay details-reset width-full">
-                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
-                    Why GitHub?
-                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
-                      <path d="M1,1l6.2,6L13,1"></path>
-                    </svg>
-                  </summary>
-                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
-                    <a href="/features" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a>
-                    <ul class="list-style-none f5 pb-3">
-                        <li class="edge-item-fix"><a href="/mobile" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">Mobile <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">Actions <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/features/codespaces" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">Codespaces <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/features/packages" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">Packages <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/features/security" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">Security <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">Code review <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">Project management <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">Integrations <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                    </ul>
-
-                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
-                      <li class="edge-item-fix"><a href="/sponsors" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Sponsors">GitHub Sponsors <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="/security" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                    </ul>
-                  </div>
-                </details>
-              </li>
-              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
-                <a href="/team" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Team">Team</a>
-              </li>
-              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
-                <a href="/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
-              </li>
-
-              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
-                <details class="HeaderMenu-details details-overlay details-reset width-full">
-                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
-                    Explore
-                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
-                      <path d="M1,1l6.2,6L13,1"></path>
-                    </svg>
-                  </summary>
-
-                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
-                    <ul class="list-style-none mb-3">
-                      <li class="edge-item-fix"><a href="/explore" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                    </ul>
-
-                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Learn &amp; contribute</h4>
-                    <ul class="list-style-none mb-3">
-                      <li class="edge-item-fix"><a href="/topics" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Topics">Topics <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/collections" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Collections">Collections <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="/trending" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Trending">Trending <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://opensource.guide" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                    </ul>
-
-                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Connect with others</h4>
-                    <ul class="list-style-none mb-0">
-                      <li class="edge-item-fix"><a href="https://github.com/readme" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover">The ReadME Project <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Events">Events <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://github.community" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Community forum">Community forum <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://stars.github.com" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to GitHub Stars Program">GitHub Stars program <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                    </ul>
-                  </div>
-                </details>
-              </li>
-
-              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
-                <a href="/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
-              </li>
-
-              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
-                <details class="HeaderMenu-details details-overlay details-reset width-full">
-                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
-                    Pricing
-                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
-                       <path d="M1,1l6.2,6L13,1"></path>
-                    </svg>
-                  </summary>
-
-                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
-                    <a href="/pricing" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a>
-
-                    <ul class="list-style-none mb-3">
-                      <li class="edge-item-fix"><a href="/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                    </ul>
-
-                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
-                      <li class="edge-item-fix"><a href="/nonprofit" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light pr-3">&rarr;</span></a></li>
-                    </ul>
-                  </div>
-                </details>
-              </li>
-          </ul>
-        </nav>
-
-      <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
-          <div class="d-lg-flex mb-3 mb-lg-0">
-            <div class="header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to"
-  role="combobox"
-  aria-owns="jump-to-results"
-  aria-label="Search or jump to"
-  aria-haspopup="listbox"
-  aria-expanded="false"
->
-  <div class="position-relative">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="45649715" data-scoped-search-url="/mrke/NicheMapR/search" data-owner-scoped-search-url="/users/mrke/search" data-unscoped-search-url="/search" action="/mrke/NicheMapR/search" accept-charset="UTF-8" method="get">
-      <label class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
-        <input type="text"
-          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
-          data-hotkey="s,/"
-          name="q"
-          value=""
-          placeholder="Search"
-          data-unscoped-placeholder="Search GitHub"
-          data-scoped-placeholder="Search"
-          autocapitalize="off"
-          aria-autocomplete="list"
-          aria-controls="jump-to-results"
-          aria-label="Search"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
-          spellcheck="false"
-          autocomplete="off"
-          >
-          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="WqWu1TgXgze81nwmpGqo+xHcRrjyJXqqhft/7tfE4SH4X0RIDH9CsskfnEanV2tgtJNWypxgo30rgyX0lKOGRw==" />
-          <input type="hidden" class="js-site-search-type-field" name="type" >
-            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
-
-            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
-              
-<ul class="d-none js-jump-to-suggestions-template-container">
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="suggestion">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-</ul>
-
-<ul class="d-none js-jump-to-no-results-template-container">
-  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
-    <span class="text-gray">No suggested jump to results</span>
-  </li>
-</ul>
-
-<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="scoped_search">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-owner-scoped-search d-none" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="owner_scoped_search">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this user">
-        In this user
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="global_search">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-
-</ul>
-
-            </div>
-      </label>
-</form>  </div>
-</div>
-
-          </div>
-
-        <a href="/login?return_to=%2Fmrke%2FNicheMapR%2Fblob%2Fmaster%2FR%2Fmicro_ncep.R"
-          class="HeaderMenu-link no-underline mr-3"
-          data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/mrke/NicheMapR/blob/master/R/micro_ncep.R&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="fd2899a3882b1b015c4f07487bc79f777150e8c3cfe921fbc7ee24cbcb2b06bb"
-          data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
-          Sign&nbsp;in
-        </a>
-            <a href="/join?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fblob%2Fshow&amp;source=header-repo&amp;source_repo=mrke%2FNicheMapR"
-              class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
-              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/mrke/NicheMapR/blob/master/R/micro_ncep.R&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="fd2899a3882b1b015c4f07487bc79f777150e8c3cfe921fbc7ee24cbcb2b06bb"
-              data-ga-click="Sign up, click to sign up for account, ref_page:/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show;ref_cta:Sign up;ref_loc:header logged out">
-              Sign&nbsp;up
-            </a>
-      </div>
-    </div>
-  </div>
-</header>
-
-    </div>
-
-  <div id="start-of-content" class="show-on-focus"></div>
-
-
-
-
-
-    <div data-pjax-replace id="js-flash-container">
-
-
-  <template class="js-flash-template">
-    <div class="flash flash-full  {{ className }}">
-  <div class=" px-2" >
-    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
-      <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
-    </button>
-    
-      <div>{{ message }}</div>
-
-  </div>
-</div>
-  </template>
-</div>
-
-
-    
-
-  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
-
-
-
-
-  <div
-    class="application-main "
-    data-commit-hovercards-enabled
-    data-discussion-hovercards-enabled
-    data-issue-and-pr-hovercards-enabled
-  >
-        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
-    <main id="js-repo-pjax-container" data-pjax-container >
-      
-
-      
-
-
-
-
-
-
-  
-
-
-  <div class="bg-gray-light pt-3 hide-full-screen mb-5">
-
-      <div class="d-flex mb-3 px-3 px-md-4 px-lg-5">
-
-        <div class="flex-auto min-width-0 width-fit mr-3">
-            <h1 class=" d-flex flex-wrap flex-items-center break-word f3 text-normal">
-    <svg class="octicon octicon-repo text-gray mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-    <span class="author flex-self-stretch" itemprop="author">
-      <a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/users/mrke/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/mrke">mrke</a>
-    </span>
-    <span class="mx-1 flex-self-stretch color-text-secondary">/</span>
-  <strong itemprop="name" class="mr-2 flex-self-stretch">
-    <a data-pjax="#js-repo-pjax-container" class="" href="/mrke/NicheMapR">NicheMapR</a>
-  </strong>
-  
-</h1>
-
-
-        </div>
-
-          <ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;">
-
-  <li>
-          <a class="tooltipped tooltipped-s btn btn-sm btn-with-count" aria-label="You must be signed in to watch a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/mrke/NicheMapR/blob/master/R/micro_ncep.R&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="521bbd497733b02299fe2603d4f923630174002eab585e91d1456a5f03f95397" href="/login?return_to=%2Fmrke%2FNicheMapR">
-    <svg class="octicon octicon-eye" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"></path></svg>
-    Watch
-</a>    <a class="social-count" href="/mrke/NicheMapR/watchers"
-       aria-label="16 users are watching this repository">
-      16
-    </a>
-
-  </li>
-
-  <li>
-          <a class="btn btn-sm btn-with-count  tooltipped tooltipped-s" aria-label="You must be signed in to star a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:45649715,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/mrke/NicheMapR/blob/master/R/micro_ncep.R&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="1a1d04a119a26c0c9a23808cf20cbc40f12c8d0fdfd1200393edc09b438a9371" href="/login?return_to=%2Fmrke%2FNicheMapR">
-      <svg class="octicon octicon-star v-align-text-bottom mr-1" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
-      <span>
-        Star
-</span></a>
-    <a class="social-count js-social-count" href="/mrke/NicheMapR/stargazers"
-      aria-label="23 users starred this repository">
-      23
-    </a>
-
-  </li>
-
-  <li>
-        <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to fork a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:45649715,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/mrke/NicheMapR/blob/master/R/micro_ncep.R&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c675a47ea1eb90760b12cfe6f123d6fff607331f225e6fc6c51bf88554694999" href="/login?return_to=%2Fmrke%2FNicheMapR">
-          <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
-          Fork
-</a>
-      <a href="/mrke/NicheMapR/network/members" class="social-count"
-         aria-label="26 users forked this repository">
-        26
-      </a>
-  </li>
-</ul>
-
-      </div>
-        
-<nav aria-label="Repository" data-pjax="#js-repo-pjax-container" class="js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden UnderlineNav px-3 px-md-4 px-lg-5 bg-gray-light">
-  <ul class="UnderlineNav-body list-style-none ">
-          <li class="d-flex">
-        <a class="js-selected-navigation-item selected UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i0code-tab" data-hotkey="g c" data-ga-click="Repository, Navigation click, Code tab" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments /mrke/NicheMapR" href="/mrke/NicheMapR">
-              <svg class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path></svg>
-            <span data-content="Code">Code</span>
-              <span title="Not available" class="Counter "></span>
-</a>
-
-      </li>
-      <li class="d-flex">
-        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i1issues-tab" data-hotkey="g i" data-ga-click="Repository, Navigation click, Issues tab" data-selected-links="repo_issues repo_labels repo_milestones /mrke/NicheMapR/issues" href="/mrke/NicheMapR/issues">
-              <svg class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z"></path></svg>
-            <span data-content="Issues">Issues</span>
-              <span title="3" class="Counter ">3</span>
-</a>
-
-      </li>
-      <li class="d-flex">
-        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i2pull-requests-tab" data-hotkey="g p" data-ga-click="Repository, Navigation click, Pull requests tab" data-selected-links="repo_pulls checks /mrke/NicheMapR/pulls" href="/mrke/NicheMapR/pulls">
-              <svg class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path></svg>
-            <span data-content="Pull requests">Pull requests</span>
-              <span title="0" hidden="hidden" class="Counter ">0</span>
-</a>
-
-      </li>
-      <li class="d-flex">
-        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i3actions-tab" data-hotkey="g a" data-ga-click="Repository, Navigation click, Actions tab" data-selected-links="repo_actions /mrke/NicheMapR/actions" href="/mrke/NicheMapR/actions">
-              <svg class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
-            <span data-content="Actions">Actions</span>
-              <span title="Not available" class="Counter "></span>
-</a>
-
-      </li>
-      <li class="d-flex">
-        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i4projects-tab" data-hotkey="g b" data-ga-click="Repository, Navigation click, Projects tab" data-selected-links="repo_projects new_repo_project repo_project /mrke/NicheMapR/projects" href="/mrke/NicheMapR/projects">
-              <svg class="octicon octicon-project UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-            <span data-content="Projects">Projects</span>
-              <span title="0" hidden="hidden" class="Counter ">0</span>
-</a>
-
-      </li>
-      <li class="d-flex">
-        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i5security-tab" data-hotkey="g s" data-ga-click="Repository, Navigation click, Security tab" data-selected-links="security overview alerts policy token_scanning code_scanning /mrke/NicheMapR/security" href="/mrke/NicheMapR/security">
-              <svg class="octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.467.133a1.75 1.75 0 011.066 0l5.25 1.68A1.75 1.75 0 0115 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.7 1.7 0 01-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 011.217-1.667l5.25-1.68zm.61 1.429a.25.25 0 00-.153 0l-5.25 1.68a.25.25 0 00-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.2.2 0 00.154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.25.25 0 00-.174-.237l-5.25-1.68zM9 10.5a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.75a.75.75 0 10-1.5 0v3a.75.75 0 001.5 0v-3z"></path></svg>
-            <span data-content="Security">Security</span>
-              <include-fragment src="/mrke/NicheMapR/security/overall-count" accept="text/fragment+html"></include-fragment>
-</a>
-
-      </li>
-      <li class="d-flex">
-        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i6insights-tab" data-ga-click="Repository, Navigation click, Insights tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people /mrke/NicheMapR/pulse" href="/mrke/NicheMapR/pulse">
-              <svg class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"></path></svg>
-            <span data-content="Insights">Insights</span>
-              <span title="Not available" class="Counter "></span>
-</a>
-
-      </li>
-
-</ul>        <div class="position-absolute right-0 pr-3 pr-md-4 pr-lg-5 js-responsive-underlinenav-overflow" style="visibility:hidden;">
-      <details class="details-overlay details-reset position-relative">
-  <summary role="button">
-    <div class="UnderlineNav-item mr-0 border-0">
-            <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
-            <span class="sr-only">More</span>
-          </div>
-</summary>  <div>
-    <details-menu role="menu" class="dropdown-menu dropdown-menu-sw ">
-  
-            <ul>
-                <li data-menu-item="i0code-tab" hidden>
-                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /mrke/NicheMapR" href="/mrke/NicheMapR">
-                    Code
-</a>                </li>
-                <li data-menu-item="i1issues-tab" hidden>
-                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /mrke/NicheMapR/issues" href="/mrke/NicheMapR/issues">
-                    Issues
-</a>                </li>
-                <li data-menu-item="i2pull-requests-tab" hidden>
-                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /mrke/NicheMapR/pulls" href="/mrke/NicheMapR/pulls">
-                    Pull requests
-</a>                </li>
-                <li data-menu-item="i3actions-tab" hidden>
-                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /mrke/NicheMapR/actions" href="/mrke/NicheMapR/actions">
-                    Actions
-</a>                </li>
-                <li data-menu-item="i4projects-tab" hidden>
-                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /mrke/NicheMapR/projects" href="/mrke/NicheMapR/projects">
-                    Projects
-</a>                </li>
-                <li data-menu-item="i5security-tab" hidden>
-                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /mrke/NicheMapR/security" href="/mrke/NicheMapR/security">
-                    Security
-</a>                </li>
-                <li data-menu-item="i6insights-tab" hidden>
-                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /mrke/NicheMapR/pulse" href="/mrke/NicheMapR/pulse">
-                    Insights
-</a>                </li>
-            </ul>
-
-</details-menu>
-</div></details>    </div>
-
-</nav>
-  </div>
-
-
-<div class="container-xl clearfix new-discussion-timeline px-3 px-md-4 px-lg-5">
-  <div id="repo-content-pjax-container" class="repository-content " >
-
-    
-      
-    
-
-<div>
-  
-
-
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/mrke/NicheMapR/blob/0196b957d095aa9b1ea0f0fd69c7ba6abd269aed/R/micro_ncep.R">Permalink</a>
-
-    <!-- blob contrib key: blob_contributors:v22:6d521cd5e7baead81e35ede8ee1a25f633f8a7804e15d292c7ad26082eface1b -->
-
-    <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-wrap flex-md-nowrap flex-justify-between flex-md-justify-start">
-      
-<div class="position-relative">
-  <details class="details-reset details-overlay mr-0 mb-0 " id="branch-select-menu">
-    <summary class="btn css-truncate"
-            data-hotkey="w"
-            title="Switch branches or tags">
-      <svg class="octicon octicon-git-branch text-gray" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg>
-      <span class="css-truncate-target" data-menu-button>master</span>
-      <span class="dropdown-caret"></span>
-    </summary>
-
-      <details-menu class="SelectMenu SelectMenu--hasFilter" src="/mrke/NicheMapR/refs/master/R/micro_ncep.R?source_action=show&amp;source_controller=blob" preload>
-        <div class="SelectMenu-modal">
-          <include-fragment class="SelectMenu-loading" aria-label="Menu is loading">
-            <svg class="octicon octicon-octoface anim-pulse" height="32" viewBox="0 0 24 24" version="1.1" width="32" aria-hidden="true"><path d="M7.75 11c-.69 0-1.25.56-1.25 1.25v1.5a1.25 1.25 0 102.5 0v-1.5C9 11.56 8.44 11 7.75 11zm1.27 4.5a.469.469 0 01.48-.5h5a.47.47 0 01.48.5c-.116 1.316-.759 2.5-2.98 2.5s-2.864-1.184-2.98-2.5zm7.23-4.5c-.69 0-1.25.56-1.25 1.25v1.5a1.25 1.25 0 102.5 0v-1.5c0-.69-.56-1.25-1.25-1.25z"></path><path fill-rule="evenodd" d="M21.255 3.82a1.725 1.725 0 00-2.141-1.195c-.557.16-1.406.44-2.264.866-.78.386-1.647.93-2.293 1.677A18.442 18.442 0 0012 5c-.93 0-1.784.059-2.569.17-.645-.74-1.505-1.28-2.28-1.664a13.876 13.876 0 00-2.265-.866 1.725 1.725 0 00-2.141 1.196 23.645 23.645 0 00-.69 3.292c-.125.97-.191 2.07-.066 3.112C1.254 11.882 1 13.734 1 15.527 1 19.915 3.13 23 12 23c8.87 0 11-3.053 11-7.473 0-1.794-.255-3.647-.99-5.29.127-1.046.06-2.15-.066-3.125a23.652 23.652 0 00-.689-3.292zM20.5 14c.5 3.5-1.5 6.5-8.5 6.5s-9-3-8.5-6.5c.583-4 3-6 8.5-6s7.928 2 8.5 6z"></path></svg>
-          </include-fragment>
-        </div>
-      </details-menu>
-  </details>
-
-</div>
-
-      <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal mx-0 mx-md-3 width-full width-md-auto flex-order-1 flex-md-order-none mt-3 mt-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/mrke/NicheMapR"><span>NicheMapR</span></a></span></span><span class="separator">/</span><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/mrke/NicheMapR/tree/master/R"><span>R</span></a></span><span class="separator">/</span><strong class="final-path">micro_ncep.R</strong>
-      </h2>
-      <a href="/mrke/NicheMapR/find/master"
-            class="js-pjax-capture-input btn mr-2 d-none d-md-block"
-            data-pjax
-            data-hotkey="t">
-        Go to file
-      </a>
-
-      <details id="blob-more-options-details" class="details-overlay details-reset position-relative">
-  <summary role="button" type="button" class="btn ">
-    <svg aria-label="More options" class="octicon octicon-kebab-horizontal" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
-</summary>  <div>
-    <ul class="dropdown-menu dropdown-menu-sw">
-            <li class="d-block d-md-none">
-              <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:45649715,&quot;originating_url&quot;:&quot;https://github.com/mrke/NicheMapR/blob/master/R/micro_ncep.R&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6e54183bd9532ea71d7f4f65fcd095cf150e717d8b800881b8f9b0942c144bc6" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/mrke/NicheMapR/find/master">
-                <span class="flex-auto">Go to file</span>
-                <span class="text-small text-gray" aria-hidden="true">T</span>
-</a>            </li>
-            <li data-toggle-for="blob-more-options-details">
-              <button type="button" data-toggle-for="jumpto-line-details-dialog" class="btn-link dropdown-item">
-                <span class="d-flex flex-items-baseline">
-                  <span class="flex-auto">Go to line</span>
-                  <span class="text-small text-gray" aria-hidden="true">L</span>
-                </span>
-              </button>
-            </li>
-            <li class="dropdown-divider" role="none"></li>
-            <li>
-              <clipboard-copy value="R/micro_ncep.R" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details">
-                Copy path
-              </clipboard-copy>
-            </li>
-          </ul>
-</div></details>    </div>
-
-
-
-    <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      <include-fragment src="/mrke/NicheMapR/contributors/master/R/micro_ncep.R" class="commit-loader">
-        <div class="Box-header Box-header--blue d-flex flex-items-center">
-          <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
-          <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
-        </div>
-
-        <div class="Box-body d-flex flex-items-center" >
-          <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
-          <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
-        </div>
-</include-fragment>    </div>
-
-
-
-
-
-
-    <div class="Box mt-3 position-relative
-      ">
-      
-<div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
-  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-
-      1249 lines (1223 sloc)
-      <span class="file-info-divider"></span>
-    68.8 KB
-  </div>
-
-  <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
-
-    <div class="BtnGroup">
-      <a href="/mrke/NicheMapR/raw/master/R/micro_ncep.R" id="raw-url" role="button" class="btn btn-sm BtnGroup-item ">Raw</a>
-        <a href="/mrke/NicheMapR/blame/master/R/micro_ncep.R" data-hotkey="b" role="button" class="btn js-update-url-with-hash btn-sm BtnGroup-item ">Blame</a>
-    </div>
-
-    <div>
-          <a class="btn-octicon tooltipped tooltipped-nw js-remove-unless-platform"
-             data-platforms="windows,mac"
-             href="https://desktop.github.com"
-             aria-label="Open this file in GitHub Desktop"
-             data-ga-click="Repository, open with desktop">
-              <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path></svg>
-          </a>
-
-          <a href="/login?return_to=%2Fmrke%2FNicheMapR%2Fblob%2Fmaster%2FR%2Fmicro_ncep.R" class="btn-octicon disabled tooltipped tooltipped-nw"
-            aria-label="You must be signed in to make or propose changes">
-            <svg class="octicon octicon-pencil" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path></svg>
-          </a>
-          <a href="/login?return_to=%2Fmrke%2FNicheMapR%2Fblob%2Fmaster%2FR%2Fmicro_ncep.R" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
-            aria-label="You must be signed in to make or propose changes">
-            <svg class="octicon octicon-trashcan" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z"></path></svg>
-          </a>
-    </div>
-  </div>
-</div>
-
-      
-
-  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-r  gist-border-0">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
-      <tr>
-        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; NCEP implementation of the microclimate model, with package microclima computing hourly forcing.</span></td>
-      </tr>
-      <tr>
-        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; An implementation of the NicheMapR microclimate model that integrates the RNCEP 6-hourly weather data and the elevatr package for obtaining DEM using downscaling functions from the microclima package as described in more detail in Kearney, M. R., Gillingham, P. K., Bramer, I., Duffy, J. P., &amp; Maclean, I. M. D. (2019). A method for computing hourly, historical, terrain-corrected microclimate anywhere on Earth. Methods in Ecology and Evolution.</span></td>
-      </tr>
-      <tr>
-        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @encoding UTF-8</span></td>
-      </tr>
-      <tr>
-        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param loc Longitude and latitude (decimal degrees)</span></td>
-      </tr>
-      <tr>
-        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param dstart First day to run, date in format &quot;d/m/Y&quot; e.g. &quot;01/01/2016&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param dfinish Last day to run, date in format &quot;d/m/Y&quot; e.g. &quot;31/12/2016&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param dem A digital elevation model used by microclima for micro-topographic effects, produced by microclima function &#39;get_dem&#39; via R package &#39;elevatr&#39; (internally generated via same function based on &#39;loc&#39; if NA)</span></td>
-      </tr>
-      <tr>
-        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param dem2 A digital elevation model used by microclima for meso-climate calculations, produced by microclima function &#39;get_dem&#39; via R package &#39;elevatr&#39; (internally generated via same function based on &#39;loc&#39; if NA)</span></td>
-      </tr>
-      <tr>
-        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param dem.res Requested resolution of the DEM from elevatr, m</span></td>
-      </tr>
-      <tr>
-        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param pixels Number of pixels along one edge of square requested of DEM requested from elevatr, #</span></td>
-      </tr>
-      <tr>
-        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param REFL Soil solar reflectance, decimal \%</span></td>
-      </tr>
-      <tr>
-        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param slope Slope in degrees (if NA, then derived from DEM with package microclima)</span></td>
-      </tr>
-      <tr>
-        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param aspect Aspect in degrees (0 = north) (if NA, then derived from DEM with microclima)</span></td>
-      </tr>
-      <tr>
-        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param DEP Soil depths at which calculations are to be made (cm), must be 10 values starting from 0, and more closely spaced near the surface</span></td>
-      </tr>
-      <tr>
-        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param minshade Minimum shade level to use (\%) (can be a single value or a vector of daily values)</span></td>
-      </tr>
-      <tr>
-        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param maxshade Maximum shade level to use (\%) (can be a single value or a vector of daily values)</span></td>
-      </tr>
-      <tr>
-        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param Usrhyt Local height (m) at which air temperature, wind speed and humidity are to be computed for organism of interest</span></td>
-      </tr>
-      <tr>
-        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="LC19" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param coastal Compute coastal effects with microclima? T (TRUE) or F (FALSE) (can take a while and may have high memory requirements depending on DEM size)</span></td>
-      </tr>
-      <tr>
-        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param hourlydata user input of the hourlydata matrix</span></td>
-      </tr>
-      <tr>
-        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param dailyprecip user input of daily rainfall</span></td>
-      </tr>
-      <tr>
-        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param weather.elev optional value indicating the elevation of values in `hourlydata`. Either a numeric value, corresponding to the elevation in (m) of the location from which `hourlydata` were obtained, or `ncep` (default, data derive from NOAA-NCEP reanalysis) project.</span></td>
-      </tr>
-      <tr>
-        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param cad.effects optional logical indicating whether to calculate cold air drainage effects (TRUE = Yes, slower. FALSE =  No, quicker)</span></td>
-      </tr>
-      <tr>
-        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @param ... Additional arguments, see Details</span></td>
-      </tr>
-      <tr>
-        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return metout The above ground micrometeorological conditions under the minimum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return shadmet The above ground micrometeorological conditions under the maximum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return soil Hourly predictions of the soil temperatures under the minimum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return shadsoil Hourly predictions of the soil temperatures under the maximum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
-        <td id="LC29" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return soilmoist Hourly predictions of the soil moisture under the minimum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="LC30" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return shadmoist Hourly predictions of the soil moisture under the maximum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
-        <td id="LC31" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return soilpot Hourly predictions of the soil water potential under the minimum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
-        <td id="LC32" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return shadpot Hourly predictions of the soil water potential under the maximum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
-        <td id="LC33" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return humid Hourly predictions of the soil humidity under the minimum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
-        <td id="LC34" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return shadhumid Hourly predictions of the soil humidity under the maximum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
-        <td id="LC35" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return plant Hourly predictions of plant transpiration, leaf water potential and root water potential under the minimum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
-        <td id="LC36" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return shadplant Hourly predictions of plant transpiration, leaf water potential and root water potential under the maximum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
-        <td id="LC37" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return sunsnow Hourly predictions of snow temperature under the minimum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
-        <td id="LC38" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @return shadsnow Hourly predictions snow temperature under the maximum specified shade</span></td>
-      </tr>
-      <tr>
-        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
-        <td id="LC39" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @usage micro_ncep(loc = c(-91.415669, -0.287145), dstart = &quot;01/01/2019&quot;, dfinish = &quot;31/07/2019&quot;,</span></td>
-      </tr>
-      <tr>
-        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
-        <td id="LC40" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; REFL = 0.15, slope = 0, aspect = 0, DEP = c(0, 2.5,  5,  10,  15,  20,  30,  50,  100,  200), minshade = 0, maxshade = 90,</span></td>
-      </tr>
-      <tr>
-        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
-        <td id="LC41" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; Usrhyt = 0.01, ...)</span></td>
-      </tr>
-      <tr>
-        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
-        <td id="LC42" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @export</span></td>
-      </tr>
-      <tr>
-        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
-        <td id="LC43" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @details</span></td>
-      </tr>
-      <tr>
-        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
-        <td id="LC44" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \strong{ Parameters controlling how the model runs:}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
-        <td id="LC45" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{runshade}{ = 1, Run the microclimate model twice, once for each shade level (1) or just once for the minimum shade (0)?}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
-        <td id="LC46" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{run.gads}{ = 1, Use the Global Aerosol Database? 1=yes (Fortran version), 2=yes (R version), 0=no}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
-        <td id="LC47" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{IR}{ = 0, Clear-sky longwave radiation computed using Campbell and Norman (1998) eq. 10.10 (includes humidity) (0) or Swinbank formula (1) or from NCEP data (2)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
-        <td id="LC48" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{solonly}{ = 0, Only run SOLRAD to get solar radiation? 1=yes, 0=no}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
-        <td id="LC49" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{lamb}{ = 0, Return wavelength-specific solar radiation output?}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
-        <td id="LC50" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{IUV}{ = 0, Use gamma function for scattered solar radiation? (computationally intensive)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
-        <td id="LC51" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{write_input}{ = 0, Write csv files of final input to folder &#39;csv input&#39; in working directory? 1=yes, 0=no}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
-        <td id="LC52" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{writecsv}{ = 0, Make Fortran code write output as csv files? 1=yes, 0=no}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
-        <td id="LC53" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{reanalysis}{ = TRUE, Use reanalysis2 NCEP data? TRUE/FALSE}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
-        <td id="LC54" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{windfac}{ = 1, factor to multiply wind speed by e.g. to simulate forest}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
-        <td id="LC55" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{warm}{ = 0, warming offset vector, °C (negative values mean cooling). Can supply a single value or a vector the length of the number of days to be simulated.}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
-        <td id="LC56" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{soilgrids}{ = 0, query soilgrids.org database for soil hydraulic properties?}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
-        <td id="LC57" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{message}{ = 0, allow the Fortran integrator to output warnings? (1) or not (0)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
-        <td id="LC58" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{fail}{ = nyears x 24 x 365, how many restarts of the integrator before the Fortran program quits (avoids endless loops when solutions can&#39;t be found)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
-        <td id="LC59" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{spatial}{ = NA, specify folder with local NCEP data (no trailing forward slash), goes to the web if NA }\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
-        <td id="LC60" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{save}{ = 0, don&#39;t save forcing data (0), save the forcing data (1) or read previously saved data (2)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
-        <td id="LC61" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
-        <td id="LC62" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \strong{ General additional parameters:}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
-        <td id="LC63" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{ERR}{ = 1.5, Integrator error tolerance for soil temperature calculations}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
-        <td id="LC64" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{Refhyt}{ = 2, Reference height (m), reference height at which air temperature, wind speed and relative humidity input data are measured}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
-        <td id="LC65" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{RUF}{ = 0.004, Roughness height (m), e.g. smooth desert is 0.0003, closely mowed grass may be 0.001, bare tilled soil 0.002-0.006, current allowed range: 0.00001 (snow) - 0.02 m.}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
-        <td id="LC66" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{ZH}{ = 0, heat transfer roughness height (m) for Campbell and Norman air temperature/wind speed profile (invoked if greater than 0, 0.02 * canopy height in m if unknown)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
-        <td id="LC67" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{D0}{ = 0, zero plane displacement correction factor (m) for Campbell and Norman air temperature/wind speed profile (0.6 * canopy height in m if unknown)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
-        <td id="LC68" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{Z01}{ = 0, Top (1st) segment roughness height(m) - IF NO EXPERIMENTAL WIND PROFILE DATA SET THIS TO ZERO! (then RUF and Refhyt used)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
-        <td id="LC69" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{Z02}{ = 0, 2nd segment roughness height(m) - IF NO EXPERIMENTAL WIND PROFILE DATA SET THIS TO ZERO! (then RUF and Refhyt used).}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
-        <td id="LC70" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{ZH1}{ = 0, Top of (1st) segment, height above surface(m) - IF NO EXPERIMENTAL WIND PROFILE DATA SET THIS TO ZERO! (then RUF and Refhyt used).}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
-        <td id="LC71" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{ZH2}{ = 0, 2nd segment, height above surface(m) - IF NO EXPERIMENTAL WIND PROFILE DATA SET THIS TO ZERO! (then RUF and Refhyt used).}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
-        <td id="LC72" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{EC}{ = 0.0167238, Eccenricity of the earth&#39;s orbit (current value 0.0167238, ranges between 0.0034 to 0.058)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
-        <td id="LC73" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{SLE}{ = 0.95, Substrate longwave IR emissivity (decimal \%), typically close to 1}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
-        <td id="LC74" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{Thcond}{ = 2.5, Soil minerals thermal conductivity, single value or vector of 10 specific to each depth (W/mK)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
-        <td id="LC75" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{Density}{ = 2.56, Soil minerals density, single value or vector of 10 specific to each depth (Mg/m3)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
-        <td id="LC76" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{SpecHeat}{ = 870, Soil minerals specific heat, single value or vector of 10 specific to each depth (J/kg-K)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
-        <td id="LC77" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{BulkDensity}{ = 1.3, Soil bulk density (Mg/m3), single value or vector of 10 specific to each depth}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
-        <td id="LC78" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{PCTWET}{ = 0, \% of ground surface area acting as a free water surface (overridden if soil moisture model is running)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
-        <td id="LC79" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{rainwet}{ = 1.5, mm of rainfall causing the ground to be 90\% wet for the day}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
-        <td id="LC80" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{cap}{ = 1, organic cap present on soil surface? (cap has lower conductivity - 0.2 W/mC - and higher specific heat 1920 J/kg-K)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
-        <td id="LC81" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{CMH2O}{ = 1, Precipitable cm H2O in air column, 0.1 = very dry; 1.0 = moist air conditions; 2.0 = humid, tropical conditions (note this is for the whole atmospheric profile, not just near the ground)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
-        <td id="LC82" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{hori}{ = rep(NA,24), Horizon angles (degrees), from 0 degrees azimuth (north) clockwise in 15 degree intervals}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
-        <td id="LC83" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
-        <td id="LC84" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \strong{ Soil moisture mode parameters:}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
-        <td id="LC85" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
-        <td id="LC86" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{runmoist}{ = 1, Run soil moisture model? 1=yes, 0=no  1=yes, 0=no (note that this may cause slower runs)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
-        <td id="LC87" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{PE}{ = rep(1.1,19), Air entry potential (J/kg) (19 values descending through soil for specified soil nodes in parameter}</span></td>
-      </tr>
-      <tr>
-        <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
-        <td id="LC88" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{DEP}</span></td>
-      </tr>
-      <tr>
-        <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
-        <td id="LC89" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; { and points half way between)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
-        <td id="LC90" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{KS}{ = rep(0.0037,19), Saturated conductivity, (kg s/m3) (19 values descending through soil for specified soil nodes in parameter}</span></td>
-      </tr>
-      <tr>
-        <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
-        <td id="LC91" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{DEP}</span></td>
-      </tr>
-      <tr>
-        <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
-        <td id="LC92" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; { and points half way between)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
-        <td id="LC93" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{BB}{ = rep(4.5,19), Campbell&#39;s soil &#39;b&#39; parameter (-) (19 values descending through soil for specified soil nodes in parameter}</span></td>
-      </tr>
-      <tr>
-        <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
-        <td id="LC94" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{DEP}</span></td>
-      </tr>
-      <tr>
-        <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
-        <td id="LC95" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; { and points half way between)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
-        <td id="LC96" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{BD}{ = rep(1.3,19), Soil bulk density (Mg/m3)  (19 values descending through soil for specified soil nodes in parameter}</span></td>
-      </tr>
-      <tr>
-        <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
-        <td id="LC97" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{DEP}</span></td>
-      </tr>
-      <tr>
-        <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
-        <td id="LC98" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; { and points half way between)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
-        <td id="LC99" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{DD}{ = rep(2.56,19), Soil density (Mg/m3)  (19 values descending through soil for specified soil nodes in parameter DEP and points half way between)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
-        <td id="LC100" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{DEP}</span></td>
-      </tr>
-      <tr>
-        <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
-        <td id="LC101" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; { and points half way between)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
-        <td id="LC102" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{maxpool}{ = 10000, Max depth for water pooling on the surface (mm), to account for runoff}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
-        <td id="LC103" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{rainhourly}{ = 0, Is hourly rain input being supplied (1 = yes, 0 = no)?}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
-        <td id="LC104" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{rainhour}{ = 0, Vector of hourly rainfall values - overrides daily NCEP rain if rainhourly = 1}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
-        <td id="LC105" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{rainmult}{ = 1, Rain multiplier for surface soil moisture (-), used to induce runon}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
-        <td id="LC106" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{rainoff}{ = 0, Rain offset (mm), used to induce changes in rainfall from NCEP values. Can be a single value or a vector matching the number of days to simulate. If negative values are used, rainfall will be prevented from becomming negative.}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
-        <td id="LC107" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{evenrain}{ = 0, Spread daily rainfall evenly across 24hrs (1) or one event at midnight (0)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
-        <td id="LC108" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{SoilMoist_Init}{ = c(0.1,0.12,0.15,0.2,0.25,0.3,0.3,0.3,0.3,0.3), initial soil water content at each soil node, m3/m3}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
-        <td id="LC109" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{L}{ = c(0,0,8.2,8.0,7.8,7.4,7.1,6.4,5.8,4.8,4.0,1.8,0.9,0.6,0.8,0.4,0.4,0,0)*10000, root density (m/m3), (19 values descending through soil for specified soil nodes in parameter}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
-        <td id="LC110" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{R1}{ = 0.001, root radius, m}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
-        <td id="LC111" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{RW}{ = 2.5e+10, resistance per unit length of root, m3 kg-1 s-1}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
-        <td id="LC112" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{RL}{ = 2e+6, resistance per unit length of leaf, m3 kg-1 s-1}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
-        <td id="LC113" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{PC}{ = -1500, critical leaf water potential for stomatal closure, J kg-1}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
-        <td id="LC114" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{SP}{ = 10, stability parameter for stomatal closure equation, -}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
-        <td id="LC115" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{IM}{ = 1e-06, maximum allowable mass balance error, kg}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
-        <td id="LC116" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{MAXCOUNT}{ = 500, maximum iterations for mass balance, -}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
-        <td id="LC117" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{LAI}{ = 0.1, leaf area index (can be a single value or a vector of daily values), used to partition traspiration/evaporation from PET in soil moisture model}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
-        <td id="LC118" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{microclima.LAI}{ = 0, leaf area index, used by package microclima for radiation calcs}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
-        <td id="LC119" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{LOR}{ = 1, leaf orientation for package microclima radiation calcs}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
-        <td id="LC120" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
-        <td id="LC121" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \strong{ Snow mode parameters:}</span></td>
-      </tr>
-      <tr>
-        <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
-        <td id="LC122" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
-        <td id="LC123" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{snowmodel}{ = 1, run the snow model 1=yes, 0=no (note that this may cause slower runs)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
-        <td id="LC124" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{snowtemp}{ = 1.5, Temperature (°C) at which precipitation falls as snow}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
-        <td id="LC125" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{snowdens}{ = 0.375, snow density (mg/m3), overridden by densfun}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
-        <td id="LC126" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{densfun}{ = c(0.5979, 0.2178, 0.001, 0.0038), slope and intercept of model of snow density as a linear function of snowpack age if first two values are nonzero, and following the exponential function of Sturm et al. 2010 J. of Hydromet. 11:1380-1394 if all values are non-zero; if it is c(0,0,0,0) then fixed density used}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
-        <td id="LC127" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{snowmelt}{ = 1, proportion of calculated snowmelt that doesn&#39;t refreeze}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
-        <td id="LC128" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{undercatch}{ = 1, undercatch multipier for converting rainfall to snow}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
-        <td id="LC129" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{rainmelt}{ = 0.0125, paramter in equation that melts snow with rainfall as a function of air temp}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
-        <td id="LC130" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{snowcond}{ = 0, effective snow thermal conductivity W/mC (if zero, uses inbuilt function of density)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
-        <td id="LC131" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{intercept}{ = max(maxshade) / 100 * 0.3, snow interception fraction for when there&#39;s shade (0-1)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
-        <td id="LC132" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{grasshade}{ = 0, if 1, means shade is removed when snow is present, because shade is cast by grass/low shrubs}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
-        <td id="LC133" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
-        <td id="LC134" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \strong{ Intertidal mode parameters:}</span></td>
-      </tr>
-      <tr>
-        <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
-        <td id="LC135" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
-        <td id="LC136" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{shore}{ Include tide effects? If 1, the matrix}</span></td>
-      </tr>
-      <tr>
-        <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
-        <td id="LC137" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{tides}{ is used to specify tide presence, sea water temperature and presence of wavesplash}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
-        <td id="LC138" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{tides}{ = matrix(data = 0, nrow = length(seq(as.POSIXct(dstart, format = &#39;%d/%m/%Y&#39;), as.POSIXct(dfinish, format = &#39;%d/%m/%Y&#39;), by = &#39;days&#39;)) * 24, ncol = 3), matrix of 1. tide state (0=out, 1=in), 2. Water temperature (°C) and 3. Wave splash (0=yes, 1=no)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
-        <td id="LC139" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
-        <td id="LC140" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
-        <td id="LC141" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \strong{Outputs:}</span></td>
-      </tr>
-      <tr>
-        <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
-        <td id="LC142" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
-        <td id="LC143" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{ndays}{ - number of days for which predictions are made}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L144" class="blob-num js-line-number" data-line-number="144"></td>
-        <td id="LC144" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{longlat}{ - longitude and latitude for which simulation was run (decimal degrees)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L145" class="blob-num js-line-number" data-line-number="145"></td>
-        <td id="LC145" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{dates}{ - vector of dates (POSIXct, UTC)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L146" class="blob-num js-line-number" data-line-number="146"></td>
-        <td id="LC146" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{nyears}{ - number of years for which predictions are made}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L147" class="blob-num js-line-number" data-line-number="147"></td>
-        <td id="LC147" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{RAINFALL}{ - vector of daily rainfall (mm)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L148" class="blob-num js-line-number" data-line-number="148"></td>
-        <td id="LC148" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{elev}{ - elevation at point of simulation (m)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L149" class="blob-num js-line-number" data-line-number="149"></td>
-        <td id="LC149" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{minshade}{ - minimum shade for each day of simulation (\%)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L150" class="blob-num js-line-number" data-line-number="150"></td>
-        <td id="LC150" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{maxshade}{ - maximum shade for each day of simulation (\%)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L151" class="blob-num js-line-number" data-line-number="151"></td>
-        <td id="LC151" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{dem}{ - digital elevation model obtained via &#39;get_dev&#39; using package &#39;elevatr&#39; (m)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L152" class="blob-num js-line-number" data-line-number="152"></td>
-        <td id="LC152" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{DEP}{ - vector of depths used (cm)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L153" class="blob-num js-line-number" data-line-number="153"></td>
-        <td id="LC153" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{SLOPE}{ - slope at point of simulation (\%)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L154" class="blob-num js-line-number" data-line-number="154"></td>
-        <td id="LC154" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{ASPECT}{ - aspect at point of simulation (°, 0 is north)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L155" class="blob-num js-line-number" data-line-number="155"></td>
-        <td id="LC155" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \code{HORIZON}{ - horizon angles at point of simulation (°)}\cr\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L156" class="blob-num js-line-number" data-line-number="156"></td>
-        <td id="LC156" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L157" class="blob-num js-line-number" data-line-number="157"></td>
-        <td id="LC157" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; metout/shadmet variables:</span></td>
-      </tr>
-      <tr>
-        <td id="L158" class="blob-num js-line-number" data-line-number="158"></td>
-        <td id="LC158" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \itemize{</span></td>
-      </tr>
-      <tr>
-        <td id="L159" class="blob-num js-line-number" data-line-number="159"></td>
-        <td id="LC159" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 1 DOY - day-of-year</span></td>
-      </tr>
-      <tr>
-        <td id="L160" class="blob-num js-line-number" data-line-number="160"></td>
-        <td id="LC160" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 2 TIME - time of day (mins)</span></td>
-      </tr>
-      <tr>
-        <td id="L161" class="blob-num js-line-number" data-line-number="161"></td>
-        <td id="LC161" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 3 TALOC - air temperature (°C) at local height (specified by &#39;Usrhyt&#39; variable)</span></td>
-      </tr>
-      <tr>
-        <td id="L162" class="blob-num js-line-number" data-line-number="162"></td>
-        <td id="LC162" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 4 TAREF - air temperature (°C) at reference height (specified by &#39;Refhyt&#39;, 2m default)</span></td>
-      </tr>
-      <tr>
-        <td id="L163" class="blob-num js-line-number" data-line-number="163"></td>
-        <td id="LC163" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 5 RHLOC - relative humidity (\%) at local height (specified by &#39;Usrhyt&#39; variable)</span></td>
-      </tr>
-      <tr>
-        <td id="L164" class="blob-num js-line-number" data-line-number="164"></td>
-        <td id="LC164" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 6 RH  - relative humidity (\%) at reference height (specified by &#39;Refhyt&#39;, 2m default)</span></td>
-      </tr>
-      <tr>
-        <td id="L165" class="blob-num js-line-number" data-line-number="165"></td>
-        <td id="LC165" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 7 VLOC - wind speed (m/s) at local height (specified by &#39;Usrhyt&#39; variable)</span></td>
-      </tr>
-      <tr>
-        <td id="L166" class="blob-num js-line-number" data-line-number="166"></td>
-        <td id="LC166" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 8 VREF - wind speed (m/s) at reference height (specified by &#39;Refhyt&#39;, 2m default)</span></td>
-      </tr>
-      <tr>
-        <td id="L167" class="blob-num js-line-number" data-line-number="167"></td>
-        <td id="LC167" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 9 SNOWMELT - snowmelt (mm)</span></td>
-      </tr>
-      <tr>
-        <td id="L168" class="blob-num js-line-number" data-line-number="168"></td>
-        <td id="LC168" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 10 POOLDEP - water pooling on surface (mm)</span></td>
-      </tr>
-      <tr>
-        <td id="L169" class="blob-num js-line-number" data-line-number="169"></td>
-        <td id="LC169" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 11 PCTWET - soil surface wetness (\%)</span></td>
-      </tr>
-      <tr>
-        <td id="L170" class="blob-num js-line-number" data-line-number="170"></td>
-        <td id="LC170" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 12 ZEN - zenith angle of sun (degrees - 90 = below the horizon)</span></td>
-      </tr>
-      <tr>
-        <td id="L171" class="blob-num js-line-number" data-line-number="171"></td>
-        <td id="LC171" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 13 SOLR - solar radiation (W/m2) (unshaded, adjusted for slope, aspect and horizon angle)</span></td>
-      </tr>
-      <tr>
-        <td id="L172" class="blob-num js-line-number" data-line-number="172"></td>
-        <td id="LC172" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 14 TSKYC - sky radiant temperature (°C)</span></td>
-      </tr>
-      <tr>
-        <td id="L173" class="blob-num js-line-number" data-line-number="173"></td>
-        <td id="LC173" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 15 DEW - dew presence (0 or 1)</span></td>
-      </tr>
-      <tr>
-        <td id="L174" class="blob-num js-line-number" data-line-number="174"></td>
-        <td id="LC174" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 16 FROST - frost presence (0 or 1)</span></td>
-      </tr>
-      <tr>
-        <td id="L175" class="blob-num js-line-number" data-line-number="175"></td>
-        <td id="LC175" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 17 SNOWFALL - snow predicted to have fallen (cm)</span></td>
-      </tr>
-      <tr>
-        <td id="L176" class="blob-num js-line-number" data-line-number="176"></td>
-        <td id="LC176" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 18 SNOWDEP - predicted snow depth (cm)</span></td>
-      </tr>
-      <tr>
-        <td id="L177" class="blob-num js-line-number" data-line-number="177"></td>
-        <td id="LC177" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 19 SNOWDENS - snow density (g/cm3)</span></td>
-      </tr>
-      <tr>
-        <td id="L178" class="blob-num js-line-number" data-line-number="178"></td>
-        <td id="LC178" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;}</span></td>
-      </tr>
-      <tr>
-        <td id="L179" class="blob-num js-line-number" data-line-number="179"></td>
-        <td id="LC179" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; soil and shadsoil variables:</span></td>
-      </tr>
-      <tr>
-        <td id="L180" class="blob-num js-line-number" data-line-number="180"></td>
-        <td id="LC180" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \itemize{</span></td>
-      </tr>
-      <tr>
-        <td id="L181" class="blob-num js-line-number" data-line-number="181"></td>
-        <td id="LC181" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 1 DOY - day-of-year</span></td>
-      </tr>
-      <tr>
-        <td id="L182" class="blob-num js-line-number" data-line-number="182"></td>
-        <td id="LC182" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 2 TIME - time of day (mins)</span></td>
-      </tr>
-      <tr>
-        <td id="L183" class="blob-num js-line-number" data-line-number="183"></td>
-        <td id="LC183" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 3-12 D0cm ... - soil temperature (°C) at each of the 10 specified depths</span></td>
-      </tr>
-      <tr>
-        <td id="L184" class="blob-num js-line-number" data-line-number="184"></td>
-        <td id="LC184" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L185" class="blob-num js-line-number" data-line-number="185"></td>
-        <td id="LC185" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L186" class="blob-num js-line-number" data-line-number="186"></td>
-        <td id="LC186" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; if soil moisture model is run i.e. parameter runmoist = 1\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L187" class="blob-num js-line-number" data-line-number="187"></td>
-        <td id="LC187" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L188" class="blob-num js-line-number" data-line-number="188"></td>
-        <td id="LC188" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; soilmoist and shadmoist variables:</span></td>
-      </tr>
-      <tr>
-        <td id="L189" class="blob-num js-line-number" data-line-number="189"></td>
-        <td id="LC189" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \itemize{</span></td>
-      </tr>
-      <tr>
-        <td id="L190" class="blob-num js-line-number" data-line-number="190"></td>
-        <td id="LC190" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 1 DOY - day-of-year</span></td>
-      </tr>
-      <tr>
-        <td id="L191" class="blob-num js-line-number" data-line-number="191"></td>
-        <td id="LC191" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 2 TIME - time of day (mins)</span></td>
-      </tr>
-      <tr>
-        <td id="L192" class="blob-num js-line-number" data-line-number="192"></td>
-        <td id="LC192" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 3-12 WC0cm ... - soil moisture (m3/m3) at each of the 10 specified depths</span></td>
-      </tr>
-      <tr>
-        <td id="L193" class="blob-num js-line-number" data-line-number="193"></td>
-        <td id="LC193" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L194" class="blob-num js-line-number" data-line-number="194"></td>
-        <td id="LC194" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; soilpot and shadpot variables:</span></td>
-      </tr>
-      <tr>
-        <td id="L195" class="blob-num js-line-number" data-line-number="195"></td>
-        <td id="LC195" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \itemize{</span></td>
-      </tr>
-      <tr>
-        <td id="L196" class="blob-num js-line-number" data-line-number="196"></td>
-        <td id="LC196" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 1 DOY - day-of-year</span></td>
-      </tr>
-      <tr>
-        <td id="L197" class="blob-num js-line-number" data-line-number="197"></td>
-        <td id="LC197" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 2 TIME - time of day (mins)</span></td>
-      </tr>
-      <tr>
-        <td id="L198" class="blob-num js-line-number" data-line-number="198"></td>
-        <td id="LC198" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item 3-12 PT0cm ... - soil water potential (J/kg = kPa = bar/100) at each of the 10 specified depths</span></td>
-      </tr>
-      <tr>
-        <td id="L199" class="blob-num js-line-number" data-line-number="199"></td>
-        <td id="LC199" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L200" class="blob-num js-line-number" data-line-number="200"></td>
-        <td id="LC200" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; humid and shadhumid variables:</span></td>
-      </tr>
-      <tr>
-        <td id="L201" class="blob-num js-line-number" data-line-number="201"></td>
-        <td id="LC201" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \itemize{</span></td>
-      </tr>
-      <tr>
-        <td id="L202" class="blob-num js-line-number" data-line-number="202"></td>
-        <td id="LC202" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  1 DOY - day-of-year</span></td>
-      </tr>
-      <tr>
-        <td id="L203" class="blob-num js-line-number" data-line-number="203"></td>
-        <td id="LC203" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  2 TIME - time of day (mins)</span></td>
-      </tr>
-      <tr>
-        <td id="L204" class="blob-num js-line-number" data-line-number="204"></td>
-        <td id="LC204" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  3-12 RH0cm ... - soil relative humidity (decimal \%), at each of the 10 specified depths</span></td>
-      </tr>
-      <tr>
-        <td id="L205" class="blob-num js-line-number" data-line-number="205"></td>
-        <td id="LC205" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L206" class="blob-num js-line-number" data-line-number="206"></td>
-        <td id="LC206" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; plant and shadplant variables:</span></td>
-      </tr>
-      <tr>
-        <td id="L207" class="blob-num js-line-number" data-line-number="207"></td>
-        <td id="LC207" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \itemize{</span></td>
-      </tr>
-      <tr>
-        <td id="L208" class="blob-num js-line-number" data-line-number="208"></td>
-        <td id="LC208" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  1 DOY - day-of-year</span></td>
-      </tr>
-      <tr>
-        <td id="L209" class="blob-num js-line-number" data-line-number="209"></td>
-        <td id="LC209" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  2 TIME - time of day (mins)</span></td>
-      </tr>
-      <tr>
-        <td id="L210" class="blob-num js-line-number" data-line-number="210"></td>
-        <td id="LC210" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  3 TRANS - plant transpiration rate (g/m2/h)</span></td>
-      </tr>
-      <tr>
-        <td id="L211" class="blob-num js-line-number" data-line-number="211"></td>
-        <td id="LC211" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  4 LEAFPOT - leaf water potential (J/kg = kPa = bar/100)</span></td>
-      </tr>
-      <tr>
-        <td id="L212" class="blob-num js-line-number" data-line-number="212"></td>
-        <td id="LC212" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  5-14 RPOT0cm ... - root water potential (J/kg = kPa = bar/100), at each of the 10 specified depths</span></td>
-      </tr>
-      <tr>
-        <td id="L213" class="blob-num js-line-number" data-line-number="213"></td>
-        <td id="LC213" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L214" class="blob-num js-line-number" data-line-number="214"></td>
-        <td id="LC214" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L215" class="blob-num js-line-number" data-line-number="215"></td>
-        <td id="LC215" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; if snow model is run i.e. parameter lamb = 1\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L216" class="blob-num js-line-number" data-line-number="216"></td>
-        <td id="LC216" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; sunsnow and shdsnow variables:</span></td>
-      </tr>
-      <tr>
-        <td id="L217" class="blob-num js-line-number" data-line-number="217"></td>
-        <td id="LC217" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \itemize{</span></td>
-      </tr>
-      <tr>
-        <td id="L218" class="blob-num js-line-number" data-line-number="218"></td>
-        <td id="LC218" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  1 DOY - day-of-year</span></td>
-      </tr>
-      <tr>
-        <td id="L219" class="blob-num js-line-number" data-line-number="219"></td>
-        <td id="LC219" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  2 TIME - time of day (mins)</span></td>
-      </tr>
-      <tr>
-        <td id="L220" class="blob-num js-line-number" data-line-number="220"></td>
-        <td id="LC220" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  3-10 SN1 ... - snow temperature (°C), at each of the potential 8 snow layers (layer 8 is always the bottom - need metout$SNOWDEP to interpret which depth in the snow a given layer represents)</span></td>
-      </tr>
-      <tr>
-        <td id="L221" class="blob-num js-line-number" data-line-number="221"></td>
-        <td id="LC221" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L222" class="blob-num js-line-number" data-line-number="222"></td>
-        <td id="LC222" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L223" class="blob-num js-line-number" data-line-number="223"></td>
-        <td id="LC223" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; if wavelength-specific solar output is selected i.e. parameter lamb = 1\cr</span></td>
-      </tr>
-      <tr>
-        <td id="L224" class="blob-num js-line-number" data-line-number="224"></td>
-        <td id="LC224" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; solar output variables</span></td>
-      </tr>
-      <tr>
-        <td id="L225" class="blob-num js-line-number" data-line-number="225"></td>
-        <td id="LC225" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; drlam (direct solar), drrlam (direct Rayleigh solar) and srlam (scattered solar) variables:</span></td>
-      </tr>
-      <tr>
-        <td id="L226" class="blob-num js-line-number" data-line-number="226"></td>
-        <td id="LC226" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \itemize{</span></td>
-      </tr>
-      <tr>
-        <td id="L227" class="blob-num js-line-number" data-line-number="227"></td>
-        <td id="LC227" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  1 DOY - day-of-year</span></td>
-      </tr>
-      <tr>
-        <td id="L228" class="blob-num js-line-number" data-line-number="228"></td>
-        <td id="LC228" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  2 TIME - time of day (mins)</span></td>
-      </tr>
-      <tr>
-        <td id="L229" class="blob-num js-line-number" data-line-number="229"></td>
-        <td id="LC229" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; \item  3-113 290, ..., 4000 - irradiance (W/(m2 nm)) at each of 111 wavelengths from 290 to 4000 nm</span></td>
-      </tr>
-      <tr>
-        <td id="L230" class="blob-num js-line-number" data-line-number="230"></td>
-        <td id="LC230" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L231" class="blob-num js-line-number" data-line-number="231"></td>
-        <td id="LC231" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; @examples</span></td>
-      </tr>
-      <tr>
-        <td id="L232" class="blob-num js-line-number" data-line-number="232"></td>
-        <td id="LC232" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; library(NicheMapR)</span></td>
-      </tr>
-      <tr>
-        <td id="L233" class="blob-num js-line-number" data-line-number="233"></td>
-        <td id="LC233" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; dstart &lt;- &quot;02/01/2017&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L234" class="blob-num js-line-number" data-line-number="234"></td>
-        <td id="LC234" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; dfinish &lt;- &quot;30/12/2017&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L235" class="blob-num js-line-number" data-line-number="235"></td>
-        <td id="LC235" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; loc &lt;- c(-91.415669, -0.287145) # Isla Fernandina Galapagos</span></td>
-      </tr>
-      <tr>
-        <td id="L236" class="blob-num js-line-number" data-line-number="236"></td>
-        <td id="LC236" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; micro&lt;-micro_ncep(loc = loc, dstart = dstart, dfinish = dfinish)</span></td>
-      </tr>
-      <tr>
-        <td id="L237" class="blob-num js-line-number" data-line-number="237"></td>
-        <td id="LC237" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L238" class="blob-num js-line-number" data-line-number="238"></td>
-        <td id="LC238" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; metout&lt;-as.data.frame(micro$metout) # above ground microclimatic conditions, min shade</span></td>
-      </tr>
-      <tr>
-        <td id="L239" class="blob-num js-line-number" data-line-number="239"></td>
-        <td id="LC239" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; soil&lt;-as.data.frame(micro$soil) # soil temperatures, minimum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L240" class="blob-num js-line-number" data-line-number="240"></td>
-        <td id="LC240" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; soilmoist&lt;-as.data.frame(micro$soilmoist) # soil temperatures, minimum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L241" class="blob-num js-line-number" data-line-number="241"></td>
-        <td id="LC241" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L242" class="blob-num js-line-number" data-line-number="242"></td>
-        <td id="LC242" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; # append dates</span></td>
-      </tr>
-      <tr>
-        <td id="L243" class="blob-num js-line-number" data-line-number="243"></td>
-        <td id="LC243" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; tzone&lt;-paste(&quot;Etc/GMT+&quot;,0,sep=&quot;&quot;)</span></td>
-      </tr>
-      <tr>
-        <td id="L244" class="blob-num js-line-number" data-line-number="244"></td>
-        <td id="LC244" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; dates&lt;-seq(as.POSIXct(dstart, format=&quot;%d/%m/%Y&quot;,tz=tzone)-3600*12, as.POSIXct(dfinish, format=&quot;%d/%m/%Y&quot;,tz=tzone)+3600*11, by=&quot;hours&quot;)</span></td>
-      </tr>
-      <tr>
-        <td id="L245" class="blob-num js-line-number" data-line-number="245"></td>
-        <td id="LC245" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L246" class="blob-num js-line-number" data-line-number="246"></td>
-        <td id="LC246" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; metout &lt;- cbind(dates,metout)</span></td>
-      </tr>
-      <tr>
-        <td id="L247" class="blob-num js-line-number" data-line-number="247"></td>
-        <td id="LC247" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; soil &lt;- cbind(dates,soil)</span></td>
-      </tr>
-      <tr>
-        <td id="L248" class="blob-num js-line-number" data-line-number="248"></td>
-        <td id="LC248" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; soilmoist &lt;- cbind(dates, soilmoist)</span></td>
-      </tr>
-      <tr>
-        <td id="L249" class="blob-num js-line-number" data-line-number="249"></td>
-        <td id="LC249" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L250" class="blob-num js-line-number" data-line-number="250"></td>
-        <td id="LC250" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; # plotting above-ground conditions in minimum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L251" class="blob-num js-line-number" data-line-number="251"></td>
-        <td id="LC251" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{plot(TALOC ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Temperature (°C)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L252" class="blob-num js-line-number" data-line-number="252"></td>
-        <td id="LC252" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; , type = &quot;l&quot;,main=paste(&quot;air and sky temperature&quot;,sep=&quot;&quot;), ylim = c(-20, 60))})</span></td>
-      </tr>
-      <tr>
-        <td id="L253" class="blob-num js-line-number" data-line-number="253"></td>
-        <td id="LC253" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{points(TAREF ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Temperature (°C)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L254" class="blob-num js-line-number" data-line-number="254"></td>
-        <td id="LC254" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; , type = &quot;l&quot;,lty=2,col=&#39;blue&#39;)})</span></td>
-      </tr>
-      <tr>
-        <td id="L255" class="blob-num js-line-number" data-line-number="255"></td>
-        <td id="LC255" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{points(TSKYC ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Temperature (°C)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L256" class="blob-num js-line-number" data-line-number="256"></td>
-        <td id="LC256" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; ,  type = &quot;l&quot;,col=&#39;light blue&#39;,main=paste(&quot;sky temperature&quot;,sep=&quot;&quot;))})</span></td>
-      </tr>
-      <tr>
-        <td id="L257" class="blob-num js-line-number" data-line-number="257"></td>
-        <td id="LC257" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{plot(RHLOC ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Relative Humidity (%)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L258" class="blob-num js-line-number" data-line-number="258"></td>
-        <td id="LC258" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; , type = &quot;l&quot;,ylim=c(0,100),main=paste(&quot;humidity&quot;,sep=&quot;&quot;))})</span></td>
-      </tr>
-      <tr>
-        <td id="L259" class="blob-num js-line-number" data-line-number="259"></td>
-        <td id="LC259" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{points(RH ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Relative Humidity (%)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L260" class="blob-num js-line-number" data-line-number="260"></td>
-        <td id="LC260" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; , type = &quot;l&quot;,col=&#39;blue&#39;,lty=2,ylim=c(0,100))})</span></td>
-      </tr>
-      <tr>
-        <td id="L261" class="blob-num js-line-number" data-line-number="261"></td>
-        <td id="LC261" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{plot(VREF ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Wind Speed (m/s)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L262" class="blob-num js-line-number" data-line-number="262"></td>
-        <td id="LC262" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; ,  type = &quot;l&quot;,main=&quot;wind speed&quot;,ylim = c(0, 15))})</span></td>
-      </tr>
-      <tr>
-        <td id="L263" class="blob-num js-line-number" data-line-number="263"></td>
-        <td id="LC263" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{points(VLOC ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Wind Speed (m/s)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L264" class="blob-num js-line-number" data-line-number="264"></td>
-        <td id="LC264" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; ,  type = &quot;l&quot;,lty=2,col=&#39;blue&#39;)})</span></td>
-      </tr>
-      <tr>
-        <td id="L265" class="blob-num js-line-number" data-line-number="265"></td>
-        <td id="LC265" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{plot(SOLR ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Solar Radiation (W/m2)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L266" class="blob-num js-line-number" data-line-number="266"></td>
-        <td id="LC266" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; ,  type = &quot;l&quot;,main=&quot;solar radiation&quot;)})</span></td>
-      </tr>
-      <tr>
-        <td id="L267" class="blob-num js-line-number" data-line-number="267"></td>
-        <td id="LC267" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; with(metout,{plot(SNOWDEP ~ dates,xlab = &quot;Date and Time&quot;, ylab = &quot;Snow Depth (cm)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L268" class="blob-num js-line-number" data-line-number="268"></td>
-        <td id="LC268" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; ,  type = &quot;l&quot;,main=&quot;snow depth&quot;)})</span></td>
-      </tr>
-      <tr>
-        <td id="L269" class="blob-num js-line-number" data-line-number="269"></td>
-        <td id="LC269" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L270" class="blob-num js-line-number" data-line-number="270"></td>
-        <td id="LC270" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; # plotting soil temperature</span></td>
-      </tr>
-      <tr>
-        <td id="L271" class="blob-num js-line-number" data-line-number="271"></td>
-        <td id="LC271" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; for(i in 1:10){</span></td>
-      </tr>
-      <tr>
-        <td id="L272" class="blob-num js-line-number" data-line-number="272"></td>
-        <td id="LC272" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;  if(i==1){</span></td>
-      </tr>
-      <tr>
-        <td id="L273" class="blob-num js-line-number" data-line-number="273"></td>
-        <td id="LC273" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;    plot(soil[,i+3]~soil[,1],xlab = &quot;Date and Time&quot;, ylab = &quot;Soil Temperature (°C)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L274" class="blob-num js-line-number" data-line-number="274"></td>
-        <td id="LC274" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;    ,col=i,type = &quot;l&quot;,main=paste(&quot;soil temperature&quot;,sep=&quot;&quot;))</span></td>
-      </tr>
-      <tr>
-        <td id="L275" class="blob-num js-line-number" data-line-number="275"></td>
-        <td id="LC275" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;  }else{</span></td>
-      </tr>
-      <tr>
-        <td id="L276" class="blob-num js-line-number" data-line-number="276"></td>
-        <td id="LC276" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;    points(soil[,i+3]~soil[,1],xlab = &quot;Date and Time&quot;, ylab = &quot;Soil Temperature</span></td>
-      </tr>
-      <tr>
-        <td id="L277" class="blob-num js-line-number" data-line-number="277"></td>
-        <td id="LC277" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;     (°C)&quot;,col=i,type = &quot;l&quot;)</span></td>
-      </tr>
-      <tr>
-        <td id="L278" class="blob-num js-line-number" data-line-number="278"></td>
-        <td id="LC278" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;  }</span></td>
-      </tr>
-      <tr>
-        <td id="L279" class="blob-num js-line-number" data-line-number="279"></td>
-        <td id="LC279" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L280" class="blob-num js-line-number" data-line-number="280"></td>
-        <td id="LC280" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L281" class="blob-num js-line-number" data-line-number="281"></td>
-        <td id="LC281" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; # plotting soil moisture</span></td>
-      </tr>
-      <tr>
-        <td id="L282" class="blob-num js-line-number" data-line-number="282"></td>
-        <td id="LC282" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; for(i in 1:10){</span></td>
-      </tr>
-      <tr>
-        <td id="L283" class="blob-num js-line-number" data-line-number="283"></td>
-        <td id="LC283" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;  if(i==1){</span></td>
-      </tr>
-      <tr>
-        <td id="L284" class="blob-num js-line-number" data-line-number="284"></td>
-        <td id="LC284" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;    plot(soilmoist[,i+3]*100~soilmoist[,1],xlab = &quot;Date and Time&quot;, ylab = &quot;Soil Moisture (% volumetric)&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L285" class="blob-num js-line-number" data-line-number="285"></td>
-        <td id="LC285" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;    ,col=i,type = &quot;l&quot;,main=paste(&quot;soil moisture&quot;,sep=&quot;&quot;))</span></td>
-      </tr>
-      <tr>
-        <td id="L286" class="blob-num js-line-number" data-line-number="286"></td>
-        <td id="LC286" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;  }else{</span></td>
-      </tr>
-      <tr>
-        <td id="L287" class="blob-num js-line-number" data-line-number="287"></td>
-        <td id="LC287" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;    points(soilmoist[,i+3]*100~soilmoist[,1],xlab = &quot;Date and Time&quot;, ylab = &quot;Soil Moisture</span></td>
-      </tr>
-      <tr>
-        <td id="L288" class="blob-num js-line-number" data-line-number="288"></td>
-        <td id="LC288" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;     (%)&quot;,col=i,type = &quot;l&quot;)</span></td>
-      </tr>
-      <tr>
-        <td id="L289" class="blob-num js-line-number" data-line-number="289"></td>
-        <td id="LC289" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39;  }</span></td>
-      </tr>
-      <tr>
-        <td id="L290" class="blob-num js-line-number" data-line-number="290"></td>
-        <td id="LC290" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>&#39; }</span></td>
-      </tr>
-      <tr>
-        <td id="L291" class="blob-num js-line-number" data-line-number="291"></td>
-        <td id="LC291" class="blob-code blob-code-inner js-file-line"><span class="pl-en">micro_ncep</span> <span class="pl-k">&lt;-</span> <span class="pl-k">function</span>(</td>
-      </tr>
-      <tr>
-        <td id="L292" class="blob-num js-line-number" data-line-number="292"></td>
-        <td id="LC292" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">loc</span> <span class="pl-k">=</span> c(<span class="pl-k">-</span><span class="pl-c1">5.3</span>, <span class="pl-c1">50.13</span>),</td>
-      </tr>
-      <tr>
-        <td id="L293" class="blob-num js-line-number" data-line-number="293"></td>
-        <td id="LC293" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">dstart</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>01/01/2017<span class="pl-pds">&quot;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L294" class="blob-num js-line-number" data-line-number="294"></td>
-        <td id="LC294" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">dfinish</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>31/12/2017<span class="pl-pds">&quot;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L295" class="blob-num js-line-number" data-line-number="295"></td>
-        <td id="LC295" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">dem</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>,</td>
-      </tr>
-      <tr>
-        <td id="L296" class="blob-num js-line-number" data-line-number="296"></td>
-        <td id="LC296" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">dem2</span> <span class="pl-k">=</span> <span class="pl-smi">dem</span>,</td>
-      </tr>
-      <tr>
-        <td id="L297" class="blob-num js-line-number" data-line-number="297"></td>
-        <td id="LC297" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">dem.res</span> <span class="pl-k">=</span> <span class="pl-c1">30</span>,</td>
-      </tr>
-      <tr>
-        <td id="L298" class="blob-num js-line-number" data-line-number="298"></td>
-        <td id="LC298" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">pixels</span> <span class="pl-k">=</span> <span class="pl-c1">100</span>,</td>
-      </tr>
-      <tr>
-        <td id="L299" class="blob-num js-line-number" data-line-number="299"></td>
-        <td id="LC299" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">nyears</span> <span class="pl-k">=</span> as.numeric(substr(<span class="pl-smi">dfinish</span>, <span class="pl-c1">7</span>, <span class="pl-c1">10</span>)) <span class="pl-k">-</span> as.numeric(substr(<span class="pl-smi">dstart</span>, <span class="pl-c1">7</span>, <span class="pl-c1">10</span>)) <span class="pl-k">+</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L300" class="blob-num js-line-number" data-line-number="300"></td>
-        <td id="LC300" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">REFL</span> <span class="pl-k">=</span> <span class="pl-c1">0.15</span>,</td>
-      </tr>
-      <tr>
-        <td id="L301" class="blob-num js-line-number" data-line-number="301"></td>
-        <td id="LC301" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">slope</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>,</td>
-      </tr>
-      <tr>
-        <td id="L302" class="blob-num js-line-number" data-line-number="302"></td>
-        <td id="LC302" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">aspect</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>,</td>
-      </tr>
-      <tr>
-        <td id="L303" class="blob-num js-line-number" data-line-number="303"></td>
-        <td id="LC303" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">DEP</span> <span class="pl-k">=</span> c(<span class="pl-c1">0</span>, <span class="pl-c1">2.5</span>,  <span class="pl-c1">5</span>,  <span class="pl-c1">10</span>,  <span class="pl-c1">15</span>,  <span class="pl-c1">20</span>,  <span class="pl-c1">30</span>,  <span class="pl-c1">50</span>,  <span class="pl-c1">100</span>,  <span class="pl-c1">200</span>),</td>
-      </tr>
-      <tr>
-        <td id="L304" class="blob-num js-line-number" data-line-number="304"></td>
-        <td id="LC304" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">minshade</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L305" class="blob-num js-line-number" data-line-number="305"></td>
-        <td id="LC305" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">maxshade</span> <span class="pl-k">=</span> <span class="pl-c1">90</span>,</td>
-      </tr>
-      <tr>
-        <td id="L306" class="blob-num js-line-number" data-line-number="306"></td>
-        <td id="LC306" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">Refhyt</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>,</td>
-      </tr>
-      <tr>
-        <td id="L307" class="blob-num js-line-number" data-line-number="307"></td>
-        <td id="LC307" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">Usrhyt</span> <span class="pl-k">=</span> <span class="pl-c1">0.01</span>,</td>
-      </tr>
-      <tr>
-        <td id="L308" class="blob-num js-line-number" data-line-number="308"></td>
-        <td id="LC308" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">Z01</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L309" class="blob-num js-line-number" data-line-number="309"></td>
-        <td id="LC309" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">Z02</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L310" class="blob-num js-line-number" data-line-number="310"></td>
-        <td id="LC310" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">ZH1</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L311" class="blob-num js-line-number" data-line-number="311"></td>
-        <td id="LC311" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">ZH2</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L312" class="blob-num js-line-number" data-line-number="312"></td>
-        <td id="LC312" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">runshade</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L313" class="blob-num js-line-number" data-line-number="313"></td>
-        <td id="LC313" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">run.gads</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L314" class="blob-num js-line-number" data-line-number="314"></td>
-        <td id="LC314" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">solonly</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L315" class="blob-num js-line-number" data-line-number="315"></td>
-        <td id="LC315" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">write_input</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L316" class="blob-num js-line-number" data-line-number="316"></td>
-        <td id="LC316" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">writecsv</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L317" class="blob-num js-line-number" data-line-number="317"></td>
-        <td id="LC317" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">reanalysis</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>,</td>
-      </tr>
-      <tr>
-        <td id="L318" class="blob-num js-line-number" data-line-number="318"></td>
-        <td id="LC318" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">windfac</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L319" class="blob-num js-line-number" data-line-number="319"></td>
-        <td id="LC319" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">warm</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L320" class="blob-num js-line-number" data-line-number="320"></td>
-        <td id="LC320" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">ERR</span> <span class="pl-k">=</span> <span class="pl-c1">1.5</span>,</td>
-      </tr>
-      <tr>
-        <td id="L321" class="blob-num js-line-number" data-line-number="321"></td>
-        <td id="LC321" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">RUF</span> <span class="pl-k">=</span> <span class="pl-c1">0.004</span>,</td>
-      </tr>
-      <tr>
-        <td id="L322" class="blob-num js-line-number" data-line-number="322"></td>
-        <td id="LC322" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">ZH</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L323" class="blob-num js-line-number" data-line-number="323"></td>
-        <td id="LC323" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">D0</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L324" class="blob-num js-line-number" data-line-number="324"></td>
-        <td id="LC324" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">EC</span> <span class="pl-k">=</span> <span class="pl-c1">0.0167238</span>,</td>
-      </tr>
-      <tr>
-        <td id="L325" class="blob-num js-line-number" data-line-number="325"></td>
-        <td id="LC325" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">SLE</span> <span class="pl-k">=</span> <span class="pl-c1">0.95</span>,</td>
-      </tr>
-      <tr>
-        <td id="L326" class="blob-num js-line-number" data-line-number="326"></td>
-        <td id="LC326" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">Thcond</span> <span class="pl-k">=</span> <span class="pl-c1">2.5</span>,</td>
-      </tr>
-      <tr>
-        <td id="L327" class="blob-num js-line-number" data-line-number="327"></td>
-        <td id="LC327" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">Density</span> <span class="pl-k">=</span> <span class="pl-c1">2.56</span>,</td>
-      </tr>
-      <tr>
-        <td id="L328" class="blob-num js-line-number" data-line-number="328"></td>
-        <td id="LC328" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">SpecHeat</span> <span class="pl-k">=</span> <span class="pl-c1">870</span>,</td>
-      </tr>
-      <tr>
-        <td id="L329" class="blob-num js-line-number" data-line-number="329"></td>
-        <td id="LC329" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">BulkDensity</span> <span class="pl-k">=</span> <span class="pl-c1">1.3</span>,</td>
-      </tr>
-      <tr>
-        <td id="L330" class="blob-num js-line-number" data-line-number="330"></td>
-        <td id="LC330" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">PCTWET</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L331" class="blob-num js-line-number" data-line-number="331"></td>
-        <td id="LC331" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">rainwet</span> <span class="pl-k">=</span> <span class="pl-c1">1.5</span>,</td>
-      </tr>
-      <tr>
-        <td id="L332" class="blob-num js-line-number" data-line-number="332"></td>
-        <td id="LC332" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">cap</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L333" class="blob-num js-line-number" data-line-number="333"></td>
-        <td id="LC333" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">CMH2O</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L334" class="blob-num js-line-number" data-line-number="334"></td>
-        <td id="LC334" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">hori</span> <span class="pl-k">=</span> rep(<span class="pl-c1">NA</span>, <span class="pl-c1">24</span>),</td>
-      </tr>
-      <tr>
-        <td id="L335" class="blob-num js-line-number" data-line-number="335"></td>
-        <td id="LC335" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">runmoist</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L336" class="blob-num js-line-number" data-line-number="336"></td>
-        <td id="LC336" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">PE</span> <span class="pl-k">=</span> rep(<span class="pl-c1">1.1</span>, <span class="pl-c1">19</span>),</td>
-      </tr>
-      <tr>
-        <td id="L337" class="blob-num js-line-number" data-line-number="337"></td>
-        <td id="LC337" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">KS</span> <span class="pl-k">=</span> rep(<span class="pl-c1">0.0037</span>, <span class="pl-c1">19</span>),</td>
-      </tr>
-      <tr>
-        <td id="L338" class="blob-num js-line-number" data-line-number="338"></td>
-        <td id="LC338" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">BB</span> <span class="pl-k">=</span> rep(<span class="pl-c1">4.5</span>, <span class="pl-c1">19</span>),</td>
-      </tr>
-      <tr>
-        <td id="L339" class="blob-num js-line-number" data-line-number="339"></td>
-        <td id="LC339" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">BD</span> <span class="pl-k">=</span> rep(<span class="pl-smi">BulkDensity</span>, <span class="pl-c1">19</span>),</td>
-      </tr>
-      <tr>
-        <td id="L340" class="blob-num js-line-number" data-line-number="340"></td>
-        <td id="LC340" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">DD</span> <span class="pl-k">=</span> rep(<span class="pl-smi">Density</span>, <span class="pl-c1">19</span>),</td>
-      </tr>
-      <tr>
-        <td id="L341" class="blob-num js-line-number" data-line-number="341"></td>
-        <td id="LC341" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">maxpool</span> <span class="pl-k">=</span> <span class="pl-c1">10000</span>,</td>
-      </tr>
-      <tr>
-        <td id="L342" class="blob-num js-line-number" data-line-number="342"></td>
-        <td id="LC342" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">rainmult</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L343" class="blob-num js-line-number" data-line-number="343"></td>
-        <td id="LC343" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">evenrain</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L344" class="blob-num js-line-number" data-line-number="344"></td>
-        <td id="LC344" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">SoilMoist_Init</span> <span class="pl-k">=</span> c(<span class="pl-c1">0.1</span>, <span class="pl-c1">0.12</span>, <span class="pl-c1">0.15</span>, <span class="pl-c1">0.2</span>, <span class="pl-c1">0.25</span>, <span class="pl-c1">0.3</span>, <span class="pl-c1">0.3</span>, <span class="pl-c1">0.3</span>, <span class="pl-c1">0.3</span>, <span class="pl-c1">0.3</span>),</td>
-      </tr>
-      <tr>
-        <td id="L345" class="blob-num js-line-number" data-line-number="345"></td>
-        <td id="LC345" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">L</span> <span class="pl-k">=</span> c(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">8.2</span>, <span class="pl-c1">8.0</span>, <span class="pl-c1">7.8</span>, <span class="pl-c1">7.4</span>, <span class="pl-c1">7.1</span>, <span class="pl-c1">6.4</span>, <span class="pl-c1">5.8</span>, <span class="pl-c1">4.8</span>, <span class="pl-c1">4.0</span>, <span class="pl-c1">1.8</span>, <span class="pl-c1">0.9</span>, <span class="pl-c1">0.6</span>, <span class="pl-c1">0.8</span>, <span class="pl-c1">0.4</span> ,<span class="pl-c1">0.4</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>) <span class="pl-k">*</span> <span class="pl-c1">10000</span>,</td>
-      </tr>
-      <tr>
-        <td id="L346" class="blob-num js-line-number" data-line-number="346"></td>
-        <td id="LC346" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">R1</span> <span class="pl-k">=</span> <span class="pl-c1">0.001</span>,</td>
-      </tr>
-      <tr>
-        <td id="L347" class="blob-num js-line-number" data-line-number="347"></td>
-        <td id="LC347" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">RW</span> <span class="pl-k">=</span> <span class="pl-c1">2.5e+10</span>,</td>
-      </tr>
-      <tr>
-        <td id="L348" class="blob-num js-line-number" data-line-number="348"></td>
-        <td id="LC348" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">RL</span> <span class="pl-k">=</span> <span class="pl-c1">2e+06</span>,</td>
-      </tr>
-      <tr>
-        <td id="L349" class="blob-num js-line-number" data-line-number="349"></td>
-        <td id="LC349" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">PC</span> <span class="pl-k">=</span> <span class="pl-k">-</span><span class="pl-c1">1500</span>,</td>
-      </tr>
-      <tr>
-        <td id="L350" class="blob-num js-line-number" data-line-number="350"></td>
-        <td id="LC350" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">SP</span> <span class="pl-k">=</span> <span class="pl-c1">10</span>,</td>
-      </tr>
-      <tr>
-        <td id="L351" class="blob-num js-line-number" data-line-number="351"></td>
-        <td id="LC351" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">IM</span> <span class="pl-k">=</span> <span class="pl-c1">1e-06</span>,</td>
-      </tr>
-      <tr>
-        <td id="L352" class="blob-num js-line-number" data-line-number="352"></td>
-        <td id="LC352" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">MAXCOUNT</span> <span class="pl-k">=</span> <span class="pl-c1">500</span>,</td>
-      </tr>
-      <tr>
-        <td id="L353" class="blob-num js-line-number" data-line-number="353"></td>
-        <td id="LC353" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">LAI</span> <span class="pl-k">=</span> <span class="pl-c1">0.1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L354" class="blob-num js-line-number" data-line-number="354"></td>
-        <td id="LC354" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">microclima.LAI</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L355" class="blob-num js-line-number" data-line-number="355"></td>
-        <td id="LC355" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">LOR</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L356" class="blob-num js-line-number" data-line-number="356"></td>
-        <td id="LC356" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">snowmodel</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L357" class="blob-num js-line-number" data-line-number="357"></td>
-        <td id="LC357" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">snowtemp</span> <span class="pl-k">=</span> <span class="pl-c1">1.5</span>,</td>
-      </tr>
-      <tr>
-        <td id="L358" class="blob-num js-line-number" data-line-number="358"></td>
-        <td id="LC358" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">snowdens</span> <span class="pl-k">=</span> <span class="pl-c1">0.375</span>,</td>
-      </tr>
-      <tr>
-        <td id="L359" class="blob-num js-line-number" data-line-number="359"></td>
-        <td id="LC359" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">densfun</span> <span class="pl-k">=</span> c(<span class="pl-c1">0.5979</span>, <span class="pl-c1">0.2178</span>, <span class="pl-c1">0.001</span>, <span class="pl-c1">0.0038</span>),</td>
-      </tr>
-      <tr>
-        <td id="L360" class="blob-num js-line-number" data-line-number="360"></td>
-        <td id="LC360" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">snowmelt</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L361" class="blob-num js-line-number" data-line-number="361"></td>
-        <td id="LC361" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">undercatch</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>,</td>
-      </tr>
-      <tr>
-        <td id="L362" class="blob-num js-line-number" data-line-number="362"></td>
-        <td id="LC362" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">rainmelt</span> <span class="pl-k">=</span> <span class="pl-c1">0.0125</span>,</td>
-      </tr>
-      <tr>
-        <td id="L363" class="blob-num js-line-number" data-line-number="363"></td>
-        <td id="LC363" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">shore</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L364" class="blob-num js-line-number" data-line-number="364"></td>
-        <td id="LC364" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">tides</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L365" class="blob-num js-line-number" data-line-number="365"></td>
-        <td id="LC365" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">deepsoil</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>,</td>
-      </tr>
-      <tr>
-        <td id="L366" class="blob-num js-line-number" data-line-number="366"></td>
-        <td id="LC366" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">rainhour</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L367" class="blob-num js-line-number" data-line-number="367"></td>
-        <td id="LC367" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">rainhourly</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L368" class="blob-num js-line-number" data-line-number="368"></td>
-        <td id="LC368" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">rainoff</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L369" class="blob-num js-line-number" data-line-number="369"></td>
-        <td id="LC369" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">lamb</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L370" class="blob-num js-line-number" data-line-number="370"></td>
-        <td id="LC370" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">IUV</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L371" class="blob-num js-line-number" data-line-number="371"></td>
-        <td id="LC371" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">soilgrids</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L372" class="blob-num js-line-number" data-line-number="372"></td>
-        <td id="LC372" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">IR</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L373" class="blob-num js-line-number" data-line-number="373"></td>
-        <td id="LC373" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">message</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L374" class="blob-num js-line-number" data-line-number="374"></td>
-        <td id="LC374" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">fail</span> <span class="pl-k">=</span> <span class="pl-smi">nyears</span> <span class="pl-k">*</span> <span class="pl-c1">24</span> <span class="pl-k">*</span> <span class="pl-c1">365</span>,</td>
-      </tr>
-      <tr>
-        <td id="L375" class="blob-num js-line-number" data-line-number="375"></td>
-        <td id="LC375" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">spatial</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>,</td>
-      </tr>
-      <tr>
-        <td id="L376" class="blob-num js-line-number" data-line-number="376"></td>
-        <td id="LC376" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">save</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L377" class="blob-num js-line-number" data-line-number="377"></td>
-        <td id="LC377" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">snowcond</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L378" class="blob-num js-line-number" data-line-number="378"></td>
-        <td id="LC378" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">intercept</span> <span class="pl-k">=</span> max(<span class="pl-smi">maxshade</span>) <span class="pl-k">/</span> <span class="pl-c1">100</span> <span class="pl-k">*</span> <span class="pl-c1">0.3</span>,</td>
-      </tr>
-      <tr>
-        <td id="L379" class="blob-num js-line-number" data-line-number="379"></td>
-        <td id="LC379" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">grasshade</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>,</td>
-      </tr>
-      <tr>
-        <td id="L380" class="blob-num js-line-number" data-line-number="380"></td>
-        <td id="LC380" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">coastal</span> <span class="pl-k">=</span> <span class="pl-c1">F</span>,</td>
-      </tr>
-      <tr>
-        <td id="L381" class="blob-num js-line-number" data-line-number="381"></td>
-        <td id="LC381" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">hourlydata</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>,</td>
-      </tr>
-      <tr>
-        <td id="L382" class="blob-num js-line-number" data-line-number="382"></td>
-        <td id="LC382" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">dailyprecip</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>,</td>
-      </tr>
-      <tr>
-        <td id="L383" class="blob-num js-line-number" data-line-number="383"></td>
-        <td id="LC383" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">weather.elev</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>ncep<span class="pl-pds">&#39;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L384" class="blob-num js-line-number" data-line-number="384"></td>
-        <td id="LC384" class="blob-code blob-code-inner js-file-line">  <span class="pl-v">cad.effects</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>){ <span class="pl-c"><span class="pl-c">#</span> end function parameters</span></td>
-      </tr>
-      <tr>
-        <td id="L385" class="blob-num js-line-number" data-line-number="385"></td>
-        <td id="LC385" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">#</span> error trapping - originally inside the Fortran code, but now checking before executing Fortran</span></td>
-      </tr>
-      <tr>
-        <td id="L386" class="blob-num js-line-number" data-line-number="386"></td>
-        <td id="LC386" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L387" class="blob-num js-line-number" data-line-number="387"></td>
-        <td id="LC387" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">DEP</span>[<span class="pl-c1">2</span>]<span class="pl-k">-</span><span class="pl-smi">DEP</span>[<span class="pl-c1">1</span>]<span class="pl-k">&gt;</span><span class="pl-c1">3</span> <span class="pl-k">|</span> <span class="pl-smi">DEP</span>[<span class="pl-c1">3</span>]<span class="pl-k">-</span><span class="pl-smi">DEP</span>[<span class="pl-c1">2</span>]<span class="pl-k">&gt;</span><span class="pl-c1">3</span>){</td>
-      </tr>
-      <tr>
-        <td id="L388" class="blob-num js-line-number" data-line-number="388"></td>
-        <td id="LC388" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>warning, nodes might be too far apart near the surface, try a different spacing if the program is crashing <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L389" class="blob-num js-line-number" data-line-number="389"></td>
-        <td id="LC389" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L390" class="blob-num js-line-number" data-line-number="390"></td>
-        <td id="LC390" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">DEP</span>[<span class="pl-c1">2</span>]<span class="pl-k">-</span><span class="pl-smi">DEP</span>[<span class="pl-c1">1</span>]<span class="pl-k">&lt;</span><span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L391" class="blob-num js-line-number" data-line-number="391"></td>
-        <td id="LC391" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>warning, nodes might be too close near the surface, try a different spacing if the program is crashing <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L392" class="blob-num js-line-number" data-line-number="392"></td>
-        <td id="LC392" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L393" class="blob-num js-line-number" data-line-number="393"></td>
-        <td id="LC393" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(is.numeric(<span class="pl-smi">loc</span>[<span class="pl-c1">1</span>])){</td>
-      </tr>
-      <tr>
-        <td id="L394" class="blob-num js-line-number" data-line-number="394"></td>
-        <td id="LC394" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">loc</span>[<span class="pl-c1">1</span>]<span class="pl-k">&gt;</span><span class="pl-c1">180</span> <span class="pl-k">|</span> <span class="pl-smi">loc</span>[<span class="pl-c1">2</span>] <span class="pl-k">&gt;</span> <span class="pl-c1">90</span>){</td>
-      </tr>
-      <tr>
-        <td id="L395" class="blob-num js-line-number" data-line-number="395"></td>
-        <td id="LC395" class="blob-code blob-code-inner js-file-line">      cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Latitude or longitude (longlat) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L396" class="blob-num js-line-number" data-line-number="396"></td>
-        <td id="LC396" class="blob-code blob-code-inner js-file-line"><span class="pl-s">          Please enter a correct value.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L397" class="blob-num js-line-number" data-line-number="397"></td>
-        <td id="LC397" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L398" class="blob-num js-line-number" data-line-number="398"></td>
-        <td id="LC398" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L399" class="blob-num js-line-number" data-line-number="399"></td>
-        <td id="LC399" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L400" class="blob-num js-line-number" data-line-number="400"></td>
-        <td id="LC400" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">run.gads</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L401" class="blob-num js-line-number" data-line-number="401"></td>
-        <td id="LC401" class="blob-code blob-code-inner js-file-line">    message(<span class="pl-s"><span class="pl-pds">&quot;</span>If program is crashing, try run.gads = 2.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L402" class="blob-num js-line-number" data-line-number="402"></td>
-        <td id="LC402" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L403" class="blob-num js-line-number" data-line-number="403"></td>
-        <td id="LC403" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">run.gads</span><span class="pl-k">%in%</span>c(<span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">2</span>)<span class="pl-k">==</span><span class="pl-c1">FALSE</span>){</td>
-      </tr>
-      <tr>
-        <td id="L404" class="blob-num js-line-number" data-line-number="404"></td>
-        <td id="LC404" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: the variable &#39;run.gads&#39; be either 0, 1 or 2.</span></td>
-      </tr>
-      <tr>
-        <td id="L405" class="blob-num js-line-number" data-line-number="405"></td>
-        <td id="LC405" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please correct.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L406" class="blob-num js-line-number" data-line-number="406"></td>
-        <td id="LC406" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L407" class="blob-num js-line-number" data-line-number="407"></td>
-        <td id="LC407" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L408" class="blob-num js-line-number" data-line-number="408"></td>
-        <td id="LC408" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">write_input</span><span class="pl-k">%in%</span>c(<span class="pl-c1">0</span>,<span class="pl-c1">1</span>)<span class="pl-k">==</span><span class="pl-c1">FALSE</span>){</td>
-      </tr>
-      <tr>
-        <td id="L409" class="blob-num js-line-number" data-line-number="409"></td>
-        <td id="LC409" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: the variable &#39;write_input&#39; be either 0 or 1.</span></td>
-      </tr>
-      <tr>
-        <td id="L410" class="blob-num js-line-number" data-line-number="410"></td>
-        <td id="LC410" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please correct.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L411" class="blob-num js-line-number" data-line-number="411"></td>
-        <td id="LC411" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L412" class="blob-num js-line-number" data-line-number="412"></td>
-        <td id="LC412" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L413" class="blob-num js-line-number" data-line-number="413"></td>
-        <td id="LC413" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">EC</span><span class="pl-k">&lt;</span><span class="pl-c1">0.0034</span> <span class="pl-k">|</span> <span class="pl-smi">EC</span> <span class="pl-k">&gt;</span> <span class="pl-c1">0.058</span>){</td>
-      </tr>
-      <tr>
-        <td id="L414" class="blob-num js-line-number" data-line-number="414"></td>
-        <td id="LC414" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: the eccentricity variable (EC) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L415" class="blob-num js-line-number" data-line-number="415"></td>
-        <td id="LC415" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please enter a correct value (0.0034 - 0.058).<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L416" class="blob-num js-line-number" data-line-number="416"></td>
-        <td id="LC416" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L417" class="blob-num js-line-number" data-line-number="417"></td>
-        <td id="LC417" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L418" class="blob-num js-line-number" data-line-number="418"></td>
-        <td id="LC418" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">RUF</span><span class="pl-k">&lt;</span><span class="pl-c1">0.0001</span>){</td>
-      </tr>
-      <tr>
-        <td id="L419" class="blob-num js-line-number" data-line-number="419"></td>
-        <td id="LC419" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: The roughness height (RUF) is too small ( &lt; 0.0001).</span></td>
-      </tr>
-      <tr>
-        <td id="L420" class="blob-num js-line-number" data-line-number="420"></td>
-        <td id="LC420" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please enter a larger value.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L421" class="blob-num js-line-number" data-line-number="421"></td>
-        <td id="LC421" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L422" class="blob-num js-line-number" data-line-number="422"></td>
-        <td id="LC422" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L423" class="blob-num js-line-number" data-line-number="423"></td>
-        <td id="LC423" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">RUF</span><span class="pl-k">&gt;</span><span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L424" class="blob-num js-line-number" data-line-number="424"></td>
-        <td id="LC424" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: The roughness height (RUF) is too large ( &gt; 2).</span></td>
-      </tr>
-      <tr>
-        <td id="L425" class="blob-num js-line-number" data-line-number="425"></td>
-        <td id="LC425" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please enter a smaller value.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L426" class="blob-num js-line-number" data-line-number="426"></td>
-        <td id="LC426" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L427" class="blob-num js-line-number" data-line-number="427"></td>
-        <td id="LC427" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L428" class="blob-num js-line-number" data-line-number="428"></td>
-        <td id="LC428" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">DEP</span>[<span class="pl-c1">1</span>]<span class="pl-k">!=</span><span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L429" class="blob-num js-line-number" data-line-number="429"></td>
-        <td id="LC429" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: First soil node (DEP[1]) must = 0 cm.</span></td>
-      </tr>
-      <tr>
-        <td id="L430" class="blob-num js-line-number" data-line-number="430"></td>
-        <td id="LC430" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please correct<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L431" class="blob-num js-line-number" data-line-number="431"></td>
-        <td id="LC431" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L432" class="blob-num js-line-number" data-line-number="432"></td>
-        <td id="LC432" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L433" class="blob-num js-line-number" data-line-number="433"></td>
-        <td id="LC433" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(length(<span class="pl-smi">DEP</span>)<span class="pl-k">!=</span><span class="pl-c1">10</span>){</td>
-      </tr>
-      <tr>
-        <td id="L434" class="blob-num js-line-number" data-line-number="434"></td>
-        <td id="LC434" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: You must enter 10 different soil depths.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L435" class="blob-num js-line-number" data-line-number="435"></td>
-        <td id="LC435" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L436" class="blob-num js-line-number" data-line-number="436"></td>
-        <td id="LC436" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L437" class="blob-num js-line-number" data-line-number="437"></td>
-        <td id="LC437" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">for</span>(<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">9</span>){</td>
-      </tr>
-      <tr>
-        <td id="L438" class="blob-num js-line-number" data-line-number="438"></td>
-        <td id="LC438" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">DEP</span>[<span class="pl-smi">i</span><span class="pl-k">+</span><span class="pl-c1">1</span>]<span class="pl-k">&lt;</span><span class="pl-k">=</span><span class="pl-smi">DEP</span>[<span class="pl-smi">i</span>]){</td>
-      </tr>
-      <tr>
-        <td id="L439" class="blob-num js-line-number" data-line-number="439"></td>
-        <td id="LC439" class="blob-code blob-code-inner js-file-line">      cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Soil depth (DEP array) is not in ascending size<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L440" class="blob-num js-line-number" data-line-number="440"></td>
-        <td id="LC440" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L441" class="blob-num js-line-number" data-line-number="441"></td>
-        <td id="LC441" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L442" class="blob-num js-line-number" data-line-number="442"></td>
-        <td id="LC442" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L443" class="blob-num js-line-number" data-line-number="443"></td>
-        <td id="LC443" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">DEP</span>[<span class="pl-c1">10</span>]<span class="pl-k">&gt;</span><span class="pl-c1">500</span>){</td>
-      </tr>
-      <tr>
-        <td id="L444" class="blob-num js-line-number" data-line-number="444"></td>
-        <td id="LC444" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Deepest soil depth (DEP array) is too large (&lt;=500 cm)<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L445" class="blob-num js-line-number" data-line-number="445"></td>
-        <td id="LC445" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L446" class="blob-num js-line-number" data-line-number="446"></td>
-        <td id="LC446" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L447" class="blob-num js-line-number" data-line-number="447"></td>
-        <td id="LC447" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(min(<span class="pl-smi">Thcond</span>)<span class="pl-k">&lt;</span><span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L448" class="blob-num js-line-number" data-line-number="448"></td>
-        <td id="LC448" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Thermal variable conductivity (THCOND) is negative.</span></td>
-      </tr>
-      <tr>
-        <td id="L449" class="blob-num js-line-number" data-line-number="449"></td>
-        <td id="LC449" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a positive value.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L450" class="blob-num js-line-number" data-line-number="450"></td>
-        <td id="LC450" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L451" class="blob-num js-line-number" data-line-number="451"></td>
-        <td id="LC451" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L452" class="blob-num js-line-number" data-line-number="452"></td>
-        <td id="LC452" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(min(<span class="pl-smi">Density</span>)<span class="pl-k">&lt;</span><span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L453" class="blob-num js-line-number" data-line-number="453"></td>
-        <td id="LC453" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Density variable (Density) is negative.</span></td>
-      </tr>
-      <tr>
-        <td id="L454" class="blob-num js-line-number" data-line-number="454"></td>
-        <td id="LC454" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a positive value.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L455" class="blob-num js-line-number" data-line-number="455"></td>
-        <td id="LC455" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L456" class="blob-num js-line-number" data-line-number="456"></td>
-        <td id="LC456" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L457" class="blob-num js-line-number" data-line-number="457"></td>
-        <td id="LC457" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(min(<span class="pl-smi">SpecHeat</span>)<span class="pl-k">&lt;</span><span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L458" class="blob-num js-line-number" data-line-number="458"></td>
-        <td id="LC458" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Specific heat variable (SpecHeat) is negative.</span></td>
-      </tr>
-      <tr>
-        <td id="L459" class="blob-num js-line-number" data-line-number="459"></td>
-        <td id="LC459" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a positive value.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L460" class="blob-num js-line-number" data-line-number="460"></td>
-        <td id="LC460" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L461" class="blob-num js-line-number" data-line-number="461"></td>
-        <td id="LC461" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L462" class="blob-num js-line-number" data-line-number="462"></td>
-        <td id="LC462" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(min(<span class="pl-smi">BulkDensity</span>)<span class="pl-k">&lt;</span><span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L463" class="blob-num js-line-number" data-line-number="463"></td>
-        <td id="LC463" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Bulk density value (BulkDensity) is negative.</span></td>
-      </tr>
-      <tr>
-        <td id="L464" class="blob-num js-line-number" data-line-number="464"></td>
-        <td id="LC464" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a positive value.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L465" class="blob-num js-line-number" data-line-number="465"></td>
-        <td id="LC465" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L466" class="blob-num js-line-number" data-line-number="466"></td>
-        <td id="LC466" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L467" class="blob-num js-line-number" data-line-number="467"></td>
-        <td id="LC467" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">REFL</span><span class="pl-k">&lt;</span><span class="pl-c1">0</span> <span class="pl-k">|</span> <span class="pl-smi">REFL</span><span class="pl-k">&gt;</span><span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L468" class="blob-num js-line-number" data-line-number="468"></td>
-        <td id="LC468" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Soil reflectivity value (REFL) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L469" class="blob-num js-line-number" data-line-number="469"></td>
-        <td id="LC469" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a value between 0 and 1.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L470" class="blob-num js-line-number" data-line-number="470"></td>
-        <td id="LC470" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L471" class="blob-num js-line-number" data-line-number="471"></td>
-        <td id="LC471" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L472" class="blob-num js-line-number" data-line-number="472"></td>
-        <td id="LC472" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(is.na(<span class="pl-smi">slope</span>) <span class="pl-k">==</span> <span class="pl-c1">FALSE</span> <span class="pl-k">&amp;</span> <span class="pl-smi">slope</span> <span class="pl-k">&gt;</span> <span class="pl-c1">90</span>){</td>
-      </tr>
-      <tr>
-        <td id="L473" class="blob-num js-line-number" data-line-number="473"></td>
-        <td id="LC473" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Slope value (slope) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L474" class="blob-num js-line-number" data-line-number="474"></td>
-        <td id="LC474" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a value between 0 and 90.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L475" class="blob-num js-line-number" data-line-number="475"></td>
-        <td id="LC475" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L476" class="blob-num js-line-number" data-line-number="476"></td>
-        <td id="LC476" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L477" class="blob-num js-line-number" data-line-number="477"></td>
-        <td id="LC477" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(is.na(<span class="pl-smi">aspect</span>) <span class="pl-k">==</span> <span class="pl-c1">FALSE</span> <span class="pl-k">&amp;</span> <span class="pl-smi">aspect</span> <span class="pl-k">&gt;</span><span class="pl-c1">365</span>){</td>
-      </tr>
-      <tr>
-        <td id="L478" class="blob-num js-line-number" data-line-number="478"></td>
-        <td id="LC478" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Aspect value (aspect) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L479" class="blob-num js-line-number" data-line-number="479"></td>
-        <td id="LC479" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a value between 0 and 365.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L480" class="blob-num js-line-number" data-line-number="480"></td>
-        <td id="LC480" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L481" class="blob-num js-line-number" data-line-number="481"></td>
-        <td id="LC481" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L482" class="blob-num js-line-number" data-line-number="482"></td>
-        <td id="LC482" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(is.na(<span class="pl-smi">hori</span>[<span class="pl-c1">1</span>])<span class="pl-k">==</span><span class="pl-c1">FALSE</span> <span class="pl-k">&amp;</span> (max(<span class="pl-smi">hori</span>)<span class="pl-k">&gt;</span><span class="pl-c1">90</span> <span class="pl-k">|</span> min(<span class="pl-smi">hori</span>)<span class="pl-k">&lt;</span><span class="pl-c1">0</span>)){</td>
-      </tr>
-      <tr>
-        <td id="L483" class="blob-num js-line-number" data-line-number="483"></td>
-        <td id="LC483" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: At least one of your horizon angles (hori) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L484" class="blob-num js-line-number" data-line-number="484"></td>
-        <td id="LC484" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a value between 0 and 90<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L485" class="blob-num js-line-number" data-line-number="485"></td>
-        <td id="LC485" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L486" class="blob-num js-line-number" data-line-number="486"></td>
-        <td id="LC486" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L487" class="blob-num js-line-number" data-line-number="487"></td>
-        <td id="LC487" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(length(<span class="pl-smi">hori</span>)<span class="pl-k">!=</span><span class="pl-c1">24</span>){</td>
-      </tr>
-      <tr>
-        <td id="L488" class="blob-num js-line-number" data-line-number="488"></td>
-        <td id="LC488" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: You must enter 24 horizon angle values.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L489" class="blob-num js-line-number" data-line-number="489"></td>
-        <td id="LC489" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L490" class="blob-num js-line-number" data-line-number="490"></td>
-        <td id="LC490" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L491" class="blob-num js-line-number" data-line-number="491"></td>
-        <td id="LC491" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">SLE</span><span class="pl-k">&lt;</span><span class="pl-c1">0.05</span> <span class="pl-k">|</span> <span class="pl-smi">SLE</span> <span class="pl-k">&gt;</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L492" class="blob-num js-line-number" data-line-number="492"></td>
-        <td id="LC492" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Emissivity (SLE) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L493" class="blob-num js-line-number" data-line-number="493"></td>
-        <td id="LC493" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please enter a correct value (0.05 - 1.00).<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L494" class="blob-num js-line-number" data-line-number="494"></td>
-        <td id="LC494" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L495" class="blob-num js-line-number" data-line-number="495"></td>
-        <td id="LC495" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L496" class="blob-num js-line-number" data-line-number="496"></td>
-        <td id="LC496" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">ERR</span><span class="pl-k">&lt;</span><span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L497" class="blob-num js-line-number" data-line-number="497"></td>
-        <td id="LC497" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Error bound (ERR) is too small.</span></td>
-      </tr>
-      <tr>
-        <td id="L498" class="blob-num js-line-number" data-line-number="498"></td>
-        <td id="LC498" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please enter a correct value (&gt; 0.00).<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L499" class="blob-num js-line-number" data-line-number="499"></td>
-        <td id="LC499" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L500" class="blob-num js-line-number" data-line-number="500"></td>
-        <td id="LC500" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L501" class="blob-num js-line-number" data-line-number="501"></td>
-        <td id="LC501" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">Usrhyt</span><span class="pl-k">&lt;</span><span class="pl-smi">RUF</span>){</td>
-      </tr>
-      <tr>
-        <td id="L502" class="blob-num js-line-number" data-line-number="502"></td>
-        <td id="LC502" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Reference height (Usrhyt) smaller than roughness height (RUF).</span></td>
-      </tr>
-      <tr>
-        <td id="L503" class="blob-num js-line-number" data-line-number="503"></td>
-        <td id="LC503" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please use a larger height above the surface.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L504" class="blob-num js-line-number" data-line-number="504"></td>
-        <td id="LC504" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L505" class="blob-num js-line-number" data-line-number="505"></td>
-        <td id="LC505" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L506" class="blob-num js-line-number" data-line-number="506"></td>
-        <td id="LC506" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">Usrhyt</span><span class="pl-k">&lt;</span><span class="pl-c1">0.005</span> <span class="pl-k">|</span> <span class="pl-smi">Usrhyt</span><span class="pl-k">&gt;</span><span class="pl-smi">Refhyt</span>){</td>
-      </tr>
-      <tr>
-        <td id="L507" class="blob-num js-line-number" data-line-number="507"></td>
-        <td id="LC507" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Local height (Usrhyt) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L508" class="blob-num js-line-number" data-line-number="508"></td>
-        <td id="LC508" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please enter a correct value (0.005 - Refhyt).<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L509" class="blob-num js-line-number" data-line-number="509"></td>
-        <td id="LC509" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L510" class="blob-num js-line-number" data-line-number="510"></td>
-        <td id="LC510" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L511" class="blob-num js-line-number" data-line-number="511"></td>
-        <td id="LC511" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">CMH2O</span><span class="pl-k">&lt;</span><span class="pl-c1">0.5</span> <span class="pl-k">|</span> <span class="pl-smi">CMH2O</span><span class="pl-k">&gt;</span><span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L512" class="blob-num js-line-number" data-line-number="512"></td>
-        <td id="LC512" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Preciptable water in air column (CMH2O) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L513" class="blob-num js-line-number" data-line-number="513"></td>
-        <td id="LC513" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please enter a correct value (0.1 - 2cm).<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L514" class="blob-num js-line-number" data-line-number="514"></td>
-        <td id="LC514" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L515" class="blob-num js-line-number" data-line-number="515"></td>
-        <td id="LC515" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L516" class="blob-num js-line-number" data-line-number="516"></td>
-        <td id="LC516" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(max(<span class="pl-smi">minshade</span><span class="pl-k">-</span><span class="pl-smi">maxshade</span>) <span class="pl-k">&gt;</span><span class="pl-k">=</span> <span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L517" class="blob-num js-line-number" data-line-number="517"></td>
-        <td id="LC517" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Your value(s) for minimum shade (minshade) is greater than or equal to the maximum shade (maxshade).</span></td>
-      </tr>
-      <tr>
-        <td id="L518" class="blob-num js-line-number" data-line-number="518"></td>
-        <td id="LC518" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please correct this.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L519" class="blob-num js-line-number" data-line-number="519"></td>
-        <td id="LC519" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L520" class="blob-num js-line-number" data-line-number="520"></td>
-        <td id="LC520" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L521" class="blob-num js-line-number" data-line-number="521"></td>
-        <td id="LC521" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(max(<span class="pl-smi">minshade</span>)<span class="pl-k">&gt;</span><span class="pl-c1">100</span> <span class="pl-k">|</span> min(<span class="pl-smi">minshade</span>)<span class="pl-k">&lt;</span><span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L522" class="blob-num js-line-number" data-line-number="522"></td>
-        <td id="LC522" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Your value(s) for minimum shade (minshade) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L523" class="blob-num js-line-number" data-line-number="523"></td>
-        <td id="LC523" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a value between 0 and 100.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L524" class="blob-num js-line-number" data-line-number="524"></td>
-        <td id="LC524" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L525" class="blob-num js-line-number" data-line-number="525"></td>
-        <td id="LC525" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L526" class="blob-num js-line-number" data-line-number="526"></td>
-        <td id="LC526" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(max(<span class="pl-smi">maxshade</span>)<span class="pl-k">&gt;</span><span class="pl-c1">100</span> <span class="pl-k">|</span> min(<span class="pl-smi">maxshade</span>)<span class="pl-k">&lt;</span><span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L527" class="blob-num js-line-number" data-line-number="527"></td>
-        <td id="LC527" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: Your value(s) for maximum shade (maxshade) is out of bounds.</span></td>
-      </tr>
-      <tr>
-        <td id="L528" class="blob-num js-line-number" data-line-number="528"></td>
-        <td id="LC528" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Please input a value between 0 and 100.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L529" class="blob-num js-line-number" data-line-number="529"></td>
-        <td id="LC529" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">errors</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L530" class="blob-num js-line-number" data-line-number="530"></td>
-        <td id="LC530" class="blob-code blob-code-inner js-file-line">  }</td>
-      </tr>
-      <tr>
-        <td id="L531" class="blob-num js-line-number" data-line-number="531"></td>
-        <td id="LC531" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">#</span> end error trapping</span></td>
-      </tr>
-      <tr>
-        <td id="L532" class="blob-num js-line-number" data-line-number="532"></td>
-        <td id="LC532" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L533" class="blob-num js-line-number" data-line-number="533"></td>
-        <td id="LC533" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-smi">errors</span><span class="pl-k">==</span><span class="pl-c1">0</span>){ <span class="pl-c"><span class="pl-c">#</span> continue</span></td>
-      </tr>
-      <tr>
-        <td id="L534" class="blob-num js-line-number" data-line-number="534"></td>
-        <td id="LC534" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">max.date</span> <span class="pl-k">&lt;-</span> as.POSIXct(paste0(<span class="pl-s"><span class="pl-pds">&quot;</span>01/<span class="pl-pds">&quot;</span></span>, format(Sys.time(), <span class="pl-s"><span class="pl-pds">&quot;</span>%m/%Y<span class="pl-pds">&quot;</span></span>)), <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>UTC<span class="pl-pds">&quot;</span></span>) <span class="pl-k">-</span> <span class="pl-c1">54</span> <span class="pl-k">*</span> <span class="pl-c1">3600</span></td>
-      </tr>
-      <tr>
-        <td id="L535" class="blob-num js-line-number" data-line-number="535"></td>
-        <td id="LC535" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(as.Date(<span class="pl-smi">dfinish</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>) <span class="pl-k">&gt;</span> <span class="pl-smi">max.date</span>){</td>
-      </tr>
-      <tr>
-        <td id="L536" class="blob-num js-line-number" data-line-number="536"></td>
-        <td id="LC536" class="blob-code blob-code-inner js-file-line">      message(paste0(<span class="pl-s"><span class="pl-pds">&quot;</span>Cannot simulate past <span class="pl-pds">&quot;</span></span>, <span class="pl-smi">max.date</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>; reducing timespan accordingly <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L537" class="blob-num js-line-number" data-line-number="537"></td>
-        <td id="LC537" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">dfinish</span> <span class="pl-k">&lt;-</span> as.character(as.Date(<span class="pl-smi">max.date</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%Y/%m/%d<span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L538" class="blob-num js-line-number" data-line-number="538"></td>
-        <td id="LC538" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">dfinish</span> <span class="pl-k">&lt;-</span> paste(substr(<span class="pl-smi">dfinish</span>, <span class="pl-c1">9</span>, <span class="pl-c1">10</span>), substr(<span class="pl-smi">dfinish</span>, <span class="pl-c1">6</span>, <span class="pl-c1">7</span>), substr(<span class="pl-smi">dfinish</span>, <span class="pl-c1">1</span>, <span class="pl-c1">4</span>), <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>/<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L539" class="blob-num js-line-number" data-line-number="539"></td>
-        <td id="LC539" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L540" class="blob-num js-line-number" data-line-number="540"></td>
-        <td id="LC540" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ystart</span> <span class="pl-k">&lt;-</span> as.numeric(substr(<span class="pl-smi">dstart</span>, <span class="pl-c1">7</span>, <span class="pl-c1">10</span>))</td>
-      </tr>
-      <tr>
-        <td id="L541" class="blob-num js-line-number" data-line-number="541"></td>
-        <td id="LC541" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">yfinish</span> <span class="pl-k">&lt;-</span> as.numeric(substr(<span class="pl-smi">dfinish</span>, <span class="pl-c1">7</span>, <span class="pl-c1">10</span>))</td>
-      </tr>
-      <tr>
-        <td id="L542" class="blob-num js-line-number" data-line-number="542"></td>
-        <td id="LC542" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">yearlist</span> <span class="pl-k">&lt;-</span> seq(<span class="pl-smi">ystart</span>, (<span class="pl-smi">ystart</span> <span class="pl-k">+</span> (<span class="pl-smi">nyears</span> <span class="pl-k">-</span> <span class="pl-c1">1</span>)), <span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L543" class="blob-num js-line-number" data-line-number="543"></td>
-        <td id="LC543" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L544" class="blob-num js-line-number" data-line-number="544"></td>
-        <td id="LC544" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>remove trailing forward slash if necessary</span></td>
-      </tr>
-      <tr>
-        <td id="L545" class="blob-num js-line-number" data-line-number="545"></td>
-        <td id="LC545" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(is.na(<span class="pl-smi">spatial</span>)<span class="pl-k">==</span><span class="pl-c1">FALSE</span>){</td>
-      </tr>
-      <tr>
-        <td id="L546" class="blob-num js-line-number" data-line-number="546"></td>
-        <td id="LC546" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(substr(<span class="pl-v">x</span> <span class="pl-k">=</span> <span class="pl-smi">spatial</span>, <span class="pl-v">start</span> <span class="pl-k">=</span> nchar(<span class="pl-smi">spatial</span>), nchar(<span class="pl-smi">spatial</span>))<span class="pl-k">==</span><span class="pl-s"><span class="pl-pds">&#39;</span>/<span class="pl-pds">&#39;</span></span>){</td>
-      </tr>
-      <tr>
-        <td id="L547" class="blob-num js-line-number" data-line-number="547"></td>
-        <td id="LC547" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">spatial</span> <span class="pl-k">&lt;-</span> substr(<span class="pl-smi">spatial</span>, <span class="pl-c1">1</span>, nchar(<span class="pl-smi">spatial</span>)<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L548" class="blob-num js-line-number" data-line-number="548"></td>
-        <td id="LC548" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L549" class="blob-num js-line-number" data-line-number="549"></td>
-        <td id="LC549" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L550" class="blob-num js-line-number" data-line-number="550"></td>
-        <td id="LC550" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>################# time related variables #################################</span></td>
-      </tr>
-      <tr>
-        <td id="L551" class="blob-num js-line-number" data-line-number="551"></td>
-        <td id="LC551" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L552" class="blob-num js-line-number" data-line-number="552"></td>
-        <td id="LC552" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> for microclima calculations</span></td>
-      </tr>
-      <tr>
-        <td id="L553" class="blob-num js-line-number" data-line-number="553"></td>
-        <td id="LC553" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">tme</span> <span class="pl-k">&lt;-</span> seq(as.Date(<span class="pl-smi">dstart</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>), as.Date(<span class="pl-smi">dfinish</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>), <span class="pl-s"><span class="pl-pds">&quot;</span>days<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L554" class="blob-num js-line-number" data-line-number="554"></td>
-        <td id="LC554" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L555" class="blob-num js-line-number" data-line-number="555"></td>
-        <td id="LC555" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">doy</span> <span class="pl-k">&lt;-</span> as.numeric(strftime(<span class="pl-smi">tme</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%j<span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L556" class="blob-num js-line-number" data-line-number="556"></td>
-        <td id="LC556" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ndays</span><span class="pl-k">&lt;-</span>length(<span class="pl-smi">doy</span>)</td>
-      </tr>
-      <tr>
-        <td id="L557" class="blob-num js-line-number" data-line-number="557"></td>
-        <td id="LC557" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">doynum</span><span class="pl-k">&lt;-</span><span class="pl-smi">ndays</span></td>
-      </tr>
-      <tr>
-        <td id="L558" class="blob-num js-line-number" data-line-number="558"></td>
-        <td id="LC558" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ida</span><span class="pl-k">&lt;-</span><span class="pl-smi">ndays</span></td>
-      </tr>
-      <tr>
-        <td id="L559" class="blob-num js-line-number" data-line-number="559"></td>
-        <td id="LC559" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">microdaily</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span> <span class="pl-c"><span class="pl-c">#</span> run microclimate model where one iteration of each day occurs and last day gives initial conditions for present day with an initial 3 day burn in</span></td>
-      </tr>
-      <tr>
-        <td id="L560" class="blob-num js-line-number" data-line-number="560"></td>
-        <td id="LC560" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">daystart</span><span class="pl-k">&lt;-</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L561" class="blob-num js-line-number" data-line-number="561"></td>
-        <td id="LC561" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(length(<span class="pl-smi">minshade</span>) <span class="pl-k">!=</span> <span class="pl-smi">ndays</span>){</td>
-      </tr>
-      <tr>
-        <td id="L562" class="blob-num js-line-number" data-line-number="562"></td>
-        <td id="LC562" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">MINSHADES</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-c1">0</span>, <span class="pl-smi">ndays</span>) <span class="pl-k">+</span> <span class="pl-smi">minshade</span>[<span class="pl-c1">1</span>] <span class="pl-c"><span class="pl-c">#</span> daily min shade (%)</span></td>
-      </tr>
-      <tr>
-        <td id="L563" class="blob-num js-line-number" data-line-number="563"></td>
-        <td id="LC563" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L564" class="blob-num js-line-number" data-line-number="564"></td>
-        <td id="LC564" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">MINSHADES</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-c1">0</span>, <span class="pl-smi">ndays</span>) <span class="pl-k">+</span> <span class="pl-smi">minshade</span> <span class="pl-c"><span class="pl-c">#</span> daily min shade (%)</span></td>
-      </tr>
-      <tr>
-        <td id="L565" class="blob-num js-line-number" data-line-number="565"></td>
-        <td id="LC565" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L566" class="blob-num js-line-number" data-line-number="566"></td>
-        <td id="LC566" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(length(<span class="pl-smi">maxshade</span>) <span class="pl-k">!=</span> <span class="pl-smi">ndays</span>){</td>
-      </tr>
-      <tr>
-        <td id="L567" class="blob-num js-line-number" data-line-number="567"></td>
-        <td id="LC567" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">MAXSHADES</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-c1">0</span>, <span class="pl-smi">ndays</span>) <span class="pl-k">+</span> <span class="pl-smi">maxshade</span>[<span class="pl-c1">1</span>] <span class="pl-c"><span class="pl-c">#</span> daily max shade (%)</span></td>
-      </tr>
-      <tr>
-        <td id="L568" class="blob-num js-line-number" data-line-number="568"></td>
-        <td id="LC568" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L569" class="blob-num js-line-number" data-line-number="569"></td>
-        <td id="LC569" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">MAXSHADES</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-c1">0</span>, <span class="pl-smi">ndays</span>) <span class="pl-k">+</span> <span class="pl-smi">maxshade</span> <span class="pl-c"><span class="pl-c">#</span> daily max shade (%)</span></td>
-      </tr>
-      <tr>
-        <td id="L570" class="blob-num js-line-number" data-line-number="570"></td>
-        <td id="LC570" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L571" class="blob-num js-line-number" data-line-number="571"></td>
-        <td id="LC571" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">idayst</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">1</span> <span class="pl-c"><span class="pl-c">#</span> start day</span></td>
-      </tr>
-      <tr>
-        <td id="L572" class="blob-num js-line-number" data-line-number="572"></td>
-        <td id="LC572" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L573" class="blob-num js-line-number" data-line-number="573"></td>
-        <td id="LC573" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>################# location and terrain #################################</span></td>
-      </tr>
-      <tr>
-        <td id="L574" class="blob-num js-line-number" data-line-number="574"></td>
-        <td id="LC574" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-k">!</span>require(<span class="pl-s"><span class="pl-pds">&quot;</span>raster<span class="pl-pds">&quot;</span></span>, <span class="pl-v">quietly</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)) {</td>
-      </tr>
-      <tr>
-        <td id="L575" class="blob-num js-line-number" data-line-number="575"></td>
-        <td id="LC575" class="blob-code blob-code-inner js-file-line">      stop(<span class="pl-s"><span class="pl-pds">&quot;</span>package &#39;raster&#39; is needed. Please install it.<span class="pl-pds">&quot;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L576" class="blob-num js-line-number" data-line-number="576"></td>
-        <td id="LC576" class="blob-code blob-code-inner js-file-line">           <span class="pl-v">call.</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>)</td>
-      </tr>
-      <tr>
-        <td id="L577" class="blob-num js-line-number" data-line-number="577"></td>
-        <td id="LC577" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L578" class="blob-num js-line-number" data-line-number="578"></td>
-        <td id="LC578" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-k">!</span>require(<span class="pl-s"><span class="pl-pds">&quot;</span>RNCEP<span class="pl-pds">&quot;</span></span>, <span class="pl-v">quietly</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)) {</td>
-      </tr>
-      <tr>
-        <td id="L579" class="blob-num js-line-number" data-line-number="579"></td>
-        <td id="LC579" class="blob-code blob-code-inner js-file-line">      stop(<span class="pl-s"><span class="pl-pds">&quot;</span>package &#39;RNCEP&#39; is needed. Please install it.<span class="pl-pds">&quot;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L580" class="blob-num js-line-number" data-line-number="580"></td>
-        <td id="LC580" class="blob-code blob-code-inner js-file-line">           <span class="pl-v">call.</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>)</td>
-      </tr>
-      <tr>
-        <td id="L581" class="blob-num js-line-number" data-line-number="581"></td>
-        <td id="LC581" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L582" class="blob-num js-line-number" data-line-number="582"></td>
-        <td id="LC582" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-k">!</span>require(<span class="pl-s"><span class="pl-pds">&quot;</span>RNetCDF<span class="pl-pds">&quot;</span></span>, <span class="pl-v">quietly</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)) {</td>
-      </tr>
-      <tr>
-        <td id="L583" class="blob-num js-line-number" data-line-number="583"></td>
-        <td id="LC583" class="blob-code blob-code-inner js-file-line">      stop(<span class="pl-s"><span class="pl-pds">&quot;</span>package &#39;RNetCDF&#39; is needed. Please install it.<span class="pl-pds">&quot;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L584" class="blob-num js-line-number" data-line-number="584"></td>
-        <td id="LC584" class="blob-code blob-code-inner js-file-line">           <span class="pl-v">call.</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>)</td>
-      </tr>
-      <tr>
-        <td id="L585" class="blob-num js-line-number" data-line-number="585"></td>
-        <td id="LC585" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L586" class="blob-num js-line-number" data-line-number="586"></td>
-        <td id="LC586" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-k">!</span>require(<span class="pl-s"><span class="pl-pds">&quot;</span>microclima<span class="pl-pds">&quot;</span></span>, <span class="pl-v">quietly</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)) {</td>
-      </tr>
-      <tr>
-        <td id="L587" class="blob-num js-line-number" data-line-number="587"></td>
-        <td id="LC587" class="blob-code blob-code-inner js-file-line">      stop(<span class="pl-s"><span class="pl-pds">&quot;</span>package &#39;microclima&#39; is needed. Please install it via command: devtools::install_github(&#39;ilyamaclean/microclima&#39;).<span class="pl-pds">&quot;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L588" class="blob-num js-line-number" data-line-number="588"></td>
-        <td id="LC588" class="blob-code blob-code-inner js-file-line">           <span class="pl-v">call.</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>)</td>
-      </tr>
-      <tr>
-        <td id="L589" class="blob-num js-line-number" data-line-number="589"></td>
-        <td id="LC589" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L590" class="blob-num js-line-number" data-line-number="590"></td>
-        <td id="LC590" class="blob-code blob-code-inner js-file-line">    require(<span class="pl-s"><span class="pl-pds">&quot;</span>raster<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L591" class="blob-num js-line-number" data-line-number="591"></td>
-        <td id="LC591" class="blob-code blob-code-inner js-file-line">    require(<span class="pl-s"><span class="pl-pds">&quot;</span>RNCEP<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L592" class="blob-num js-line-number" data-line-number="592"></td>
-        <td id="LC592" class="blob-code blob-code-inner js-file-line">    require(<span class="pl-s"><span class="pl-pds">&quot;</span>RNetCDF<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L593" class="blob-num js-line-number" data-line-number="593"></td>
-        <td id="LC593" class="blob-code blob-code-inner js-file-line">    require(<span class="pl-s"><span class="pl-pds">&quot;</span>microclima<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L594" class="blob-num js-line-number" data-line-number="594"></td>
-        <td id="LC594" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">longlat</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">loc</span></td>
-      </tr>
-      <tr>
-        <td id="L595" class="blob-num js-line-number" data-line-number="595"></td>
-        <td id="LC595" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">x</span> <span class="pl-k">&lt;-</span> t(as.matrix(as.numeric(c(<span class="pl-smi">loc</span>[<span class="pl-c1">1</span>],<span class="pl-smi">loc</span>[<span class="pl-c1">2</span>]))))</td>
-      </tr>
-      <tr>
-        <td id="L596" class="blob-num js-line-number" data-line-number="596"></td>
-        <td id="LC596" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L597" class="blob-num js-line-number" data-line-number="597"></td>
-        <td id="LC597" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> get the local timezone reference longitude</span></td>
-      </tr>
-      <tr>
-        <td id="L598" class="blob-num js-line-number" data-line-number="598"></td>
-        <td id="LC598" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALREF</span> <span class="pl-k">&lt;-</span> abs(trunc(<span class="pl-smi">x</span>[<span class="pl-c1">1</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L599" class="blob-num js-line-number" data-line-number="599"></td>
-        <td id="LC599" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">HEMIS</span> <span class="pl-k">&lt;-</span> ifelse(<span class="pl-smi">x</span>[<span class="pl-c1">2</span>]<span class="pl-k">&lt;</span><span class="pl-c1">0</span>, <span class="pl-c1">2</span>, <span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> 1 is northern hemisphere</span></td>
-      </tr>
-      <tr>
-        <td id="L600" class="blob-num js-line-number" data-line-number="600"></td>
-        <td id="LC600" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> break decimal degree lat/lon into deg and min</span></td>
-      </tr>
-      <tr>
-        <td id="L601" class="blob-num js-line-number" data-line-number="601"></td>
-        <td id="LC601" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALAT</span> <span class="pl-k">&lt;-</span> abs(trunc(<span class="pl-smi">x</span>[<span class="pl-c1">2</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L602" class="blob-num js-line-number" data-line-number="602"></td>
-        <td id="LC602" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">AMINUT</span> <span class="pl-k">&lt;-</span> (abs(<span class="pl-smi">x</span>[<span class="pl-c1">2</span>])<span class="pl-k">-</span><span class="pl-smi">ALAT</span>)<span class="pl-k">*</span><span class="pl-c1">60</span></td>
-      </tr>
-      <tr>
-        <td id="L603" class="blob-num js-line-number" data-line-number="603"></td>
-        <td id="LC603" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALONG</span> <span class="pl-k">&lt;-</span> abs(trunc(<span class="pl-smi">x</span>[<span class="pl-c1">1</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L604" class="blob-num js-line-number" data-line-number="604"></td>
-        <td id="LC604" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALMINT</span> <span class="pl-k">&lt;-</span> (abs(<span class="pl-smi">x</span>[<span class="pl-c1">1</span>])<span class="pl-k">-</span><span class="pl-smi">ALONG</span>)<span class="pl-k">*</span><span class="pl-c1">60</span></td>
-      </tr>
-      <tr>
-        <td id="L605" class="blob-num js-line-number" data-line-number="605"></td>
-        <td id="LC605" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">azmuth</span><span class="pl-k">&lt;-</span><span class="pl-smi">aspect</span></td>
-      </tr>
-      <tr>
-        <td id="L606" class="blob-num js-line-number" data-line-number="606"></td>
-        <td id="LC606" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">lat</span> <span class="pl-k">&lt;-</span> as.numeric(<span class="pl-smi">longlat</span>[<span class="pl-c1">2</span>])</td>
-      </tr>
-      <tr>
-        <td id="L607" class="blob-num js-line-number" data-line-number="607"></td>
-        <td id="LC607" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">long</span> <span class="pl-k">&lt;-</span> as.numeric(<span class="pl-smi">longlat</span>[<span class="pl-c1">1</span>])</td>
-      </tr>
-      <tr>
-        <td id="L608" class="blob-num js-line-number" data-line-number="608"></td>
-        <td id="LC608" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">loc</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">long</span>, <span class="pl-smi">lat</span>)</td>
-      </tr>
-      <tr>
-        <td id="L609" class="blob-num js-line-number" data-line-number="609"></td>
-        <td id="LC609" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(class(<span class="pl-smi">dem</span>)[<span class="pl-c1">1</span>] <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>RasterLayer<span class="pl-pds">&quot;</span></span>){</td>
-      </tr>
-      <tr>
-        <td id="L610" class="blob-num js-line-number" data-line-number="610"></td>
-        <td id="LC610" class="blob-code blob-code-inner js-file-line">      cat(<span class="pl-s"><span class="pl-pds">&#39;</span>using DEM provided to function call <span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L611" class="blob-num js-line-number" data-line-number="611"></td>
-        <td id="LC611" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L612" class="blob-num js-line-number" data-line-number="612"></td>
-        <td id="LC612" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">!=</span> <span class="pl-c1">2</span> <span class="pl-k">&amp;</span> class(<span class="pl-smi">dem</span>)[<span class="pl-c1">1</span>] <span class="pl-k">!=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>RasterLayer<span class="pl-pds">&quot;</span></span>){</td>
-      </tr>
-      <tr>
-        <td id="L613" class="blob-num js-line-number" data-line-number="613"></td>
-        <td id="LC613" class="blob-code blob-code-inner js-file-line">      cat(<span class="pl-s"><span class="pl-pds">&#39;</span>downloading DEM via package elevatr <span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L614" class="blob-num js-line-number" data-line-number="614"></td>
-        <td id="LC614" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">dem</span> <span class="pl-k">&lt;-</span> <span class="pl-e">microclima</span><span class="pl-k">::</span>get_dem(<span class="pl-v">lat</span> <span class="pl-k">=</span> <span class="pl-smi">lat</span>, <span class="pl-v">long</span> <span class="pl-k">=</span> <span class="pl-smi">long</span>, <span class="pl-v">resolution</span> <span class="pl-k">=</span> <span class="pl-smi">dem.res</span>, <span class="pl-v">xdims</span> <span class="pl-k">=</span> <span class="pl-smi">pixels</span>, <span class="pl-v">ydims</span> <span class="pl-k">=</span> <span class="pl-smi">pixels</span>) <span class="pl-c"><span class="pl-c">#</span> mercator equal area projection</span></td>
-      </tr>
-      <tr>
-        <td id="L615" class="blob-num js-line-number" data-line-number="615"></td>
-        <td id="LC615" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L616" class="blob-num js-line-number" data-line-number="616"></td>
-        <td id="LC616" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L617" class="blob-num js-line-number" data-line-number="617"></td>
-        <td id="LC617" class="blob-code blob-code-inner js-file-line">      save(<span class="pl-smi">dem</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>dem.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L618" class="blob-num js-line-number" data-line-number="618"></td>
-        <td id="LC618" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L619" class="blob-num js-line-number" data-line-number="619"></td>
-        <td id="LC619" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">==</span> <span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L620" class="blob-num js-line-number" data-line-number="620"></td>
-        <td id="LC620" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>dem.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L621" class="blob-num js-line-number" data-line-number="621"></td>
-        <td id="LC621" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L622" class="blob-num js-line-number" data-line-number="622"></td>
-        <td id="LC622" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">!=</span> <span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L623" class="blob-num js-line-number" data-line-number="623"></td>
-        <td id="LC623" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">soilgrids</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L624" class="blob-num js-line-number" data-line-number="624"></td>
-        <td id="LC624" class="blob-code blob-code-inner js-file-line">        cat(<span class="pl-s"><span class="pl-pds">&#39;</span>extracting soil texture data from SoilGrids <span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L625" class="blob-num js-line-number" data-line-number="625"></td>
-        <td id="LC625" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> (<span class="pl-k">!</span>requireNamespace(<span class="pl-s"><span class="pl-pds">&quot;</span>jsonlite<span class="pl-pds">&quot;</span></span>, <span class="pl-v">quietly</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)) {</td>
-      </tr>
-      <tr>
-        <td id="L626" class="blob-num js-line-number" data-line-number="626"></td>
-        <td id="LC626" class="blob-code blob-code-inner js-file-line">          stop(<span class="pl-s"><span class="pl-pds">&quot;</span>package &#39;jsonlite&#39; is needed to extract data from SoilGrids, please install it.<span class="pl-pds">&quot;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L627" class="blob-num js-line-number" data-line-number="627"></td>
-        <td id="LC627" class="blob-code blob-code-inner js-file-line">               <span class="pl-v">call.</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>)</td>
-      </tr>
-      <tr>
-        <td id="L628" class="blob-num js-line-number" data-line-number="628"></td>
-        <td id="LC628" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L629" class="blob-num js-line-number" data-line-number="629"></td>
-        <td id="LC629" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span>ov &lt;- fromJSON(paste0(&#39;https://rest.soilgrids.org/query?lon=&#39;,x[1],&#39;&amp;lat=&#39;,x[2],&#39;,&amp;attributes=BLDFIE,SLTPPT,SNDPPT,CLYPPT&#39;), flatten = TRUE)</span></td>
-      </tr>
-      <tr>
-        <td id="L630" class="blob-num js-line-number" data-line-number="630"></td>
-        <td id="LC630" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">ov</span> <span class="pl-k">&lt;-</span> fromJSON(paste0(<span class="pl-s"><span class="pl-pds">&#39;</span>https://rest.soilgrids.org/soilgrids/v2.0/properties/query?lon=<span class="pl-pds">&#39;</span></span>,<span class="pl-smi">x</span>[<span class="pl-c1">1</span>],<span class="pl-s"><span class="pl-pds">&#39;</span>&amp;lat=<span class="pl-pds">&#39;</span></span>,<span class="pl-smi">x</span>[<span class="pl-c1">2</span>],<span class="pl-s"><span class="pl-pds">&#39;</span>&amp;property=bdod&amp;property=silt&amp;property=clay&amp;property=sand<span class="pl-pds">&#39;</span></span>), <span class="pl-v">flatten</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)</td>
-      </tr>
-      <tr>
-        <td id="L631" class="blob-num js-line-number" data-line-number="631"></td>
-        <td id="LC631" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(length(<span class="pl-smi">ov</span>) <span class="pl-k">&gt;</span> <span class="pl-c1">3</span>){</td>
-      </tr>
-      <tr>
-        <td id="L632" class="blob-num js-line-number" data-line-number="632"></td>
-        <td id="LC632" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">soilpro</span> <span class="pl-k">&lt;-</span> cbind(c(<span class="pl-c1">0</span>, <span class="pl-c1">5</span>, <span class="pl-c1">15</span>, <span class="pl-c1">30</span>, <span class="pl-c1">60</span>, <span class="pl-c1">100</span>), unlist(<span class="pl-smi">ov</span><span class="pl-k">$</span><span class="pl-smi">properties</span><span class="pl-k">$</span><span class="pl-smi">layers</span><span class="pl-k">$</span><span class="pl-smi">depths</span>[[<span class="pl-c1">1</span>]]<span class="pl-k">$</span><span class="pl-smi">values.mean</span>) <span class="pl-k">/</span> <span class="pl-c1">100</span>, unlist(<span class="pl-smi">ov</span><span class="pl-k">$</span><span class="pl-smi">properties</span><span class="pl-k">$</span><span class="pl-smi">layers</span><span class="pl-k">$</span><span class="pl-smi">depths</span>[[<span class="pl-c1">2</span>]]<span class="pl-k">$</span><span class="pl-smi">values.mean</span>) <span class="pl-k">/</span> <span class="pl-c1">10</span>, unlist(<span class="pl-smi">ov</span><span class="pl-k">$</span><span class="pl-smi">properties</span><span class="pl-k">$</span><span class="pl-smi">layers</span><span class="pl-k">$</span><span class="pl-smi">depths</span>[[<span class="pl-c1">4</span>]]<span class="pl-k">$</span><span class="pl-smi">values.mean</span>) <span class="pl-k">/</span> <span class="pl-c1">10</span>, unlist(<span class="pl-smi">ov</span><span class="pl-k">$</span><span class="pl-smi">properties</span><span class="pl-k">$</span><span class="pl-smi">layers</span><span class="pl-k">$</span><span class="pl-smi">depths</span>[[<span class="pl-c1">3</span>]]<span class="pl-k">$</span><span class="pl-smi">values.mean</span>) <span class="pl-k">/</span> <span class="pl-c1">10</span>)</td>
-      </tr>
-      <tr>
-        <td id="L633" class="blob-num js-line-number" data-line-number="633"></td>
-        <td id="LC633" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">soilpro</span> <span class="pl-k">&lt;-</span> rbind(<span class="pl-smi">soilpro</span>, <span class="pl-smi">soilpro</span>[<span class="pl-c1">6</span>, ])</td>
-      </tr>
-      <tr>
-        <td id="L634" class="blob-num js-line-number" data-line-number="634"></td>
-        <td id="LC634" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">soilpro</span>[<span class="pl-c1">7</span>, <span class="pl-c1">1</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">200</span></td>
-      </tr>
-      <tr>
-        <td id="L635" class="blob-num js-line-number" data-line-number="635"></td>
-        <td id="LC635" class="blob-code blob-code-inner js-file-line">          <span class="pl-c"><span class="pl-c">#</span>soilpro &lt;- cbind(c(0,5,15,30,60,100,200), unlist(ov$properties$BLDFIE$M)/1000, unlist(ov$properties$CLYPPT$M), unlist(ov$properties$SLTPPT$M), unlist(ov$properties$SNDPPT$M) )</span></td>
-      </tr>
-      <tr>
-        <td id="L636" class="blob-num js-line-number" data-line-number="636"></td>
-        <td id="LC636" class="blob-code blob-code-inner js-file-line">          colnames(<span class="pl-smi">soilpro</span>) <span class="pl-k">&lt;-</span> c(<span class="pl-s"><span class="pl-pds">&#39;</span>depth<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>blkdens<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>clay<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>silt<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>sand<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L637" class="blob-num js-line-number" data-line-number="637"></td>
-        <td id="LC637" class="blob-code blob-code-inner js-file-line">          <span class="pl-c"><span class="pl-c">#</span>Now get hydraulic properties for this soil using Cosby et al. 1984 pedotransfer functions.</span></td>
-      </tr>
-      <tr>
-        <td id="L638" class="blob-num js-line-number" data-line-number="638"></td>
-        <td id="LC638" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">soil.hydro</span><span class="pl-k">&lt;-</span>pedotransfer(<span class="pl-v">soilpro</span> <span class="pl-k">=</span> as.data.frame(<span class="pl-smi">soilpro</span>), <span class="pl-v">DEP</span> <span class="pl-k">=</span> <span class="pl-smi">DEP</span>)</td>
-      </tr>
-      <tr>
-        <td id="L639" class="blob-num js-line-number" data-line-number="639"></td>
-        <td id="LC639" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">PE</span><span class="pl-k">&lt;-</span><span class="pl-smi">soil.hydro</span><span class="pl-k">$</span><span class="pl-smi">PE</span></td>
-      </tr>
-      <tr>
-        <td id="L640" class="blob-num js-line-number" data-line-number="640"></td>
-        <td id="LC640" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">BB</span><span class="pl-k">&lt;-</span><span class="pl-smi">soil.hydro</span><span class="pl-k">$</span><span class="pl-smi">BB</span></td>
-      </tr>
-      <tr>
-        <td id="L641" class="blob-num js-line-number" data-line-number="641"></td>
-        <td id="LC641" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">BD</span><span class="pl-k">&lt;-</span><span class="pl-smi">soil.hydro</span><span class="pl-k">$</span><span class="pl-smi">BD</span></td>
-      </tr>
-      <tr>
-        <td id="L642" class="blob-num js-line-number" data-line-number="642"></td>
-        <td id="LC642" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">KS</span><span class="pl-k">&lt;-</span><span class="pl-smi">soil.hydro</span><span class="pl-k">$</span><span class="pl-smi">KS</span></td>
-      </tr>
-      <tr>
-        <td id="L643" class="blob-num js-line-number" data-line-number="643"></td>
-        <td id="LC643" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">BulkDensity</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">BD</span>[seq(<span class="pl-c1">1</span>,<span class="pl-c1">19</span>,<span class="pl-c1">2</span>)] <span class="pl-c"><span class="pl-c">#</span>soil bulk density, Mg/m3</span></td>
-      </tr>
-      <tr>
-        <td id="L644" class="blob-num js-line-number" data-line-number="644"></td>
-        <td id="LC644" class="blob-code blob-code-inner js-file-line">        }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L645" class="blob-num js-line-number" data-line-number="645"></td>
-        <td id="LC645" class="blob-code blob-code-inner js-file-line">          cat(<span class="pl-s"><span class="pl-pds">&#39;</span>no SoilGrids data for this site, using user-input soil properties <span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L646" class="blob-num js-line-number" data-line-number="646"></td>
-        <td id="LC646" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L647" class="blob-num js-line-number" data-line-number="647"></td>
-        <td id="LC647" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L648" class="blob-num js-line-number" data-line-number="648"></td>
-        <td id="LC648" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L649" class="blob-num js-line-number" data-line-number="649"></td>
-        <td id="LC649" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">soilgrids</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L650" class="blob-num js-line-number" data-line-number="650"></td>
-        <td id="LC650" class="blob-code blob-code-inner js-file-line">        cat(<span class="pl-s"><span class="pl-pds">&quot;</span>loading SoilGrids data from previous run <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L651" class="blob-num js-line-number" data-line-number="651"></td>
-        <td id="LC651" class="blob-code blob-code-inner js-file-line">        load(<span class="pl-s"><span class="pl-pds">&#39;</span>PE.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L652" class="blob-num js-line-number" data-line-number="652"></td>
-        <td id="LC652" class="blob-code blob-code-inner js-file-line">        load(<span class="pl-s"><span class="pl-pds">&#39;</span>BB.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L653" class="blob-num js-line-number" data-line-number="653"></td>
-        <td id="LC653" class="blob-code blob-code-inner js-file-line">        load(<span class="pl-s"><span class="pl-pds">&#39;</span>BD.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L654" class="blob-num js-line-number" data-line-number="654"></td>
-        <td id="LC654" class="blob-code blob-code-inner js-file-line">        load(<span class="pl-s"><span class="pl-pds">&#39;</span>KS.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L655" class="blob-num js-line-number" data-line-number="655"></td>
-        <td id="LC655" class="blob-code blob-code-inner js-file-line">        load(<span class="pl-s"><span class="pl-pds">&#39;</span>BulkDensity.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L656" class="blob-num js-line-number" data-line-number="656"></td>
-        <td id="LC656" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L657" class="blob-num js-line-number" data-line-number="657"></td>
-        <td id="LC657" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L658" class="blob-num js-line-number" data-line-number="658"></td>
-        <td id="LC658" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">==</span> <span class="pl-c1">1</span> <span class="pl-k">&amp;</span> <span class="pl-smi">soilgrids</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L659" class="blob-num js-line-number" data-line-number="659"></td>
-        <td id="LC659" class="blob-code blob-code-inner js-file-line">      cat(<span class="pl-s"><span class="pl-pds">&quot;</span>saving SoilGrids data for later <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L660" class="blob-num js-line-number" data-line-number="660"></td>
-        <td id="LC660" class="blob-code blob-code-inner js-file-line">      save(<span class="pl-smi">PE</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>PE.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L661" class="blob-num js-line-number" data-line-number="661"></td>
-        <td id="LC661" class="blob-code blob-code-inner js-file-line">      save(<span class="pl-smi">BB</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>BB.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L662" class="blob-num js-line-number" data-line-number="662"></td>
-        <td id="LC662" class="blob-code blob-code-inner js-file-line">      save(<span class="pl-smi">BD</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>BD.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L663" class="blob-num js-line-number" data-line-number="663"></td>
-        <td id="LC663" class="blob-code blob-code-inner js-file-line">      save(<span class="pl-smi">KS</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>KS.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L664" class="blob-num js-line-number" data-line-number="664"></td>
-        <td id="LC664" class="blob-code blob-code-inner js-file-line">      save(<span class="pl-smi">BulkDensity</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>BulkDensity.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L665" class="blob-num js-line-number" data-line-number="665"></td>
-        <td id="LC665" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L666" class="blob-num js-line-number" data-line-number="666"></td>
-        <td id="LC666" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(is.na(<span class="pl-smi">hori</span>[<span class="pl-c1">1</span>])){</td>
-      </tr>
-      <tr>
-        <td id="L667" class="blob-num js-line-number" data-line-number="667"></td>
-        <td id="LC667" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">hori</span><span class="pl-k">&lt;-</span>rep(<span class="pl-c1">0</span>, <span class="pl-c1">24</span>)</td>
-      </tr>
-      <tr>
-        <td id="L668" class="blob-num js-line-number" data-line-number="668"></td>
-        <td id="LC668" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">VIEWF</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">1</span> <span class="pl-c"><span class="pl-c">#</span> incorporated already by microclima</span></td>
-      </tr>
-      <tr>
-        <td id="L669" class="blob-num js-line-number" data-line-number="669"></td>
-        <td id="LC669" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L670" class="blob-num js-line-number" data-line-number="670"></td>
-        <td id="LC670" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">VIEWF</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">1</span><span class="pl-k">-</span>sum(sin(as.data.frame(<span class="pl-smi">hori</span>)<span class="pl-k">*</span><span class="pl-c1">pi</span><span class="pl-k">/</span><span class="pl-c1">180</span>))<span class="pl-k">/</span>length(<span class="pl-smi">hori</span>) <span class="pl-c"><span class="pl-c">#</span> convert horizon angles to radians and calc view factor(s)</span></td>
-      </tr>
-      <tr>
-        <td id="L671" class="blob-num js-line-number" data-line-number="671"></td>
-        <td id="LC671" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">HORIZON</span> <span class="pl-k">&lt;-</span> spline(<span class="pl-v">x</span> <span class="pl-k">=</span> <span class="pl-smi">hori</span>, <span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">36</span>, <span class="pl-v">method</span> <span class="pl-k">=</span>  <span class="pl-s"><span class="pl-pds">&#39;</span>periodic<span class="pl-pds">&#39;</span></span>)<span class="pl-k">$</span><span class="pl-smi">y</span></td>
-      </tr>
-      <tr>
-        <td id="L672" class="blob-num js-line-number" data-line-number="672"></td>
-        <td id="LC672" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">HORIZON</span>[<span class="pl-smi">HORIZON</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L673" class="blob-num js-line-number" data-line-number="673"></td>
-        <td id="LC673" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">HORIZON</span>[<span class="pl-smi">HORIZON</span> <span class="pl-k">&gt;</span> <span class="pl-c1">90</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">90</span></td>
-      </tr>
-      <tr>
-        <td id="L674" class="blob-num js-line-number" data-line-number="674"></td>
-        <td id="LC674" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L675" class="blob-num js-line-number" data-line-number="675"></td>
-        <td id="LC675" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">days</span> <span class="pl-k">&lt;-</span> seq(as.POSIXct(<span class="pl-smi">dstart</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">origin</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>01/01/1900<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>), as.POSIXct(<span class="pl-smi">dfinish</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">origin</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>01/01/1900<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>), <span class="pl-v">by</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>days<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L676" class="blob-num js-line-number" data-line-number="676"></td>
-        <td id="LC676" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">alldays</span> <span class="pl-k">&lt;-</span> seq(as.POSIXct(<span class="pl-s"><span class="pl-pds">&quot;</span>01/01/1900<span class="pl-pds">&quot;</span></span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">origin</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>01/01/1900<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>), Sys.time()<span class="pl-k">-</span><span class="pl-c1">60</span><span class="pl-k">*</span><span class="pl-c1">60</span><span class="pl-k">*</span><span class="pl-c1">24</span>, <span class="pl-v">by</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>days<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L677" class="blob-num js-line-number" data-line-number="677"></td>
-        <td id="LC677" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">startday</span> <span class="pl-k">&lt;-</span> which(as.character(format(<span class="pl-smi">alldays</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>)) <span class="pl-k">==</span> format(as.POSIXct(<span class="pl-smi">dstart</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">origin</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>01/01/1900<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>), <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L678" class="blob-num js-line-number" data-line-number="678"></td>
-        <td id="LC678" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">endday</span> <span class="pl-k">&lt;-</span> which(as.character(format(<span class="pl-smi">alldays</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>)) <span class="pl-k">==</span> format(as.POSIXct(<span class="pl-smi">dfinish</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">origin</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>01/01/1900<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>), <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L679" class="blob-num js-line-number" data-line-number="679"></td>
-        <td id="LC679" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">countday</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">endday</span><span class="pl-k">-</span><span class="pl-smi">startday</span><span class="pl-k">+</span><span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L680" class="blob-num js-line-number" data-line-number="680"></td>
-        <td id="LC680" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">tt</span> <span class="pl-k">&lt;-</span> seq(as.POSIXct(<span class="pl-smi">dstart</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>), as.POSIXct(<span class="pl-smi">dfinish</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>)<span class="pl-k">+</span><span class="pl-c1">23</span><span class="pl-k">*</span><span class="pl-c1">3600</span>, <span class="pl-v">by</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>hours<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L681" class="blob-num js-line-number" data-line-number="681"></td>
-        <td id="LC681" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">dates2</span> <span class="pl-k">&lt;-</span> seq(as.POSIXct(<span class="pl-smi">dstart</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>), as.POSIXct(<span class="pl-smi">dfinish</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>UTC<span class="pl-pds">&#39;</span></span>)<span class="pl-k">+</span><span class="pl-c1">23</span><span class="pl-k">*</span><span class="pl-c1">3600</span>, <span class="pl-v">by</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>days<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L682" class="blob-num js-line-number" data-line-number="682"></td>
-        <td id="LC682" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">==</span> <span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L683" class="blob-num js-line-number" data-line-number="683"></td>
-        <td id="LC683" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>tref.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L684" class="blob-num js-line-number" data-line-number="684"></td>
-        <td id="LC684" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>SLOPE.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L685" class="blob-num js-line-number" data-line-number="685"></td>
-        <td id="LC685" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>ASPECT.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L686" class="blob-num js-line-number" data-line-number="686"></td>
-        <td id="LC686" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>HORIZON.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L687" class="blob-num js-line-number" data-line-number="687"></td>
-        <td id="LC687" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">elev</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">tref</span><span class="pl-k">$</span><span class="pl-smi">elev</span>[<span class="pl-c1">1</span>] <span class="pl-c"><span class="pl-c">#</span> m</span></td>
-      </tr>
-      <tr>
-        <td id="L688" class="blob-num js-line-number" data-line-number="688"></td>
-        <td id="LC688" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">ALTT</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">elev</span></td>
-      </tr>
-      <tr>
-        <td id="L689" class="blob-num js-line-number" data-line-number="689"></td>
-        <td id="LC689" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L690" class="blob-num js-line-number" data-line-number="690"></td>
-        <td id="LC690" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L691" class="blob-num js-line-number" data-line-number="691"></td>
-        <td id="LC691" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">!=</span> <span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L692" class="blob-num js-line-number" data-line-number="692"></td>
-        <td id="LC692" class="blob-code blob-code-inner js-file-line">      <span class="pl-en">ncquery</span> <span class="pl-k">&lt;-</span> <span class="pl-k">function</span>(<span class="pl-smi">filename</span>, <span class="pl-smi">var</span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">year</span>){</td>
-      </tr>
-      <tr>
-        <td id="L693" class="blob-num js-line-number" data-line-number="693"></td>
-        <td id="LC693" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> (<span class="pl-k">!</span>require(<span class="pl-s"><span class="pl-pds">&quot;</span>ncdf4<span class="pl-pds">&quot;</span></span>, <span class="pl-v">quietly</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)) {</td>
-      </tr>
-      <tr>
-        <td id="L694" class="blob-num js-line-number" data-line-number="694"></td>
-        <td id="LC694" class="blob-code blob-code-inner js-file-line">          stop(<span class="pl-s"><span class="pl-pds">&quot;</span>package &#39;ncdf4&#39; is needed. Please install it.<span class="pl-pds">&quot;</span></span>,</td>
-      </tr>
-      <tr>
-        <td id="L695" class="blob-num js-line-number" data-line-number="695"></td>
-        <td id="LC695" class="blob-code blob-code-inner js-file-line">               <span class="pl-v">call.</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>)</td>
-      </tr>
-      <tr>
-        <td id="L696" class="blob-num js-line-number" data-line-number="696"></td>
-        <td id="LC696" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L697" class="blob-num js-line-number" data-line-number="697"></td>
-        <td id="LC697" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(<span class="pl-k">!</span>file.exists(paste(<span class="pl-smi">spatial</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>/<span class="pl-pds">&quot;</span></span>,<span class="pl-smi">filename</span>,<span class="pl-smi">year</span>,<span class="pl-s"><span class="pl-pds">&quot;</span>_time.nc<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>))){</td>
-      </tr>
-      <tr>
-        <td id="L698" class="blob-num js-line-number" data-line-number="698"></td>
-        <td id="LC698" class="blob-code blob-code-inner js-file-line">          stop(<span class="pl-s"><span class="pl-pds">&quot;</span>looks like you need to generate the reordered version of your locally-stored NCEP data, see instructions on the NicheMapR Google Group under the heading &#39;speeding up reading of NCEP data&#39;<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L699" class="blob-num js-line-number" data-line-number="699"></td>
-        <td id="LC699" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L700" class="blob-num js-line-number" data-line-number="700"></td>
-        <td id="LC700" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">nc</span> <span class="pl-k">&lt;-</span> <span class="pl-e">ncdf4</span><span class="pl-k">::</span>nc_open(paste(<span class="pl-smi">spatial</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>/<span class="pl-pds">&quot;</span></span>,<span class="pl-smi">filename</span>,<span class="pl-smi">year</span>,<span class="pl-s"><span class="pl-pds">&quot;</span>_time.nc<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L701" class="blob-num js-line-number" data-line-number="701"></td>
-        <td id="LC701" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(<span class="pl-smi">nc</span><span class="pl-k">$</span><span class="pl-smi">ndims</span> <span class="pl-k">==</span> <span class="pl-c1">3</span>){</td>
-      </tr>
-      <tr>
-        <td id="L702" class="blob-num js-line-number" data-line-number="702"></td>
-        <td id="LC702" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">start</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">start</span>[c(<span class="pl-c1">1</span>,<span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">4</span>)]</td>
-      </tr>
-      <tr>
-        <td id="L703" class="blob-num js-line-number" data-line-number="703"></td>
-        <td id="LC703" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">count</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">count</span>[c(<span class="pl-c1">1</span>,<span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">4</span>)]</td>
-      </tr>
-      <tr>
-        <td id="L704" class="blob-num js-line-number" data-line-number="704"></td>
-        <td id="LC704" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L705" class="blob-num js-line-number" data-line-number="705"></td>
-        <td id="LC705" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">out</span> <span class="pl-k">&lt;-</span> as.numeric(<span class="pl-e">ncdf4</span><span class="pl-k">::</span>ncvar_get(<span class="pl-smi">nc</span>, <span class="pl-v">varid</span> <span class="pl-k">=</span> <span class="pl-smi">var</span>, <span class="pl-v">start</span> <span class="pl-k">=</span> <span class="pl-smi">start</span>, <span class="pl-v">count</span> <span class="pl-k">=</span> <span class="pl-smi">count</span>))</td>
-      </tr>
-      <tr>
-        <td id="L706" class="blob-num js-line-number" data-line-number="706"></td>
-        <td id="LC706" class="blob-code blob-code-inner js-file-line">        <span class="pl-e">ncdf4</span><span class="pl-k">::</span>nc_close(<span class="pl-smi">nc</span>)</td>
-      </tr>
-      <tr>
-        <td id="L707" class="blob-num js-line-number" data-line-number="707"></td>
-        <td id="LC707" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">out</span></td>
-      </tr>
-      <tr>
-        <td id="L708" class="blob-num js-line-number" data-line-number="708"></td>
-        <td id="LC708" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L709" class="blob-num js-line-number" data-line-number="709"></td>
-        <td id="LC709" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(is.na(<span class="pl-smi">spatial</span>) <span class="pl-k">==</span> <span class="pl-c1">FALSE</span>){</td>
-      </tr>
-      <tr>
-        <td id="L710" class="blob-num js-line-number" data-line-number="710"></td>
-        <td id="LC710" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> now getting starting point and count for reading netcdf files</span></td>
-      </tr>
-      <tr>
-        <td id="L711" class="blob-num js-line-number" data-line-number="711"></td>
-        <td id="LC711" class="blob-code blob-code-inner js-file-line">        cat(paste0(<span class="pl-s"><span class="pl-pds">&quot;</span>extracting weather data locally from <span class="pl-pds">&quot;</span></span>, <span class="pl-smi">spatial</span>, <span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L712" class="blob-num js-line-number" data-line-number="712"></td>
-        <td id="LC712" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">years</span> <span class="pl-k">&lt;-</span> as.numeric(unique(format(<span class="pl-smi">tme</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>%Y<span class="pl-pds">&quot;</span></span>)))</td>
-      </tr>
-      <tr>
-        <td id="L713" class="blob-num js-line-number" data-line-number="713"></td>
-        <td id="LC713" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">nc</span> <span class="pl-k">&lt;-</span> <span class="pl-e">RNetCDF</span><span class="pl-k">::</span>open.nc(paste(<span class="pl-smi">spatial</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>/air.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>], <span class="pl-s"><span class="pl-pds">&quot;</span>_time.nc<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L714" class="blob-num js-line-number" data-line-number="714"></td>
-        <td id="LC714" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">lon2</span> <span class="pl-k">&lt;-</span> <span class="pl-k">matrix</span>(<span class="pl-e">RNetCDF</span><span class="pl-k">::</span>var.get.nc(<span class="pl-smi">nc</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>lon<span class="pl-pds">&quot;</span></span>, <span class="pl-v">unpack</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>))</td>
-      </tr>
-      <tr>
-        <td id="L715" class="blob-num js-line-number" data-line-number="715"></td>
-        <td id="LC715" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">lat2</span> <span class="pl-k">&lt;-</span> <span class="pl-k">matrix</span>(<span class="pl-e">RNetCDF</span><span class="pl-k">::</span>var.get.nc(<span class="pl-smi">nc</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>lat<span class="pl-pds">&quot;</span></span>, <span class="pl-v">unpack</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>))</td>
-      </tr>
-      <tr>
-        <td id="L716" class="blob-num js-line-number" data-line-number="716"></td>
-        <td id="LC716" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">lon_1</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">long</span></td>
-      </tr>
-      <tr>
-        <td id="L717" class="blob-num js-line-number" data-line-number="717"></td>
-        <td id="LC717" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(<span class="pl-smi">lon_1</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>){<span class="pl-smi">lon_1</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">180</span> <span class="pl-k">-</span> (<span class="pl-smi">long</span><span class="pl-k">*-</span><span class="pl-c1">1</span>) <span class="pl-k">+</span> <span class="pl-c1">180</span>}</td>
-      </tr>
-      <tr>
-        <td id="L718" class="blob-num js-line-number" data-line-number="718"></td>
-        <td id="LC718" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">lat_1</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">lat</span></td>
-      </tr>
-      <tr>
-        <td id="L719" class="blob-num js-line-number" data-line-number="719"></td>
-        <td id="LC719" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">dist1</span> <span class="pl-k">&lt;-</span> abs(<span class="pl-smi">lon2</span> <span class="pl-k">-</span> <span class="pl-smi">lon_1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L720" class="blob-num js-line-number" data-line-number="720"></td>
-        <td id="LC720" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">index1</span> <span class="pl-k">&lt;-</span> which.min(<span class="pl-smi">dist1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L721" class="blob-num js-line-number" data-line-number="721"></td>
-        <td id="LC721" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">lon3</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">lon2</span>[<span class="pl-smi">index1</span>]</td>
-      </tr>
-      <tr>
-        <td id="L722" class="blob-num js-line-number" data-line-number="722"></td>
-        <td id="LC722" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">dist2</span> <span class="pl-k">&lt;-</span> abs(<span class="pl-smi">lat2</span> <span class="pl-k">-</span> <span class="pl-smi">lat_1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L723" class="blob-num js-line-number" data-line-number="723"></td>
-        <td id="LC723" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">index2</span> <span class="pl-k">&lt;-</span> which.min(<span class="pl-smi">dist2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L724" class="blob-num js-line-number" data-line-number="724"></td>
-        <td id="LC724" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">lat3</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">lat2</span>[<span class="pl-smi">index2</span>]</td>
-      </tr>
-      <tr>
-        <td id="L725" class="blob-num js-line-number" data-line-number="725"></td>
-        <td id="LC725" class="blob-code blob-code-inner js-file-line">        <span class="pl-e">RNetCDF</span><span class="pl-k">::</span>close.nc(<span class="pl-smi">nc</span>)</td>
-      </tr>
-      <tr>
-        <td id="L726" class="blob-num js-line-number" data-line-number="726"></td>
-        <td id="LC726" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(<span class="pl-smi">lon3</span> <span class="pl-k">&gt;</span> <span class="pl-c1">180</span>){<span class="pl-smi">lon3</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">lon3</span> <span class="pl-k">-</span> <span class="pl-c1">180</span>} <span class="pl-c"><span class="pl-c">#</span> ensure longitude is -180 to 180</span></td>
-      </tr>
-      <tr>
-        <td id="L727" class="blob-num js-line-number" data-line-number="727"></td>
-        <td id="LC727" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L728" class="blob-num js-line-number" data-line-number="728"></td>
-        <td id="LC728" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(class(<span class="pl-smi">hourlydata</span>) <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>logical<span class="pl-pds">&quot;</span></span>){</td>
-      </tr>
-      <tr>
-        <td id="L729" class="blob-num js-line-number" data-line-number="729"></td>
-        <td id="LC729" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">prev.year</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L730" class="blob-num js-line-number" data-line-number="730"></td>
-        <td id="LC730" class="blob-code blob-code-inner js-file-line">          <span class="pl-k">if</span>(format(<span class="pl-smi">tme</span>[<span class="pl-c1">1</span>], <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m<span class="pl-pds">&quot;</span></span>) <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>01/01<span class="pl-pds">&quot;</span></span>){ <span class="pl-c"><span class="pl-c">#</span> starting at beginning of year, need to start at end of previous year</span></td>
-      </tr>
-      <tr>
-        <td id="L731" class="blob-num js-line-number" data-line-number="731"></td>
-        <td id="LC731" class="blob-code blob-code-inner js-file-line">            cat(paste(<span class="pl-s"><span class="pl-pds">&quot;</span>reading weather input for <span class="pl-pds">&quot;</span></span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>,<span class="pl-s"><span class="pl-pds">&quot;</span> (need a bit of the previous year) <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L732" class="blob-num js-line-number" data-line-number="732"></td>
-        <td id="LC732" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">prev.year</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L733" class="blob-num js-line-number" data-line-number="733"></td>
-        <td id="LC733" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">start</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">1460</span><span class="pl-k">-</span><span class="pl-c1">3</span>, <span class="pl-c1">1</span>, <span class="pl-smi">index2</span>, <span class="pl-smi">index1</span>) <span class="pl-c"><span class="pl-c">#</span> for year prior to chosen years (getting the last day)</span></td>
-      </tr>
-      <tr>
-        <td id="L734" class="blob-num js-line-number" data-line-number="734"></td>
-        <td id="LC734" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">count</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">4</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> for year prior/year after chosen years (getting the last four or first four values, i.e. hours 0, 6, 12, 18)</span></td>
-      </tr>
-      <tr>
-        <td id="L735" class="blob-num js-line-number" data-line-number="735"></td>
-        <td id="LC735" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tkmin1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tmin.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tmin<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L736" class="blob-num js-line-number" data-line-number="736"></td>
-        <td id="LC736" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tkmax1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tmax.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tmax<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L737" class="blob-num js-line-number" data-line-number="737"></td>
-        <td id="LC737" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tk1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>air.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>air<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L738" class="blob-num js-line-number" data-line-number="738"></td>
-        <td id="LC738" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">sh1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>shum.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>shum<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L739" class="blob-num js-line-number" data-line-number="739"></td>
-        <td id="LC739" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">pr1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>pres.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>pres<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> only three dimensions, hence</span></td>
-      </tr>
-      <tr>
-        <td id="L740" class="blob-num js-line-number" data-line-number="740"></td>
-        <td id="LC740" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">tcdc1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tcdc.eatm.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tcdc<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L741" class="blob-num js-line-number" data-line-number="741"></td>
-        <td id="LC741" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">dsw1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>dswrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>dswrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L742" class="blob-num js-line-number" data-line-number="742"></td>
-        <td id="LC742" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">dlw1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>dlwrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>dlwrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L743" class="blob-num js-line-number" data-line-number="743"></td>
-        <td id="LC743" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">ulw1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>ulwrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>ulwrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L744" class="blob-num js-line-number" data-line-number="744"></td>
-        <td id="LC744" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">wu1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>uwnd.10m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>uwnd<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L745" class="blob-num js-line-number" data-line-number="745"></td>
-        <td id="LC745" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">wv1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>vwnd.10m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>vwnd<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L746" class="blob-num js-line-number" data-line-number="746"></td>
-        <td id="LC746" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">prate1</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>prate.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>prate<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-c1">1</span>]<span class="pl-k">-</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L747" class="blob-num js-line-number" data-line-number="747"></td>
-        <td id="LC747" class="blob-code blob-code-inner js-file-line">          }</td>
-      </tr>
-      <tr>
-        <td id="L748" class="blob-num js-line-number" data-line-number="748"></td>
-        <td id="LC748" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L749" class="blob-num js-line-number" data-line-number="749"></td>
-        <td id="LC749" class="blob-code blob-code-inner js-file-line">          <span class="pl-k">for</span>(<span class="pl-smi">j</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span>length(<span class="pl-smi">years</span>)){</td>
-      </tr>
-      <tr>
-        <td id="L750" class="blob-num js-line-number" data-line-number="750"></td>
-        <td id="LC750" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">tme3</span> <span class="pl-k">&lt;-</span> seq(as.POSIXct(paste0(<span class="pl-s"><span class="pl-pds">&quot;</span>01/01/<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]), <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>UCT<span class="pl-pds">&quot;</span></span>), as.POSIXct(paste0(<span class="pl-s"><span class="pl-pds">&quot;</span>31/12/<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]), <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>UCT<span class="pl-pds">&quot;</span></span>) <span class="pl-k">+</span> <span class="pl-c1">18</span> <span class="pl-k">*</span> <span class="pl-c1">3600</span>, <span class="pl-c1">6</span> <span class="pl-k">*</span> <span class="pl-c1">3600</span>)</td>
-      </tr>
-      <tr>
-        <td id="L751" class="blob-num js-line-number" data-line-number="751"></td>
-        <td id="LC751" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">if</span>(<span class="pl-smi">j</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L752" class="blob-num js-line-number" data-line-number="752"></td>
-        <td id="LC752" class="blob-code blob-code-inner js-file-line">              <span class="pl-k">if</span>(format(<span class="pl-smi">tme</span>[<span class="pl-c1">1</span>], <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m<span class="pl-pds">&quot;</span></span>) <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>01/01<span class="pl-pds">&quot;</span></span>){</td>
-      </tr>
-      <tr>
-        <td id="L753" class="blob-num js-line-number" data-line-number="753"></td>
-        <td id="LC753" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">start</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">index2</span>, <span class="pl-smi">index1</span>) <span class="pl-c"><span class="pl-c">#</span> for chosen years</span></td>
-      </tr>
-      <tr>
-        <td id="L754" class="blob-num js-line-number" data-line-number="754"></td>
-        <td id="LC754" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">count</span> <span class="pl-k">&lt;-</span> c(<span class="pl-k">-</span><span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>)<span class="pl-c"><span class="pl-c">#</span> for chosen years</span></td>
-      </tr>
-      <tr>
-        <td id="L755" class="blob-num js-line-number" data-line-number="755"></td>
-        <td id="LC755" class="blob-code blob-code-inner js-file-line">              }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L756" class="blob-num js-line-number" data-line-number="756"></td>
-        <td id="LC756" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">strt</span> <span class="pl-k">&lt;-</span> which(format(<span class="pl-smi">tme3</span>, <span class="pl-s"><span class="pl-pds">&#39;</span>%Y-%m-%d<span class="pl-pds">&#39;</span></span>) <span class="pl-k">==</span> <span class="pl-smi">tme</span>[<span class="pl-c1">1</span>])[<span class="pl-c1">1</span>]</td>
-      </tr>
-      <tr>
-        <td id="L757" class="blob-num js-line-number" data-line-number="757"></td>
-        <td id="LC757" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">start</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">strt</span> <span class="pl-k">-</span> <span class="pl-c1">4</span>, <span class="pl-c1">1</span>, <span class="pl-smi">index2</span>, <span class="pl-smi">index1</span>) <span class="pl-c"><span class="pl-c">#</span> for chosen years</span></td>
-      </tr>
-      <tr>
-        <td id="L758" class="blob-num js-line-number" data-line-number="758"></td>
-        <td id="LC758" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">count</span> <span class="pl-k">&lt;-</span> c(<span class="pl-k">-</span><span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>)<span class="pl-c"><span class="pl-c">#</span> for chosen years</span></td>
-      </tr>
-      <tr>
-        <td id="L759" class="blob-num js-line-number" data-line-number="759"></td>
-        <td id="LC759" class="blob-code blob-code-inner js-file-line">              }</td>
-      </tr>
-      <tr>
-        <td id="L760" class="blob-num js-line-number" data-line-number="760"></td>
-        <td id="LC760" class="blob-code blob-code-inner js-file-line">              <span class="pl-k">if</span>(format(<span class="pl-smi">tme</span>[length(<span class="pl-smi">tme</span>)], <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m<span class="pl-pds">&quot;</span></span>) <span class="pl-k">!=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>31/12<span class="pl-pds">&quot;</span></span> <span class="pl-k">&amp;</span> length(<span class="pl-smi">years</span>) <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L761" class="blob-num js-line-number" data-line-number="761"></td>
-        <td id="LC761" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">cnt</span> <span class="pl-k">&lt;-</span> which(format(<span class="pl-smi">tme3</span>, <span class="pl-s"><span class="pl-pds">&#39;</span>%Y-%m-%d<span class="pl-pds">&#39;</span></span>) <span class="pl-k">==</span> <span class="pl-smi">tme</span>[length(<span class="pl-smi">tme</span>)] <span class="pl-k">+</span> <span class="pl-c1">1</span>)[<span class="pl-c1">1</span>] <span class="pl-k">-</span> <span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L762" class="blob-num js-line-number" data-line-number="762"></td>
-        <td id="LC762" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">count</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">cnt</span> <span class="pl-k">+</span> <span class="pl-c1">5</span> <span class="pl-k">-</span> <span class="pl-smi">start</span>[<span class="pl-c1">1</span>], <span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>)<span class="pl-c"><span class="pl-c">#</span> for chosen years</span></td>
-      </tr>
-      <tr>
-        <td id="L763" class="blob-num js-line-number" data-line-number="763"></td>
-        <td id="LC763" class="blob-code blob-code-inner js-file-line">              }</td>
-      </tr>
-      <tr>
-        <td id="L764" class="blob-num js-line-number" data-line-number="764"></td>
-        <td id="LC764" class="blob-code blob-code-inner js-file-line">              cat(paste(<span class="pl-s"><span class="pl-pds">&quot;</span>reading weather input for <span class="pl-pds">&quot;</span></span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>],<span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L765" class="blob-num js-line-number" data-line-number="765"></td>
-        <td id="LC765" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">Tkmin</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tmin.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tmin<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L766" class="blob-num js-line-number" data-line-number="766"></td>
-        <td id="LC766" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">Tkmax</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tmax.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tmax<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L767" class="blob-num js-line-number" data-line-number="767"></td>
-        <td id="LC767" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">Tk</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>air.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>air<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L768" class="blob-num js-line-number" data-line-number="768"></td>
-        <td id="LC768" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">sh</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>shum.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>shum<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L769" class="blob-num js-line-number" data-line-number="769"></td>
-        <td id="LC769" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">pr</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>pres.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>pres<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]) <span class="pl-c"><span class="pl-c">#</span> only three dimensions, hence</span></td>
-      </tr>
-      <tr>
-        <td id="L770" class="blob-num js-line-number" data-line-number="770"></td>
-        <td id="LC770" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">tcdc</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tcdc.eatm.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tcdc<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L771" class="blob-num js-line-number" data-line-number="771"></td>
-        <td id="LC771" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">dsw</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>dswrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>dswrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L772" class="blob-num js-line-number" data-line-number="772"></td>
-        <td id="LC772" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">dlw</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>dlwrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>dlwrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L773" class="blob-num js-line-number" data-line-number="773"></td>
-        <td id="LC773" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">ulw</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>ulwrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>ulwrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L774" class="blob-num js-line-number" data-line-number="774"></td>
-        <td id="LC774" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">wu</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>uwnd.10m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>uwnd<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L775" class="blob-num js-line-number" data-line-number="775"></td>
-        <td id="LC775" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">wv</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>vwnd.10m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>vwnd<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L776" class="blob-num js-line-number" data-line-number="776"></td>
-        <td id="LC776" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">prate</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>prate.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>prate<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>])</td>
-      </tr>
-      <tr>
-        <td id="L777" class="blob-num js-line-number" data-line-number="777"></td>
-        <td id="LC777" class="blob-code blob-code-inner js-file-line">            }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L778" class="blob-num js-line-number" data-line-number="778"></td>
-        <td id="LC778" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">start</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">index2</span>, <span class="pl-smi">index1</span>) <span class="pl-c"><span class="pl-c">#</span> for chosen years</span></td>
-      </tr>
-      <tr>
-        <td id="L779" class="blob-num js-line-number" data-line-number="779"></td>
-        <td id="LC779" class="blob-code blob-code-inner js-file-line">              <span class="pl-k">if</span>(format(<span class="pl-smi">tme</span>[length(<span class="pl-smi">tme</span>)], <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m<span class="pl-pds">&quot;</span></span>) <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>31/12<span class="pl-pds">&quot;</span></span> <span class="pl-k">|</span> <span class="pl-smi">j</span> <span class="pl-k">!=</span> length(<span class="pl-smi">years</span>)){</td>
-      </tr>
-      <tr>
-        <td id="L780" class="blob-num js-line-number" data-line-number="780"></td>
-        <td id="LC780" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">count</span> <span class="pl-k">&lt;-</span> c(<span class="pl-k">-</span><span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>)<span class="pl-c"><span class="pl-c">#</span> for chosen years</span></td>
-      </tr>
-      <tr>
-        <td id="L781" class="blob-num js-line-number" data-line-number="781"></td>
-        <td id="LC781" class="blob-code blob-code-inner js-file-line">              }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L782" class="blob-num js-line-number" data-line-number="782"></td>
-        <td id="LC782" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">cnt</span> <span class="pl-k">&lt;-</span> which(format(<span class="pl-smi">tme3</span>, <span class="pl-s"><span class="pl-pds">&#39;</span>%Y-%m-%d<span class="pl-pds">&#39;</span></span>) <span class="pl-k">==</span> <span class="pl-smi">tme</span>[length(<span class="pl-smi">tme</span>)] <span class="pl-k">+</span> <span class="pl-c1">1</span>)[<span class="pl-c1">1</span>] <span class="pl-k">-</span> <span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L783" class="blob-num js-line-number" data-line-number="783"></td>
-        <td id="LC783" class="blob-code blob-code-inner js-file-line">                <span class="pl-smi">count</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">cnt</span> <span class="pl-k">+</span> <span class="pl-c1">5</span> <span class="pl-k">-</span> <span class="pl-smi">start</span>[<span class="pl-c1">1</span>], <span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>)<span class="pl-c"><span class="pl-c">#</span> for chosen years</span></td>
-      </tr>
-      <tr>
-        <td id="L784" class="blob-num js-line-number" data-line-number="784"></td>
-        <td id="LC784" class="blob-code blob-code-inner js-file-line">              }</td>
-      </tr>
-      <tr>
-        <td id="L785" class="blob-num js-line-number" data-line-number="785"></td>
-        <td id="LC785" class="blob-code blob-code-inner js-file-line">              cat(paste(<span class="pl-s"><span class="pl-pds">&quot;</span>reading weather input for <span class="pl-pds">&quot;</span></span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>],<span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L786" class="blob-num js-line-number" data-line-number="786"></td>
-        <td id="LC786" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">Tkmin</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tkmin</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tmin.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tmin<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L787" class="blob-num js-line-number" data-line-number="787"></td>
-        <td id="LC787" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">Tkmax</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tkmax</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tmax.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tmax<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L788" class="blob-num js-line-number" data-line-number="788"></td>
-        <td id="LC788" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">Tk</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tk</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>air.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>air<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L789" class="blob-num js-line-number" data-line-number="789"></td>
-        <td id="LC789" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">sh</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">sh</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>shum.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>shum<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L790" class="blob-num js-line-number" data-line-number="790"></td>
-        <td id="LC790" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">pr</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">pr</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>pres.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>pres<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L791" class="blob-num js-line-number" data-line-number="791"></td>
-        <td id="LC791" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">tcdc</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">tcdc</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tcdc.eatm.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tcdc<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L792" class="blob-num js-line-number" data-line-number="792"></td>
-        <td id="LC792" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">dsw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">dsw</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>dswrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>dswrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L793" class="blob-num js-line-number" data-line-number="793"></td>
-        <td id="LC793" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">dlw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">dlw</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>dlwrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>dlwrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L794" class="blob-num js-line-number" data-line-number="794"></td>
-        <td id="LC794" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">ulw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">ulw</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>ulwrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>ulwrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L795" class="blob-num js-line-number" data-line-number="795"></td>
-        <td id="LC795" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">wu</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">wu</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>uwnd.10m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>uwnd<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L796" class="blob-num js-line-number" data-line-number="796"></td>
-        <td id="LC796" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">wv</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">wv</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>vwnd.10m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>vwnd<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L797" class="blob-num js-line-number" data-line-number="797"></td>
-        <td id="LC797" class="blob-code blob-code-inner js-file-line">              <span class="pl-smi">prate</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">prate</span>, ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>prate.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>prate<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[<span class="pl-smi">j</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L798" class="blob-num js-line-number" data-line-number="798"></td>
-        <td id="LC798" class="blob-code blob-code-inner js-file-line">            }</td>
-      </tr>
-      <tr>
-        <td id="L799" class="blob-num js-line-number" data-line-number="799"></td>
-        <td id="LC799" class="blob-code blob-code-inner js-file-line">          }</td>
-      </tr>
-      <tr>
-        <td id="L800" class="blob-num js-line-number" data-line-number="800"></td>
-        <td id="LC800" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L801" class="blob-num js-line-number" data-line-number="801"></td>
-        <td id="LC801" class="blob-code blob-code-inner js-file-line">          <span class="pl-k">next</span><span class="pl-smi">.year</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L802" class="blob-num js-line-number" data-line-number="802"></td>
-        <td id="LC802" class="blob-code blob-code-inner js-file-line">          <span class="pl-k">if</span>(format(<span class="pl-smi">tme</span>[length(<span class="pl-smi">tme</span>)], <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m<span class="pl-pds">&quot;</span></span>) <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>31/12<span class="pl-pds">&quot;</span></span>){ <span class="pl-c"><span class="pl-c">#</span> starting at beginning of year, need to start at end of previous year</span></td>
-      </tr>
-      <tr>
-        <td id="L803" class="blob-num js-line-number" data-line-number="803"></td>
-        <td id="LC803" class="blob-code blob-code-inner js-file-line">            cat(paste(<span class="pl-s"><span class="pl-pds">&quot;</span>reading weather input for <span class="pl-pds">&quot;</span></span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>,<span class="pl-s"><span class="pl-pds">&quot;</span> (need a bit of the next year) <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L804" class="blob-num js-line-number" data-line-number="804"></td>
-        <td id="LC804" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">next</span><span class="pl-smi">.year</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L805" class="blob-num js-line-number" data-line-number="805"></td>
-        <td id="LC805" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">start</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">index2</span>, <span class="pl-smi">index1</span>) <span class="pl-c"><span class="pl-c">#</span> for year prior to chosen years (getting the last day)</span></td>
-      </tr>
-      <tr>
-        <td id="L806" class="blob-num js-line-number" data-line-number="806"></td>
-        <td id="LC806" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">count</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">4</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> for year prior/year after chosen years (getting the last four or first four values, i.e. hours 0, 6, 12, 18)</span></td>
-      </tr>
-      <tr>
-        <td id="L807" class="blob-num js-line-number" data-line-number="807"></td>
-        <td id="LC807" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tkmin2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tmin.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tmin<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L808" class="blob-num js-line-number" data-line-number="808"></td>
-        <td id="LC808" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tkmax2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tmax.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tmax<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L809" class="blob-num js-line-number" data-line-number="809"></td>
-        <td id="LC809" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tk2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>air.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>air<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L810" class="blob-num js-line-number" data-line-number="810"></td>
-        <td id="LC810" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">sh2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>shum.2m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>shum<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L811" class="blob-num js-line-number" data-line-number="811"></td>
-        <td id="LC811" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">pr2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>pres.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>pres<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> only three dimensions, hence</span></td>
-      </tr>
-      <tr>
-        <td id="L812" class="blob-num js-line-number" data-line-number="812"></td>
-        <td id="LC812" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">tcdc2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>tcdc.eatm.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>tcdc<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L813" class="blob-num js-line-number" data-line-number="813"></td>
-        <td id="LC813" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">dsw2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>dswrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>dswrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L814" class="blob-num js-line-number" data-line-number="814"></td>
-        <td id="LC814" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">dlw2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>dlwrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>dlwrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L815" class="blob-num js-line-number" data-line-number="815"></td>
-        <td id="LC815" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">ulw2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>ulwrf.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>ulwrf<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L816" class="blob-num js-line-number" data-line-number="816"></td>
-        <td id="LC816" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">wu2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>uwnd.10m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>uwnd<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L817" class="blob-num js-line-number" data-line-number="817"></td>
-        <td id="LC817" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">wv2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>vwnd.10m.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>vwnd<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L818" class="blob-num js-line-number" data-line-number="818"></td>
-        <td id="LC818" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">prate2</span> <span class="pl-k">&lt;-</span> ncquery(<span class="pl-s"><span class="pl-pds">&quot;</span>prate.sfc.gauss.<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>prate<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">start</span>, <span class="pl-smi">count</span>, <span class="pl-smi">years</span>[length(<span class="pl-smi">years</span>)]<span class="pl-k">+</span><span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L819" class="blob-num js-line-number" data-line-number="819"></td>
-        <td id="LC819" class="blob-code blob-code-inner js-file-line">          }</td>
-      </tr>
-      <tr>
-        <td id="L820" class="blob-num js-line-number" data-line-number="820"></td>
-        <td id="LC820" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L821" class="blob-num js-line-number" data-line-number="821"></td>
-        <td id="LC821" class="blob-code blob-code-inner js-file-line">          <span class="pl-k">if</span>(<span class="pl-smi">prev.year</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L822" class="blob-num js-line-number" data-line-number="822"></td>
-        <td id="LC822" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tkmin</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tkmin1</span>, <span class="pl-smi">Tkmin</span>)</td>
-      </tr>
-      <tr>
-        <td id="L823" class="blob-num js-line-number" data-line-number="823"></td>
-        <td id="LC823" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tkmax</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tkmax1</span>, <span class="pl-smi">Tkmax</span>)</td>
-      </tr>
-      <tr>
-        <td id="L824" class="blob-num js-line-number" data-line-number="824"></td>
-        <td id="LC824" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tk</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tk1</span>, <span class="pl-smi">Tk</span>)</td>
-      </tr>
-      <tr>
-        <td id="L825" class="blob-num js-line-number" data-line-number="825"></td>
-        <td id="LC825" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">sh</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">sh1</span>, <span class="pl-smi">sh</span>)</td>
-      </tr>
-      <tr>
-        <td id="L826" class="blob-num js-line-number" data-line-number="826"></td>
-        <td id="LC826" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">pr</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">pr1</span>, <span class="pl-smi">pr</span>)</td>
-      </tr>
-      <tr>
-        <td id="L827" class="blob-num js-line-number" data-line-number="827"></td>
-        <td id="LC827" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">tcdc</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">tcdc1</span>, <span class="pl-smi">tcdc</span>)</td>
-      </tr>
-      <tr>
-        <td id="L828" class="blob-num js-line-number" data-line-number="828"></td>
-        <td id="LC828" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">dsw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">dsw1</span>, <span class="pl-smi">dsw</span>)</td>
-      </tr>
-      <tr>
-        <td id="L829" class="blob-num js-line-number" data-line-number="829"></td>
-        <td id="LC829" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">dlw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">dlw1</span>, <span class="pl-smi">dlw</span>)</td>
-      </tr>
-      <tr>
-        <td id="L830" class="blob-num js-line-number" data-line-number="830"></td>
-        <td id="LC830" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">ulw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">ulw1</span>, <span class="pl-smi">ulw</span>)</td>
-      </tr>
-      <tr>
-        <td id="L831" class="blob-num js-line-number" data-line-number="831"></td>
-        <td id="LC831" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">wu</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">wu1</span>, <span class="pl-smi">wu</span>)</td>
-      </tr>
-      <tr>
-        <td id="L832" class="blob-num js-line-number" data-line-number="832"></td>
-        <td id="LC832" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">wv</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">wv1</span>, <span class="pl-smi">wv</span>)</td>
-      </tr>
-      <tr>
-        <td id="L833" class="blob-num js-line-number" data-line-number="833"></td>
-        <td id="LC833" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">prate</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">prate1</span>, <span class="pl-smi">prate</span>)</td>
-      </tr>
-      <tr>
-        <td id="L834" class="blob-num js-line-number" data-line-number="834"></td>
-        <td id="LC834" class="blob-code blob-code-inner js-file-line">          }</td>
-      </tr>
-      <tr>
-        <td id="L835" class="blob-num js-line-number" data-line-number="835"></td>
-        <td id="LC835" class="blob-code blob-code-inner js-file-line">          <span class="pl-k">if</span>(<span class="pl-k">next</span><span class="pl-smi">.year</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L836" class="blob-num js-line-number" data-line-number="836"></td>
-        <td id="LC836" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tkmin</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tkmin</span>, <span class="pl-smi">Tkmin2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L837" class="blob-num js-line-number" data-line-number="837"></td>
-        <td id="LC837" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tkmax</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tkmax</span>, <span class="pl-smi">Tkmax2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L838" class="blob-num js-line-number" data-line-number="838"></td>
-        <td id="LC838" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">Tk</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">Tk</span>, <span class="pl-smi">Tk2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L839" class="blob-num js-line-number" data-line-number="839"></td>
-        <td id="LC839" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">sh</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">sh</span>, <span class="pl-smi">sh2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L840" class="blob-num js-line-number" data-line-number="840"></td>
-        <td id="LC840" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">pr</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">pr</span>, <span class="pl-smi">pr2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L841" class="blob-num js-line-number" data-line-number="841"></td>
-        <td id="LC841" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">tcdc</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">tcdc</span>, <span class="pl-smi">tcdc2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L842" class="blob-num js-line-number" data-line-number="842"></td>
-        <td id="LC842" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">dsw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">dsw</span>, <span class="pl-smi">dsw2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L843" class="blob-num js-line-number" data-line-number="843"></td>
-        <td id="LC843" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">dlw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">dlw</span>, <span class="pl-smi">dlw2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L844" class="blob-num js-line-number" data-line-number="844"></td>
-        <td id="LC844" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">ulw</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">ulw</span>, <span class="pl-smi">ulw2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L845" class="blob-num js-line-number" data-line-number="845"></td>
-        <td id="LC845" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">wu</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">wu</span>, <span class="pl-smi">wu2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L846" class="blob-num js-line-number" data-line-number="846"></td>
-        <td id="LC846" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">wv</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">wv</span>, <span class="pl-smi">wv2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L847" class="blob-num js-line-number" data-line-number="847"></td>
-        <td id="LC847" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">prate</span> <span class="pl-k">&lt;-</span> c(<span class="pl-smi">prate</span>, <span class="pl-smi">prate2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L848" class="blob-num js-line-number" data-line-number="848"></td>
-        <td id="LC848" class="blob-code blob-code-inner js-file-line">          }</td>
-      </tr>
-      <tr>
-        <td id="L849" class="blob-num js-line-number" data-line-number="849"></td>
-        <td id="LC849" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">dsw</span>[<span class="pl-smi">dsw</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L850" class="blob-num js-line-number" data-line-number="850"></td>
-        <td id="LC850" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">prate</span>[<span class="pl-smi">prate</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L851" class="blob-num js-line-number" data-line-number="851"></td>
-        <td id="LC851" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">prate</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">prate</span> <span class="pl-k">*</span> <span class="pl-c1">3600</span> <span class="pl-k">*</span> <span class="pl-c1">6</span> <span class="pl-c"><span class="pl-c">#</span> mm in 6 hrs</span></td>
-      </tr>
-      <tr>
-        <td id="L852" class="blob-num js-line-number" data-line-number="852"></td>
-        <td id="LC852" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">obs_time</span> <span class="pl-k">&lt;-</span> seq(as.POSIXct(<span class="pl-smi">dstart</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>UCT<span class="pl-pds">&quot;</span></span>) <span class="pl-k">-</span> <span class="pl-c1">3600</span> <span class="pl-k">*</span> <span class="pl-c1">24</span>, as.POSIXct(<span class="pl-smi">dfinish</span>, <span class="pl-v">format</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%d/%m/%Y<span class="pl-pds">&quot;</span></span>, <span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>UCT<span class="pl-pds">&quot;</span></span>) <span class="pl-k">+</span> <span class="pl-c1">18</span> <span class="pl-k">*</span> <span class="pl-c1">3600</span> <span class="pl-k">+</span> <span class="pl-c1">24</span> <span class="pl-k">*</span> <span class="pl-c1">3600</span>, <span class="pl-c1">6</span> <span class="pl-k">*</span> <span class="pl-c1">3600</span>)</td>
-      </tr>
-      <tr>
-        <td id="L853" class="blob-num js-line-number" data-line-number="853"></td>
-        <td id="LC853" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">ncepdata</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">obs_time</span> <span class="pl-k">=</span> <span class="pl-smi">obs_time</span>, <span class="pl-smi">Tk</span>, <span class="pl-smi">Tkmin</span>, <span class="pl-smi">Tkmax</span>, <span class="pl-smi">sh</span>, <span class="pl-smi">pr</span>, <span class="pl-smi">wu</span>, <span class="pl-smi">wv</span>, <span class="pl-smi">dlw</span>, <span class="pl-smi">ulw</span>, <span class="pl-smi">dsw</span>, <span class="pl-smi">tcdc</span>) <span class="pl-c"><span class="pl-c">#</span> 6-hourly ncep for chosen period plus a day added either side for interpolation</span></td>
-      </tr>
-      <tr>
-        <td id="L854" class="blob-num js-line-number" data-line-number="854"></td>
-        <td id="LC854" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">hourlydata</span> <span class="pl-k">&lt;-</span> <span class="pl-e">microclima</span><span class="pl-k">::</span>hourlyNCEP(<span class="pl-v">ncepdata</span> <span class="pl-k">=</span> <span class="pl-smi">ncepdata</span>, <span class="pl-smi">lat</span>, <span class="pl-smi">long</span>, <span class="pl-smi">tme</span>, <span class="pl-smi">reanalysis</span>) <span class="pl-c"><span class="pl-c">#</span> interpolated to hourly</span></td>
-      </tr>
-      <tr>
-        <td id="L855" class="blob-num js-line-number" data-line-number="855"></td>
-        <td id="LC855" class="blob-code blob-code-inner js-file-line">          cat(<span class="pl-s"><span class="pl-pds">&quot;</span>computing radiation and elevation effects with package microclima <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L856" class="blob-num js-line-number" data-line-number="856"></td>
-        <td id="LC856" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">microclima.out</span> <span class="pl-k">&lt;-</span> <span class="pl-e">microclima</span><span class="pl-k">::</span>microclimaforNMR(<span class="pl-v">lat</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>[<span class="pl-c1">2</span>], <span class="pl-v">long</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>[<span class="pl-c1">1</span>], <span class="pl-v">dstart</span> <span class="pl-k">=</span> <span class="pl-smi">dstart</span>, <span class="pl-v">dfinish</span> <span class="pl-k">=</span> <span class="pl-smi">dfinish</span>, <span class="pl-v">l</span> <span class="pl-k">=</span> mean(<span class="pl-smi">microclima.LAI</span>), <span class="pl-v">x</span> <span class="pl-k">=</span> <span class="pl-smi">LOR</span>, <span class="pl-v">coastal</span> <span class="pl-k">=</span> <span class="pl-smi">coastal</span>, <span class="pl-v">hourlydata</span> <span class="pl-k">=</span> <span class="pl-smi">hourlydata</span>, <span class="pl-v">dailyprecip</span> <span class="pl-k">=</span> <span class="pl-smi">prate</span>, <span class="pl-v">dem</span> <span class="pl-k">=</span> <span class="pl-smi">dem</span>, <span class="pl-v">demmeso</span> <span class="pl-k">=</span> <span class="pl-smi">dem2</span>, <span class="pl-v">albr</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">resolution</span> <span class="pl-k">=</span> <span class="pl-c1">30</span>, <span class="pl-v">zmin</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">slope</span> <span class="pl-k">=</span> <span class="pl-smi">slope</span>, <span class="pl-v">aspect</span> <span class="pl-k">=</span> <span class="pl-smi">aspect</span>, <span class="pl-v">windthresh</span> <span class="pl-k">=</span> <span class="pl-c1">4.5</span>, <span class="pl-v">emthresh</span> <span class="pl-k">=</span> <span class="pl-c1">0.78</span>, <span class="pl-v">reanalysis2</span> <span class="pl-k">=</span> <span class="pl-smi">reanalysis</span>, <span class="pl-v">difani</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>, <span class="pl-v">weather.elev</span> <span class="pl-k">=</span> <span class="pl-smi">weather.elev</span>, <span class="pl-v">cad.effects</span> <span class="pl-k">=</span> <span class="pl-smi">cad.effects</span>)</td>
-      </tr>
-      <tr>
-        <td id="L857" class="blob-num js-line-number" data-line-number="857"></td>
-        <td id="LC857" class="blob-code blob-code-inner js-file-line">        }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L858" class="blob-num js-line-number" data-line-number="858"></td>
-        <td id="LC858" class="blob-code blob-code-inner js-file-line">          cat(<span class="pl-s"><span class="pl-pds">&quot;</span>computing radiation and elevation effects with package microclima <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L859" class="blob-num js-line-number" data-line-number="859"></td>
-        <td id="LC859" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">microclima.out</span> <span class="pl-k">&lt;-</span> <span class="pl-e">microclima</span><span class="pl-k">::</span>microclimaforNMR(<span class="pl-v">lat</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>[<span class="pl-c1">2</span>], <span class="pl-v">long</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>[<span class="pl-c1">1</span>], <span class="pl-v">dstart</span> <span class="pl-k">=</span> <span class="pl-smi">dstart</span>, <span class="pl-v">dfinish</span> <span class="pl-k">=</span> <span class="pl-smi">dfinish</span>, <span class="pl-v">l</span> <span class="pl-k">=</span> mean(<span class="pl-smi">microclima.LAI</span>), <span class="pl-v">x</span> <span class="pl-k">=</span> <span class="pl-smi">LOR</span>, <span class="pl-v">coastal</span> <span class="pl-k">=</span> <span class="pl-smi">coastal</span>, <span class="pl-v">hourlydata</span> <span class="pl-k">=</span> <span class="pl-smi">hourlydata</span>, <span class="pl-v">dailyprecip</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">dem</span> <span class="pl-k">=</span> <span class="pl-smi">dem</span>, <span class="pl-v">demmeso</span> <span class="pl-k">=</span> <span class="pl-smi">dem2</span>, <span class="pl-v">albr</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">resolution</span> <span class="pl-k">=</span> <span class="pl-c1">30</span>, <span class="pl-v">zmin</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">slope</span> <span class="pl-k">=</span> <span class="pl-smi">slope</span>, <span class="pl-v">aspect</span> <span class="pl-k">=</span> <span class="pl-smi">aspect</span>, <span class="pl-v">windthresh</span> <span class="pl-k">=</span> <span class="pl-c1">4.5</span>, <span class="pl-v">emthresh</span> <span class="pl-k">=</span> <span class="pl-c1">0.78</span>, <span class="pl-v">reanalysis2</span> <span class="pl-k">=</span> <span class="pl-smi">reanalysis</span>, <span class="pl-v">difani</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>, <span class="pl-v">weather.elev</span> <span class="pl-k">=</span> <span class="pl-smi">weather.elev</span>, <span class="pl-v">cad.effects</span> <span class="pl-k">=</span> <span class="pl-smi">cad.effects</span>)</td>
-      </tr>
-      <tr>
-        <td id="L860" class="blob-num js-line-number" data-line-number="860"></td>
-        <td id="LC860" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L861" class="blob-num js-line-number" data-line-number="861"></td>
-        <td id="LC861" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(class(<span class="pl-smi">dailyprecip</span>) <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>logical<span class="pl-pds">&quot;</span></span>){</td>
-      </tr>
-      <tr>
-        <td id="L862" class="blob-num js-line-number" data-line-number="862"></td>
-        <td id="LC862" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">dailyprecip</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microclima.out</span><span class="pl-k">$</span><span class="pl-smi">dailyprecip</span>[<span class="pl-k">-</span>c(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">4</span>)] <span class="pl-c"><span class="pl-c">#</span> remove extra 4 values from start</span></td>
-      </tr>
-      <tr>
-        <td id="L863" class="blob-num js-line-number" data-line-number="863"></td>
-        <td id="LC863" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">dailyprecip</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">dailyprecip</span>[<span class="pl-c1">1</span><span class="pl-k">:</span>(length(<span class="pl-smi">dailyprecip</span>) <span class="pl-k">-</span> <span class="pl-c1">4</span>)] <span class="pl-c"><span class="pl-c">#</span> remove extra 5 values from end</span></td>
-      </tr>
-      <tr>
-        <td id="L864" class="blob-num js-line-number" data-line-number="864"></td>
-        <td id="LC864" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">dailyprecip</span> <span class="pl-k">&lt;-</span> aggregate(<span class="pl-smi">dailyprecip</span>, <span class="pl-v">by</span> <span class="pl-k">=</span> <span class="pl-k">list</span>(format(<span class="pl-smi">hourlydata</span><span class="pl-k">$</span><span class="pl-smi">obs_time</span>[seq(<span class="pl-c1">1</span>, nrow(<span class="pl-smi">hourlydata</span>), <span class="pl-c1">6</span>)], <span class="pl-s"><span class="pl-pds">&quot;</span>%Y-%m-%d<span class="pl-pds">&quot;</span></span>)), <span class="pl-smi">sum</span>)<span class="pl-k">$</span><span class="pl-smi">x</span></td>
-      </tr>
-      <tr>
-        <td id="L865" class="blob-num js-line-number" data-line-number="865"></td>
-        <td id="LC865" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L866" class="blob-num js-line-number" data-line-number="866"></td>
-        <td id="LC866" class="blob-code blob-code-inner js-file-line">      }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L867" class="blob-num js-line-number" data-line-number="867"></td>
-        <td id="LC867" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(class(<span class="pl-smi">hourlydata</span>) <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>logical<span class="pl-pds">&quot;</span></span>){</td>
-      </tr>
-      <tr>
-        <td id="L868" class="blob-num js-line-number" data-line-number="868"></td>
-        <td id="LC868" class="blob-code blob-code-inner js-file-line">          cat(<span class="pl-s"><span class="pl-pds">&quot;</span>downloading weather data with package RNCEP via package microclima <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L869" class="blob-num js-line-number" data-line-number="869"></td>
-        <td id="LC869" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">hourlydata</span> <span class="pl-k">&lt;-</span> <span class="pl-e">microclima</span><span class="pl-k">::</span>hourlyNCEP(<span class="pl-v">ncepdata</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-smi">lat</span>, <span class="pl-smi">long</span>, <span class="pl-smi">tme</span>, <span class="pl-smi">reanalysis</span>) <span class="pl-c"><span class="pl-c">#</span> interpolated to hourly</span></td>
-      </tr>
-      <tr>
-        <td id="L870" class="blob-num js-line-number" data-line-number="870"></td>
-        <td id="LC870" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L871" class="blob-num js-line-number" data-line-number="871"></td>
-        <td id="LC871" class="blob-code blob-code-inner js-file-line">        cat(<span class="pl-s"><span class="pl-pds">&quot;</span>computing radiation and elevation effects with package microclima <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L872" class="blob-num js-line-number" data-line-number="872"></td>
-        <td id="LC872" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">microclima.out</span> <span class="pl-k">&lt;-</span> <span class="pl-e">microclima</span><span class="pl-k">::</span>microclimaforNMR(<span class="pl-v">lat</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>[<span class="pl-c1">2</span>], <span class="pl-v">long</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>[<span class="pl-c1">1</span>], <span class="pl-v">dstart</span> <span class="pl-k">=</span> <span class="pl-smi">dstart</span>, <span class="pl-v">dfinish</span> <span class="pl-k">=</span> <span class="pl-smi">dfinish</span>, <span class="pl-v">l</span> <span class="pl-k">=</span> mean(<span class="pl-smi">microclima.LAI</span>), <span class="pl-v">x</span> <span class="pl-k">=</span> <span class="pl-smi">LOR</span>, <span class="pl-v">coastal</span> <span class="pl-k">=</span> <span class="pl-smi">coastal</span>, <span class="pl-v">hourlydata</span> <span class="pl-k">=</span> <span class="pl-smi">hourlydata</span>, <span class="pl-v">dailyprecip</span> <span class="pl-k">=</span> <span class="pl-smi">dailyprecip</span>, <span class="pl-v">dem</span> <span class="pl-k">=</span> <span class="pl-smi">dem</span>, <span class="pl-v">demmeso</span> <span class="pl-k">=</span> <span class="pl-smi">dem2</span>, <span class="pl-v">albr</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">resolution</span> <span class="pl-k">=</span> <span class="pl-c1">30</span>, <span class="pl-v">zmin</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">slope</span> <span class="pl-k">=</span> <span class="pl-smi">slope</span>, <span class="pl-v">aspect</span> <span class="pl-k">=</span> <span class="pl-smi">aspect</span>, <span class="pl-v">windthresh</span> <span class="pl-k">=</span> <span class="pl-c1">4.5</span>, <span class="pl-v">emthresh</span> <span class="pl-k">=</span> <span class="pl-c1">0.78</span>, <span class="pl-v">reanalysis2</span> <span class="pl-k">=</span> <span class="pl-smi">reanalysis</span>, <span class="pl-v">difani</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>, <span class="pl-v">weather.elev</span> <span class="pl-k">=</span> <span class="pl-smi">weather.elev</span>, <span class="pl-v">cad.effects</span> <span class="pl-k">=</span> <span class="pl-smi">cad.effects</span>)</td>
-      </tr>
-      <tr>
-        <td id="L873" class="blob-num js-line-number" data-line-number="873"></td>
-        <td id="LC873" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">dailyprecip</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microclima.out</span><span class="pl-k">$</span><span class="pl-smi">dailyprecip</span></td>
-      </tr>
-      <tr>
-        <td id="L874" class="blob-num js-line-number" data-line-number="874"></td>
-        <td id="LC874" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L875" class="blob-num js-line-number" data-line-number="875"></td>
-        <td id="LC875" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">hourlyradwind</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microclima.out</span><span class="pl-k">$</span><span class="pl-smi">hourlyradwind</span></td>
-      </tr>
-      <tr>
-        <td id="L876" class="blob-num js-line-number" data-line-number="876"></td>
-        <td id="LC876" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">SLOPE</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlyradwind</span><span class="pl-k">$</span><span class="pl-smi">slope</span>[<span class="pl-c1">1</span>]</td>
-      </tr>
-      <tr>
-        <td id="L877" class="blob-num js-line-number" data-line-number="877"></td>
-        <td id="LC877" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">ASPECT</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlyradwind</span><span class="pl-k">$</span><span class="pl-smi">aspect</span>[<span class="pl-c1">1</span>]</td>
-      </tr>
-      <tr>
-        <td id="L878" class="blob-num js-line-number" data-line-number="878"></td>
-        <td id="LC878" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">tref</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microclima.out</span><span class="pl-k">$</span><span class="pl-smi">tref</span></td>
-      </tr>
-      <tr>
-        <td id="L879" class="blob-num js-line-number" data-line-number="879"></td>
-        <td id="LC879" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">ZENhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlydata</span><span class="pl-k">$</span><span class="pl-smi">szenith</span></td>
-      </tr>
-      <tr>
-        <td id="L880" class="blob-num js-line-number" data-line-number="880"></td>
-        <td id="LC880" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">ZENhr</span>[<span class="pl-smi">ZENhr</span> <span class="pl-k">&gt;</span> <span class="pl-c1">90</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">90</span></td>
-      </tr>
-      <tr>
-        <td id="L881" class="blob-num js-line-number" data-line-number="881"></td>
-        <td id="LC881" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">HORIZON</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hori</span></td>
-      </tr>
-      <tr>
-        <td id="L882" class="blob-num js-line-number" data-line-number="882"></td>
-        <td id="LC882" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L883" class="blob-num js-line-number" data-line-number="883"></td>
-        <td id="LC883" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">SLOPE</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>SLOPE.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L884" class="blob-num js-line-number" data-line-number="884"></td>
-        <td id="LC884" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">ASPECT</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>ASPECT.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L885" class="blob-num js-line-number" data-line-number="885"></td>
-        <td id="LC885" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">HORIZON</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>HORIZON.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L886" class="blob-num js-line-number" data-line-number="886"></td>
-        <td id="LC886" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L887" class="blob-num js-line-number" data-line-number="887"></td>
-        <td id="LC887" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span> NB units for rad = MJ / m^2 / hr (divide by 0.0036 to get to W / m^2)</span></td>
-      </tr>
-      <tr>
-        <td id="L888" class="blob-num js-line-number" data-line-number="888"></td>
-        <td id="LC888" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span> Skyviewfact (time invariant, 1 = complete hemisphere in view)</span></td>
-      </tr>
-      <tr>
-        <td id="L889" class="blob-num js-line-number" data-line-number="889"></td>
-        <td id="LC889" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span> canopyfact (proportion of isotropic radiation blocked out, 1 = no radiation gets in)</span></td>
-      </tr>
-      <tr>
-        <td id="L890" class="blob-num js-line-number" data-line-number="890"></td>
-        <td id="LC890" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L891" class="blob-num js-line-number" data-line-number="891"></td>
-        <td id="LC891" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">tref</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>tref.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L892" class="blob-num js-line-number" data-line-number="892"></td>
-        <td id="LC892" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L893" class="blob-num js-line-number" data-line-number="893"></td>
-        <td id="LC893" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span> tref (original hourly NCEP)</span></td>
-      </tr>
-      <tr>
-        <td id="L894" class="blob-num js-line-number" data-line-number="894"></td>
-        <td id="LC894" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span> telev (elevation-corrected temperature)</span></td>
-      </tr>
-      <tr>
-        <td id="L895" class="blob-num js-line-number" data-line-number="895"></td>
-        <td id="LC895" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span> tcad (delta temperature due to cold air drainage)</span></td>
-      </tr>
-      <tr>
-        <td id="L896" class="blob-num js-line-number" data-line-number="896"></td>
-        <td id="LC896" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">elev</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">tref</span><span class="pl-k">$</span><span class="pl-smi">elev</span>[<span class="pl-c1">1</span>] <span class="pl-c"><span class="pl-c">#</span> m</span></td>
-      </tr>
-      <tr>
-        <td id="L897" class="blob-num js-line-number" data-line-number="897"></td>
-        <td id="LC897" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">ALTT</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">elev</span></td>
-      </tr>
-      <tr>
-        <td id="L898" class="blob-num js-line-number" data-line-number="898"></td>
-        <td id="LC898" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">TAIRhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">tref</span><span class="pl-k">$</span><span class="pl-smi">telev</span> <span class="pl-k">+</span> <span class="pl-smi">tref</span><span class="pl-k">$</span><span class="pl-smi">tcad</span> <span class="pl-c"><span class="pl-c">#</span> reference Tair corrected for lapse rate and cold air drainage</span></td>
-      </tr>
-      <tr>
-        <td id="L899" class="blob-num js-line-number" data-line-number="899"></td>
-        <td id="LC899" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">SOLRhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlyradwind</span><span class="pl-k">$</span><span class="pl-smi">swrad</span> <span class="pl-k">/</span> <span class="pl-c1">0.0036</span></td>
-      </tr>
-      <tr>
-        <td id="L900" class="blob-num js-line-number" data-line-number="900"></td>
-        <td id="LC900" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">SOLRhr</span>[<span class="pl-smi">SOLRhr</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L901" class="blob-num js-line-number" data-line-number="901"></td>
-        <td id="LC901" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">SOLRhr</span> <span class="pl-k">&lt;-</span> <span class="pl-e">zoo</span><span class="pl-k">::</span>na.approx(<span class="pl-smi">SOLRhr</span>)</td>
-      </tr>
-      <tr>
-        <td id="L902" class="blob-num js-line-number" data-line-number="902"></td>
-        <td id="LC902" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">cloudhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlydata</span><span class="pl-k">$</span><span class="pl-smi">cloudcover</span></td>
-      </tr>
-      <tr>
-        <td id="L903" class="blob-num js-line-number" data-line-number="903"></td>
-        <td id="LC903" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">IRDhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlydata</span><span class="pl-k">$</span><span class="pl-smi">downlong</span> <span class="pl-k">/</span> <span class="pl-c1">0.0036</span></td>
-      </tr>
-      <tr>
-        <td id="L904" class="blob-num js-line-number" data-line-number="904"></td>
-        <td id="LC904" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">IR</span> <span class="pl-k">!=</span> <span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L905" class="blob-num js-line-number" data-line-number="905"></td>
-        <td id="LC905" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">IRDhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">IRDhr</span> <span class="pl-k">*</span> <span class="pl-c1">0</span> <span class="pl-k">+</span> <span class="pl-k">-</span><span class="pl-c1">1</span> <span class="pl-c"><span class="pl-c">#</span> make negative so computed internally in the microclimate model</span></td>
-      </tr>
-      <tr>
-        <td id="L906" class="blob-num js-line-number" data-line-number="906"></td>
-        <td id="LC906" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L907" class="blob-num js-line-number" data-line-number="907"></td>
-        <td id="LC907" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">CLDhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlydata</span><span class="pl-k">$</span><span class="pl-smi">cloudcover</span></td>
-      </tr>
-      <tr>
-        <td id="L908" class="blob-num js-line-number" data-line-number="908"></td>
-        <td id="LC908" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">CLDhr</span>[<span class="pl-smi">CLDhr</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L909" class="blob-num js-line-number" data-line-number="909"></td>
-        <td id="LC909" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">CLDhr</span>[<span class="pl-smi">CLDhr</span> <span class="pl-k">&gt;</span> <span class="pl-c1">100</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">100</span></td>
-      </tr>
-      <tr>
-        <td id="L910" class="blob-num js-line-number" data-line-number="910"></td>
-        <td id="LC910" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">RHhr</span> <span class="pl-k">&lt;-</span> suppressWarnings(humidityconvert(<span class="pl-v">h</span> <span class="pl-k">=</span> <span class="pl-smi">hourlydata</span><span class="pl-k">$</span><span class="pl-smi">humidity</span>, <span class="pl-v">intype</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>specific<span class="pl-pds">&#39;</span></span>, <span class="pl-v">p</span> <span class="pl-k">=</span> <span class="pl-smi">hourlydata</span><span class="pl-k">$</span><span class="pl-smi">pressure</span>, <span class="pl-v">tc</span> <span class="pl-k">=</span> <span class="pl-smi">TAIRhr</span>)<span class="pl-k">$</span><span class="pl-smi">relative</span>)</td>
-      </tr>
-      <tr>
-        <td id="L911" class="blob-num js-line-number" data-line-number="911"></td>
-        <td id="LC911" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">RHhr</span>[<span class="pl-smi">RHhr</span> <span class="pl-k">&gt;</span> <span class="pl-c1">100</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">100</span></td>
-      </tr>
-      <tr>
-        <td id="L912" class="blob-num js-line-number" data-line-number="912"></td>
-        <td id="LC912" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">RHhr</span>[<span class="pl-smi">RHhr</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L913" class="blob-num js-line-number" data-line-number="913"></td>
-        <td id="LC913" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">WNhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlyradwind</span><span class="pl-k">$</span><span class="pl-smi">windspeed</span></td>
-      </tr>
-      <tr>
-        <td id="L914" class="blob-num js-line-number" data-line-number="914"></td>
-        <td id="LC914" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">WNhr</span>[is.na(<span class="pl-smi">WNhr</span>)] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.1</span></td>
-      </tr>
-      <tr>
-        <td id="L915" class="blob-num js-line-number" data-line-number="915"></td>
-        <td id="LC915" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">RAINhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">WNhr</span> <span class="pl-k">*</span> <span class="pl-c1">0</span> <span class="pl-c"><span class="pl-c">#</span> using daily rain for now</span></td>
-      </tr>
-      <tr>
-        <td id="L916" class="blob-num js-line-number" data-line-number="916"></td>
-        <td id="LC916" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">PRESShr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">hourlydata</span><span class="pl-k">$</span><span class="pl-smi">pressure</span></td>
-      </tr>
-      <tr>
-        <td id="L917" class="blob-num js-line-number" data-line-number="917"></td>
-        <td id="LC917" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">RAINFALL</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">dailyprecip</span></td>
-      </tr>
-      <tr>
-        <td id="L918" class="blob-num js-line-number" data-line-number="918"></td>
-        <td id="LC918" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">RAINFALL</span>[<span class="pl-smi">RAINFALL</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0.1</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L919" class="blob-num js-line-number" data-line-number="919"></td>
-        <td id="LC919" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">ZENhr2</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">ZENhr</span></td>
-      </tr>
-      <tr>
-        <td id="L920" class="blob-num js-line-number" data-line-number="920"></td>
-        <td id="LC920" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">ZENhr2</span>[<span class="pl-smi">ZENhr2</span><span class="pl-k">!=</span><span class="pl-c1">90</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L921" class="blob-num js-line-number" data-line-number="921"></td>
-        <td id="LC921" class="blob-code blob-code-inner js-file-line">      <span class="pl-en">dmaxmin</span> <span class="pl-k">&lt;-</span> <span class="pl-k">function</span>(<span class="pl-smi">x</span>, <span class="pl-smi">fun</span>) {</td>
-      </tr>
-      <tr>
-        <td id="L922" class="blob-num js-line-number" data-line-number="922"></td>
-        <td id="LC922" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">dx</span> <span class="pl-k">&lt;-</span> t(<span class="pl-k">matrix</span>(<span class="pl-smi">x</span>, <span class="pl-v">nrow</span> <span class="pl-k">=</span> <span class="pl-c1">24</span>))</td>
-      </tr>
-      <tr>
-        <td id="L923" class="blob-num js-line-number" data-line-number="923"></td>
-        <td id="LC923" class="blob-code blob-code-inner js-file-line">        apply(<span class="pl-smi">dx</span>, <span class="pl-c1">1</span>, <span class="pl-smi">fun</span>)</td>
-      </tr>
-      <tr>
-        <td id="L924" class="blob-num js-line-number" data-line-number="924"></td>
-        <td id="LC924" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L925" class="blob-num js-line-number" data-line-number="925"></td>
-        <td id="LC925" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">TMAXX</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">TAIRhr</span>, <span class="pl-smi">max</span>)</td>
-      </tr>
-      <tr>
-        <td id="L926" class="blob-num js-line-number" data-line-number="926"></td>
-        <td id="LC926" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">TMINN</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">TAIRhr</span>, <span class="pl-smi">min</span>)</td>
-      </tr>
-      <tr>
-        <td id="L927" class="blob-num js-line-number" data-line-number="927"></td>
-        <td id="LC927" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">CCMAXX</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">CLDhr</span>, <span class="pl-smi">max</span>)</td>
-      </tr>
-      <tr>
-        <td id="L928" class="blob-num js-line-number" data-line-number="928"></td>
-        <td id="LC928" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">CCMINN</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">CLDhr</span>, <span class="pl-smi">min</span>)</td>
-      </tr>
-      <tr>
-        <td id="L929" class="blob-num js-line-number" data-line-number="929"></td>
-        <td id="LC929" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">RHMAXX</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">RHhr</span>, <span class="pl-smi">max</span>)</td>
-      </tr>
-      <tr>
-        <td id="L930" class="blob-num js-line-number" data-line-number="930"></td>
-        <td id="LC930" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">RHMINN</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">RHhr</span>, <span class="pl-smi">min</span>)</td>
-      </tr>
-      <tr>
-        <td id="L931" class="blob-num js-line-number" data-line-number="931"></td>
-        <td id="LC931" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">WNMAXX</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">WNhr</span>, <span class="pl-smi">max</span>)</td>
-      </tr>
-      <tr>
-        <td id="L932" class="blob-num js-line-number" data-line-number="932"></td>
-        <td id="LC932" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">WNMINN</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">WNhr</span>, <span class="pl-smi">min</span>)</td>
-      </tr>
-      <tr>
-        <td id="L933" class="blob-num js-line-number" data-line-number="933"></td>
-        <td id="LC933" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">PRESS</span> <span class="pl-k">&lt;-</span> dmaxmin(<span class="pl-smi">PRESShr</span>, <span class="pl-smi">min</span>)</td>
-      </tr>
-      <tr>
-        <td id="L934" class="blob-num js-line-number" data-line-number="934"></td>
-        <td id="LC934" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L935" class="blob-num js-line-number" data-line-number="935"></td>
-        <td id="LC935" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">save</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L936" class="blob-num js-line-number" data-line-number="936"></td>
-        <td id="LC936" class="blob-code blob-code-inner js-file-line">        cat(<span class="pl-s"><span class="pl-pds">&quot;</span>saving met data for later <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L937" class="blob-num js-line-number" data-line-number="937"></td>
-        <td id="LC937" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">CCMAXX</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>CCMAXX.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L938" class="blob-num js-line-number" data-line-number="938"></td>
-        <td id="LC938" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">CCMINN</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>CCMINN.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L939" class="blob-num js-line-number" data-line-number="939"></td>
-        <td id="LC939" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">WNMAXX</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>WNMAXX.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L940" class="blob-num js-line-number" data-line-number="940"></td>
-        <td id="LC940" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">WNMINN</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>WNMINN.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L941" class="blob-num js-line-number" data-line-number="941"></td>
-        <td id="LC941" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">TMAXX</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>TMAXX.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L942" class="blob-num js-line-number" data-line-number="942"></td>
-        <td id="LC942" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">TMINN</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>TMINN.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L943" class="blob-num js-line-number" data-line-number="943"></td>
-        <td id="LC943" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">RHMAXX</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>RHMAXX.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L944" class="blob-num js-line-number" data-line-number="944"></td>
-        <td id="LC944" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">RHMINN</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>RHMINN.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L945" class="blob-num js-line-number" data-line-number="945"></td>
-        <td id="LC945" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">RAINFALL</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>RAINFALL.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L946" class="blob-num js-line-number" data-line-number="946"></td>
-        <td id="LC946" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">PRESS</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>PRESS.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L947" class="blob-num js-line-number" data-line-number="947"></td>
-        <td id="LC947" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">CLDhr</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>CLDhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L948" class="blob-num js-line-number" data-line-number="948"></td>
-        <td id="LC948" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">WNhr</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>WNhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L949" class="blob-num js-line-number" data-line-number="949"></td>
-        <td id="LC949" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">TAIRhr</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>TAIRhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L950" class="blob-num js-line-number" data-line-number="950"></td>
-        <td id="LC950" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">RHhr</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>RHhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L951" class="blob-num js-line-number" data-line-number="951"></td>
-        <td id="LC951" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">RAINhr</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>RAINhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L952" class="blob-num js-line-number" data-line-number="952"></td>
-        <td id="LC952" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">SOLRhr</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>SOLRhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L953" class="blob-num js-line-number" data-line-number="953"></td>
-        <td id="LC953" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">ZENhr</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>ZENhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L954" class="blob-num js-line-number" data-line-number="954"></td>
-        <td id="LC954" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">IRDhr</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>IRDhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L955" class="blob-num js-line-number" data-line-number="955"></td>
-        <td id="LC955" class="blob-code blob-code-inner js-file-line">        save(<span class="pl-smi">microclima.out</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>microclima.out.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L956" class="blob-num js-line-number" data-line-number="956"></td>
-        <td id="LC956" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L957" class="blob-num js-line-number" data-line-number="957"></td>
-        <td id="LC957" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L958" class="blob-num js-line-number" data-line-number="958"></td>
-        <td id="LC958" class="blob-code blob-code-inner js-file-line">      cat(<span class="pl-s"><span class="pl-pds">&quot;</span>loading met data from previous run <span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L959" class="blob-num js-line-number" data-line-number="959"></td>
-        <td id="LC959" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>CCMAXX.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L960" class="blob-num js-line-number" data-line-number="960"></td>
-        <td id="LC960" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>CCMINN.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L961" class="blob-num js-line-number" data-line-number="961"></td>
-        <td id="LC961" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>WNMAXX.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L962" class="blob-num js-line-number" data-line-number="962"></td>
-        <td id="LC962" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>WNMINN.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L963" class="blob-num js-line-number" data-line-number="963"></td>
-        <td id="LC963" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>TMAXX.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L964" class="blob-num js-line-number" data-line-number="964"></td>
-        <td id="LC964" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>TMINN.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L965" class="blob-num js-line-number" data-line-number="965"></td>
-        <td id="LC965" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>RHMAXX.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L966" class="blob-num js-line-number" data-line-number="966"></td>
-        <td id="LC966" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>RHMINN.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L967" class="blob-num js-line-number" data-line-number="967"></td>
-        <td id="LC967" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>RAINFALL.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L968" class="blob-num js-line-number" data-line-number="968"></td>
-        <td id="LC968" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>PRESS.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L969" class="blob-num js-line-number" data-line-number="969"></td>
-        <td id="LC969" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>CLDhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L970" class="blob-num js-line-number" data-line-number="970"></td>
-        <td id="LC970" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>WNhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L971" class="blob-num js-line-number" data-line-number="971"></td>
-        <td id="LC971" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>TAIRhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L972" class="blob-num js-line-number" data-line-number="972"></td>
-        <td id="LC972" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>RHhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L973" class="blob-num js-line-number" data-line-number="973"></td>
-        <td id="LC973" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>RAINhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L974" class="blob-num js-line-number" data-line-number="974"></td>
-        <td id="LC974" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>SOLRhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L975" class="blob-num js-line-number" data-line-number="975"></td>
-        <td id="LC975" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>ZENhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L976" class="blob-num js-line-number" data-line-number="976"></td>
-        <td id="LC976" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>IRDhr.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L977" class="blob-num js-line-number" data-line-number="977"></td>
-        <td id="LC977" class="blob-code blob-code-inner js-file-line">      load(<span class="pl-s"><span class="pl-pds">&#39;</span>microclima.out.Rda<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L978" class="blob-num js-line-number" data-line-number="978"></td>
-        <td id="LC978" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L979" class="blob-num js-line-number" data-line-number="979"></td>
-        <td id="LC979" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">slope</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span> <span class="pl-c"><span class="pl-c">#</span> already corrected for by microclima</span></td>
-      </tr>
-      <tr>
-        <td id="L980" class="blob-num js-line-number" data-line-number="980"></td>
-        <td id="LC980" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">azmuth</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span> <span class="pl-c"><span class="pl-c">#</span> already corrected for by microclima</span></td>
-      </tr>
-      <tr>
-        <td id="L981" class="blob-num js-line-number" data-line-number="981"></td>
-        <td id="LC981" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L982" class="blob-num js-line-number" data-line-number="982"></td>
-        <td id="LC982" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">run.gads</span> <span class="pl-k">&gt;</span> <span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L983" class="blob-num js-line-number" data-line-number="983"></td>
-        <td id="LC983" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span>###### get solar attenuation due to aerosols with program GADS #####################</span></td>
-      </tr>
-      <tr>
-        <td id="L984" class="blob-num js-line-number" data-line-number="984"></td>
-        <td id="LC984" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">relhum</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L985" class="blob-num js-line-number" data-line-number="985"></td>
-        <td id="LC985" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">run.gads</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){ <span class="pl-c"><span class="pl-c">#</span> fortran version</span></td>
-      </tr>
-      <tr>
-        <td id="L986" class="blob-num js-line-number" data-line-number="986"></td>
-        <td id="LC986" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">optdep.summer</span> <span class="pl-k">&lt;-</span> as.data.frame(rungads(<span class="pl-smi">longlat</span>[<span class="pl-c1">2</span>], <span class="pl-smi">longlat</span>[<span class="pl-c1">1</span>], <span class="pl-smi">relhum</span>, <span class="pl-c1">0</span>))</td>
-      </tr>
-      <tr>
-        <td id="L987" class="blob-num js-line-number" data-line-number="987"></td>
-        <td id="LC987" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">optdep.winter</span> <span class="pl-k">&lt;-</span> as.data.frame(rungads(<span class="pl-smi">longlat</span>[<span class="pl-c1">2</span>], <span class="pl-smi">longlat</span>[<span class="pl-c1">1</span>], <span class="pl-smi">relhum</span>, <span class="pl-c1">1</span>))</td>
-      </tr>
-      <tr>
-        <td id="L988" class="blob-num js-line-number" data-line-number="988"></td>
-        <td id="LC988" class="blob-code blob-code-inner js-file-line">      }<span class="pl-k">else</span>{ <span class="pl-c"><span class="pl-c">#</span> r version</span></td>
-      </tr>
-      <tr>
-        <td id="L989" class="blob-num js-line-number" data-line-number="989"></td>
-        <td id="LC989" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">optdep.summer</span> <span class="pl-k">&lt;-</span> as.data.frame(gads.r(<span class="pl-smi">longlat</span>[<span class="pl-c1">2</span>], <span class="pl-smi">longlat</span>[<span class="pl-c1">1</span>], <span class="pl-smi">relhum</span>, <span class="pl-c1">0</span>))</td>
-      </tr>
-      <tr>
-        <td id="L990" class="blob-num js-line-number" data-line-number="990"></td>
-        <td id="LC990" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">optdep.winter</span> <span class="pl-k">&lt;-</span> as.data.frame(gads.r(<span class="pl-smi">longlat</span>[<span class="pl-c1">2</span>], <span class="pl-smi">longlat</span>[<span class="pl-c1">1</span>], <span class="pl-smi">relhum</span>, <span class="pl-c1">1</span>))</td>
-      </tr>
-      <tr>
-        <td id="L991" class="blob-num js-line-number" data-line-number="991"></td>
-        <td id="LC991" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L992" class="blob-num js-line-number" data-line-number="992"></td>
-        <td id="LC992" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">optdep</span><span class="pl-k">&lt;-</span>cbind(<span class="pl-smi">optdep.winter</span>[, <span class="pl-c1">1</span>], rowMeans(cbind(<span class="pl-smi">optdep.summer</span>[, <span class="pl-c1">2</span>], <span class="pl-smi">optdep.winter</span>[, <span class="pl-c1">2</span>])))</td>
-      </tr>
-      <tr>
-        <td id="L993" class="blob-num js-line-number" data-line-number="993"></td>
-        <td id="LC993" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">optdep</span><span class="pl-k">&lt;-</span>as.data.frame(<span class="pl-smi">optdep</span>)</td>
-      </tr>
-      <tr>
-        <td id="L994" class="blob-num js-line-number" data-line-number="994"></td>
-        <td id="LC994" class="blob-code blob-code-inner js-file-line">      colnames(<span class="pl-smi">optdep</span>) <span class="pl-k">&lt;-</span> c(<span class="pl-s"><span class="pl-pds">&quot;</span>LAMBDA<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>OPTDEPTH<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L995" class="blob-num js-line-number" data-line-number="995"></td>
-        <td id="LC995" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">a</span> <span class="pl-k">&lt;-</span> lm(<span class="pl-smi">OPTDEPTH</span> <span class="pl-k">~</span> poly(<span class="pl-smi">LAMBDA</span>, <span class="pl-c1">6</span>, <span class="pl-v">raw</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>), <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">optdep</span>)</td>
-      </tr>
-      <tr>
-        <td id="L996" class="blob-num js-line-number" data-line-number="996"></td>
-        <td id="LC996" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">LAMBDA</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">290</span>, <span class="pl-c1">295</span>, <span class="pl-c1">300</span>, <span class="pl-c1">305</span>, <span class="pl-c1">310</span>, <span class="pl-c1">315</span>, <span class="pl-c1">320</span>, <span class="pl-c1">330</span>, <span class="pl-c1">340</span>, <span class="pl-c1">350</span>, <span class="pl-c1">360</span>, <span class="pl-c1">370</span>, <span class="pl-c1">380</span>, <span class="pl-c1">390</span>, <span class="pl-c1">400</span>, <span class="pl-c1">420</span>, <span class="pl-c1">440</span>, <span class="pl-c1">460</span>, <span class="pl-c1">480</span>, <span class="pl-c1">500</span>, <span class="pl-c1">520</span>, <span class="pl-c1">540</span>, <span class="pl-c1">560</span>, <span class="pl-c1">580</span>, <span class="pl-c1">600</span>, <span class="pl-c1">620</span>, <span class="pl-c1">640</span>, <span class="pl-c1">660</span>, <span class="pl-c1">680</span>, <span class="pl-c1">700</span>, <span class="pl-c1">720</span>, <span class="pl-c1">740</span>, <span class="pl-c1">760</span>, <span class="pl-c1">780</span>, <span class="pl-c1">800</span>, <span class="pl-c1">820</span>, <span class="pl-c1">840</span>, <span class="pl-c1">860</span>, <span class="pl-c1">880</span>, <span class="pl-c1">900</span>, <span class="pl-c1">920</span>, <span class="pl-c1">940</span>, <span class="pl-c1">960</span>, <span class="pl-c1">980</span>, <span class="pl-c1">1000</span>, <span class="pl-c1">1020</span>, <span class="pl-c1">1080</span>, <span class="pl-c1">1100</span>, <span class="pl-c1">1120</span>, <span class="pl-c1">1140</span>, <span class="pl-c1">1160</span>, <span class="pl-c1">1180</span>, <span class="pl-c1">1200</span>, <span class="pl-c1">1220</span>, <span class="pl-c1">1240</span>, <span class="pl-c1">1260</span>, <span class="pl-c1">1280</span>, <span class="pl-c1">1300</span>, <span class="pl-c1">1320</span>, <span class="pl-c1">1380</span>, <span class="pl-c1">1400</span>, <span class="pl-c1">1420</span>, <span class="pl-c1">1440</span>, <span class="pl-c1">1460</span>, <span class="pl-c1">1480</span>, <span class="pl-c1">1500</span>, <span class="pl-c1">1540</span>, <span class="pl-c1">1580</span>, <span class="pl-c1">1600</span>, <span class="pl-c1">1620</span>, <span class="pl-c1">1640</span>, <span class="pl-c1">1660</span>, <span class="pl-c1">1700</span>, <span class="pl-c1">1720</span>, <span class="pl-c1">1780</span>, <span class="pl-c1">1800</span>, <span class="pl-c1">1860</span>, <span class="pl-c1">1900</span>, <span class="pl-c1">1950</span>, <span class="pl-c1">2000</span>, <span class="pl-c1">2020</span>, <span class="pl-c1">2050</span>, <span class="pl-c1">2100</span>, <span class="pl-c1">2120</span>, <span class="pl-c1">2150</span>, <span class="pl-c1">2200</span>, <span class="pl-c1">2260</span>, <span class="pl-c1">2300</span>, <span class="pl-c1">2320</span>, <span class="pl-c1">2350</span>, <span class="pl-c1">2380</span>, <span class="pl-c1">2400</span>, <span class="pl-c1">2420</span>, <span class="pl-c1">2450</span>, <span class="pl-c1">2490</span>, <span class="pl-c1">2500</span>, <span class="pl-c1">2600</span>, <span class="pl-c1">2700</span>, <span class="pl-c1">2800</span>, <span class="pl-c1">2900</span>, <span class="pl-c1">3000</span>, <span class="pl-c1">3100</span>, <span class="pl-c1">3200</span>, <span class="pl-c1">3300</span>, <span class="pl-c1">3400</span>, <span class="pl-c1">3500</span>, <span class="pl-c1">3600</span>, <span class="pl-c1">3700</span>, <span class="pl-c1">3800</span>, <span class="pl-c1">3900</span>, <span class="pl-c1">4000</span>)</td>
-      </tr>
-      <tr>
-        <td id="L997" class="blob-num js-line-number" data-line-number="997"></td>
-        <td id="LC997" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">TAI</span> <span class="pl-k">&lt;-</span> predict(<span class="pl-smi">a</span>, <span class="pl-k">data.frame</span>(<span class="pl-smi">LAMBDA</span>))</td>
-      </tr>
-      <tr>
-        <td id="L998" class="blob-num js-line-number" data-line-number="998"></td>
-        <td id="LC998" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span>############### end GADS ##################################################</span></td>
-      </tr>
-      <tr>
-        <td id="L999" class="blob-num js-line-number" data-line-number="999"></td>
-        <td id="LC999" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{ <span class="pl-c"><span class="pl-c">#</span> use a suitable one for Australia (same as around Adelaide/Melbourne)</span></td>
-      </tr>
-      <tr>
-        <td id="L1000" class="blob-num js-line-number" data-line-number="1000"></td>
-        <td id="LC1000" class="blob-code blob-code-inner js-file-line">      TAI&lt;-c(0.0670358341290886, 0.0662612704779235, 0.065497075238002, 0.0647431301168489, 0.0639993178022531, 0.0632655219571553, 0.0625416272145492, 0.0611230843885423, 0.0597427855962549, 0.0583998423063099, 0.0570933810229656, 0.0558225431259535, 0.0545864847111214, 0.0533843764318805, 0.0522154033414562, 0.0499736739981675, 0.047855059159556, 0.0458535417401334, 0.0439633201842001, 0.0421788036108921, 0.0404946070106968, 0.0389055464934382, 0.0374066345877315, 0.0359930755919066, 0.0346602609764008, 0.0334037648376212, 0.0322193394032758, 0.0311029105891739, 0.0300505736074963, 0.0290585886265337, 0.0281233764818952, 0.0272415144391857, 0.0264097320081524, 0.0256249068083005, 0.0248840604859789, 0.0241843546829336, 0.0235230870563317, 0.0228976873502544, 0.0223057135186581, 0.0217448478998064, 0.0212128934421699, 0.0207077699817964, 0.0202275105711489, 0.0197702578594144, 0.0193342605242809, 0.0189178697551836, 0.0177713140039894, 0.0174187914242432, 0.0170790495503944, 0.0167509836728154, 0.0164335684174899, 0.0161258546410128, 0.0158269663770596, 0.0155360978343254, 0.0152525104459325, 0.0149755299703076, 0.0147045436435285, 0.0144389973831391, 0.0141783930434343, 0.0134220329447663, 0.0131772403830191, 0.0129356456025128, 0.0126970313213065, 0.0124612184223418, 0.0122280636204822, 0.01199745718102, 0.0115436048739351, 0.0110993711778668, 0.0108808815754663, 0.0106648652077878, 0.0104513876347606, 0.0102405315676965, 0.00982708969547694, 0.00962473896278535, 0.00903679230300494, 0.00884767454432418, 0.0083031278398166, 0.00796072474935954, 0.00755817587626185, 0.00718610751850881, 0.00704629977586921, 0.00684663903049612, 0.00654155580333479, 0.00642947339729728, 0.00627223096874308, 0.00603955966866779, 0.00580920937536261, 0.00568506186880564, 0.00563167068287251, 0.00556222005081865, 0.00550522989971023, 0.00547395763028062, 0.0054478983436216, 0.00541823364504573, 0.00539532163908382, 0.00539239864119488, 0.00541690124712384, 0.00551525885358836, 0.00564825853509463, 0.00577220185074264, 0.00584222986640171, 0.00581645238345584, 0.00566088137411449, 0.00535516862329704, 0.00489914757707667, 0.00432017939770409, 0.0036813032251836, 0.00309019064543606, 0.00270890436501562, 0.00276446109239711, 0.00356019862584603)</td>
-      </tr>
-      <tr>
-        <td id="L1001" class="blob-num js-line-number" data-line-number="1001"></td>
-        <td id="LC1001" class="blob-code blob-code-inner js-file-line">    } <span class="pl-c"><span class="pl-c">#</span>end check if running gads</span></td>
-      </tr>
-      <tr>
-        <td id="L1002" class="blob-num js-line-number" data-line-number="1002"></td>
-        <td id="LC1002" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1003" class="blob-num js-line-number" data-line-number="1003"></td>
-        <td id="LC1003" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(max(abs(<span class="pl-smi">warm</span>)) <span class="pl-k">!=</span> <span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1004" class="blob-num js-line-number" data-line-number="1004"></td>
-        <td id="LC1004" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">#</span> impose uniform temperature change</span></td>
-      </tr>
-      <tr>
-        <td id="L1005" class="blob-num js-line-number" data-line-number="1005"></td>
-        <td id="LC1005" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">TMAXX</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">TMAXX</span> <span class="pl-k">+</span> <span class="pl-smi">warm</span></td>
-      </tr>
-      <tr>
-        <td id="L1006" class="blob-num js-line-number" data-line-number="1006"></td>
-        <td id="LC1006" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">TMINN</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">TMINN</span> <span class="pl-k">+</span> <span class="pl-smi">warm</span></td>
-      </tr>
-      <tr>
-        <td id="L1007" class="blob-num js-line-number" data-line-number="1007"></td>
-        <td id="LC1007" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(length(<span class="pl-smi">warm</span>) <span class="pl-k">==</span> length(<span class="pl-smi">TMAXX</span>)){</td>
-      </tr>
-      <tr>
-        <td id="L1008" class="blob-num js-line-number" data-line-number="1008"></td>
-        <td id="LC1008" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">warm.hr</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-smi">warm</span>, <span class="pl-v">each</span> <span class="pl-k">=</span> <span class="pl-c1">24</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1009" class="blob-num js-line-number" data-line-number="1009"></td>
-        <td id="LC1009" class="blob-code blob-code-inner js-file-line">      }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1010" class="blob-num js-line-number" data-line-number="1010"></td>
-        <td id="LC1010" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">warm.hr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">warm</span></td>
-      </tr>
-      <tr>
-        <td id="L1011" class="blob-num js-line-number" data-line-number="1011"></td>
-        <td id="LC1011" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L1012" class="blob-num js-line-number" data-line-number="1012"></td>
-        <td id="LC1012" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">TAIRhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">TAIRhr</span> <span class="pl-k">+</span> <span class="pl-smi">warm.hr</span></td>
-      </tr>
-      <tr>
-        <td id="L1013" class="blob-num js-line-number" data-line-number="1013"></td>
-        <td id="LC1013" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">sigma</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">5.67e-8</span> <span class="pl-c"><span class="pl-c">#</span>Stefan-Boltzman, W/(m.K)</span></td>
-      </tr>
-      <tr>
-        <td id="L1014" class="blob-num js-line-number" data-line-number="1014"></td>
-        <td id="LC1014" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">IRDhr</span> <span class="pl-k">==</span> <span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1015" class="blob-num js-line-number" data-line-number="1015"></td>
-        <td id="LC1015" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">IRDhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">sigma</span> <span class="pl-k">*</span> ((<span class="pl-smi">IRDhr</span> <span class="pl-k">/</span> <span class="pl-smi">sigma</span>) <span class="pl-k">^</span> (<span class="pl-c1">1</span> <span class="pl-k">/</span> <span class="pl-c1">4</span>) <span class="pl-k">+</span> <span class="pl-smi">warm.hr</span>) <span class="pl-k">^</span> <span class="pl-c1">4</span> <span class="pl-c"><span class="pl-c">#</span> adjust downward radiation for altered &#39;sky temperature&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L1016" class="blob-num js-line-number" data-line-number="1016"></td>
-        <td id="LC1016" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L1017" class="blob-num js-line-number" data-line-number="1017"></td>
-        <td id="LC1017" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1018" class="blob-num js-line-number" data-line-number="1018"></td>
-        <td id="LC1018" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">RAINFALL</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">RAINFALL</span> <span class="pl-k">+</span> <span class="pl-smi">rainoff</span></td>
-      </tr>
-      <tr>
-        <td id="L1019" class="blob-num js-line-number" data-line-number="1019"></td>
-        <td id="LC1019" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">RAINFALL</span>[<span class="pl-smi">RAINFALL</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L1020" class="blob-num js-line-number" data-line-number="1020"></td>
-        <td id="LC1020" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(length(<span class="pl-smi">rainoff</span>) <span class="pl-k">==</span> length(<span class="pl-smi">RAINFALL</span>)){</td>
-      </tr>
-      <tr>
-        <td id="L1021" class="blob-num js-line-number" data-line-number="1021"></td>
-        <td id="LC1021" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">rainoff.hr</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-smi">rainoff</span>, <span class="pl-v">each</span> <span class="pl-k">=</span> <span class="pl-c1">24</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1022" class="blob-num js-line-number" data-line-number="1022"></td>
-        <td id="LC1022" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1023" class="blob-num js-line-number" data-line-number="1023"></td>
-        <td id="LC1023" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">rainoff.hr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">rainoff</span></td>
-      </tr>
-      <tr>
-        <td id="L1024" class="blob-num js-line-number" data-line-number="1024"></td>
-        <td id="LC1024" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1025" class="blob-num js-line-number" data-line-number="1025"></td>
-        <td id="LC1025" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">RAINhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">RAINhr</span> <span class="pl-k">+</span> <span class="pl-smi">rainoff</span></td>
-      </tr>
-      <tr>
-        <td id="L1026" class="blob-num js-line-number" data-line-number="1026"></td>
-        <td id="LC1026" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">RAINhr</span>[<span class="pl-smi">RAINhr</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L1027" class="blob-num js-line-number" data-line-number="1027"></td>
-        <td id="LC1027" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALLMINTEMPS</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">TMINN</span></td>
-      </tr>
-      <tr>
-        <td id="L1028" class="blob-num js-line-number" data-line-number="1028"></td>
-        <td id="LC1028" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALLMAXTEMPS</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">TMAXX</span></td>
-      </tr>
-      <tr>
-        <td id="L1029" class="blob-num js-line-number" data-line-number="1029"></td>
-        <td id="LC1029" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALLTEMPS</span> <span class="pl-k">&lt;-</span> cbind(<span class="pl-smi">ALLMAXTEMPS</span>, <span class="pl-smi">ALLMINTEMPS</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1030" class="blob-num js-line-number" data-line-number="1030"></td>
-        <td id="LC1030" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1031" class="blob-num js-line-number" data-line-number="1031"></td>
-        <td id="LC1031" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">WNMAXX</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">WNMAXX</span> <span class="pl-k">*</span> <span class="pl-smi">windfac</span></td>
-      </tr>
-      <tr>
-        <td id="L1032" class="blob-num js-line-number" data-line-number="1032"></td>
-        <td id="LC1032" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">WNMINN</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">WNMINN</span> <span class="pl-k">*</span> <span class="pl-smi">windfac</span></td>
-      </tr>
-      <tr>
-        <td id="L1033" class="blob-num js-line-number" data-line-number="1033"></td>
-        <td id="LC1033" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">WNhr</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">WNhr</span> <span class="pl-k">*</span> <span class="pl-smi">windfac</span></td>
-      </tr>
-      <tr>
-        <td id="L1034" class="blob-num js-line-number" data-line-number="1034"></td>
-        <td id="LC1034" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1035" class="blob-num js-line-number" data-line-number="1035"></td>
-        <td id="LC1035" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">REFLS</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-smi">REFL</span>, <span class="pl-smi">ndays</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1036" class="blob-num js-line-number" data-line-number="1036"></td>
-        <td id="LC1036" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">PCTWET</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-smi">PCTWET</span>, <span class="pl-smi">ndays</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1037" class="blob-num js-line-number" data-line-number="1037"></td>
-        <td id="LC1037" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilwet</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">RAINFALL</span></td>
-      </tr>
-      <tr>
-        <td id="L1038" class="blob-num js-line-number" data-line-number="1038"></td>
-        <td id="LC1038" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilwet</span>[<span class="pl-smi">soilwet</span> <span class="pl-k">&lt;</span><span class="pl-k">=</span> <span class="pl-smi">rainwet</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L1039" class="blob-num js-line-number" data-line-number="1039"></td>
-        <td id="LC1039" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilwet</span>[<span class="pl-smi">soilwet</span> <span class="pl-k">&gt;</span> <span class="pl-c1">0</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">90</span></td>
-      </tr>
-      <tr>
-        <td id="L1040" class="blob-num js-line-number" data-line-number="1040"></td>
-        <td id="LC1040" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">ndays</span> <span class="pl-k">&lt;</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1041" class="blob-num js-line-number" data-line-number="1041"></td>
-        <td id="LC1041" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">PCTWET</span> <span class="pl-k">&lt;-</span> pmax(<span class="pl-smi">soilwet</span>, <span class="pl-smi">PCTWET</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1042" class="blob-num js-line-number" data-line-number="1042"></td>
-        <td id="LC1042" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1043" class="blob-num js-line-number" data-line-number="1043"></td>
-        <td id="LC1043" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1044" class="blob-num js-line-number" data-line-number="1044"></td>
-        <td id="LC1044" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">Intrvls</span><span class="pl-k">&lt;-</span>rep(<span class="pl-c1">0</span>, <span class="pl-smi">ndays</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1045" class="blob-num js-line-number" data-line-number="1045"></td>
-        <td id="LC1045" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">Intrvls</span>[<span class="pl-c1">1</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">1</span> <span class="pl-c"><span class="pl-c">#</span> user-supplied last day-of-year in each time interval sequence</span></td>
-      </tr>
-      <tr>
-        <td id="L1046" class="blob-num js-line-number" data-line-number="1046"></td>
-        <td id="LC1046" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">Numtyps</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">10</span> <span class="pl-c"><span class="pl-c">#</span> number of substrate types</span></td>
-      </tr>
-      <tr>
-        <td id="L1047" class="blob-num js-line-number" data-line-number="1047"></td>
-        <td id="LC1047" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">Nodes</span> <span class="pl-k">&lt;-</span> <span class="pl-k">matrix</span>(<span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">nrow</span> <span class="pl-k">=</span> <span class="pl-c1">10</span>, <span class="pl-v">ncol</span> <span class="pl-k">=</span> <span class="pl-smi">ndays</span>) <span class="pl-c"><span class="pl-c">#</span> deepest nodes for each substrate type</span></td>
-      </tr>
-      <tr>
-        <td id="L1048" class="blob-num js-line-number" data-line-number="1048"></td>
-        <td id="LC1048" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">Nodes</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>,] <span class="pl-k">&lt;-</span> c(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>) <span class="pl-c"><span class="pl-c">#</span> deepest nodes for each substrate type</span></td>
-      </tr>
-      <tr>
-        <td id="L1049" class="blob-num js-line-number" data-line-number="1049"></td>
-        <td id="LC1049" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALREF</span> <span class="pl-k">&lt;-</span> abs(trunc(<span class="pl-smi">x</span>[<span class="pl-c1">1</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L1050" class="blob-num js-line-number" data-line-number="1050"></td>
-        <td id="LC1050" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1051" class="blob-num js-line-number" data-line-number="1051"></td>
-        <td id="LC1051" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">HEMIS</span> <span class="pl-k">&lt;-</span> ifelse(<span class="pl-smi">x</span>[<span class="pl-c1">2</span>] <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>, <span class="pl-c1">2</span>, <span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1052" class="blob-num js-line-number" data-line-number="1052"></td>
-        <td id="LC1052" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALAT</span> <span class="pl-k">&lt;-</span> abs(trunc(<span class="pl-smi">x</span>[<span class="pl-c1">2</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L1053" class="blob-num js-line-number" data-line-number="1053"></td>
-        <td id="LC1053" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">AMINUT</span> <span class="pl-k">&lt;-</span> (abs(<span class="pl-smi">x</span>[<span class="pl-c1">2</span>]) <span class="pl-k">-</span> <span class="pl-smi">ALAT</span>) <span class="pl-k">*</span> <span class="pl-c1">60</span></td>
-      </tr>
-      <tr>
-        <td id="L1054" class="blob-num js-line-number" data-line-number="1054"></td>
-        <td id="LC1054" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALONG</span> <span class="pl-k">&lt;-</span> abs(trunc(<span class="pl-smi">x</span>[<span class="pl-c1">1</span>]))</td>
-      </tr>
-      <tr>
-        <td id="L1055" class="blob-num js-line-number" data-line-number="1055"></td>
-        <td id="LC1055" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALMINT</span> <span class="pl-k">&lt;-</span> (abs(<span class="pl-smi">x</span>[<span class="pl-c1">1</span>]) <span class="pl-k">-</span> <span class="pl-smi">ALONG</span>) <span class="pl-k">*</span> <span class="pl-c1">60</span></td>
-      </tr>
-      <tr>
-        <td id="L1056" class="blob-num js-line-number" data-line-number="1056"></td>
-        <td id="LC1056" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1057" class="blob-num js-line-number" data-line-number="1057"></td>
-        <td id="LC1057" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">avetemp</span> <span class="pl-k">&lt;-</span> (sum(<span class="pl-smi">TMAXX</span>) <span class="pl-k">+</span> sum(<span class="pl-smi">TMINN</span>)) <span class="pl-k">/</span> (length(<span class="pl-smi">TMAXX</span>) <span class="pl-k">*</span> <span class="pl-c1">2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1058" class="blob-num js-line-number" data-line-number="1058"></td>
-        <td id="LC1058" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilinit</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-smi">avetemp</span>, <span class="pl-c1">20</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1059" class="blob-num js-line-number" data-line-number="1059"></td>
-        <td id="LC1059" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">tannul</span> <span class="pl-k">&lt;-</span> mean(unlist(<span class="pl-smi">ALLTEMPS</span>))</td>
-      </tr>
-      <tr>
-        <td id="L1060" class="blob-num js-line-number" data-line-number="1060"></td>
-        <td id="LC1060" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1061" class="blob-num js-line-number" data-line-number="1061"></td>
-        <td id="LC1061" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(is.na(<span class="pl-smi">deepsoil</span>)){</td>
-      </tr>
-      <tr>
-        <td id="L1062" class="blob-num js-line-number" data-line-number="1062"></td>
-        <td id="LC1062" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">nyears</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1063" class="blob-num js-line-number" data-line-number="1063"></td>
-        <td id="LC1063" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">avetemp</span> <span class="pl-k">&lt;-</span> (sum(<span class="pl-smi">TMAXX</span>) <span class="pl-k">+</span> sum(<span class="pl-smi">TMINN</span>)) <span class="pl-k">/</span> (length(<span class="pl-smi">TMAXX</span>)<span class="pl-k">*</span><span class="pl-c1">2</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1064" class="blob-num js-line-number" data-line-number="1064"></td>
-        <td id="LC1064" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">deepsoil</span> <span class="pl-k">&lt;-</span>rep(<span class="pl-smi">avetemp</span>, <span class="pl-smi">ndays</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1065" class="blob-num js-line-number" data-line-number="1065"></td>
-        <td id="LC1065" class="blob-code blob-code-inner js-file-line">      }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1066" class="blob-num js-line-number" data-line-number="1066"></td>
-        <td id="LC1066" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">avetemp</span> <span class="pl-k">&lt;-</span> rowMeans(cbind(<span class="pl-smi">TMAXX</span>, <span class="pl-smi">TMINN</span>), <span class="pl-v">na.rm</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1067" class="blob-num js-line-number" data-line-number="1067"></td>
-        <td id="LC1067" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span>(length(<span class="pl-smi">TMAXX</span>) <span class="pl-k">&lt;</span> <span class="pl-c1">365</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1068" class="blob-num js-line-number" data-line-number="1068"></td>
-        <td id="LC1068" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">deepsoil</span> <span class="pl-k">&lt;-</span> rep((sum(<span class="pl-smi">TMAXX</span>) <span class="pl-k">+</span> sum(<span class="pl-smi">TMINN</span>)) <span class="pl-k">/</span> (length(<span class="pl-smi">TMAXX</span>) <span class="pl-k">*</span> <span class="pl-c1">2</span>), length(<span class="pl-smi">TMAXX</span>))</td>
-      </tr>
-      <tr>
-        <td id="L1069" class="blob-num js-line-number" data-line-number="1069"></td>
-        <td id="LC1069" class="blob-code blob-code-inner js-file-line">        }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1070" class="blob-num js-line-number" data-line-number="1070"></td>
-        <td id="LC1070" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">deepsoil</span> <span class="pl-k">&lt;-</span> <span class="pl-e">raster</span><span class="pl-k">::</span>movingFun(<span class="pl-smi">avetemp</span>, <span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">365</span>, <span class="pl-v">fun</span> <span class="pl-k">=</span> <span class="pl-smi">mean</span>, <span class="pl-v">type</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>to<span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1071" class="blob-num js-line-number" data-line-number="1071"></td>
-        <td id="LC1071" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">yearone</span> <span class="pl-k">&lt;-</span> rep((sum(<span class="pl-smi">TMAXX</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">365</span>]) <span class="pl-k">+</span> sum(<span class="pl-smi">TMINN</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">365</span>])) <span class="pl-k">/</span> (<span class="pl-c1">365</span> <span class="pl-k">*</span> <span class="pl-c1">2</span>), <span class="pl-c1">365</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1072" class="blob-num js-line-number" data-line-number="1072"></td>
-        <td id="LC1072" class="blob-code blob-code-inner js-file-line">          <span class="pl-smi">deepsoil</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">365</span>] <span class="pl-k">&lt;-</span> <span class="pl-smi">yearone</span></td>
-      </tr>
-      <tr>
-        <td id="L1073" class="blob-num js-line-number" data-line-number="1073"></td>
-        <td id="LC1073" class="blob-code blob-code-inner js-file-line">        }</td>
-      </tr>
-      <tr>
-        <td id="L1074" class="blob-num js-line-number" data-line-number="1074"></td>
-        <td id="LC1074" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L1075" class="blob-num js-line-number" data-line-number="1075"></td>
-        <td id="LC1075" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1076" class="blob-num js-line-number" data-line-number="1076"></td>
-        <td id="LC1076" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">tannul</span> <span class="pl-k">&lt;-</span> mean(<span class="pl-smi">deepsoil</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1077" class="blob-num js-line-number" data-line-number="1077"></td>
-        <td id="LC1077" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1078" class="blob-num js-line-number" data-line-number="1078"></td>
-        <td id="LC1078" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1079" class="blob-num js-line-number" data-line-number="1079"></td>
-        <td id="LC1079" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">SLES</span> <span class="pl-k">&lt;-</span> <span class="pl-k">matrix</span>(<span class="pl-v">nrow</span> <span class="pl-k">=</span> <span class="pl-smi">ndays</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1080" class="blob-num js-line-number" data-line-number="1080"></td>
-        <td id="LC1080" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">SLES</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">SLES</span> <span class="pl-k">+</span> <span class="pl-smi">SLE</span></td>
-      </tr>
-      <tr>
-        <td id="L1081" class="blob-num js-line-number" data-line-number="1081"></td>
-        <td id="LC1081" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1082" class="blob-num js-line-number" data-line-number="1082"></td>
-        <td id="LC1082" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">moists2</span> <span class="pl-k">&lt;-</span> <span class="pl-k">matrix</span>(<span class="pl-v">nrow</span> <span class="pl-k">=</span> <span class="pl-c1">10</span>, <span class="pl-v">ncol</span> <span class="pl-k">=</span> <span class="pl-smi">ndays</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1083" class="blob-num js-line-number" data-line-number="1083"></td>
-        <td id="LC1083" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">moists2</span>[<span class="pl-c1">1</span>, <span class="pl-smi">ndays</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.2</span></td>
-      </tr>
-      <tr>
-        <td id="L1084" class="blob-num js-line-number" data-line-number="1084"></td>
-        <td id="LC1084" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">moists</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">moists2</span></td>
-      </tr>
-      <tr>
-        <td id="L1085" class="blob-num js-line-number" data-line-number="1085"></td>
-        <td id="LC1085" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1086" class="blob-num js-line-number" data-line-number="1086"></td>
-        <td id="LC1086" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">runmoist</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1087" class="blob-num js-line-number" data-line-number="1087"></td>
-        <td id="LC1087" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">moists2</span> <span class="pl-k">&lt;-</span> <span class="pl-k">matrix</span>(<span class="pl-v">nrow</span> <span class="pl-k">=</span> <span class="pl-c1">10</span>, <span class="pl-v">ncol</span> <span class="pl-k">=</span> <span class="pl-smi">ndays</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>) <span class="pl-c"><span class="pl-c">#</span> set up an empty vector for soil moisture values through time</span></td>
-      </tr>
-      <tr>
-        <td id="L1088" class="blob-num js-line-number" data-line-number="1088"></td>
-        <td id="LC1088" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">moists2</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>, ] <span class="pl-k">&lt;-</span> <span class="pl-smi">SoilMoist_Init</span></td>
-      </tr>
-      <tr>
-        <td id="L1089" class="blob-num js-line-number" data-line-number="1089"></td>
-        <td id="LC1089" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">moists</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">moists2</span></td>
-      </tr>
-      <tr>
-        <td id="L1090" class="blob-num js-line-number" data-line-number="1090"></td>
-        <td id="LC1090" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1091" class="blob-num js-line-number" data-line-number="1091"></td>
-        <td id="LC1091" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilprops</span> <span class="pl-k">&lt;-</span> <span class="pl-k">matrix</span>(<span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">nrow</span> <span class="pl-k">=</span> <span class="pl-c1">10</span>, <span class="pl-v">ncol</span> <span class="pl-k">=</span> <span class="pl-c1">5</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1092" class="blob-num js-line-number" data-line-number="1092"></td>
-        <td id="LC1092" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilprops</span>[,<span class="pl-c1">1</span>] <span class="pl-k">&lt;-</span> <span class="pl-smi">BulkDensity</span></td>
-      </tr>
-      <tr>
-        <td id="L1093" class="blob-num js-line-number" data-line-number="1093"></td>
-        <td id="LC1093" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilprops</span>[,<span class="pl-c1">2</span>] <span class="pl-k">&lt;-</span> <span class="pl-smi">BulkDensity</span> <span class="pl-k">/</span> <span class="pl-smi">Density</span> <span class="pl-c"><span class="pl-c">#</span> not used if soil moisture computed</span></td>
-      </tr>
-      <tr>
-        <td id="L1094" class="blob-num js-line-number" data-line-number="1094"></td>
-        <td id="LC1094" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilprops</span>[<span class="pl-smi">soilprops</span>[,<span class="pl-c1">2</span>] <span class="pl-k">&lt;</span> <span class="pl-c1">0.26</span>, <span class="pl-c1">2</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.26</span></td>
-      </tr>
-      <tr>
-        <td id="L1095" class="blob-num js-line-number" data-line-number="1095"></td>
-        <td id="LC1095" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilprops</span>[,<span class="pl-c1">3</span>] <span class="pl-k">&lt;-</span> <span class="pl-smi">Thcond</span></td>
-      </tr>
-      <tr>
-        <td id="L1096" class="blob-num js-line-number" data-line-number="1096"></td>
-        <td id="LC1096" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilprops</span>[,<span class="pl-c1">4</span>] <span class="pl-k">&lt;-</span> <span class="pl-smi">SpecHeat</span></td>
-      </tr>
-      <tr>
-        <td id="L1097" class="blob-num js-line-number" data-line-number="1097"></td>
-        <td id="LC1097" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soilprops</span>[,<span class="pl-c1">5</span>] <span class="pl-k">&lt;-</span> <span class="pl-smi">Density</span></td>
-      </tr>
-      <tr>
-        <td id="L1098" class="blob-num js-line-number" data-line-number="1098"></td>
-        <td id="LC1098" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">cap</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1099" class="blob-num js-line-number" data-line-number="1099"></td>
-        <td id="LC1099" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilprops</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">2</span>, <span class="pl-c1">3</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.2</span></td>
-      </tr>
-      <tr>
-        <td id="L1100" class="blob-num js-line-number" data-line-number="1100"></td>
-        <td id="LC1100" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilprops</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">2</span>, <span class="pl-c1">4</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">1920</span></td>
-      </tr>
-      <tr>
-        <td id="L1101" class="blob-num js-line-number" data-line-number="1101"></td>
-        <td id="LC1101" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1102" class="blob-num js-line-number" data-line-number="1102"></td>
-        <td id="LC1102" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">cap</span><span class="pl-k">==</span><span class="pl-c1">2</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1103" class="blob-num js-line-number" data-line-number="1103"></td>
-        <td id="LC1103" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilprops</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">2</span>, <span class="pl-c1">3</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.1</span></td>
-      </tr>
-      <tr>
-        <td id="L1104" class="blob-num js-line-number" data-line-number="1104"></td>
-        <td id="LC1104" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilprops</span>[<span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">4</span>, <span class="pl-c1">3</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.25</span></td>
-      </tr>
-      <tr>
-        <td id="L1105" class="blob-num js-line-number" data-line-number="1105"></td>
-        <td id="LC1105" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilprops</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">4</span>, <span class="pl-c1">4</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">1920</span></td>
-      </tr>
-      <tr>
-        <td id="L1106" class="blob-num js-line-number" data-line-number="1106"></td>
-        <td id="LC1106" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilprops</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">4</span>, <span class="pl-c1">5</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">1.3</span></td>
-      </tr>
-      <tr>
-        <td id="L1107" class="blob-num js-line-number" data-line-number="1107"></td>
-        <td id="LC1107" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilprops</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">4</span>, <span class="pl-c1">1</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.7</span></td>
-      </tr>
-      <tr>
-        <td id="L1108" class="blob-num js-line-number" data-line-number="1108"></td>
-        <td id="LC1108" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1109" class="blob-num js-line-number" data-line-number="1109"></td>
-        <td id="LC1109" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1110" class="blob-num js-line-number" data-line-number="1110"></td>
-        <td id="LC1110" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALTT</span> <span class="pl-k">&lt;-</span> as.numeric(<span class="pl-smi">ALTT</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1111" class="blob-num js-line-number" data-line-number="1111"></td>
-        <td id="LC1111" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALREF</span> <span class="pl-k">&lt;-</span> as.numeric(<span class="pl-smi">ALREF</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1112" class="blob-num js-line-number" data-line-number="1112"></td>
-        <td id="LC1112" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALMINT</span> <span class="pl-k">&lt;-</span> as.numeric(<span class="pl-smi">ALMINT</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1113" class="blob-num js-line-number" data-line-number="1113"></td>
-        <td id="LC1113" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALONG</span> <span class="pl-k">&lt;-</span> as.numeric(<span class="pl-smi">ALONG</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1114" class="blob-num js-line-number" data-line-number="1114"></td>
-        <td id="LC1114" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">AMINUT</span> <span class="pl-k">&lt;-</span> as.numeric(<span class="pl-smi">AMINUT</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1115" class="blob-num js-line-number" data-line-number="1115"></td>
-        <td id="LC1115" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ALAT</span> <span class="pl-k">&lt;-</span>as.numeric(<span class="pl-smi">ALAT</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1116" class="blob-num js-line-number" data-line-number="1116"></td>
-        <td id="LC1116" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">hourly</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">1</span></td>
-      </tr>
-      <tr>
-        <td id="L1117" class="blob-num js-line-number" data-line-number="1117"></td>
-        <td id="LC1117" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">rainhourly</span> <span class="pl-k">==</span> <span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1118" class="blob-num js-line-number" data-line-number="1118"></td>
-        <td id="LC1118" class="blob-code blob-code-inner js-file-line">      <span class="pl-v">RAINhr</span> <span class="pl-k">=</span> rep(<span class="pl-c1">0</span>, <span class="pl-c1">24</span> <span class="pl-k">*</span> <span class="pl-smi">ndays</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1119" class="blob-num js-line-number" data-line-number="1119"></td>
-        <td id="LC1119" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1120" class="blob-num js-line-number" data-line-number="1120"></td>
-        <td id="LC1120" class="blob-code blob-code-inner js-file-line">      <span class="pl-v">RAINhr</span> <span class="pl-k">=</span> <span class="pl-smi">rainhour</span></td>
-      </tr>
-      <tr>
-        <td id="L1121" class="blob-num js-line-number" data-line-number="1121"></td>
-        <td id="LC1121" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1122" class="blob-num js-line-number" data-line-number="1122"></td>
-        <td id="LC1122" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> microclimate input parameters list</span></td>
-      </tr>
-      <tr>
-        <td id="L1123" class="blob-num js-line-number" data-line-number="1123"></td>
-        <td id="LC1123" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">microinput</span><span class="pl-k">&lt;-</span>c(<span class="pl-smi">ndays</span>, <span class="pl-smi">RUF</span>, <span class="pl-smi">ERR</span>, <span class="pl-smi">Usrhyt</span>, <span class="pl-smi">Refhyt</span>, <span class="pl-smi">Numtyps</span>, <span class="pl-smi">Z01</span>, <span class="pl-smi">Z02</span>, <span class="pl-smi">ZH1</span>, <span class="pl-smi">ZH2</span>, <span class="pl-smi">idayst</span>, <span class="pl-smi">ida</span>, <span class="pl-smi">HEMIS</span>, <span class="pl-smi">ALAT</span>, <span class="pl-smi">AMINUT</span>, <span class="pl-smi">ALONG</span>, <span class="pl-smi">ALMINT</span>, <span class="pl-smi">ALREF</span>, <span class="pl-smi">slope</span>, <span class="pl-smi">azmuth</span>, <span class="pl-smi">ALTT</span>, <span class="pl-smi">CMH2O</span>, <span class="pl-smi">microdaily</span>, <span class="pl-smi">tannul</span>, <span class="pl-smi">EC</span>, <span class="pl-smi">VIEWF</span>, <span class="pl-smi">snowtemp</span>, <span class="pl-smi">snowdens</span>, <span class="pl-smi">snowmelt</span>, <span class="pl-smi">undercatch</span>, <span class="pl-smi">rainmult</span>, <span class="pl-smi">runshade</span>, <span class="pl-smi">runmoist</span>, <span class="pl-smi">maxpool</span>, <span class="pl-smi">evenrain</span>, <span class="pl-smi">snowmodel</span>, <span class="pl-smi">rainmelt</span>, <span class="pl-smi">writecsv</span>, <span class="pl-smi">densfun</span>, <span class="pl-smi">hourly</span>, <span class="pl-smi">rainhourly</span>, <span class="pl-smi">lamb</span>, <span class="pl-smi">IUV</span>, <span class="pl-smi">RW</span>, <span class="pl-smi">PC</span>, <span class="pl-smi">RL</span>, <span class="pl-smi">SP</span>, <span class="pl-smi">R1</span>, <span class="pl-smi">IM</span>, <span class="pl-smi">MAXCOUNT</span>, <span class="pl-smi">IR</span>, <span class="pl-smi">message</span>, <span class="pl-smi">fail</span>, <span class="pl-smi">snowcond</span>, <span class="pl-smi">intercept</span>, <span class="pl-smi">grasshade</span>, <span class="pl-smi">solonly</span>, <span class="pl-smi">ZH</span>, <span class="pl-smi">D0</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1124" class="blob-num js-line-number" data-line-number="1124"></td>
-        <td id="LC1124" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1125" class="blob-num js-line-number" data-line-number="1125"></td>
-        <td id="LC1125" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(length(<span class="pl-smi">LAI</span>) <span class="pl-k">&lt;</span> <span class="pl-smi">ndays</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1126" class="blob-num js-line-number" data-line-number="1126"></td>
-        <td id="LC1126" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">LAI</span><span class="pl-k">&lt;-</span>rep(<span class="pl-smi">LAI</span>[<span class="pl-c1">1</span>], <span class="pl-smi">ndays</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1127" class="blob-num js-line-number" data-line-number="1127"></td>
-        <td id="LC1127" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1128" class="blob-num js-line-number" data-line-number="1128"></td>
-        <td id="LC1128" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">shore</span> <span class="pl-k">==</span> <span class="pl-c1">0</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1129" class="blob-num js-line-number" data-line-number="1129"></td>
-        <td id="LC1129" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">tides</span> <span class="pl-k">&lt;-</span> <span class="pl-k">matrix</span>(<span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">nrow</span> <span class="pl-k">=</span> <span class="pl-c1">24</span> <span class="pl-k">*</span> <span class="pl-smi">ndays</span>, <span class="pl-v">ncol</span> <span class="pl-k">=</span> <span class="pl-c1">3</span>) <span class="pl-c"><span class="pl-c">#</span> make an empty matrix</span></td>
-      </tr>
-      <tr>
-        <td id="L1130" class="blob-num js-line-number" data-line-number="1130"></td>
-        <td id="LC1130" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1131" class="blob-num js-line-number" data-line-number="1131"></td>
-        <td id="LC1131" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">TIMAXS</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1132" class="blob-num js-line-number" data-line-number="1132"></td>
-        <td id="LC1132" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">TIMINS</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1133" class="blob-num js-line-number" data-line-number="1133"></td>
-        <td id="LC1133" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> all microclimate data input list - all these variables are expected by the input argument of the fortran micro2014 subroutine</span></td>
-      </tr>
-      <tr>
-        <td id="L1134" class="blob-num js-line-number" data-line-number="1134"></td>
-        <td id="LC1134" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">micro</span> <span class="pl-k">&lt;-</span> <span class="pl-k">list</span>(<span class="pl-v">tides</span> <span class="pl-k">=</span> <span class="pl-smi">tides</span>, <span class="pl-v">microinput</span> <span class="pl-k">=</span> <span class="pl-smi">microinput</span>, <span class="pl-v">doy</span> <span class="pl-k">=</span> <span class="pl-smi">doy</span>, <span class="pl-v">SLES</span> <span class="pl-k">=</span> <span class="pl-smi">SLES</span>, <span class="pl-v">DEP</span> <span class="pl-k">=</span> <span class="pl-smi">DEP</span>, <span class="pl-v">Nodes</span> <span class="pl-k">=</span> <span class="pl-smi">Nodes</span>, <span class="pl-v">MAXSHADES</span> <span class="pl-k">=</span> <span class="pl-smi">MAXSHADES</span>, <span class="pl-v">MINSHADES</span> <span class="pl-k">=</span> <span class="pl-smi">MINSHADES</span>, <span class="pl-v">TIMAXS</span> <span class="pl-k">=</span> <span class="pl-smi">TIMAXS</span>, <span class="pl-v">TIMINS</span> <span class="pl-k">=</span> <span class="pl-smi">TIMINS</span>, <span class="pl-v">TMAXX</span> <span class="pl-k">=</span> <span class="pl-smi">TMAXX</span>, <span class="pl-v">TMINN</span> <span class="pl-k">=</span> <span class="pl-smi">TMINN</span>, <span class="pl-v">RHMAXX</span> <span class="pl-k">=</span> <span class="pl-smi">RHMAXX</span>, <span class="pl-v">RHMINN</span> <span class="pl-k">=</span> <span class="pl-smi">RHMINN</span>, <span class="pl-v">CCMAXX</span> <span class="pl-k">=</span> <span class="pl-smi">CCMAXX</span>, <span class="pl-v">CCMINN</span> <span class="pl-k">=</span> <span class="pl-smi">CCMINN</span>, <span class="pl-v">WNMAXX</span> <span class="pl-k">=</span> <span class="pl-smi">WNMAXX</span>, <span class="pl-v">WNMINN</span> <span class="pl-k">=</span> <span class="pl-smi">WNMINN</span>, <span class="pl-v">TAIRhr</span> <span class="pl-k">=</span> <span class="pl-smi">TAIRhr</span>, <span class="pl-v">RHhr</span> <span class="pl-k">=</span> <span class="pl-smi">RHhr</span>, <span class="pl-v">WNhr</span> <span class="pl-k">=</span> <span class="pl-smi">WNhr</span>, <span class="pl-v">CLDhr</span> <span class="pl-k">=</span> <span class="pl-smi">CLDhr</span>, <span class="pl-v">SOLRhr</span> <span class="pl-k">=</span> <span class="pl-smi">SOLRhr</span>, <span class="pl-v">RAINhr</span> <span class="pl-k">=</span> <span class="pl-smi">RAINhr</span>, <span class="pl-v">ZENhr</span> <span class="pl-k">=</span> <span class="pl-smi">ZENhr</span>, <span class="pl-v">IRDhr</span> <span class="pl-k">=</span> <span class="pl-smi">IRDhr</span>, <span class="pl-v">REFLS</span> <span class="pl-k">=</span> <span class="pl-smi">REFLS</span>, <span class="pl-v">PCTWET</span> <span class="pl-k">=</span> <span class="pl-smi">PCTWET</span>, <span class="pl-v">soilinit</span> <span class="pl-k">=</span> <span class="pl-smi">soilinit</span>, <span class="pl-v">hori</span> <span class="pl-k">=</span> <span class="pl-smi">hori</span>, <span class="pl-v">TAI</span> <span class="pl-k">=</span> <span class="pl-smi">TAI</span>, <span class="pl-v">soilprops</span> <span class="pl-k">=</span> <span class="pl-smi">soilprops</span>, <span class="pl-v">moists</span> <span class="pl-k">=</span> <span class="pl-smi">moists</span>, <span class="pl-v">RAINFALL</span> <span class="pl-k">=</span> <span class="pl-smi">RAINFALL</span>, <span class="pl-v">tannulrun</span> <span class="pl-k">=</span> <span class="pl-smi">deepsoil</span>, <span class="pl-v">PE</span> <span class="pl-k">=</span> <span class="pl-smi">PE</span>, <span class="pl-v">KS</span> <span class="pl-k">=</span> <span class="pl-smi">KS</span>, <span class="pl-v">BB</span> <span class="pl-k">=</span> <span class="pl-smi">BB</span>, <span class="pl-v">BD</span> <span class="pl-k">=</span> <span class="pl-smi">BD</span>, <span class="pl-v">DD</span> <span class="pl-k">=</span> <span class="pl-smi">DD</span>, <span class="pl-v">L</span> <span class="pl-k">=</span> <span class="pl-smi">L</span>, <span class="pl-v">LAI</span> <span class="pl-k">=</span> <span class="pl-smi">LAI</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1135" class="blob-num js-line-number" data-line-number="1135"></td>
-        <td id="LC1135" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> write all input to csv files in their own folder</span></td>
-      </tr>
-      <tr>
-        <td id="L1136" class="blob-num js-line-number" data-line-number="1136"></td>
-        <td id="LC1136" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">write_input</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1137" class="blob-num js-line-number" data-line-number="1137"></td>
-        <td id="LC1137" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(dir.exists(<span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input<span class="pl-pds">&quot;</span></span>) <span class="pl-k">==</span> <span class="pl-c1">FALSE</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1138" class="blob-num js-line-number" data-line-number="1138"></td>
-        <td id="LC1138" class="blob-code blob-code-inner js-file-line">        dir.create(<span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1139" class="blob-num js-line-number" data-line-number="1139"></td>
-        <td id="LC1139" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L1140" class="blob-num js-line-number" data-line-number="1140"></td>
-        <td id="LC1140" class="blob-code blob-code-inner js-file-line">      write.table(as.matrix(<span class="pl-smi">microinput</span>), <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/microinput.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1141" class="blob-num js-line-number" data-line-number="1141"></td>
-        <td id="LC1141" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">doy</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/doy.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1142" class="blob-num js-line-number" data-line-number="1142"></td>
-        <td id="LC1142" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">SLES</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/SLES.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1143" class="blob-num js-line-number" data-line-number="1143"></td>
-        <td id="LC1143" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">DEP</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/DEP.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1144" class="blob-num js-line-number" data-line-number="1144"></td>
-        <td id="LC1144" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">Nodes</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/Nodes.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1145" class="blob-num js-line-number" data-line-number="1145"></td>
-        <td id="LC1145" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">MAXSHADES</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/Maxshades.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1146" class="blob-num js-line-number" data-line-number="1146"></td>
-        <td id="LC1146" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">MINSHADES</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/Minshades.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1147" class="blob-num js-line-number" data-line-number="1147"></td>
-        <td id="LC1147" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">TIMAXS</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/TIMAXS.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1148" class="blob-num js-line-number" data-line-number="1148"></td>
-        <td id="LC1148" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">TIMINS</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/TIMINS.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1149" class="blob-num js-line-number" data-line-number="1149"></td>
-        <td id="LC1149" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">TMAXX</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/TMAXX.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1150" class="blob-num js-line-number" data-line-number="1150"></td>
-        <td id="LC1150" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">TMINN</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/TMINN.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1151" class="blob-num js-line-number" data-line-number="1151"></td>
-        <td id="LC1151" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">RHMAXX</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/RHMAXX.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1152" class="blob-num js-line-number" data-line-number="1152"></td>
-        <td id="LC1152" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">RHMINN</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/RHMINN.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1153" class="blob-num js-line-number" data-line-number="1153"></td>
-        <td id="LC1153" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">CCMAXX</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/CCMAXX.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1154" class="blob-num js-line-number" data-line-number="1154"></td>
-        <td id="LC1154" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">CCMINN</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/CCMINN.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1155" class="blob-num js-line-number" data-line-number="1155"></td>
-        <td id="LC1155" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">WNMAXX</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/WNMAXX.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1156" class="blob-num js-line-number" data-line-number="1156"></td>
-        <td id="LC1156" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">WNMINN</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/WNMINN.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1157" class="blob-num js-line-number" data-line-number="1157"></td>
-        <td id="LC1157" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">REFLS</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/REFLS.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1158" class="blob-num js-line-number" data-line-number="1158"></td>
-        <td id="LC1158" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">PCTWET</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/PCTWET.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1159" class="blob-num js-line-number" data-line-number="1159"></td>
-        <td id="LC1159" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">soilinit</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/soilinit.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1160" class="blob-num js-line-number" data-line-number="1160"></td>
-        <td id="LC1160" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">hori</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/hori.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1161" class="blob-num js-line-number" data-line-number="1161"></td>
-        <td id="LC1161" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">TAI</span>, <span class="pl-v">file</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/TAI.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1162" class="blob-num js-line-number" data-line-number="1162"></td>
-        <td id="LC1162" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">soilprops</span>, <span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/soilprop.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1163" class="blob-num js-line-number" data-line-number="1163"></td>
-        <td id="LC1163" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">moists</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/moists.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1164" class="blob-num js-line-number" data-line-number="1164"></td>
-        <td id="LC1164" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">RAINFALL</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/rain.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1165" class="blob-num js-line-number" data-line-number="1165"></td>
-        <td id="LC1165" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">deepsoil</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/tannulrun.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1166" class="blob-num js-line-number" data-line-number="1166"></td>
-        <td id="LC1166" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">PE</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/PE.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1167" class="blob-num js-line-number" data-line-number="1167"></td>
-        <td id="LC1167" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">BD</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/BD.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1168" class="blob-num js-line-number" data-line-number="1168"></td>
-        <td id="LC1168" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">DD</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/DD.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1169" class="blob-num js-line-number" data-line-number="1169"></td>
-        <td id="LC1169" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">BB</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/BB.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1170" class="blob-num js-line-number" data-line-number="1170"></td>
-        <td id="LC1170" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">KS</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/KS.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1171" class="blob-num js-line-number" data-line-number="1171"></td>
-        <td id="LC1171" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">L</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/L.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1172" class="blob-num js-line-number" data-line-number="1172"></td>
-        <td id="LC1172" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">LAI</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/LAI.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1173" class="blob-num js-line-number" data-line-number="1173"></td>
-        <td id="LC1173" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">tides</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/tides.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1174" class="blob-num js-line-number" data-line-number="1174"></td>
-        <td id="LC1174" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">TAIRhr</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/TAIRhr.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1175" class="blob-num js-line-number" data-line-number="1175"></td>
-        <td id="LC1175" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">RHhr</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/RHhr.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1176" class="blob-num js-line-number" data-line-number="1176"></td>
-        <td id="LC1176" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">WNhr</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/WNhr.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1177" class="blob-num js-line-number" data-line-number="1177"></td>
-        <td id="LC1177" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">CLDhr</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/CLDhr.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1178" class="blob-num js-line-number" data-line-number="1178"></td>
-        <td id="LC1178" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">SOLRhr</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/SOLRhr.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1179" class="blob-num js-line-number" data-line-number="1179"></td>
-        <td id="LC1179" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">RAINhr</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/RAINhr.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1180" class="blob-num js-line-number" data-line-number="1180"></td>
-        <td id="LC1180" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">ZENhr</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/ZENhr.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1181" class="blob-num js-line-number" data-line-number="1181"></td>
-        <td id="LC1181" class="blob-code blob-code-inner js-file-line">      write.table(<span class="pl-smi">IRDhr</span>,<span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>micro csv input/IRDhr.csv<span class="pl-pds">&quot;</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>,<span class="pl-pds">&quot;</span></span>, <span class="pl-v">col.names</span> <span class="pl-k">=</span> <span class="pl-c1">NA</span>, <span class="pl-v">qmethod</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>double<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1182" class="blob-num js-line-number" data-line-number="1182"></td>
-        <td id="LC1182" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1183" class="blob-num js-line-number" data-line-number="1183"></td>
-        <td id="LC1183" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(is.numeric(<span class="pl-smi">loc</span>[<span class="pl-c1">1</span>])){</td>
-      </tr>
-      <tr>
-        <td id="L1184" class="blob-num js-line-number" data-line-number="1184"></td>
-        <td id="LC1184" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">location</span> <span class="pl-k">&lt;-</span> paste(<span class="pl-s"><span class="pl-pds">&quot;</span>long<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">loc</span>[<span class="pl-c1">1</span>], <span class="pl-s"><span class="pl-pds">&quot;</span>lat<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">loc</span>[<span class="pl-c1">2</span>])</td>
-      </tr>
-      <tr>
-        <td id="L1185" class="blob-num js-line-number" data-line-number="1185"></td>
-        <td id="LC1185" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1186" class="blob-num js-line-number" data-line-number="1186"></td>
-        <td id="LC1186" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">location</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">loc</span></td>
-      </tr>
-      <tr>
-        <td id="L1187" class="blob-num js-line-number" data-line-number="1187"></td>
-        <td id="LC1187" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1188" class="blob-num js-line-number" data-line-number="1188"></td>
-        <td id="LC1188" class="blob-code blob-code-inner js-file-line">    cat(paste(<span class="pl-s"><span class="pl-pds">&#39;</span>running microclimate model for <span class="pl-pds">&#39;</span></span>, <span class="pl-smi">ndays</span>, <span class="pl-s"><span class="pl-pds">&#39;</span> days from <span class="pl-pds">&#39;</span></span>, <span class="pl-smi">tt</span>[<span class="pl-c1">1</span>], <span class="pl-s"><span class="pl-pds">&#39;</span> to <span class="pl-pds">&#39;</span></span>, <span class="pl-smi">tt</span>[length(<span class="pl-smi">tt</span>)], <span class="pl-s"><span class="pl-pds">&#39;</span> at site <span class="pl-pds">&#39;</span></span>, <span class="pl-smi">location</span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>))</td>
-      </tr>
-      <tr>
-        <td id="L1189" class="blob-num js-line-number" data-line-number="1189"></td>
-        <td id="LC1189" class="blob-code blob-code-inner js-file-line">    cat(<span class="pl-s"><span class="pl-pds">&#39;</span>Note: the output column `SOLR` in metout and shadmet is for unshaded solar radiation adjusted for slope, aspect and horizon angle <span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1190" class="blob-num js-line-number" data-line-number="1190"></td>
-        <td id="LC1190" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ptm</span> <span class="pl-k">&lt;-</span> proc.time() <span class="pl-c"><span class="pl-c">#</span> Start timing</span></td>
-      </tr>
-      <tr>
-        <td id="L1191" class="blob-num js-line-number" data-line-number="1191"></td>
-        <td id="LC1191" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">microut</span><span class="pl-k">&lt;-</span>microclimate(<span class="pl-smi">micro</span>)</td>
-      </tr>
-      <tr>
-        <td id="L1192" class="blob-num js-line-number" data-line-number="1192"></td>
-        <td id="LC1192" class="blob-code blob-code-inner js-file-line">    print(proc.time() <span class="pl-k">-</span> <span class="pl-smi">ptm</span>) <span class="pl-c"><span class="pl-c">#</span> Stop the clock</span></td>
-      </tr>
-      <tr>
-        <td id="L1193" class="blob-num js-line-number" data-line-number="1193"></td>
-        <td id="LC1193" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1194" class="blob-num js-line-number" data-line-number="1194"></td>
-        <td id="LC1194" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">metout</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">metout</span> <span class="pl-c"><span class="pl-c">#</span> retrieve above ground microclimatic conditions, min shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1195" class="blob-num js-line-number" data-line-number="1195"></td>
-        <td id="LC1195" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">shadmet</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">shadmet</span> <span class="pl-c"><span class="pl-c">#</span> retrieve above ground microclimatic conditions, max shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1196" class="blob-num js-line-number" data-line-number="1196"></td>
-        <td id="LC1196" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">soil</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">soil</span> <span class="pl-c"><span class="pl-c">#</span> retrieve soil temperatures, minimum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1197" class="blob-num js-line-number" data-line-number="1197"></td>
-        <td id="LC1197" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">shadsoil</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">shadsoil</span> <span class="pl-c"><span class="pl-c">#</span> retrieve soil temperatures, maximum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1198" class="blob-num js-line-number" data-line-number="1198"></td>
-        <td id="LC1198" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">runmoist</span><span class="pl-k">==</span><span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1199" class="blob-num js-line-number" data-line-number="1199"></td>
-        <td id="LC1199" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilmoist</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">soilmoist</span> <span class="pl-c"><span class="pl-c">#</span> retrieve soil moisture, minimum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1200" class="blob-num js-line-number" data-line-number="1200"></td>
-        <td id="LC1200" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadmoist</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">shadmoist</span> <span class="pl-c"><span class="pl-c">#</span> retrieve soil moisture, maximum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1201" class="blob-num js-line-number" data-line-number="1201"></td>
-        <td id="LC1201" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">humid</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">humid</span> <span class="pl-c"><span class="pl-c">#</span> retrieve soil humidity, minimum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1202" class="blob-num js-line-number" data-line-number="1202"></td>
-        <td id="LC1202" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadhumid</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">shadhumid</span> <span class="pl-c"><span class="pl-c">#</span> retrieve soil humidity, maximum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1203" class="blob-num js-line-number" data-line-number="1203"></td>
-        <td id="LC1203" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilpot</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">soilpot</span> <span class="pl-c"><span class="pl-c">#</span> retrieve soil water potential, minimum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1204" class="blob-num js-line-number" data-line-number="1204"></td>
-        <td id="LC1204" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadpot</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">shadpot</span> <span class="pl-c"><span class="pl-c">#</span> retrieve soil water potential, maximum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1205" class="blob-num js-line-number" data-line-number="1205"></td>
-        <td id="LC1205" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">plant</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">plant</span> <span class="pl-c"><span class="pl-c">#</span> retrieve plant output, minimum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1206" class="blob-num js-line-number" data-line-number="1206"></td>
-        <td id="LC1206" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadplant</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">shadplant</span> <span class="pl-c"><span class="pl-c">#</span> retrieve plant output, maximum shade</span></td>
-      </tr>
-      <tr>
-        <td id="L1207" class="blob-num js-line-number" data-line-number="1207"></td>
-        <td id="LC1207" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1208" class="blob-num js-line-number" data-line-number="1208"></td>
-        <td id="LC1208" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilpot</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">soil</span></td>
-      </tr>
-      <tr>
-        <td id="L1209" class="blob-num js-line-number" data-line-number="1209"></td>
-        <td id="LC1209" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilmoist</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">soil</span></td>
-      </tr>
-      <tr>
-        <td id="L1210" class="blob-num js-line-number" data-line-number="1210"></td>
-        <td id="LC1210" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadpot</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">soil</span></td>
-      </tr>
-      <tr>
-        <td id="L1211" class="blob-num js-line-number" data-line-number="1211"></td>
-        <td id="LC1211" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadmoist</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">soil</span></td>
-      </tr>
-      <tr>
-        <td id="L1212" class="blob-num js-line-number" data-line-number="1212"></td>
-        <td id="LC1212" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">humid</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">soil</span></td>
-      </tr>
-      <tr>
-        <td id="L1213" class="blob-num js-line-number" data-line-number="1213"></td>
-        <td id="LC1213" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadhumid</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">soil</span></td>
-      </tr>
-      <tr>
-        <td id="L1214" class="blob-num js-line-number" data-line-number="1214"></td>
-        <td id="LC1214" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">plant</span> <span class="pl-k">&lt;-</span> cbind(<span class="pl-smi">soil</span>, <span class="pl-smi">soil</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">4</span>])</td>
-      </tr>
-      <tr>
-        <td id="L1215" class="blob-num js-line-number" data-line-number="1215"></td>
-        <td id="LC1215" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadplant</span> <span class="pl-k">&lt;-</span> cbind(<span class="pl-smi">soil</span>, <span class="pl-smi">soil</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">4</span>])</td>
-      </tr>
-      <tr>
-        <td id="L1216" class="blob-num js-line-number" data-line-number="1216"></td>
-        <td id="LC1216" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilpot</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">12</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L1217" class="blob-num js-line-number" data-line-number="1217"></td>
-        <td id="LC1217" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">soilmoist</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">12</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.5</span></td>
-      </tr>
-      <tr>
-        <td id="L1218" class="blob-num js-line-number" data-line-number="1218"></td>
-        <td id="LC1218" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadpot</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">12</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L1219" class="blob-num js-line-number" data-line-number="1219"></td>
-        <td id="LC1219" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadmoist</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">12</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.5</span></td>
-      </tr>
-      <tr>
-        <td id="L1220" class="blob-num js-line-number" data-line-number="1220"></td>
-        <td id="LC1220" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">humid</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">12</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.99</span></td>
-      </tr>
-      <tr>
-        <td id="L1221" class="blob-num js-line-number" data-line-number="1221"></td>
-        <td id="LC1221" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadhumid</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">12</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0.99</span></td>
-      </tr>
-      <tr>
-        <td id="L1222" class="blob-num js-line-number" data-line-number="1222"></td>
-        <td id="LC1222" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">plant</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">14</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L1223" class="blob-num js-line-number" data-line-number="1223"></td>
-        <td id="LC1223" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shadplant</span>[, <span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-c1">14</span>] <span class="pl-k">&lt;-</span> <span class="pl-c1">0</span></td>
-      </tr>
-      <tr>
-        <td id="L1224" class="blob-num js-line-number" data-line-number="1224"></td>
-        <td id="LC1224" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1225" class="blob-num js-line-number" data-line-number="1225"></td>
-        <td id="LC1225" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">snowmodel</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1226" class="blob-num js-line-number" data-line-number="1226"></td>
-        <td id="LC1226" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">sunsnow</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">sunsnow</span></td>
-      </tr>
-      <tr>
-        <td id="L1227" class="blob-num js-line-number" data-line-number="1227"></td>
-        <td id="LC1227" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">shdsnow</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">shdsnow</span></td>
-      </tr>
-      <tr>
-        <td id="L1228" class="blob-num js-line-number" data-line-number="1228"></td>
-        <td id="LC1228" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1229" class="blob-num js-line-number" data-line-number="1229"></td>
-        <td id="LC1229" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(max(<span class="pl-smi">metout</span>[,<span class="pl-c1">1</span>] <span class="pl-k">==</span> <span class="pl-c1">0</span>)){</td>
-      </tr>
-      <tr>
-        <td id="L1230" class="blob-num js-line-number" data-line-number="1230"></td>
-        <td id="LC1230" class="blob-code blob-code-inner js-file-line">      cat(<span class="pl-s"><span class="pl-pds">&quot;</span>ERROR: the model crashed - try a different error tolerance (ERR) or a different spacing in DEP<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L1231" class="blob-num js-line-number" data-line-number="1231"></td>
-        <td id="LC1231" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1232" class="blob-num js-line-number" data-line-number="1232"></td>
-        <td id="LC1232" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-smi">lamb</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1233" class="blob-num js-line-number" data-line-number="1233"></td>
-        <td id="LC1233" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">drlam</span> <span class="pl-k">&lt;-</span> as.data.frame(<span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">drlam</span>) <span class="pl-c"><span class="pl-c">#</span> retrieve direct solar irradiance</span></td>
-      </tr>
-      <tr>
-        <td id="L1234" class="blob-num js-line-number" data-line-number="1234"></td>
-        <td id="LC1234" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">drrlam</span> <span class="pl-k">&lt;-</span> as.data.frame(<span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">drrlam</span>) <span class="pl-c"><span class="pl-c">#</span> retrieve direct Rayleigh component solar irradiance</span></td>
-      </tr>
-      <tr>
-        <td id="L1235" class="blob-num js-line-number" data-line-number="1235"></td>
-        <td id="LC1235" class="blob-code blob-code-inner js-file-line">      <span class="pl-smi">srlam</span> <span class="pl-k">&lt;-</span> as.data.frame(<span class="pl-smi">microut</span><span class="pl-k">$</span><span class="pl-smi">srlam</span>) <span class="pl-c"><span class="pl-c">#</span> retrieve scattered solar irradiance</span></td>
-      </tr>
-      <tr>
-        <td id="L1236" class="blob-num js-line-number" data-line-number="1236"></td>
-        <td id="LC1236" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">snowmodel</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1237" class="blob-num js-line-number" data-line-number="1237"></td>
-        <td id="LC1237" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">return</span>(<span class="pl-k">list</span>(<span class="pl-v">soil</span> <span class="pl-k">=</span> <span class="pl-smi">soil</span>, <span class="pl-v">shadsoil</span> <span class="pl-k">=</span> <span class="pl-smi">shadsoil</span>, <span class="pl-v">metout</span> <span class="pl-k">=</span> <span class="pl-smi">metout</span>, <span class="pl-v">shadmet</span> <span class="pl-k">=</span> <span class="pl-smi">shadmet</span>, <span class="pl-v">soilmoist</span> <span class="pl-k">=</span> <span class="pl-smi">soilmoist</span>, <span class="pl-v">shadmoist</span> <span class="pl-k">=</span> <span class="pl-smi">shadmoist</span>, <span class="pl-v">humid</span> <span class="pl-k">=</span> <span class="pl-smi">humid</span>, <span class="pl-v">shadhumid</span> <span class="pl-k">=</span> <span class="pl-smi">shadhumid</span>, <span class="pl-v">soilpot</span> <span class="pl-k">=</span> <span class="pl-smi">soilpot</span>, <span class="pl-v">shadpot</span> <span class="pl-k">=</span> <span class="pl-smi">shadpot</span>, <span class="pl-v">sunsnow</span> <span class="pl-k">=</span> <span class="pl-smi">sunsnow</span>, <span class="pl-v">shdsnow</span> <span class="pl-k">=</span> <span class="pl-smi">shdsnow</span>, <span class="pl-v">plant</span> <span class="pl-k">=</span> <span class="pl-smi">plant</span>, <span class="pl-v">shadplant</span> <span class="pl-k">=</span> <span class="pl-smi">shadplant</span>, <span class="pl-v">RAINFALL</span> <span class="pl-k">=</span> <span class="pl-smi">RAINFALL</span>, <span class="pl-v">ndays</span> <span class="pl-k">=</span> <span class="pl-smi">ndays</span>, <span class="pl-v">elev</span> <span class="pl-k">=</span> <span class="pl-smi">ALTT</span>, <span class="pl-v">REFL</span> <span class="pl-k">=</span> <span class="pl-smi">REFL</span>[<span class="pl-c1">1</span>], <span class="pl-v">longlat</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>, <span class="pl-v">nyears</span> <span class="pl-k">=</span> <span class="pl-smi">nyears</span>, <span class="pl-v">minshade</span> <span class="pl-k">=</span> <span class="pl-smi">MINSHADES</span>, <span class="pl-v">maxshade</span> <span class="pl-k">=</span> <span class="pl-smi">MAXSHADES</span>, <span class="pl-v">DEP</span> <span class="pl-k">=</span> <span class="pl-smi">DEP</span>, <span class="pl-v">drlam</span> <span class="pl-k">=</span> <span class="pl-smi">drlam</span>, <span class="pl-v">drrlam</span> <span class="pl-k">=</span> <span class="pl-smi">drrlam</span>, <span class="pl-v">srlam</span> <span class="pl-k">=</span> <span class="pl-smi">srlam</span>, <span class="pl-v">SLOPE</span> <span class="pl-k">=</span> <span class="pl-smi">SLOPE</span>, <span class="pl-v">ASPECT</span> <span class="pl-k">=</span> <span class="pl-smi">ASPECT</span>, <span class="pl-v">HORIZON</span> <span class="pl-k">=</span> <span class="pl-smi">HORIZON</span>, <span class="pl-v">dates</span> <span class="pl-k">=</span> <span class="pl-smi">tt</span>, <span class="pl-v">dem</span> <span class="pl-k">=</span> <span class="pl-smi">dem</span>, <span class="pl-v">dates2</span> <span class="pl-k">=</span> <span class="pl-smi">dates2</span>, <span class="pl-v">microclima.out</span> <span class="pl-k">=</span> <span class="pl-smi">microclima.out</span>))</td>
-      </tr>
-      <tr>
-        <td id="L1238" class="blob-num js-line-number" data-line-number="1238"></td>
-        <td id="LC1238" class="blob-code blob-code-inner js-file-line">      }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1239" class="blob-num js-line-number" data-line-number="1239"></td>
-        <td id="LC1239" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">return</span>(<span class="pl-k">list</span>(<span class="pl-v">soil</span> <span class="pl-k">=</span> <span class="pl-smi">soil</span>, <span class="pl-v">shadsoil</span> <span class="pl-k">=</span> <span class="pl-smi">shadsoil</span>, <span class="pl-v">metout</span> <span class="pl-k">=</span> <span class="pl-smi">metout</span>, <span class="pl-v">shadmet</span> <span class="pl-k">=</span> <span class="pl-smi">shadmet</span>, <span class="pl-v">soilmoist</span> <span class="pl-k">=</span> <span class="pl-smi">soilmoist</span>, <span class="pl-v">shadmoist</span> <span class="pl-k">=</span> <span class="pl-smi">shadmoist</span>, <span class="pl-v">humid</span> <span class="pl-k">=</span> <span class="pl-smi">humid</span>, <span class="pl-v">shadhumid</span> <span class="pl-k">=</span> <span class="pl-smi">shadhumid</span>, <span class="pl-v">soilpot</span> <span class="pl-k">=</span> <span class="pl-smi">soilpot</span>, <span class="pl-v">shadpot</span> <span class="pl-k">=</span> <span class="pl-smi">shadpot</span>, <span class="pl-v">plant</span> <span class="pl-k">=</span> <span class="pl-smi">plant</span>, <span class="pl-v">shadplant</span> <span class="pl-k">=</span> <span class="pl-smi">shadplant</span>, <span class="pl-v">RAINFALL</span> <span class="pl-k">=</span> <span class="pl-smi">RAINFALL</span>, <span class="pl-v">ndays</span> <span class="pl-k">=</span> <span class="pl-smi">ndays</span>, <span class="pl-v">elev</span> <span class="pl-k">=</span> <span class="pl-smi">ALTT</span>, <span class="pl-v">REFL</span> <span class="pl-k">=</span> <span class="pl-smi">REFL</span>[<span class="pl-c1">1</span>], <span class="pl-v">longlat</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>, <span class="pl-v">nyears</span> <span class="pl-k">=</span> <span class="pl-smi">nyears</span>, <span class="pl-v">minshade</span> <span class="pl-k">=</span> <span class="pl-smi">MINSHADES</span>, <span class="pl-v">maxshade</span> <span class="pl-k">=</span> <span class="pl-smi">MAXSHADES</span>, <span class="pl-v">DEP</span> <span class="pl-k">=</span> <span class="pl-smi">DEP</span>, <span class="pl-v">drlam</span> <span class="pl-k">=</span> <span class="pl-smi">drlam</span>, <span class="pl-v">drrlam</span> <span class="pl-k">=</span> <span class="pl-smi">drrlam</span>, <span class="pl-v">srlam</span> <span class="pl-k">=</span> <span class="pl-smi">srlam</span>, <span class="pl-v">SLOPE</span> <span class="pl-k">=</span> <span class="pl-smi">SLOPE</span>, <span class="pl-v">ASPECT</span> <span class="pl-k">=</span> <span class="pl-smi">ASPECT</span>, <span class="pl-v">HORIZON</span> <span class="pl-k">=</span> <span class="pl-smi">HORIZON</span>, <span class="pl-v">dates</span> <span class="pl-k">=</span> <span class="pl-smi">tt</span>, <span class="pl-v">dem</span> <span class="pl-k">=</span> <span class="pl-smi">dem</span>, <span class="pl-v">dates2</span> <span class="pl-k">=</span> <span class="pl-smi">dates2</span>, <span class="pl-v">microclima.out</span> <span class="pl-k">=</span> <span class="pl-smi">microclima.out</span>))</td>
-      </tr>
-      <tr>
-        <td id="L1240" class="blob-num js-line-number" data-line-number="1240"></td>
-        <td id="LC1240" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L1241" class="blob-num js-line-number" data-line-number="1241"></td>
-        <td id="LC1241" class="blob-code blob-code-inner js-file-line">    }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1242" class="blob-num js-line-number" data-line-number="1242"></td>
-        <td id="LC1242" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">if</span>(<span class="pl-smi">snowmodel</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>){</td>
-      </tr>
-      <tr>
-        <td id="L1243" class="blob-num js-line-number" data-line-number="1243"></td>
-        <td id="LC1243" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">return</span>(<span class="pl-k">list</span>(<span class="pl-v">soil</span> <span class="pl-k">=</span> <span class="pl-smi">soil</span>, <span class="pl-v">shadsoil</span> <span class="pl-k">=</span> <span class="pl-smi">shadsoil</span>, <span class="pl-v">metout</span> <span class="pl-k">=</span> <span class="pl-smi">metout</span>, <span class="pl-v">shadmet</span> <span class="pl-k">=</span> <span class="pl-smi">shadmet</span>, <span class="pl-v">soilmoist</span> <span class="pl-k">=</span> <span class="pl-smi">soilmoist</span>, <span class="pl-v">shadmoist</span> <span class="pl-k">=</span> <span class="pl-smi">shadmoist</span>, <span class="pl-v">humid</span> <span class="pl-k">=</span> <span class="pl-smi">humid</span>, <span class="pl-v">shadhumid</span> <span class="pl-k">=</span> <span class="pl-smi">shadhumid</span>, <span class="pl-v">soilpot</span> <span class="pl-k">=</span> <span class="pl-smi">soilpot</span>, <span class="pl-v">shadpot</span> <span class="pl-k">=</span> <span class="pl-smi">shadpot</span>, <span class="pl-v">sunsnow</span> <span class="pl-k">=</span> <span class="pl-smi">sunsnow</span>, <span class="pl-v">shdsnow</span> <span class="pl-k">=</span> <span class="pl-smi">shdsnow</span>, <span class="pl-v">plant</span> <span class="pl-k">=</span> <span class="pl-smi">plant</span>, <span class="pl-v">shadplant</span> <span class="pl-k">=</span> <span class="pl-smi">shadplant</span>, <span class="pl-v">RAINFALL</span> <span class="pl-k">=</span> <span class="pl-smi">RAINFALL</span>, <span class="pl-v">ndays</span> <span class="pl-k">=</span> <span class="pl-smi">ndays</span>, <span class="pl-v">elev</span> <span class="pl-k">=</span> <span class="pl-smi">ALTT</span>, <span class="pl-v">REFL</span> <span class="pl-k">=</span> <span class="pl-smi">REFL</span>[<span class="pl-c1">1</span>], <span class="pl-v">longlat</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>, <span class="pl-v">nyears</span> <span class="pl-k">=</span> <span class="pl-smi">nyears</span>, <span class="pl-v">minshade</span> <span class="pl-k">=</span> <span class="pl-smi">MINSHADES</span>, <span class="pl-v">maxshade</span> <span class="pl-k">=</span> <span class="pl-smi">MAXSHADES</span>, <span class="pl-v">DEP</span> <span class="pl-k">=</span> <span class="pl-smi">DEP</span>, <span class="pl-v">SLOPE</span> <span class="pl-k">=</span> <span class="pl-smi">SLOPE</span>, <span class="pl-v">ASPECT</span> <span class="pl-k">=</span> <span class="pl-smi">ASPECT</span>, <span class="pl-v">HORIZON</span> <span class="pl-k">=</span> <span class="pl-smi">HORIZON</span>, <span class="pl-v">dates</span> <span class="pl-k">=</span> <span class="pl-smi">tt</span>, <span class="pl-v">dem</span> <span class="pl-k">=</span> <span class="pl-smi">dem</span>, <span class="pl-v">dates2</span> <span class="pl-k">=</span> <span class="pl-smi">dates2</span>, <span class="pl-v">microclima.out</span> <span class="pl-k">=</span> <span class="pl-smi">microclima.out</span>))</td>
-      </tr>
-      <tr>
-        <td id="L1244" class="blob-num js-line-number" data-line-number="1244"></td>
-        <td id="LC1244" class="blob-code blob-code-inner js-file-line">      }<span class="pl-k">else</span>{</td>
-      </tr>
-      <tr>
-        <td id="L1245" class="blob-num js-line-number" data-line-number="1245"></td>
-        <td id="LC1245" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">return</span>(<span class="pl-k">list</span>(<span class="pl-v">soil</span> <span class="pl-k">=</span> <span class="pl-smi">soil</span>, <span class="pl-v">shadsoil</span> <span class="pl-k">=</span> <span class="pl-smi">shadsoil</span>, <span class="pl-v">metout</span> <span class="pl-k">=</span> <span class="pl-smi">metout</span>, <span class="pl-v">shadmet</span> <span class="pl-k">=</span> <span class="pl-smi">shadmet</span>, <span class="pl-v">soilmoist</span> <span class="pl-k">=</span> <span class="pl-smi">soilmoist</span>, <span class="pl-v">shadmoist</span> <span class="pl-k">=</span> <span class="pl-smi">shadmoist</span>, <span class="pl-v">humid</span> <span class="pl-k">=</span> <span class="pl-smi">humid</span>, <span class="pl-v">shadhumid</span> <span class="pl-k">=</span> <span class="pl-smi">shadhumid</span>, <span class="pl-v">soilpot</span> <span class="pl-k">=</span> <span class="pl-smi">soilpot</span>, <span class="pl-v">shadpot</span> <span class="pl-k">=</span> <span class="pl-smi">shadpot</span>, <span class="pl-v">plant</span> <span class="pl-k">=</span> <span class="pl-smi">plant</span>, <span class="pl-v">shadplant</span> <span class="pl-k">=</span> <span class="pl-smi">shadplant</span>, <span class="pl-v">RAINFALL</span> <span class="pl-k">=</span> <span class="pl-smi">RAINFALL</span>, <span class="pl-v">ndays</span> <span class="pl-k">=</span> <span class="pl-smi">ndays</span>, <span class="pl-v">elev</span> <span class="pl-k">=</span> <span class="pl-smi">ALTT</span>, <span class="pl-v">REFL</span> <span class="pl-k">=</span> <span class="pl-smi">REFL</span>[<span class="pl-c1">1</span>], <span class="pl-v">longlat</span> <span class="pl-k">=</span> <span class="pl-smi">longlat</span>, <span class="pl-v">nyears</span> <span class="pl-k">=</span> <span class="pl-smi">nyears</span>, <span class="pl-v">minshade</span> <span class="pl-k">=</span> <span class="pl-smi">MINSHADES</span>, <span class="pl-v">maxshade</span> <span class="pl-k">=</span> <span class="pl-smi">MAXSHADES</span>, <span class="pl-v">DEP</span> <span class="pl-k">=</span> <span class="pl-smi">DEP</span>, <span class="pl-v">SLOPE</span> <span class="pl-k">=</span> <span class="pl-smi">SLOPE</span>, <span class="pl-v">ASPECT</span> <span class="pl-k">=</span> <span class="pl-smi">ASPECT</span>, <span class="pl-v">HORIZON</span> <span class="pl-k">=</span> <span class="pl-smi">HORIZON</span>, <span class="pl-v">dates</span> <span class="pl-k">=</span> <span class="pl-smi">tt</span>, <span class="pl-v">dem</span> <span class="pl-k">=</span> <span class="pl-smi">dem</span>, <span class="pl-v">dates2</span> <span class="pl-k">=</span> <span class="pl-smi">dates2</span>, <span class="pl-v">microclima.out</span> <span class="pl-k">=</span> <span class="pl-smi">microclima.out</span>))</td>
-      </tr>
-      <tr>
-        <td id="L1246" class="blob-num js-line-number" data-line-number="1246"></td>
-        <td id="LC1246" class="blob-code blob-code-inner js-file-line">      }</td>
-      </tr>
-      <tr>
-        <td id="L1247" class="blob-num js-line-number" data-line-number="1247"></td>
-        <td id="LC1247" class="blob-code blob-code-inner js-file-line">    }</td>
-      </tr>
-      <tr>
-        <td id="L1248" class="blob-num js-line-number" data-line-number="1248"></td>
-        <td id="LC1248" class="blob-code blob-code-inner js-file-line">  } <span class="pl-c"><span class="pl-c">#</span> end error trapping</span></td>
-      </tr>
-      <tr>
-        <td id="L1249" class="blob-num js-line-number" data-line-number="1249"></td>
-        <td id="LC1249" class="blob-code blob-code-inner js-file-line">} <span class="pl-c"><span class="pl-c">#</span> end of micro_ncep function</span></td>
-      </tr>
-</table>
-
-  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
-    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
-      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
-    </summary>
-    <details-menu>
-      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
-        <li>
-          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
-            Copy lines
-          </clipboard-copy>
-        </li>
-        <li>
-          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
-            Copy permalink
-          </clipboard-copy>
-        </li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/mrke/NicheMapR/blame/0196b957d095aa9b1ea0f0fd69c7ba6abd269aed/R/micro_ncep.R">View git blame</a></li>
-          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/mrke/NicheMapR/issues/new">Reference in new issue</a></li>
-      </ul>
-    </details-menu>
-  </details>
-
-  </div>
-
-    </div>
-
-  
-
-  <details class="details-reset details-overlay details-overlay-dark" id="jumpto-line-details-dialog">
-    <summary data-hotkey="l" aria-label="Jump to line"></summary>
-    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get">
-        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
-        <button type="submit" class="btn" data-close-dialog>Go</button>
-</form>    </details-dialog>
-  </details>
-
-
-</div>
-
-
-
-  </div>
-</div>
-
-    </main>
-  </div>
-
-  </div>
-
-          
-<div class="footer container-xl width-full p-responsive" role="contentinfo">
-  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
-    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      <li class="mr-3 mr-lg-0">&copy; 2021 GitHub, Inc.</li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://www.githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
-        <li><a data-ga-click="Footer, go to help, text:Docs" href="https://docs.github.com">Docs</a></li>
-    </ul>
-
-    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
-      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-</a>
-    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://docs.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://services.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
-        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
-    </ul>
-  </div>
-  <div class="d-flex flex-justify-center pb-6">
-    <span class="f6 text-gray-light"></span>
-  </div>
-
-  
-</div>
-
-
-
-  <div id="ajax-error-message" class="ajax-error-message flash flash-error" hidden>
-    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
-    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
-      <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
-    </button>
-    You can’t perform that action at this time.
-  </div>
-
-  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
-    >
-    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
-    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
-    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
-  </div>
-    <template id="site-details-dialog">
-  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
-    <summary role="button" aria-label="Close dialog"></summary>
-    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
-      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
-        <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
-      </button>
-      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
-    </details-dialog>
-  </details>
-</template>
-
-    <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
-  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
-  </div>
-</div>
-
-
-
-  </body>
-</html>
-
+#' NCEP implementation of the microclimate model, with package microclima computing hourly forcing.
+#'
+#' An implementation of the NicheMapR microclimate model that integrates the RNCEP 6-hourly weather data and the elevatr package for obtaining DEM using downscaling functions from the microclima package as described in more detail in Kearney, M. R., Gillingham, P. K., Bramer, I., Duffy, J. P., & Maclean, I. M. D. (2019). A method for computing hourly, historical, terrain-corrected microclimate anywhere on Earth. Methods in Ecology and Evolution.
+#' @encoding UTF-8
+#' @param loc Longitude and latitude (decimal degrees)
+#' @param dstart First day to run, date in format "d/m/Y" e.g. "01/01/2016"
+#' @param dfinish Last day to run, date in format "d/m/Y" e.g. "31/12/2016"
+#' @param dem A digital elevation model used by microclima for micro-topographic effects, produced by microclima function 'get_dem' via R package 'elevatr' (internally generated via same function based on 'loc' if NA)
+#' @param dem2 A digital elevation model used by microclima for meso-climate calculations, produced by microclima function 'get_dem' via R package 'elevatr' (internally generated via same function based on 'loc' if NA)
+#' @param dem.res Requested resolution of the DEM from elevatr, m
+#' @param pixels Number of pixels along one edge of square requested of DEM requested from elevatr, #
+#' @param REFL Soil solar reflectance, decimal \%
+#' @param slope Slope in degrees (if NA, then derived from DEM with package microclima)
+#' @param aspect Aspect in degrees (0 = north) (if NA, then derived from DEM with microclima)
+#' @param DEP Soil depths at which calculations are to be made (cm), must be 10 values starting from 0, and more closely spaced near the surface
+#' @param minshade Minimum shade level to use (\%) (can be a single value or a vector of daily values)
+#' @param maxshade Maximum shade level to use (\%) (can be a single value or a vector of daily values)
+#' @param Usrhyt Local height (m) at which air temperature, wind speed and humidity are to be computed for organism of interest
+#' @param coastal Compute coastal effects with microclima? T (TRUE) or F (FALSE) (can take a while and may have high memory requirements depending on DEM size)
+#' @param hourlydata user input of the hourlydata matrix
+#' @param dailyprecip user input of daily rainfall
+#' @param weather.elev optional value indicating the elevation of values in `hourlydata`. Either a numeric value, corresponding to the elevation in (m) of the location from which `hourlydata` were obtained, or `ncep` (default, data derive from NOAA-NCEP reanalysis) project.
+#' @param cad.effects optional logical indicating whether to calculate cold air drainage effects (TRUE = Yes, slower. FALSE =  No, quicker)
+#' @param ... Additional arguments, see Details
+#' @return metout The above ground micrometeorological conditions under the minimum specified shade
+#' @return shadmet The above ground micrometeorological conditions under the maximum specified shade
+#' @return soil Hourly predictions of the soil temperatures under the minimum specified shade
+#' @return shadsoil Hourly predictions of the soil temperatures under the maximum specified shade
+#' @return soilmoist Hourly predictions of the soil moisture under the minimum specified shade
+#' @return shadmoist Hourly predictions of the soil moisture under the maximum specified shade
+#' @return soilpot Hourly predictions of the soil water potential under the minimum specified shade
+#' @return shadpot Hourly predictions of the soil water potential under the maximum specified shade
+#' @return humid Hourly predictions of the soil humidity under the minimum specified shade
+#' @return shadhumid Hourly predictions of the soil humidity under the maximum specified shade
+#' @return plant Hourly predictions of plant transpiration, leaf water potential and root water potential under the minimum specified shade
+#' @return shadplant Hourly predictions of plant transpiration, leaf water potential and root water potential under the maximum specified shade
+#' @return sunsnow Hourly predictions of snow temperature under the minimum specified shade
+#' @return shadsnow Hourly predictions snow temperature under the maximum specified shade
+#' @usage micro_ncep(loc = c(-91.415669, -0.287145), dstart = "01/01/2019", dfinish = "31/07/2019",
+#' REFL = 0.15, slope = 0, aspect = 0, DEP = c(0, 2.5,  5,  10,  15,  20,  30,  50,  100,  200), minshade = 0, maxshade = 90,
+#' Usrhyt = 0.01, ...)
+#' @export
+#' @details
+#' \strong{ Parameters controlling how the model runs:}\cr\cr
+#' \code{runshade}{ = 1, Run the microclimate model twice, once for each shade level (1) or just once for the minimum shade (0)?}\cr\cr
+#' \code{run.gads}{ = 1, Use the Global Aerosol Database? 1=yes (Fortran version), 2=yes (R version), 0=no}\cr\cr
+#' \code{IR}{ = 0, Clear-sky longwave radiation computed using Campbell and Norman (1998) eq. 10.10 (includes humidity) (0) or Swinbank formula (1) or from NCEP data (2)}\cr\cr
+#' \code{solonly}{ = 0, Only run SOLRAD to get solar radiation? 1=yes, 0=no}\cr\cr
+#' \code{lamb}{ = 0, Return wavelength-specific solar radiation output?}\cr\cr
+#' \code{IUV}{ = 0, Use gamma function for scattered solar radiation? (computationally intensive)}\cr\cr
+#' \code{write_input}{ = 0, Write csv files of final input to folder 'csv input' in working directory? 1=yes, 0=no}\cr\cr
+#' \code{writecsv}{ = 0, Make Fortran code write output as csv files? 1=yes, 0=no}\cr\cr
+#' \code{reanalysis}{ = TRUE, Use reanalysis2 NCEP data? TRUE/FALSE}\cr\cr
+#' \code{windfac}{ = 1, factor to multiply wind speed by e.g. to simulate forest}\cr\cr
+#' \code{warm}{ = 0, warming offset vector, °C (negative values mean cooling). Can supply a single value or a vector the length of the number of days to be simulated.}\cr\cr
+#' \code{soilgrids}{ = 0, query soilgrids.org database for soil hydraulic properties?}\cr\cr
+#' \code{message}{ = 0, allow the Fortran integrator to output warnings? (1) or not (0)}\cr\cr
+#' \code{fail}{ = nyears x 24 x 365, how many restarts of the integrator before the Fortran program quits (avoids endless loops when solutions can't be found)}\cr\cr
+#' \code{spatial}{ = NA, specify folder with local NCEP data (no trailing forward slash), goes to the web if NA }\cr\cr
+#' \code{save}{ = 0, don't save forcing data (0), save the forcing data (1) or read previously saved data (2)}\cr\cr
+#'
+#' \strong{ General additional parameters:}\cr\cr
+#' \code{ERR}{ = 1.5, Integrator error tolerance for soil temperature calculations}\cr\cr
+#' \code{Refhyt}{ = 2, Reference height (m), reference height at which air temperature, wind speed and relative humidity input data are measured}\cr\cr
+#' \code{RUF}{ = 0.004, Roughness height (m), e.g. smooth desert is 0.0003, closely mowed grass may be 0.001, bare tilled soil 0.002-0.006, current allowed range: 0.00001 (snow) - 0.02 m.}\cr\cr
+#' \code{ZH}{ = 0, heat transfer roughness height (m) for Campbell and Norman air temperature/wind speed profile (invoked if greater than 0, 0.02 * canopy height in m if unknown)}\cr\cr
+#' \code{D0}{ = 0, zero plane displacement correction factor (m) for Campbell and Norman air temperature/wind speed profile (0.6 * canopy height in m if unknown)}\cr\cr
+#' \code{Z01}{ = 0, Top (1st) segment roughness height(m) - IF NO EXPERIMENTAL WIND PROFILE DATA SET THIS TO ZERO! (then RUF and Refhyt used)}\cr\cr
+#' \code{Z02}{ = 0, 2nd segment roughness height(m) - IF NO EXPERIMENTAL WIND PROFILE DATA SET THIS TO ZERO! (then RUF and Refhyt used).}\cr\cr
+#' \code{ZH1}{ = 0, Top of (1st) segment, height above surface(m) - IF NO EXPERIMENTAL WIND PROFILE DATA SET THIS TO ZERO! (then RUF and Refhyt used).}\cr\cr
+#' \code{ZH2}{ = 0, 2nd segment, height above surface(m) - IF NO EXPERIMENTAL WIND PROFILE DATA SET THIS TO ZERO! (then RUF and Refhyt used).}\cr\cr
+#' \code{EC}{ = 0.0167238, Eccenricity of the earth's orbit (current value 0.0167238, ranges between 0.0034 to 0.058)}\cr\cr
+#' \code{SLE}{ = 0.95, Substrate longwave IR emissivity (decimal \%), typically close to 1}\cr\cr
+#' \code{Thcond}{ = 2.5, Soil minerals thermal conductivity, single value or vector of 10 specific to each depth (W/mK)}\cr\cr
+#' \code{Density}{ = 2.56, Soil minerals density, single value or vector of 10 specific to each depth (Mg/m3)}\cr\cr
+#' \code{SpecHeat}{ = 870, Soil minerals specific heat, single value or vector of 10 specific to each depth (J/kg-K)}\cr\cr
+#' \code{BulkDensity}{ = 1.3, Soil bulk density (Mg/m3), single value or vector of 10 specific to each depth}\cr\cr
+#' \code{PCTWET}{ = 0, \% of ground surface area acting as a free water surface (overridden if soil moisture model is running)}\cr\cr
+#' \code{rainwet}{ = 1.5, mm of rainfall causing the ground to be 90\% wet for the day}\cr\cr
+#' \code{cap}{ = 1, organic cap present on soil surface? (cap has lower conductivity - 0.2 W/mC - and higher specific heat 1920 J/kg-K)}\cr\cr
+#' \code{CMH2O}{ = 1, Precipitable cm H2O in air column, 0.1 = very dry; 1.0 = moist air conditions; 2.0 = humid, tropical conditions (note this is for the whole atmospheric profile, not just near the ground)}\cr\cr
+#' \code{hori}{ = rep(NA,24), Horizon angles (degrees), from 0 degrees azimuth (north) clockwise in 15 degree intervals}\cr\cr
+#'
+#' \strong{ Soil moisture mode parameters:}\cr\cr
+#'
+#' \code{runmoist}{ = 1, Run soil moisture model? 1=yes, 0=no  1=yes, 0=no (note that this may cause slower runs)}\cr\cr
+#' \code{PE}{ = rep(1.1,19), Air entry potential (J/kg) (19 values descending through soil for specified soil nodes in parameter}
+#' \code{DEP}
+#' { and points half way between)}\cr\cr
+#' \code{KS}{ = rep(0.0037,19), Saturated conductivity, (kg s/m3) (19 values descending through soil for specified soil nodes in parameter}
+#' \code{DEP}
+#' { and points half way between)}\cr\cr
+#' \code{BB}{ = rep(4.5,19), Campbell's soil 'b' parameter (-) (19 values descending through soil for specified soil nodes in parameter}
+#' \code{DEP}
+#' { and points half way between)}\cr\cr
+#' \code{BD}{ = rep(1.3,19), Soil bulk density (Mg/m3)  (19 values descending through soil for specified soil nodes in parameter}
+#' \code{DEP}
+#' { and points half way between)}\cr\cr
+#' \code{DD}{ = rep(2.56,19), Soil density (Mg/m3)  (19 values descending through soil for specified soil nodes in parameter DEP and points half way between)}\cr\cr
+#' \code{DEP}
+#' { and points half way between)}\cr\cr
+#' \code{maxpool}{ = 10000, Max depth for water pooling on the surface (mm), to account for runoff}\cr\cr
+#' \code{rainhourly}{ = 0, Is hourly rain input being supplied (1 = yes, 0 = no)?}\cr\cr
+#' \code{rainhour}{ = 0, Vector of hourly rainfall values - overrides daily NCEP rain if rainhourly = 1}\cr\cr
+#' \code{rainmult}{ = 1, Rain multiplier for surface soil moisture (-), used to induce runon}\cr\cr
+#' \code{rainoff}{ = 0, Rain offset (mm), used to induce changes in rainfall from NCEP values. Can be a single value or a vector matching the number of days to simulate. If negative values are used, rainfall will be prevented from becomming negative.}\cr\cr
+#' \code{evenrain}{ = 0, Spread daily rainfall evenly across 24hrs (1) or one event at midnight (0)}\cr\cr
+#' \code{SoilMoist_Init}{ = c(0.1,0.12,0.15,0.2,0.25,0.3,0.3,0.3,0.3,0.3), initial soil water content at each soil node, m3/m3}\cr\cr
+#' \code{L}{ = c(0,0,8.2,8.0,7.8,7.4,7.1,6.4,5.8,4.8,4.0,1.8,0.9,0.6,0.8,0.4,0.4,0,0)*10000, root density (m/m3), (19 values descending through soil for specified soil nodes in parameter}\cr\cr
+#' \code{R1}{ = 0.001, root radius, m}\cr\cr
+#' \code{RW}{ = 2.5e+10, resistance per unit length of root, m3 kg-1 s-1}\cr\cr
+#' \code{RL}{ = 2e+6, resistance per unit length of leaf, m3 kg-1 s-1}\cr\cr
+#' \code{PC}{ = -1500, critical leaf water potential for stomatal closure, J kg-1}\cr\cr
+#' \code{SP}{ = 10, stability parameter for stomatal closure equation, -}\cr\cr
+#' \code{IM}{ = 1e-06, maximum allowable mass balance error, kg}\cr\cr
+#' \code{MAXCOUNT}{ = 500, maximum iterations for mass balance, -}\cr\cr
+#' \code{LAI}{ = 0.1, leaf area index (can be a single value or a vector of daily values), used to partition traspiration/evaporation from PET in soil moisture model}\cr\cr
+#' \code{microclima.LAI}{ = 0, leaf area index, used by package microclima for radiation calcs}\cr\cr
+#' \code{LOR}{ = 1, leaf orientation for package microclima radiation calcs}\cr\cr
+#'
+#' \strong{ Snow mode parameters:}
+#'
+#' \code{snowmodel}{ = 1, run the snow model 1=yes, 0=no (note that this may cause slower runs)}\cr\cr
+#' \code{snowtemp}{ = 1.5, Temperature (°C) at which precipitation falls as snow}\cr\cr
+#' \code{snowdens}{ = 0.375, snow density (mg/m3), overridden by densfun}\cr\cr
+#' \code{densfun}{ = c(0.5979, 0.2178, 0.001, 0.0038), slope and intercept of model of snow density as a linear function of snowpack age if first two values are nonzero, and following the exponential function of Sturm et al. 2010 J. of Hydromet. 11:1380-1394 if all values are non-zero; if it is c(0,0,0,0) then fixed density used}\cr\cr
+#' \code{snowmelt}{ = 1, proportion of calculated snowmelt that doesn't refreeze}\cr\cr
+#' \code{undercatch}{ = 1, undercatch multipier for converting rainfall to snow}\cr\cr
+#' \code{rainmelt}{ = 0.0125, paramter in equation that melts snow with rainfall as a function of air temp}\cr\cr
+#' \code{snowcond}{ = 0, effective snow thermal conductivity W/mC (if zero, uses inbuilt function of density)}\cr\cr
+#' \code{intercept}{ = max(maxshade) / 100 * 0.3, snow interception fraction for when there's shade (0-1)}\cr\cr
+#' \code{grasshade}{ = 0, if 1, means shade is removed when snow is present, because shade is cast by grass/low shrubs}\cr\cr
+#'
+#' \strong{ Intertidal mode parameters:}
+#'
+#' \code{shore}{ Include tide effects? If 1, the matrix}
+#' \code{tides}{ is used to specify tide presence, sea water temperature and presence of wavesplash}\cr\cr
+#' \code{tides}{ = matrix(data = 0, nrow = length(seq(as.POSIXct(dstart, format = '%d/%m/%Y'), as.POSIXct(dfinish, format = '%d/%m/%Y'), by = 'days')) * 24, ncol = 3), matrix of 1. tide state (0=out, 1=in), 2. Water temperature (°C) and 3. Wave splash (0=yes, 1=no)}\cr\cr
+#' }
+#'
+#' \strong{Outputs:}
+#'
+#' \code{ndays}{ - number of days for which predictions are made}\cr\cr
+#' \code{longlat}{ - longitude and latitude for which simulation was run (decimal degrees)}\cr\cr
+#' \code{dates}{ - vector of dates (POSIXct, UTC)}\cr\cr
+#' \code{nyears}{ - number of years for which predictions are made}\cr\cr
+#' \code{RAINFALL}{ - vector of daily rainfall (mm)}\cr\cr
+#' \code{elev}{ - elevation at point of simulation (m)}\cr\cr
+#' \code{minshade}{ - minimum shade for each day of simulation (\%)}\cr\cr
+#' \code{maxshade}{ - maximum shade for each day of simulation (\%)}\cr\cr
+#' \code{dem}{ - digital elevation model obtained via 'get_dev' using package 'elevatr' (m)}\cr\cr
+#' \code{DEP}{ - vector of depths used (cm)}\cr\cr
+#' \code{SLOPE}{ - slope at point of simulation (\%)}\cr\cr
+#' \code{ASPECT}{ - aspect at point of simulation (°, 0 is north)}\cr\cr
+#' \code{HORIZON}{ - horizon angles at point of simulation (°)}\cr\cr
+#'
+#' metout/shadmet variables:
+#' \itemize{
+#' \item 1 DOY - day-of-year
+#' \item 2 TIME - time of day (mins)
+#' \item 3 TALOC - air temperature (°C) at local height (specified by 'Usrhyt' variable)
+#' \item 4 TAREF - air temperature (°C) at reference height (specified by 'Refhyt', 2m default)
+#' \item 5 RHLOC - relative humidity (\%) at local height (specified by 'Usrhyt' variable)
+#' \item 6 RH  - relative humidity (\%) at reference height (specified by 'Refhyt', 2m default)
+#' \item 7 VLOC - wind speed (m/s) at local height (specified by 'Usrhyt' variable)
+#' \item 8 VREF - wind speed (m/s) at reference height (specified by 'Refhyt', 2m default)
+#' \item 9 SNOWMELT - snowmelt (mm)
+#' \item 10 POOLDEP - water pooling on surface (mm)
+#' \item 11 PCTWET - soil surface wetness (\%)
+#' \item 12 ZEN - zenith angle of sun (degrees - 90 = below the horizon)
+#' \item 13 SOLR - solar radiation (W/m2) (unshaded, adjusted for slope, aspect and horizon angle)
+#' \item 14 TSKYC - sky radiant temperature (°C)
+#' \item 15 DEW - dew presence (0 or 1)
+#' \item 16 FROST - frost presence (0 or 1)
+#' \item 17 SNOWFALL - snow predicted to have fallen (cm)
+#' \item 18 SNOWDEP - predicted snow depth (cm)
+#' \item 19 SNOWDENS - snow density (g/cm3)
+#'}
+#' soil and shadsoil variables:
+#' \itemize{
+#' \item 1 DOY - day-of-year
+#' \item 2 TIME - time of day (mins)
+#' \item 3-12 D0cm ... - soil temperature (°C) at each of the 10 specified depths
+#' }
+#'
+#' if soil moisture model is run i.e. parameter runmoist = 1\cr
+#'
+#' soilmoist and shadmoist variables:
+#' \itemize{
+#' \item 1 DOY - day-of-year
+#' \item 2 TIME - time of day (mins)
+#' \item 3-12 WC0cm ... - soil moisture (m3/m3) at each of the 10 specified depths
+#' }
+#' soilpot and shadpot variables:
+#' \itemize{
+#' \item 1 DOY - day-of-year
+#' \item 2 TIME - time of day (mins)
+#' \item 3-12 PT0cm ... - soil water potential (J/kg = kPa = bar/100) at each of the 10 specified depths
+#' }
+#' humid and shadhumid variables:
+#' \itemize{
+#' \item  1 DOY - day-of-year
+#' \item  2 TIME - time of day (mins)
+#' \item  3-12 RH0cm ... - soil relative humidity (decimal \%), at each of the 10 specified depths
+#' }
+#' plant and shadplant variables:
+#' \itemize{
+#' \item  1 DOY - day-of-year
+#' \item  2 TIME - time of day (mins)
+#' \item  3 TRANS - plant transpiration rate (g/m2/h)
+#' \item  4 LEAFPOT - leaf water potential (J/kg = kPa = bar/100)
+#' \item  5-14 RPOT0cm ... - root water potential (J/kg = kPa = bar/100), at each of the 10 specified depths
+#' }
+#'
+#' if snow model is run i.e. parameter lamb = 1\cr
+#' sunsnow and shdsnow variables:
+#' \itemize{
+#' \item  1 DOY - day-of-year
+#' \item  2 TIME - time of day (mins)
+#' \item  3-10 SN1 ... - snow temperature (°C), at each of the potential 8 snow layers (layer 8 is always the bottom - need metout$SNOWDEP to interpret which depth in the snow a given layer represents)
+#' }
+#'
+#' if wavelength-specific solar output is selected i.e. parameter lamb = 1\cr
+#' solar output variables
+#' drlam (direct solar), drrlam (direct Rayleigh solar) and srlam (scattered solar) variables:
+#' \itemize{
+#' \item  1 DOY - day-of-year
+#' \item  2 TIME - time of day (mins)
+#' \item  3-113 290, ..., 4000 - irradiance (W/(m2 nm)) at each of 111 wavelengths from 290 to 4000 nm
+#' }
+#' @examples
+#' library(NicheMapR)
+#' dstart <- "02/01/2017"
+#' dfinish <- "30/12/2017"
+#' loc <- c(-91.415669, -0.287145) # Isla Fernandina Galapagos
+#' micro<-micro_ncep(loc = loc, dstart = dstart, dfinish = dfinish)
+#'
+#' metout<-as.data.frame(micro$metout) # above ground microclimatic conditions, min shade
+#' soil<-as.data.frame(micro$soil) # soil temperatures, minimum shade
+#' soilmoist<-as.data.frame(micro$soilmoist) # soil temperatures, minimum shade
+#'
+#' # append dates
+#' tzone<-paste("Etc/GMT+",0,sep="")
+#' dates<-seq(as.POSIXct(dstart, format="%d/%m/%Y",tz=tzone)-3600*12, as.POSIXct(dfinish, format="%d/%m/%Y",tz=tzone)+3600*11, by="hours")
+#'
+#' metout <- cbind(dates,metout)
+#' soil <- cbind(dates,soil)
+#' soilmoist <- cbind(dates, soilmoist)
+#'
+#' # plotting above-ground conditions in minimum shade
+#' with(metout,{plot(TALOC ~ dates,xlab = "Date and Time", ylab = "Temperature (°C)"
+#' , type = "l",main=paste("air and sky temperature",sep=""), ylim = c(-20, 60))})
+#' with(metout,{points(TAREF ~ dates,xlab = "Date and Time", ylab = "Temperature (°C)"
+#' , type = "l",lty=2,col='blue')})
+#' with(metout,{points(TSKYC ~ dates,xlab = "Date and Time", ylab = "Temperature (°C)"
+#' ,  type = "l",col='light blue',main=paste("sky temperature",sep=""))})
+#' with(metout,{plot(RHLOC ~ dates,xlab = "Date and Time", ylab = "Relative Humidity (%)"
+#' , type = "l",ylim=c(0,100),main=paste("humidity",sep=""))})
+#' with(metout,{points(RH ~ dates,xlab = "Date and Time", ylab = "Relative Humidity (%)"
+#' , type = "l",col='blue',lty=2,ylim=c(0,100))})
+#' with(metout,{plot(VREF ~ dates,xlab = "Date and Time", ylab = "Wind Speed (m/s)"
+#' ,  type = "l",main="wind speed",ylim = c(0, 15))})
+#' with(metout,{points(VLOC ~ dates,xlab = "Date and Time", ylab = "Wind Speed (m/s)"
+#' ,  type = "l",lty=2,col='blue')})
+#' with(metout,{plot(SOLR ~ dates,xlab = "Date and Time", ylab = "Solar Radiation (W/m2)"
+#' ,  type = "l",main="solar radiation")})
+#' with(metout,{plot(SNOWDEP ~ dates,xlab = "Date and Time", ylab = "Snow Depth (cm)"
+#' ,  type = "l",main="snow depth")})
+#'
+#' # plotting soil temperature
+#' for(i in 1:10){
+#'  if(i==1){
+#'    plot(soil[,i+3]~soil[,1],xlab = "Date and Time", ylab = "Soil Temperature (°C)"
+#'    ,col=i,type = "l",main=paste("soil temperature",sep=""))
+#'  }else{
+#'    points(soil[,i+3]~soil[,1],xlab = "Date and Time", ylab = "Soil Temperature
+#'     (°C)",col=i,type = "l")
+#'  }
+#' }
+#'
+#' # plotting soil moisture
+#' for(i in 1:10){
+#'  if(i==1){
+#'    plot(soilmoist[,i+3]*100~soilmoist[,1],xlab = "Date and Time", ylab = "Soil Moisture (% volumetric)"
+#'    ,col=i,type = "l",main=paste("soil moisture",sep=""))
+#'  }else{
+#'    points(soilmoist[,i+3]*100~soilmoist[,1],xlab = "Date and Time", ylab = "Soil Moisture
+#'     (%)",col=i,type = "l")
+#'  }
+#' }
+micro_ncep <- function(
+  loc = c(-5.3, 50.13),
+  dstart = "01/01/2017",
+  dfinish = "31/12/2017",
+  dem = NA,
+  dem2 = dem,
+  dem.res = 30,
+  pixels = 100,
+  nyears = as.numeric(substr(dfinish, 7, 10)) - as.numeric(substr(dstart, 7, 10)) + 1,
+  REFL = 0.15,
+  slope = NA,
+  aspect = NA,
+  DEP = c(0, 2.5,  5,  10,  15,  20,  30,  50,  100,  200),
+  minshade = 0,
+  maxshade = 90,
+  Refhyt = 2,
+  Usrhyt = 0.01,
+  Z01 = 0,
+  Z02 = 0,
+  ZH1 = 0,
+  ZH2 = 0,
+  runshade = 1,
+  run.gads = 1,
+  solonly = 0,
+  write_input = 0,
+  writecsv = 0,
+  reanalysis = TRUE,
+  windfac = 1,
+  warm = 0,
+  ERR = 1.5,
+  RUF = 0.004,
+  ZH = 0,
+  D0 = 0,
+  EC = 0.0167238,
+  SLE = 0.95,
+  Thcond = 2.5,
+  Density = 2.56,
+  SpecHeat = 870,
+  BulkDensity = 1.3,
+  PCTWET = 0,
+  rainwet = 1.5,
+  cap = 1,
+  CMH2O = 1,
+  hori = rep(NA, 24),
+  runmoist = 1,
+  PE = rep(1.1, 19),
+  KS = rep(0.0037, 19),
+  BB = rep(4.5, 19),
+  BD = rep(BulkDensity, 19),
+  DD = rep(Density, 19),
+  maxpool = 10000,
+  rainmult = 1,
+  evenrain = 0,
+  SoilMoist_Init = c(0.1, 0.12, 0.15, 0.2, 0.25, 0.3, 0.3, 0.3, 0.3, 0.3),
+  L = c(0, 0, 8.2, 8.0, 7.8, 7.4, 7.1, 6.4, 5.8, 4.8, 4.0, 1.8, 0.9, 0.6, 0.8, 0.4 ,0.4, 0, 0) * 10000,
+  R1 = 0.001,
+  RW = 2.5e+10,
+  RL = 2e+06,
+  PC = -1500,
+  SP = 10,
+  IM = 1e-06,
+  MAXCOUNT = 500,
+  LAI = 0.1,
+  microclima.LAI = 0,
+  LOR = 1,
+  snowmodel = 1,
+  snowtemp = 1.5,
+  snowdens = 0.375,
+  densfun = c(0.5979, 0.2178, 0.001, 0.0038),
+  snowmelt = 1,
+  undercatch = 1,
+  rainmelt = 0.0125,
+  shore = 0,
+  tides = 0,
+  deepsoil = NA,
+  rainhour = 0,
+  rainhourly = 0,
+  rainoff = 0,
+  lamb = 0,
+  IUV = 0,
+  soilgrids = 0,
+  IR = 0,
+  message = 0,
+  fail = nyears * 24 * 365,
+  spatial = NA,
+  save = 0,
+  snowcond = 0,
+  intercept = max(maxshade) / 100 * 0.3,
+  grasshade = 0,
+  coastal = F,
+  hourlydata = NA,
+  dailyprecip = NA,
+  weather.elev = 'ncep',
+  cad.effects = TRUE){ # end function parameters
+  # error trapping - originally inside the Fortran code, but now checking before executing Fortran
+  errors<-0
+  if(DEP[2]-DEP[1]>3 | DEP[3]-DEP[2]>3){
+    cat("warning, nodes might be too far apart near the surface, try a different spacing if the program is crashing \n")
+  }
+  if(DEP[2]-DEP[1]<2){
+    cat("warning, nodes might be too close near the surface, try a different spacing if the program is crashing \n")
+  }
+  if(is.numeric(loc[1])){
+    if(loc[1]>180 | loc[2] > 90){
+      cat("ERROR: Latitude or longitude (longlat) is out of bounds.
+          Please enter a correct value.", '\n')
+      errors<-1
+    }
+  }
+  if(run.gads == 1){
+    message("If program is crashing, try run.gads = 2.", '\n')
+  }
+  if(run.gads%in%c(0, 1, 2)==FALSE){
+    cat("ERROR: the variable 'run.gads' be either 0, 1 or 2.
+        Please correct.", '\n')
+    errors<-1
+  }
+  if(write_input%in%c(0,1)==FALSE){
+    cat("ERROR: the variable 'write_input' be either 0 or 1.
+        Please correct.", '\n')
+    errors<-1
+  }
+  if(EC<0.0034 | EC > 0.058){
+    cat("ERROR: the eccentricity variable (EC) is out of bounds.
+        Please enter a correct value (0.0034 - 0.058).", '\n')
+    errors<-1
+  }
+  if(RUF<0.0001){
+    cat("ERROR: The roughness height (RUF) is too small ( < 0.0001).
+        Please enter a larger value.", '\n')
+    errors<-1
+  }
+  if(RUF>2){
+    cat("ERROR: The roughness height (RUF) is too large ( > 2).
+        Please enter a smaller value.", '\n')
+    errors<-1
+  }
+  if(DEP[1]!=0){
+    cat("ERROR: First soil node (DEP[1]) must = 0 cm.
+        Please correct", '\n')
+    errors<-1
+  }
+  if(length(DEP)!=10){
+    cat("ERROR: You must enter 10 different soil depths.", '\n')
+    errors<-1
+  }
+  for(i in 1:9){
+    if(DEP[i+1]<=DEP[i]){
+      cat("ERROR: Soil depth (DEP array) is not in ascending size", '\n')
+      errors<-1
+    }
+  }
+  if(DEP[10]>500){
+    cat("ERROR: Deepest soil depth (DEP array) is too large (<=500 cm)", '\n')
+    errors<-1
+  }
+  if(min(Thcond)<0){
+    cat("ERROR: Thermal variable conductivity (THCOND) is negative.
+        Please input a positive value.", '\n')
+    errors<-1
+  }
+  if(min(Density)<0){
+    cat("ERROR: Density variable (Density) is negative.
+        Please input a positive value.", '\n')
+    errors<-1
+  }
+  if(min(SpecHeat)<0){
+    cat("ERROR: Specific heat variable (SpecHeat) is negative.
+        Please input a positive value.", '\n')
+    errors<-1
+  }
+  if(min(BulkDensity)<0){
+    cat("ERROR: Bulk density value (BulkDensity) is negative.
+        Please input a positive value.", '\n')
+    errors<-1
+  }
+  if(REFL<0 | REFL>1){
+    cat("ERROR: Soil reflectivity value (REFL) is out of bounds.
+        Please input a value between 0 and 1.", '\n')
+    errors<-1
+  }
+  if(is.na(slope) == FALSE & slope > 90){
+    cat("ERROR: Slope value (slope) is out of bounds.
+        Please input a value between 0 and 90.", '\n')
+    errors<-1
+  }
+  if(is.na(aspect) == FALSE & aspect >365){
+    cat("ERROR: Aspect value (aspect) is out of bounds.
+        Please input a value between 0 and 365.", '\n')
+    errors<-1
+  }
+  if(is.na(hori[1])==FALSE & (max(hori)>90 | min(hori)<0)){
+    cat("ERROR: At least one of your horizon angles (hori) is out of bounds.
+        Please input a value between 0 and 90", '\n')
+    errors<-1
+  }
+  if(length(hori)!=24){
+    cat("ERROR: You must enter 24 horizon angle values.", '\n')
+    errors<-1
+  }
+  if(SLE<0.05 | SLE > 1){
+    cat("ERROR: Emissivity (SLE) is out of bounds.
+        Please enter a correct value (0.05 - 1.00).", '\n')
+    errors<-1
+  }
+  if(ERR<0){
+    cat("ERROR: Error bound (ERR) is too small.
+        Please enter a correct value (> 0.00).", '\n')
+    errors<-1
+  }
+  if(Usrhyt<RUF){
+    cat("ERROR: Reference height (Usrhyt) smaller than roughness height (RUF).
+        Please use a larger height above the surface.", '\n')
+    errors<-1
+  }
+  if(Usrhyt<0.005 | Usrhyt>Refhyt){
+    cat("ERROR: Local height (Usrhyt) is out of bounds.
+        Please enter a correct value (0.005 - Refhyt).", '\n')
+    errors<-1
+  }
+  if(CMH2O<0.5 | CMH2O>2){
+    cat("ERROR: Preciptable water in air column (CMH2O) is out of bounds.
+        Please enter a correct value (0.1 - 2cm).", '\n')
+    errors<-1
+  }
+  if(max(minshade-maxshade) >= 0){
+    cat("ERROR: Your value(s) for minimum shade (minshade) is greater than or equal to the maximum shade (maxshade).
+        Please correct this.", '\n')
+    errors<-1
+  }
+  if(max(minshade)>100 | min(minshade)<0){
+    cat("ERROR: Your value(s) for minimum shade (minshade) is out of bounds.
+        Please input a value between 0 and 100.", '\n')
+    errors<-1
+  }
+  if(max(maxshade)>100 | min(maxshade)<0){
+    cat("ERROR: Your value(s) for maximum shade (maxshade) is out of bounds.
+        Please input a value between 0 and 100.", '\n')
+    errors<-1
+  }
+  # end error trapping
+
+  if(errors==0){ # continue
+    max.date <- as.POSIXct(paste0("01/", format(Sys.time(), "%m/%Y")), format = "%d/%m/%Y", tz = "UTC") - 54 * 3600
+    if(as.Date(dfinish, format = "%d/%m/%Y") > max.date){
+      message(paste0("Cannot simulate past ", max.date, "; reducing timespan accordingly \n"))
+      dfinish <- as.character(as.Date(max.date, format = "%Y/%m/%d"))
+      dfinish <- paste(substr(dfinish, 9, 10), substr(dfinish, 6, 7), substr(dfinish, 1, 4), sep = "/")
+    }
+    ystart <- as.numeric(substr(dstart, 7, 10))
+    yfinish <- as.numeric(substr(dfinish, 7, 10))
+    yearlist <- seq(ystart, (ystart + (nyears - 1)), 1)
+
+    #remove trailing forward slash if necessary
+    if(is.na(spatial)==FALSE){
+      if(substr(x = spatial, start = nchar(spatial), nchar(spatial))=='/'){
+        spatial <- substr(spatial, 1, nchar(spatial)-1)
+      }
+    }
+    ################## time related variables #################################
+
+    # for microclima calculations
+    tme <- seq(as.Date(dstart, format = "%d/%m/%Y"), as.Date(dfinish, format = "%d/%m/%Y"), "days")
+
+    doy <- as.numeric(strftime(tme, format = "%j"))
+    ndays<-length(doy)
+    doynum<-ndays
+    ida<-ndays
+    microdaily<-1 # run microclimate model where one iteration of each day occurs and last day gives initial conditions for present day with an initial 3 day burn in
+    daystart<-1
+    if(length(minshade) != ndays){
+      MINSHADES <- rep(0, ndays) + minshade[1] # daily min shade (%)
+    }else{
+      MINSHADES <- rep(0, ndays) + minshade # daily min shade (%)
+    }
+    if(length(maxshade) != ndays){
+      MAXSHADES <- rep(0, ndays) + maxshade[1] # daily max shade (%)
+    }else{
+      MAXSHADES <- rep(0, ndays) + maxshade # daily max shade (%)
+    }
+    idayst <- 1 # start day
+
+    ################## location and terrain #################################
+    if (!require("raster", quietly = TRUE)) {
+      stop("package 'raster' is needed. Please install it.",
+           call. = FALSE)
+    }
+    if (!require("RNCEP", quietly = TRUE)) {
+      stop("package 'RNCEP' is needed. Please install it.",
+           call. = FALSE)
+    }
+    if (!require("RNetCDF", quietly = TRUE)) {
+      stop("package 'RNetCDF' is needed. Please install it.",
+           call. = FALSE)
+    }
+    if (!require("microclima", quietly = TRUE)) {
+      stop("package 'microclima' is needed. Please install it via command: devtools::install_github('ilyamaclean/microclima').",
+           call. = FALSE)
+    }
+    require("raster")
+    require("RNCEP")
+    require("RNetCDF")
+    require("microclima")
+    longlat <- loc
+    x <- t(as.matrix(as.numeric(c(loc[1],loc[2]))))
+
+    # get the local timezone reference longitude
+    ALREF <- abs(trunc(x[1]))
+    HEMIS <- ifelse(x[2]<0, 2, 1) # 1 is northern hemisphere
+    # break decimal degree lat/lon into deg and min
+    ALAT <- abs(trunc(x[2]))
+    AMINUT <- (abs(x[2])-ALAT)*60
+    ALONG <- abs(trunc(x[1]))
+    ALMINT <- (abs(x[1])-ALONG)*60
+    azmuth<-aspect
+    lat <- as.numeric(longlat[2])
+    long <- as.numeric(longlat[1])
+    loc <- c(long, lat)
+    if(class(dem)[1] == "RasterLayer"){
+      cat('using DEM provided to function call \n')
+    }
+    if(save != 2 & class(dem)[1] != "RasterLayer"){
+      cat('downloading DEM via package elevatr \n')
+      dem <- microclima::get_dem(lat = lat, long = long, resolution = dem.res, xdims = pixels, ydims = pixels) # mercator equal area projection
+    }
+    if(save == 1){
+      save(dem, file = 'dem.Rda')
+    }
+    if(save == 2){
+      load('dem.Rda')
+    }
+    if(save != 2){
+      if(soilgrids == 1){
+        cat('extracting soil texture data from SoilGrids \n')
+        if (!requireNamespace("jsonlite", quietly = TRUE)) {
+          stop("package 'jsonlite' is needed to extract data from SoilGrids, please install it.",
+               call. = FALSE)
+        }
+        #ov <- fromJSON(paste0('https://rest.soilgrids.org/query?lon=',x[1],'&lat=',x[2],',&attributes=BLDFIE,SLTPPT,SNDPPT,CLYPPT'), flatten = TRUE)
+        ov <- fromJSON(paste0('https://rest.soilgrids.org/soilgrids/v2.0/properties/query?lon=',x[1],'&lat=',x[2],'&property=bdod&property=silt&property=clay&property=sand'), flatten = TRUE)
+        if(length(ov) > 3){
+          soilpro <- cbind(c(0, 5, 15, 30, 60, 100), unlist(ov$properties$layers$depths[[1]]$values.mean) / 100, unlist(ov$properties$layers$depths[[2]]$values.mean) / 10, unlist(ov$properties$layers$depths[[4]]$values.mean) / 10, unlist(ov$properties$layers$depths[[3]]$values.mean) / 10)
+          soilpro <- rbind(soilpro, soilpro[6, ])
+          soilpro[7, 1] <- 200
+          #soilpro <- cbind(c(0,5,15,30,60,100,200), unlist(ov$properties$BLDFIE$M)/1000, unlist(ov$properties$CLYPPT$M), unlist(ov$properties$SLTPPT$M), unlist(ov$properties$SNDPPT$M) )
+          colnames(soilpro) <- c('depth', 'blkdens', 'clay', 'silt', 'sand')
+          #Now get hydraulic properties for this soil using Cosby et al. 1984 pedotransfer functions.
+          soil.hydro<-pedotransfer(soilpro = as.data.frame(soilpro), DEP = DEP)
+          PE<-soil.hydro$PE
+          BB<-soil.hydro$BB
+          BD<-soil.hydro$BD
+          KS<-soil.hydro$KS
+          BulkDensity <- BD[seq(1,19,2)] #soil bulk density, Mg/m3
+        }else{
+          cat('no SoilGrids data for this site, using user-input soil properties \n')
+        }
+      }
+    }else{
+      if(soilgrids == 1){
+        cat("loading SoilGrids data from previous run \n")
+        load('PE.Rda')
+        load('BB.Rda')
+        load('BD.Rda')
+        load('KS.Rda')
+        load('BulkDensity.Rda')
+      }
+    }
+    if(save == 1 & soilgrids == 1){
+      cat("saving SoilGrids data for later \n")
+      save(PE, file = 'PE.Rda')
+      save(BB, file = 'BB.Rda')
+      save(BD, file = 'BD.Rda')
+      save(KS, file = 'KS.Rda')
+      save(BulkDensity, file = 'BulkDensity.Rda')
+    }
+    if(is.na(hori[1])){
+      hori<-rep(0, 24)
+      VIEWF <- 1 # incorporated already by microclima
+    }else{
+      VIEWF <- 1-sum(sin(as.data.frame(hori)*pi/180))/length(hori) # convert horizon angles to radians and calc view factor(s)
+      HORIZON <- spline(x = hori, n = 36, method =  'periodic')$y
+      HORIZON[HORIZON < 0] <- 0
+      HORIZON[HORIZON > 90] <- 90
+    }
+    days <- seq(as.POSIXct(dstart, format = "%d/%m/%Y", origin = "01/01/1900", tz = 'UTC'), as.POSIXct(dfinish, format = "%d/%m/%Y", origin = "01/01/1900", tz = 'UTC'), by = 'days')
+    alldays <- seq(as.POSIXct("01/01/1900", format = "%d/%m/%Y", origin = "01/01/1900", tz = 'UTC'), Sys.time()-60*60*24, by = 'days')
+    startday <- which(as.character(format(alldays, "%d/%m/%Y")) == format(as.POSIXct(dstart, format = "%d/%m/%Y", origin = "01/01/1900", tz = 'UTC'), "%d/%m/%Y"))
+    endday <- which(as.character(format(alldays, "%d/%m/%Y")) == format(as.POSIXct(dfinish, format = "%d/%m/%Y", origin = "01/01/1900", tz = 'UTC'), "%d/%m/%Y"))
+    countday <- endday-startday+1
+    tt <- seq(as.POSIXct(dstart, format = "%d/%m/%Y", tz = 'UTC'), as.POSIXct(dfinish, format = "%d/%m/%Y", tz = 'UTC')+23*3600, by = 'hours')
+    dates2 <- seq(as.POSIXct(dstart, format = "%d/%m/%Y", tz = 'UTC'), as.POSIXct(dfinish, format = "%d/%m/%Y", tz = 'UTC')+23*3600, by = 'days')
+    if(save == 2){
+      load('tref.Rda')
+      load('SLOPE.Rda')
+      load('ASPECT.Rda')
+      load('HORIZON.Rda')
+      elev <- tref$elev[1] # m
+      ALTT <- elev
+    }
+
+    if(save != 2){
+      ncquery <- function(filename, var, start, count, year){
+        if (!require("ncdf4", quietly = TRUE)) {
+          stop("package 'ncdf4' is needed. Please install it.",
+               call. = FALSE)
+        }
+        if(!file.exists(paste(spatial, "/",filename,year,"_time.nc", sep = ""))){
+          stop("looks like you need to generate the reordered version of your locally-stored NCEP data, see instructions on the NicheMapR Google Group under the heading 'speeding up reading of NCEP data'")
+        }
+        nc <- ncdf4::nc_open(paste(spatial, "/",filename,year,"_time.nc", sep = ""))
+        if(nc$ndims == 3){
+          start <- start[c(1,3:4)]
+          count <- count[c(1,3:4)]
+        }
+        out <- as.numeric(ncdf4::ncvar_get(nc, varid = var, start = start, count = count))
+        ncdf4::nc_close(nc)
+        out
+      }
+      if(is.na(spatial) == FALSE){
+        # now getting starting point and count for reading netcdf files
+        cat(paste0("extracting weather data locally from ", spatial, " \n"))
+        years <- as.numeric(unique(format(tme, "%Y")))
+        nc <- RNetCDF::open.nc(paste(spatial, "/air.2m.gauss.", years[1], "_time.nc", sep = ""))
+        lon2 <- matrix(RNetCDF::var.get.nc(nc, "lon", unpack = TRUE))
+        lat2 <- matrix(RNetCDF::var.get.nc(nc, "lat", unpack = TRUE))
+        lon_1 <- long
+        if(lon_1 < 0){lon_1 <- 180 - (long*-1) + 180}
+        lat_1 <- lat
+        dist1 <- abs(lon2 - lon_1)
+        index1 <- which.min(dist1)
+        lon3 <- lon2[index1]
+        dist2 <- abs(lat2 - lat_1)
+        index2 <- which.min(dist2)
+        lat3 <- lat2[index2]
+        RNetCDF::close.nc(nc)
+        if(lon3 > 180){lon3 <- lon3 - 180} # ensure longitude is -180 to 180
+
+        if(class(hourlydata) == "logical"){
+          prev.year <- 0
+          if(format(tme[1], "%d/%m") == "01/01"){ # starting at beginning of year, need to start at end of previous year
+            cat(paste("reading weather input for ", years[1]-1," (need a bit of the previous year) \n", sep = ""))
+            prev.year <- 1
+            start <- c(1460-3, 1, index2, index1) # for year prior to chosen years (getting the last day)
+            count <- c(4, 1, 1, 1) # for year prior/year after chosen years (getting the last four or first four values, i.e. hours 0, 6, 12, 18)
+            Tkmin1 <- ncquery("tmin.2m.gauss.", "tmin", start, count, years[1]-1)
+            Tkmax1 <- ncquery("tmax.2m.gauss.", "tmax", start, count, years[1]-1)
+            Tk1 <- ncquery("air.2m.gauss.", "air", start, count, years[1]-1)
+            sh1 <- ncquery("shum.2m.gauss.", "shum", start, count, years[1]-1)
+            pr1 <- ncquery("pres.sfc.gauss.", "pres", start, count, years[1]-1) # only three dimensions, hence
+            tcdc1 <- ncquery("tcdc.eatm.gauss.", "tcdc", start, count, years[1]-1)
+            dsw1 <- ncquery("dswrf.sfc.gauss.", "dswrf", start, count, years[1]-1)
+            dlw1 <- ncquery("dlwrf.sfc.gauss.", "dlwrf", start, count, years[1]-1)
+            ulw1 <- ncquery("ulwrf.sfc.gauss.", "ulwrf", start, count, years[1]-1)
+            wu1 <- ncquery("uwnd.10m.gauss.", "uwnd", start, count, years[1]-1)
+            wv1 <- ncquery("vwnd.10m.gauss.", "vwnd", start, count, years[1]-1)
+            prate1 <- ncquery("prate.sfc.gauss.", "prate", start, count, years[1]-1)
+          }
+
+          for(j in 1:length(years)){
+            tme3 <- seq(as.POSIXct(paste0("01/01/", years[j]), format = "%d/%m/%Y", tz = "UCT"), as.POSIXct(paste0("31/12/", years[j]), format = "%d/%m/%Y", tz = "UCT") + 18 * 3600, 6 * 3600)
+            if(j == 1){
+              if(format(tme[1], "%d/%m") == "01/01"){
+                start <- c(1, 1, index2, index1) # for chosen years
+                count <- c(-1, 1, 1, 1)# for chosen years
+              }else{
+                strt <- which(format(tme3, '%Y-%m-%d') == tme[1])[1]
+                start <- c(strt - 4, 1, index2, index1) # for chosen years
+                count <- c(-1, 1, 1, 1)# for chosen years
+              }
+              if(format(tme[length(tme)], "%d/%m") != "31/12" & length(years) == 1){
+                cnt <- which(format(tme3, '%Y-%m-%d') == tme[length(tme)] + 1)[1] - 1
+                count <- c(cnt + 5 - start[1], 1, 1, 1)# for chosen years
+              }
+              cat(paste("reading weather input for ", years[j]," \n", sep = ""))
+              Tkmin <- ncquery("tmin.2m.gauss.", "tmin", start, count, years[j])
+              Tkmax <- ncquery("tmax.2m.gauss.", "tmax", start, count, years[j])
+              Tk <- ncquery("air.2m.gauss.", "air", start, count, years[j])
+              sh <- ncquery("shum.2m.gauss.", "shum", start, count, years[j])
+              pr <- ncquery("pres.sfc.gauss.", "pres", start, count, years[j]) # only three dimensions, hence
+              tcdc <- ncquery("tcdc.eatm.gauss.", "tcdc", start, count, years[j])
+              dsw <- ncquery("dswrf.sfc.gauss.", "dswrf", start, count, years[j])
+              dlw <- ncquery("dlwrf.sfc.gauss.", "dlwrf", start, count, years[j])
+              ulw <- ncquery("ulwrf.sfc.gauss.", "ulwrf", start, count, years[j])
+              wu <- ncquery("uwnd.10m.gauss.", "uwnd", start, count, years[j])
+              wv <- ncquery("vwnd.10m.gauss.", "vwnd", start, count, years[j])
+              prate <- ncquery("prate.sfc.gauss.", "prate", start, count, years[j])
+            }else{
+              start <- c(1, 1, index2, index1) # for chosen years
+              if(format(tme[length(tme)], "%d/%m") == "31/12" | j != length(years)){
+                count <- c(-1, 1, 1, 1)# for chosen years
+              }else{
+                cnt <- which(format(tme3, '%Y-%m-%d') == tme[length(tme)] + 1)[1] - 1
+                count <- c(cnt + 5 - start[1], 1, 1, 1)# for chosen years
+              }
+              cat(paste("reading weather input for ", years[j]," \n", sep = ""))
+              Tkmin <- c(Tkmin, ncquery("tmin.2m.gauss.", "tmin", start, count, years[j]))
+              Tkmax <- c(Tkmax, ncquery("tmax.2m.gauss.", "tmax", start, count, years[j]))
+              Tk <- c(Tk, ncquery("air.2m.gauss.", "air", start, count, years[j]))
+              sh <- c(sh, ncquery("shum.2m.gauss.", "shum", start, count, years[j]))
+              pr <- c(pr, ncquery("pres.sfc.gauss.", "pres", start, count, years[j]))
+              tcdc <- c(tcdc, ncquery("tcdc.eatm.gauss.", "tcdc", start, count, years[j]))
+              dsw <- c(dsw, ncquery("dswrf.sfc.gauss.", "dswrf", start, count, years[j]))
+              dlw <- c(dlw, ncquery("dlwrf.sfc.gauss.", "dlwrf", start, count, years[j]))
+              ulw <- c(ulw, ncquery("ulwrf.sfc.gauss.", "ulwrf", start, count, years[j]))
+              wu <- c(wu, ncquery("uwnd.10m.gauss.", "uwnd", start, count, years[j]))
+              wv <- c(wv, ncquery("vwnd.10m.gauss.", "vwnd", start, count, years[j]))
+              prate <- c(prate, ncquery("prate.sfc.gauss.", "prate", start, count, years[j]))
+            }
+          }
+
+          next.year <- 0
+          if(format(tme[length(tme)], "%d/%m") == "31/12"){ # starting at beginning of year, need to start at end of previous year
+            cat(paste("reading weather input for ", years[length(years)]+1," (need a bit of the next year) \n", sep = ""))
+            next.year <- 1
+            start <- c(1, 1, index2, index1) # for year prior to chosen years (getting the last day)
+            count <- c(4, 1, 1, 1) # for year prior/year after chosen years (getting the last four or first four values, i.e. hours 0, 6, 12, 18)
+            Tkmin2 <- ncquery("tmin.2m.gauss.", "tmin", start, count, years[length(years)]+1)
+            Tkmax2 <- ncquery("tmax.2m.gauss.", "tmax", start, count, years[length(years)]+1)
+            Tk2 <- ncquery("air.2m.gauss.", "air", start, count, years[length(years)]+1)
+            sh2 <- ncquery("shum.2m.gauss.", "shum", start, count, years[length(years)]+1)
+            pr2 <- ncquery("pres.sfc.gauss.", "pres", start, count, years[length(years)]+1) # only three dimensions, hence
+            tcdc2 <- ncquery("tcdc.eatm.gauss.", "tcdc", start, count, years[length(years)]+1)
+            dsw2 <- ncquery("dswrf.sfc.gauss.", "dswrf", start, count, years[length(years)]+1)
+            dlw2 <- ncquery("dlwrf.sfc.gauss.", "dlwrf", start, count, years[length(years)]+1)
+            ulw2 <- ncquery("ulwrf.sfc.gauss.", "ulwrf", start, count, years[length(years)]+1)
+            wu2 <- ncquery("uwnd.10m.gauss.", "uwnd", start, count, years[length(years)]+1)
+            wv2 <- ncquery("vwnd.10m.gauss.", "vwnd", start, count, years[length(years)]+1)
+            prate2 <- ncquery("prate.sfc.gauss.", "prate", start, count, years[length(years)]+1)
+          }
+
+          if(prev.year == 1){
+            Tkmin <- c(Tkmin1, Tkmin)
+            Tkmax <- c(Tkmax1, Tkmax)
+            Tk <- c(Tk1, Tk)
+            sh <- c(sh1, sh)
+            pr <- c(pr1, pr)
+            tcdc <- c(tcdc1, tcdc)
+            dsw <- c(dsw1, dsw)
+            dlw <- c(dlw1, dlw)
+            ulw <- c(ulw1, ulw)
+            wu <- c(wu1, wu)
+            wv <- c(wv1, wv)
+            prate <- c(prate1, prate)
+          }
+          if(next.year == 1){
+            Tkmin <- c(Tkmin, Tkmin2)
+            Tkmax <- c(Tkmax, Tkmax2)
+            Tk <- c(Tk, Tk2)
+            sh <- c(sh, sh2)
+            pr <- c(pr, pr2)
+            tcdc <- c(tcdc, tcdc2)
+            dsw <- c(dsw, dsw2)
+            dlw <- c(dlw, dlw2)
+            ulw <- c(ulw, ulw2)
+            wu <- c(wu, wu2)
+            wv <- c(wv, wv2)
+            prate <- c(prate, prate2)
+          }
+          dsw[dsw < 0] <- 0
+          prate[prate < 0] <- 0
+          prate <- prate * 3600 * 6 # mm in 6 hrs
+          obs_time <- seq(as.POSIXct(dstart, format = "%d/%m/%Y", tz = "UCT") - 3600 * 24, as.POSIXct(dfinish, format = "%d/%m/%Y", tz = "UCT") + 18 * 3600 + 24 * 3600, 6 * 3600)
+          ncepdata <- data.frame(obs_time = obs_time, Tk, Tkmin, Tkmax, sh, pr, wu, wv, dlw, ulw, dsw, tcdc) # 6-hourly ncep for chosen period plus a day added either side for interpolation
+          hourlydata <- microclima::hourlyNCEP(ncepdata = ncepdata, lat, long, tme, reanalysis) # interpolated to hourly
+          cat("computing radiation and elevation effects with package microclima \n")
+          microclima.out <- microclima::microclimaforNMR(lat = longlat[2], long = longlat[1], dstart = dstart, dfinish = dfinish, l = mean(microclima.LAI), x = LOR, coastal = coastal, hourlydata = hourlydata, dailyprecip = prate, dem = dem, demmeso = dem2, albr = 0, resolution = 30, zmin = 0, slope = slope, aspect = aspect, windthresh = 4.5, emthresh = 0.78, reanalysis2 = reanalysis, difani = FALSE, weather.elev = weather.elev, cad.effects = cad.effects)
+        }else{
+          cat("computing radiation and elevation effects with package microclima \n")
+          microclima.out <- microclima::microclimaforNMR(lat = longlat[2], long = longlat[1], dstart = dstart, dfinish = dfinish, l = mean(microclima.LAI), x = LOR, coastal = coastal, hourlydata = hourlydata, dailyprecip = NA, dem = dem, demmeso = dem2, albr = 0, resolution = 30, zmin = 0, slope = slope, aspect = aspect, windthresh = 4.5, emthresh = 0.78, reanalysis2 = reanalysis, difani = FALSE, weather.elev = weather.elev, cad.effects = cad.effects)
+        }
+        if(class(dailyprecip) == "logical"){
+          dailyprecip <- microclima.out$dailyprecip[-c(1:4)] # remove extra 4 values from start
+          dailyprecip <- dailyprecip[1:(length(dailyprecip) - 4)] # remove extra 5 values from end
+          dailyprecip <- aggregate(dailyprecip, by = list(format(hourlydata$obs_time[seq(1, nrow(hourlydata), 6)], "%Y-%m-%d")), sum)$x
+        }
+      }else{
+        if(class(hourlydata) == "logical"){
+          cat("downloading weather data with package RNCEP via package microclima \n")
+          hourlydata <- microclima::hourlyNCEP(ncepdata = NA, lat, long, tme, reanalysis) # interpolated to hourly
+        }
+        cat("computing radiation and elevation effects with package microclima \n")
+        microclima.out <- microclima::microclimaforNMR(lat = longlat[2], long = longlat[1], dstart = dstart, dfinish = dfinish, l = mean(microclima.LAI), x = LOR, coastal = coastal, hourlydata = hourlydata, dailyprecip = dailyprecip, dem = dem, demmeso = dem2, albr = 0, resolution = 30, zmin = 0, slope = slope, aspect = aspect, windthresh = 4.5, emthresh = 0.78, reanalysis2 = reanalysis, difani = FALSE, weather.elev = weather.elev, cad.effects = cad.effects)
+        dailyprecip <- microclima.out$dailyprecip
+      }
+      hourlyradwind <- microclima.out$hourlyradwind
+      SLOPE <- hourlyradwind$slope[1]
+      ASPECT <- hourlyradwind$aspect[1]
+      tref <- microclima.out$tref
+      ZENhr <- hourlydata$szenith
+      ZENhr[ZENhr > 90] <- 90
+      HORIZON <- hori
+      if(save == 1){
+        save(SLOPE, file = 'SLOPE.Rda')
+        save(ASPECT, file = 'ASPECT.Rda')
+        save(HORIZON, file = 'HORIZON.Rda')
+      }
+      # NB units for rad = MJ / m^2 / hr (divide by 0.0036 to get to W / m^2)
+      # Skyviewfact (time invariant, 1 = complete hemisphere in view)
+      # canopyfact (proportion of isotropic radiation blocked out, 1 = no radiation gets in)
+      if(save == 1){
+        save(tref, file = 'tref.Rda')
+      }
+      # tref (original hourly NCEP)
+      # telev (elevation-corrected temperature)
+      # tcad (delta temperature due to cold air drainage)
+      elev <- tref$elev[1] # m
+      ALTT <- elev
+      TAIRhr <- tref$telev + tref$tcad # reference Tair corrected for lapse rate and cold air drainage
+      SOLRhr <- hourlyradwind$swrad / 0.0036
+      SOLRhr[SOLRhr < 0] <- 0
+      SOLRhr <- zoo::na.approx(SOLRhr)
+      cloudhr <- hourlydata$cloudcover
+      IRDhr <- hourlydata$downlong / 0.0036
+      if(IR != 2){
+        IRDhr <- IRDhr * 0 + -1 # make negative so computed internally in the microclimate model
+      }
+      CLDhr <- hourlydata$cloudcover
+      CLDhr[CLDhr < 0] <- 0
+      CLDhr[CLDhr > 100] <- 100
+      RHhr <- suppressWarnings(humidityconvert(h = hourlydata$humidity, intype = 'specific', p = hourlydata$pressure, tc = TAIRhr)$relative)
+      RHhr[RHhr > 100] <- 100
+      RHhr[RHhr < 0] <- 0
+      WNhr <- hourlyradwind$windspeed
+      WNhr[is.na(WNhr)] <- 0.1
+      RAINhr <- WNhr * 0 # using daily rain for now
+      PRESShr <- hourlydata$pressure
+      RAINFALL <- dailyprecip
+      RAINFALL[RAINFALL < 0.1] <- 0
+      ZENhr2 <- ZENhr
+      ZENhr2[ZENhr2!=90] <- 0
+      dmaxmin <- function(x, fun) {
+        dx <- t(matrix(x, nrow = 24))
+        apply(dx, 1, fun)
+      }
+      TMAXX <- dmaxmin(TAIRhr, max)
+      TMINN <- dmaxmin(TAIRhr, min)
+      CCMAXX <- dmaxmin(CLDhr, max)
+      CCMINN <- dmaxmin(CLDhr, min)
+      RHMAXX <- dmaxmin(RHhr, max)
+      RHMINN <- dmaxmin(RHhr, min)
+      WNMAXX <- dmaxmin(WNhr, max)
+      WNMINN <- dmaxmin(WNhr, min)
+      PRESS <- dmaxmin(PRESShr, min)
+
+      if(save == 1){
+        cat("saving met data for later \n")
+        save(CCMAXX, file = 'CCMAXX.Rda')
+        save(CCMINN, file = 'CCMINN.Rda')
+        save(WNMAXX, file = 'WNMAXX.Rda')
+        save(WNMINN, file = 'WNMINN.Rda')
+        save(TMAXX, file = 'TMAXX.Rda')
+        save(TMINN, file = 'TMINN.Rda')
+        save(RHMAXX, file = 'RHMAXX.Rda')
+        save(RHMINN, file = 'RHMINN.Rda')
+        save(RAINFALL, file = 'RAINFALL.Rda')
+        save(PRESS, file = 'PRESS.Rda')
+        save(CLDhr, file = 'CLDhr.Rda')
+        save(WNhr, file = 'WNhr.Rda')
+        save(TAIRhr, file = 'TAIRhr.Rda')
+        save(RHhr, file = 'RHhr.Rda')
+        save(RAINhr, file = 'RAINhr.Rda')
+        save(SOLRhr, file = 'SOLRhr.Rda')
+        save(ZENhr, file = 'ZENhr.Rda')
+        save(IRDhr, file = 'IRDhr.Rda')
+        save(microclima.out, file = 'microclima.out.Rda')
+      }
+    }else{
+      cat("loading met data from previous run \n")
+      load('CCMAXX.Rda')
+      load('CCMINN.Rda')
+      load('WNMAXX.Rda')
+      load('WNMINN.Rda')
+      load('TMAXX.Rda')
+      load('TMINN.Rda')
+      load('RHMAXX.Rda')
+      load('RHMINN.Rda')
+      load('RAINFALL.Rda')
+      load('PRESS.Rda')
+      load('CLDhr.Rda')
+      load('WNhr.Rda')
+      load('TAIRhr.Rda')
+      load('RHhr.Rda')
+      load('RAINhr.Rda')
+      load('SOLRhr.Rda')
+      load('ZENhr.Rda')
+      load('IRDhr.Rda')
+      load('microclima.out.Rda')
+    }
+    slope <- 0 # already corrected for by microclima
+    azmuth <- 0 # already corrected for by microclima
+
+    if(run.gads > 0){
+      ####### get solar attenuation due to aerosols with program GADS #####################
+      relhum <- 1
+      if(run.gads == 1){ # fortran version
+        optdep.summer <- as.data.frame(rungads(longlat[2], longlat[1], relhum, 0))
+        optdep.winter <- as.data.frame(rungads(longlat[2], longlat[1], relhum, 1))
+      }else{ # r version
+        optdep.summer <- as.data.frame(gads.r(longlat[2], longlat[1], relhum, 0))
+        optdep.winter <- as.data.frame(gads.r(longlat[2], longlat[1], relhum, 1))
+      }
+      optdep<-cbind(optdep.winter[, 1], rowMeans(cbind(optdep.summer[, 2], optdep.winter[, 2])))
+      optdep<-as.data.frame(optdep)
+      colnames(optdep) <- c("LAMBDA", "OPTDEPTH")
+      a <- lm(OPTDEPTH ~ poly(LAMBDA, 6, raw = TRUE), data = optdep)
+      LAMBDA <- c(290, 295, 300, 305, 310, 315, 320, 330, 340, 350, 360, 370, 380, 390, 400, 420, 440, 460, 480, 500, 520, 540, 560, 580, 600, 620, 640, 660, 680, 700, 720, 740, 760, 780, 800, 820, 840, 860, 880, 900, 920, 940, 960, 980, 1000, 1020, 1080, 1100, 1120, 1140, 1160, 1180, 1200, 1220, 1240, 1260, 1280, 1300, 1320, 1380, 1400, 1420, 1440, 1460, 1480, 1500, 1540, 1580, 1600, 1620, 1640, 1660, 1700, 1720, 1780, 1800, 1860, 1900, 1950, 2000, 2020, 2050, 2100, 2120, 2150, 2200, 2260, 2300, 2320, 2350, 2380, 2400, 2420, 2450, 2490, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000)
+      TAI <- predict(a, data.frame(LAMBDA))
+      ################ end GADS ##################################################
+    }else{ # use a suitable one for Australia (same as around Adelaide/Melbourne)
+      TAI<-c(0.0670358341290886, 0.0662612704779235, 0.065497075238002, 0.0647431301168489, 0.0639993178022531, 0.0632655219571553, 0.0625416272145492, 0.0611230843885423, 0.0597427855962549, 0.0583998423063099, 0.0570933810229656, 0.0558225431259535, 0.0545864847111214, 0.0533843764318805, 0.0522154033414562, 0.0499736739981675, 0.047855059159556, 0.0458535417401334, 0.0439633201842001, 0.0421788036108921, 0.0404946070106968, 0.0389055464934382, 0.0374066345877315, 0.0359930755919066, 0.0346602609764008, 0.0334037648376212, 0.0322193394032758, 0.0311029105891739, 0.0300505736074963, 0.0290585886265337, 0.0281233764818952, 0.0272415144391857, 0.0264097320081524, 0.0256249068083005, 0.0248840604859789, 0.0241843546829336, 0.0235230870563317, 0.0228976873502544, 0.0223057135186581, 0.0217448478998064, 0.0212128934421699, 0.0207077699817964, 0.0202275105711489, 0.0197702578594144, 0.0193342605242809, 0.0189178697551836, 0.0177713140039894, 0.0174187914242432, 0.0170790495503944, 0.0167509836728154, 0.0164335684174899, 0.0161258546410128, 0.0158269663770596, 0.0155360978343254, 0.0152525104459325, 0.0149755299703076, 0.0147045436435285, 0.0144389973831391, 0.0141783930434343, 0.0134220329447663, 0.0131772403830191, 0.0129356456025128, 0.0126970313213065, 0.0124612184223418, 0.0122280636204822, 0.01199745718102, 0.0115436048739351, 0.0110993711778668, 0.0108808815754663, 0.0106648652077878, 0.0104513876347606, 0.0102405315676965, 0.00982708969547694, 0.00962473896278535, 0.00903679230300494, 0.00884767454432418, 0.0083031278398166, 0.00796072474935954, 0.00755817587626185, 0.00718610751850881, 0.00704629977586921, 0.00684663903049612, 0.00654155580333479, 0.00642947339729728, 0.00627223096874308, 0.00603955966866779, 0.00580920937536261, 0.00568506186880564, 0.00563167068287251, 0.00556222005081865, 0.00550522989971023, 0.00547395763028062, 0.0054478983436216, 0.00541823364504573, 0.00539532163908382, 0.00539239864119488, 0.00541690124712384, 0.00551525885358836, 0.00564825853509463, 0.00577220185074264, 0.00584222986640171, 0.00581645238345584, 0.00566088137411449, 0.00535516862329704, 0.00489914757707667, 0.00432017939770409, 0.0036813032251836, 0.00309019064543606, 0.00270890436501562, 0.00276446109239711, 0.00356019862584603)
+    } #end check if running gads
+
+    if(max(abs(warm)) != 0){
+      # impose uniform temperature change
+      TMAXX <- TMAXX + warm
+      TMINN <- TMINN + warm
+      if(length(warm) == length(TMAXX)){
+        warm.hr <- rep(warm, each = 24)
+      }else{
+        warm.hr <- warm
+      }
+      TAIRhr <- TAIRhr + warm.hr
+      sigma <- 5.67e-8 #Stefan-Boltzman, W/(m.K)
+      if(IRDhr == 2){
+        IRDhr <- sigma * ((IRDhr / sigma) ^ (1 / 4) + warm.hr) ^ 4 # adjust downward radiation for altered 'sky temperature'
+      }
+    }
+    RAINFALL <- RAINFALL + rainoff
+    RAINFALL[RAINFALL < 0] <- 0
+    if(length(rainoff) == length(RAINFALL)){
+      rainoff.hr <- rep(rainoff, each = 24)
+    }else{
+      rainoff.hr <- rainoff
+    }
+    RAINhr <- RAINhr + rainoff
+    RAINhr[RAINhr < 0] <- 0
+    ALLMINTEMPS <- TMINN
+    ALLMAXTEMPS <- TMAXX
+    ALLTEMPS <- cbind(ALLMAXTEMPS, ALLMINTEMPS)
+
+    WNMAXX <- WNMAXX * windfac
+    WNMINN <- WNMINN * windfac
+    WNhr <- WNhr * windfac
+
+    REFLS <- rep(REFL, ndays)
+    PCTWET <- rep(PCTWET, ndays)
+    soilwet <- RAINFALL
+    soilwet[soilwet <= rainwet] <- 0
+    soilwet[soilwet > 0] <- 90
+    if(ndays < 1){
+      PCTWET <- pmax(soilwet, PCTWET)
+    }
+
+    Intrvls<-rep(0, ndays)
+    Intrvls[1] <- 1 # user-supplied last day-of-year in each time interval sequence
+    Numtyps <- 10 # number of substrate types
+    Nodes <- matrix(data = 0, nrow = 10, ncol = ndays) # deepest nodes for each substrate type
+    Nodes[1:10,] <- c(1:10) # deepest nodes for each substrate type
+    ALREF <- abs(trunc(x[1]))
+
+    HEMIS <- ifelse(x[2] < 0, 2, 1)
+    ALAT <- abs(trunc(x[2]))
+    AMINUT <- (abs(x[2]) - ALAT) * 60
+    ALONG <- abs(trunc(x[1]))
+    ALMINT <- (abs(x[1]) - ALONG) * 60
+
+    avetemp <- (sum(TMAXX) + sum(TMINN)) / (length(TMAXX) * 2)
+    soilinit <- rep(avetemp, 20)
+    tannul <- mean(unlist(ALLTEMPS))
+
+    if(is.na(deepsoil)){
+      if(nyears == 1){
+        avetemp <- (sum(TMAXX) + sum(TMINN)) / (length(TMAXX)*2)
+        deepsoil <-rep(avetemp, ndays)
+      }else{
+        avetemp <- rowMeans(cbind(TMAXX, TMINN), na.rm=TRUE)
+        if(length(TMAXX) < 365){
+          deepsoil <- rep((sum(TMAXX) + sum(TMINN)) / (length(TMAXX) * 2), length(TMAXX))
+        }else{
+          deepsoil <- raster::movingFun(avetemp, n = 365, fun = mean, type = 'to')
+          yearone <- rep((sum(TMAXX[1:365]) + sum(TMINN[1:365])) / (365 * 2), 365)
+          deepsoil[1:365] <- yearone
+        }
+      }
+    }else{
+      tannul <- mean(deepsoil)
+    }
+
+    SLES <- matrix(nrow = ndays, data = 0)
+    SLES <- SLES + SLE
+
+    moists2 <- matrix(nrow = 10, ncol = ndays, data = 0)
+    moists2[1, ndays] <- 0.2
+    moists <- moists2
+
+    if(runmoist == 1){
+      moists2 <- matrix(nrow = 10, ncol = ndays, data = 0) # set up an empty vector for soil moisture values through time
+      moists2[1:10, ] <- SoilMoist_Init
+      moists <- moists2
+    }
+    soilprops <- matrix(data = 0, nrow = 10, ncol = 5)
+    soilprops[,1] <- BulkDensity
+    soilprops[,2] <- BulkDensity / Density # not used if soil moisture computed
+    soilprops[soilprops[,2] < 0.26, 2] <- 0.26
+    soilprops[,3] <- Thcond
+    soilprops[,4] <- SpecHeat
+    soilprops[,5] <- Density
+    if(cap == 1){
+      soilprops[1:2, 3] <- 0.2
+      soilprops[1:2, 4] <- 1920
+    }
+    if(cap==2){
+      soilprops[1:2, 3] <- 0.1
+      soilprops[3:4, 3] <- 0.25
+      soilprops[1:4, 4] <- 1920
+      soilprops[1:4, 5] <- 1.3
+      soilprops[1:4, 1] <- 0.7
+    }
+
+    ALTT <- as.numeric(ALTT)
+    ALREF <- as.numeric(ALREF)
+    ALMINT <- as.numeric(ALMINT)
+    ALONG <- as.numeric(ALONG)
+    AMINUT <- as.numeric(AMINUT)
+    ALAT <-as.numeric(ALAT)
+    hourly <- 1
+    if(rainhourly == 0){
+      RAINhr = rep(0, 24 * ndays)
+    }else{
+      RAINhr = rainhour
+    }
+    # microclimate input parameters list
+    microinput<-c(ndays, RUF, ERR, Usrhyt, Refhyt, Numtyps, Z01, Z02, ZH1, ZH2, idayst, ida, HEMIS, ALAT, AMINUT, ALONG, ALMINT, ALREF, slope, azmuth, ALTT, CMH2O, microdaily, tannul, EC, VIEWF, snowtemp, snowdens, snowmelt, undercatch, rainmult, runshade, runmoist, maxpool, evenrain, snowmodel, rainmelt, writecsv, densfun, hourly, rainhourly, lamb, IUV, RW, PC, RL, SP, R1, IM, MAXCOUNT, IR, message, fail, snowcond, intercept, grasshade, solonly, ZH, D0)
+
+    if(length(LAI) < ndays){
+      LAI<-rep(LAI[1], ndays)
+    }
+    if(shore == 0){
+      tides <- matrix(data = 0, nrow = 24 * ndays, ncol = 3) # make an empty matrix
+    }
+    TIMAXS <- c(1, 1, 0, 0)
+    TIMINS <- c(0, 0, 1, 1)
+    # all microclimate data input list - all these variables are expected by the input argument of the fortran micro2014 subroutine
+    micro <- list(tides = tides, microinput = microinput, doy = doy, SLES = SLES, DEP = DEP, Nodes = Nodes, MAXSHADES = MAXSHADES, MINSHADES = MINSHADES, TIMAXS = TIMAXS, TIMINS = TIMINS, TMAXX = TMAXX, TMINN = TMINN, RHMAXX = RHMAXX, RHMINN = RHMINN, CCMAXX = CCMAXX, CCMINN = CCMINN, WNMAXX = WNMAXX, WNMINN = WNMINN, TAIRhr = TAIRhr, RHhr = RHhr, WNhr = WNhr, CLDhr = CLDhr, SOLRhr = SOLRhr, RAINhr = RAINhr, ZENhr = ZENhr, IRDhr = IRDhr, REFLS = REFLS, PCTWET = PCTWET, soilinit = soilinit, hori = hori, TAI = TAI, soilprops = soilprops, moists = moists, RAINFALL = RAINFALL, tannulrun = deepsoil, PE = PE, KS = KS, BB = BB, BD = BD, DD = DD, L = L, LAI = LAI)
+    # write all input to csv files in their own folder
+    if(write_input == 1){
+      if(dir.exists("micro csv input") == FALSE){
+        dir.create("micro csv input")
+      }
+      write.table(as.matrix(microinput), file = "micro csv input/microinput.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(doy, file = "micro csv input/doy.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(SLES, file = "micro csv input/SLES.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(DEP, file = "micro csv input/DEP.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(Nodes, file = "micro csv input/Nodes.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(MAXSHADES, file = "micro csv input/Maxshades.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(MINSHADES, file = "micro csv input/Minshades.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(TIMAXS, file = "micro csv input/TIMAXS.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(TIMINS, file = "micro csv input/TIMINS.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(TMAXX, file = "micro csv input/TMAXX.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(TMINN, file = "micro csv input/TMINN.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(RHMAXX, file = "micro csv input/RHMAXX.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(RHMINN, file = "micro csv input/RHMINN.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(CCMAXX, file = "micro csv input/CCMAXX.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(CCMINN, file = "micro csv input/CCMINN.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(WNMAXX, file = "micro csv input/WNMAXX.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(WNMINN, file = "micro csv input/WNMINN.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(REFLS, file = "micro csv input/REFLS.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(PCTWET, file = "micro csv input/PCTWET.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(soilinit, file = "micro csv input/soilinit.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(hori, file = "micro csv input/hori.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(TAI, file = "micro csv input/TAI.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(soilprops, file="micro csv input/soilprop.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(moists,file="micro csv input/moists.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(RAINFALL,file="micro csv input/rain.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(deepsoil,file="micro csv input/tannulrun.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(PE,file="micro csv input/PE.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(BD,file="micro csv input/BD.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(DD,file="micro csv input/DD.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(BB,file="micro csv input/BB.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(KS,file="micro csv input/KS.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(L,file="micro csv input/L.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(LAI,file="micro csv input/LAI.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(tides,file="micro csv input/tides.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(TAIRhr,file="micro csv input/TAIRhr.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(RHhr,file="micro csv input/RHhr.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(WNhr,file="micro csv input/WNhr.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(CLDhr,file="micro csv input/CLDhr.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(SOLRhr,file="micro csv input/SOLRhr.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(RAINhr,file="micro csv input/RAINhr.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(ZENhr,file="micro csv input/ZENhr.csv", sep = ",", col.names = NA, qmethod = "double")
+      write.table(IRDhr,file="micro csv input/IRDhr.csv", sep = ",", col.names = NA, qmethod = "double")
+    }
+    if(is.numeric(loc[1])){
+      location <- paste("long", loc[1], "lat", loc[2])
+    }else{
+      location <- loc
+    }
+    cat(paste('running microclimate model for ', ndays, ' days from ', tt[1], ' to ', tt[length(tt)], ' at site ', location, '\n'))
+    cat('Note: the output column `SOLR` in metout and shadmet is for unshaded solar radiation adjusted for slope, aspect and horizon angle \n')
+    ptm <- proc.time() # Start timing
+    microut<-microclimate(micro)
+    print(proc.time() - ptm) # Stop the clock
+
+    metout <- microut$metout # retrieve above ground microclimatic conditions, min shade
+    shadmet <- microut$shadmet # retrieve above ground microclimatic conditions, max shade
+    soil <- microut$soil # retrieve soil temperatures, minimum shade
+    shadsoil <- microut$shadsoil # retrieve soil temperatures, maximum shade
+    if(runmoist==1){
+      soilmoist <- microut$soilmoist # retrieve soil moisture, minimum shade
+      shadmoist <- microut$shadmoist # retrieve soil moisture, maximum shade
+      humid <- microut$humid # retrieve soil humidity, minimum shade
+      shadhumid <- microut$shadhumid # retrieve soil humidity, maximum shade
+      soilpot <- microut$soilpot # retrieve soil water potential, minimum shade
+      shadpot <- microut$shadpot # retrieve soil water potential, maximum shade
+      plant <- microut$plant # retrieve plant output, minimum shade
+      shadplant <- microut$shadplant # retrieve plant output, maximum shade
+    }else{
+      soilpot <- soil
+      soilmoist <- soil
+      shadpot <- soil
+      shadmoist <- soil
+      humid <- soil
+      shadhumid <- soil
+      plant <- cbind(soil, soil[, 3:4])
+      shadplant <- cbind(soil, soil[, 3:4])
+      soilpot[, 3:12] <- 0
+      soilmoist[, 3:12] <- 0.5
+      shadpot[, 3:12] <- 0
+      shadmoist[, 3:12] <- 0.5
+      humid[, 3:12] <- 0.99
+      shadhumid[, 3:12] <- 0.99
+      plant[, 3:14] <- 0
+      shadplant[, 3:14] <- 0
+    }
+    if(snowmodel == 1){
+      sunsnow <- microut$sunsnow
+      shdsnow <- microut$shdsnow
+    }
+    if(max(metout[,1] == 0)){
+      cat("ERROR: the model crashed - try a different error tolerance (ERR) or a different spacing in DEP", '\n')
+    }
+    if(lamb == 1){
+      drlam <- as.data.frame(microut$drlam) # retrieve direct solar irradiance
+      drrlam <- as.data.frame(microut$drrlam) # retrieve direct Rayleigh component solar irradiance
+      srlam <- as.data.frame(microut$srlam) # retrieve scattered solar irradiance
+      if(snowmodel == 1){
+        return(list(soil = soil, shadsoil = shadsoil, metout = metout, shadmet = shadmet, soilmoist = soilmoist, shadmoist = shadmoist, humid = humid, shadhumid = shadhumid, soilpot = soilpot, shadpot = shadpot, sunsnow = sunsnow, shdsnow = shdsnow, plant = plant, shadplant = shadplant, RAINFALL = RAINFALL, ndays = ndays, elev = ALTT, REFL = REFL[1], longlat = longlat, nyears = nyears, minshade = MINSHADES, maxshade = MAXSHADES, DEP = DEP, drlam = drlam, drrlam = drrlam, srlam = srlam, SLOPE = SLOPE, ASPECT = ASPECT, HORIZON = HORIZON, dates = tt, dem = dem, dates2 = dates2, microclima.out = microclima.out))
+      }else{
+        return(list(soil = soil, shadsoil = shadsoil, metout = metout, shadmet = shadmet, soilmoist = soilmoist, shadmoist = shadmoist, humid = humid, shadhumid = shadhumid, soilpot = soilpot, shadpot = shadpot, plant = plant, shadplant = shadplant, RAINFALL = RAINFALL, ndays = ndays, elev = ALTT, REFL = REFL[1], longlat = longlat, nyears = nyears, minshade = MINSHADES, maxshade = MAXSHADES, DEP = DEP, drlam = drlam, drrlam = drrlam, srlam = srlam, SLOPE = SLOPE, ASPECT = ASPECT, HORIZON = HORIZON, dates = tt, dem = dem, dates2 = dates2, microclima.out = microclima.out))
+      }
+    }else{
+      if(snowmodel == 1){
+        return(list(soil = soil, shadsoil = shadsoil, metout = metout, shadmet = shadmet, soilmoist = soilmoist, shadmoist = shadmoist, humid = humid, shadhumid = shadhumid, soilpot = soilpot, shadpot = shadpot, sunsnow = sunsnow, shdsnow = shdsnow, plant = plant, shadplant = shadplant, RAINFALL = RAINFALL, ndays = ndays, elev = ALTT, REFL = REFL[1], longlat = longlat, nyears = nyears, minshade = MINSHADES, maxshade = MAXSHADES, DEP = DEP, SLOPE = SLOPE, ASPECT = ASPECT, HORIZON = HORIZON, dates = tt, dem = dem, dates2 = dates2, microclima.out = microclima.out))
+      }else{
+        return(list(soil = soil, shadsoil = shadsoil, metout = metout, shadmet = shadmet, soilmoist = soilmoist, shadmoist = shadmoist, humid = humid, shadhumid = shadhumid, soilpot = soilpot, shadpot = shadpot, plant = plant, shadplant = shadplant, RAINFALL = RAINFALL, ndays = ndays, elev = ALTT, REFL = REFL[1], longlat = longlat, nyears = nyears, minshade = MINSHADES, maxshade = MAXSHADES, DEP = DEP, SLOPE = SLOPE, ASPECT = ASPECT, HORIZON = HORIZON, dates = tt, dem = dem, dates2 = dates2, microclima.out = microclima.out))
+      }
+    }
+  } # end error trapping
+} # end of micro_ncep function
